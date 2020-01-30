@@ -45,7 +45,7 @@
             aria-label="main navigation"
           >
             <div class="navbar-brand">
-              <a class="navbar-item" href="https://bulma.io">
+              <a class="navbar-item" href="/">
                 <img
                   src="public/logo-no-text.svg"
                   style="height: fit-content; width: auto;"
@@ -78,7 +78,7 @@
                 <a href="/pages/membros.html" class="navbar-item">
                   PESSOAS
                 </a>
-                <a href="" class="navbar-item">
+                <a href="https://github.com/icmc-data" class="navbar-item">
                   PROJETOS
                 </a>
                 <a href="#contato" class="navbar-item">
@@ -102,39 +102,43 @@
         </div>
         <!-- <img src="/public/58722639_330106464363279_8769161481318039552_o.png" alt="" class="img-top"> -->
         <div id="particles-js" style="width: 100%;">
-          <!-- Page Logo and "About us " columns -->
-          <div class="section">
-            <div class="columns is-multiline about-us-columns">
-              <!-- Data Logo... -->
-              <div class="column center">
-                <img
-                  src="/public/logo.svg"
-                  alt=""
-                  srcset=""
-                  class="main-page-logo"
-                />
-              </div>
+          <div>
+            <!-- Page Logo and "About us " columns -->
+            <div class="section">
+              <div class="columns is-multiline about-us-columns">
+                <!-- Data Logo... -->
+                <div class="column center">
+                  <img
+                    src="/public/logo.svg"
+                    alt=""
+                    srcset=""
+                    class="main-page-logo"
+                  />
+                </div>
 
-              <!-- About-us Column... -->
-              <div class="column center">
-                <p style="text-align: center; padding: 5%;">
-                  Lorem Ipsum é simplesmente uma simulação de texto da indústria
-                  tipográfica e de impressos, e vem sendo utilizado desde o
-                  século XVI, quando um impressor desconhecido pegou uma bandeja
-                  de tipos e os embaralhou para fazer um livro de modelos de
-                  tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como
-                  também ao salto para a editoração eletrônica, permanecendo
-                  essencialmente inalterado. Se popularizou na década de 60,
-                  quando a Letraset lançou decalques contendo passagens de Lorem
-                  Ipsum, e mais recentemente quando passou a ser integrado a
-                  softwares de editoração eletrônica como Aldus PageMaker.
-                </p>
+                <!-- About-us Column... -->
+                <div class="column center">
+                  <p style="text-align: center; padding: 5%;">
+                    Lorem Ipsum é simplesmente uma simulação de texto da
+                    indústria tipográfica e de impressos, e vem sendo utilizado
+                    desde o século XVI, quando um impressor desconhecido pegou
+                    uma bandeja de tipos e os embaralhou para fazer um livro de
+                    modelos de tipos. Lorem Ipsum sobreviveu não só a cinco
+                    séculos, como também ao salto para a editoração eletrônica,
+                    permanecendo essencialmente inalterado. Se popularizou na
+                    década de 60, quando a Letraset lançou decalques contendo
+                    passagens de Lorem Ipsum, e mais recentemente quando passou
+                    a ser integrado a softwares de editoração eletrônica como
+                    Aldus PageMaker.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- <div class="particles-js2" style="width: 100%;"> -->
       <div class="frentes" id="frentes">
         <div class="title-frentes">
           <h1>FRENTES</h1>
@@ -149,7 +153,12 @@
                   <figcaption>
                     <h2>FRENTE<span>AULAS</span></h2>
                     <p>Interessado nas aulas? Clique e saiba mais!</p>
-                    <a href="#">View more</a>
+                    <a
+                      href="#popup-aulas"
+                      class="open-popup"
+                      onclick="disableClick('open-popup')"
+                      >View more</a
+                    >
                   </figcaption>
                 </figure>
               </div>
@@ -159,7 +168,12 @@
                   <figcaption>
                     <h2>FRENTE<span>PROJETOS</span></h2>
                     <p>Confira os projetos do Data!</p>
-                    <a href="#">View more</a>
+                    <a
+                      href="#popup-projetos"
+                      class="open-popup"
+                      onclick="disableClick('open-popup')"
+                      >View more</a
+                    >
                   </figcaption>
                 </figure>
               </div>
@@ -169,7 +183,12 @@
                   <figcaption>
                     <h2>FRENTE<span>ESTUDOS</span></h2>
                     <p>Clique e saiba mais sobre a frente de estudos!</p>
-                    <a href="#">View more</a>
+                    <a
+                      href="#popup-estudos"
+                      class="open-popup"
+                      onclick="disableClick('open-popup')"
+                      >View more</a
+                    >
                   </figcaption>
                 </figure>
               </div>
@@ -177,6 +196,8 @@
           </div>
         </div>
       </div>
+      <!-- </div> -->
+
       <br />
 
       <div class="eventos-top" id="eventos">
@@ -287,12 +308,14 @@
         <div class="section">
           <div class="columns ">
             <div class="column center">
-              <button class="button button-options is-large">
-                <span class="icon is-large">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>GitHub</span>
-              </button>
+              <a href="https://github.com/icmc-data">
+                <button class="button button-options is-large">
+                  <span class="icon is-large">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -305,20 +328,24 @@
         <div class="section">
           <div class="columns">
             <div class="column center">
-              <button class="button button-options is-large">
-                <span class="icon is-large">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span>Email</span>
-              </button>
+              <a href="">
+                <button class="button button-options is-large">
+                  <span class="icon is-large">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Email</span>
+                </button>
+              </a>
             </div>
             <div class="column center">
-              <button class="button button-options is-large">
-                <span class="icon is-large">
-                  <i class="fab fa-facebook"></i>
-                </span>
-                <span>Facebook</span>
-              </button>
+              <a href="https://www.facebook.com/dataICMC/">
+                <button class="button button-options is-large">
+                  <span class="icon is-large">
+                    <i class="fab fa-facebook"></i>
+                  </span>
+                  <span>Facebook</span>
+                </button>
+              </a>
             </div>
             <div class="column center">
               <button class="button button-options is-large">
@@ -338,6 +365,192 @@
           </p>
         </div>
       </footer>
+    </div>
+    <div id="popup-aulas" class="popup">
+      <div class="popup__block">
+        <h1 class="popup__title">
+          AULAS
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+          eaque optio vitae in explicabo recusandae sit id sapiente excepturi
+          tempore, nemo, nulla odio deleniti rerum nisi perferendis aut
+          molestias! Incidunt nesciunt iusto praesentium! In at maiores
+          quibusdam enim quis, quam!
+        </p>
+        <p>
+          Architecto magni dolores cumque tenetur nemo id aperiam, ratione
+          temporibus at, consectetur totam, fuga et illo rerum earum dicta.
+          Vitae ullam harum enim aliquid hic commodi voluptas cumque iste ex
+          accusantium architecto doloremque reprehenderit, asperiores vero
+          dolor, esse inventore dolorem.
+        </p>
+        <p>
+          Excepturi eaque, reprehenderit dolores, cum molestias repellendus in
+          expedita. Placeat totam, quos pariatur quidem explicabo id harum ab
+          voluptatum. Necessitatibus, aliquam! Dolorum voluptatem ut laudantium
+          excepturi cumque, hic iure impedit ullam accusantium error natus
+          recusandae, quia fuga quo voluptates officiis?
+        </p>
+        <p>
+          Dignissimos debitis eos necessitatibus accusantium natus voluptates
+          illo blanditiis corporis minus. Repudiandae libero quae, illo error
+          expedita consectetur possimus voluptate eum esse quam molestiae
+          tempore dignissimos ipsam similique ab quod. Ea earum adipisci rem
+          voluptatem aliquid voluptatum deleniti necessitatibus provident.
+        </p>
+        <p>
+          Dicta eum amet impedit maiores accusamus numquam saepe necessitatibus
+          temporibus ut! Velit ducimus repellendus fuga repudiandae culpa
+          voluptatibus delectus praesentium totam odit ratione, tenetur
+          assumenda, labore esse et nostrum a, aut veritatis. Nihil, voluptas,
+          impedit? Magnam dolorum, iure repellendus vitae.
+        </p>
+        <p>
+          Temporibus voluptatum voluptatibus iste, nam atque dignissimos quam
+          labore sequi adipisci tempore exercitationem quos, libero,
+          reprehenderit facere quasi soluta, itaque at eum cum possimus!
+          Facilis, tempora soluta at quis. Nemo expedita voluptate esse nam ex
+          odit, sequi eveniet quibusdam, dolores?
+        </p>
+        <p>
+          Praesentium laboriosam iste dolore cumque voluptatibus deleniti quia,
+          delectus provident, illum aperiam, atque molestiae. Cum delectus,
+          doloribus expedita eius veritatis assumenda deleniti veniam
+          reprehenderit animi ut, eaque asperiores, dicta incidunt omnis
+          repellendus dolorum enim inventore rerum voluptatem saepe error id.
+        </p>
+        <a
+          href="#frentes"
+          class="popup__close"
+          onclick="enableClick('open-popup')"
+          >close</a
+        >
+      </div>
+    </div>
+    <div id="popup-projetos" class="popup">
+      <div class="popup__block">
+        <h1 class="popup__title">
+          PROJETOS
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+          eaque optio vitae in explicabo recusandae sit id sapiente excepturi
+          tempore, nemo, nulla odio deleniti rerum nisi perferendis aut
+          molestias! Incidunt nesciunt iusto praesentium! In at maiores
+          quibusdam enim quis, quam!
+        </p>
+        <p>
+          Architecto magni dolores cumque tenetur nemo id aperiam, ratione
+          temporibus at, consectetur totam, fuga et illo rerum earum dicta.
+          Vitae ullam harum enim aliquid hic commodi voluptas cumque iste ex
+          accusantium architecto doloremque reprehenderit, asperiores vero
+          dolor, esse inventore dolorem.
+        </p>
+        <p>
+          Excepturi eaque, reprehenderit dolores, cum molestias repellendus in
+          expedita. Placeat totam, quos pariatur quidem explicabo id harum ab
+          voluptatum. Necessitatibus, aliquam! Dolorum voluptatem ut laudantium
+          excepturi cumque, hic iure impedit ullam accusantium error natus
+          recusandae, quia fuga quo voluptates officiis?
+        </p>
+        <p>
+          Dignissimos debitis eos necessitatibus accusantium natus voluptates
+          illo blanditiis corporis minus. Repudiandae libero quae, illo error
+          expedita consectetur possimus voluptate eum esse quam molestiae
+          tempore dignissimos ipsam similique ab quod. Ea earum adipisci rem
+          voluptatem aliquid voluptatum deleniti necessitatibus provident.
+        </p>
+        <p>
+          Dicta eum amet impedit maiores accusamus numquam saepe necessitatibus
+          temporibus ut! Velit ducimus repellendus fuga repudiandae culpa
+          voluptatibus delectus praesentium totam odit ratione, tenetur
+          assumenda, labore esse et nostrum a, aut veritatis. Nihil, voluptas,
+          impedit? Magnam dolorum, iure repellendus vitae.
+        </p>
+        <p>
+          Temporibus voluptatum voluptatibus iste, nam atque dignissimos quam
+          labore sequi adipisci tempore exercitationem quos, libero,
+          reprehenderit facere quasi soluta, itaque at eum cum possimus!
+          Facilis, tempora soluta at quis. Nemo expedita voluptate esse nam ex
+          odit, sequi eveniet quibusdam, dolores?
+        </p>
+        <p>
+          Praesentium laboriosam iste dolore cumque voluptatibus deleniti quia,
+          delectus provident, illum aperiam, atque molestiae. Cum delectus,
+          doloribus expedita eius veritatis assumenda deleniti veniam
+          reprehenderit animi ut, eaque asperiores, dicta incidunt omnis
+          repellendus dolorum enim inventore rerum voluptatem saepe error id.
+        </p>
+        <a
+          href="#frentes"
+          class="popup__close"
+          onclick="enableClick('open-popup')"
+          >close</a
+        >
+      </div>
+    </div>
+    <div id="popup-estudos" class="popup">
+      <div class="popup__block">
+        <h1 class="popup__title">
+          ESTUDOS
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+          eaque optio vitae in explicabo recusandae sit id sapiente excepturi
+          tempore, nemo, nulla odio deleniti rerum nisi perferendis aut
+          molestias! Incidunt nesciunt iusto praesentium! In at maiores
+          quibusdam enim quis, quam!
+        </p>
+        <p>
+          Architecto magni dolores cumque tenetur nemo id aperiam, ratione
+          temporibus at, consectetur totam, fuga et illo rerum earum dicta.
+          Vitae ullam harum enim aliquid hic commodi voluptas cumque iste ex
+          accusantium architecto doloremque reprehenderit, asperiores vero
+          dolor, esse inventore dolorem.
+        </p>
+        <p>
+          Excepturi eaque, reprehenderit dolores, cum molestias repellendus in
+          expedita. Placeat totam, quos pariatur quidem explicabo id harum ab
+          voluptatum. Necessitatibus, aliquam! Dolorum voluptatem ut laudantium
+          excepturi cumque, hic iure impedit ullam accusantium error natus
+          recusandae, quia fuga quo voluptates officiis?
+        </p>
+        <p>
+          Dignissimos debitis eos necessitatibus accusantium natus voluptates
+          illo blanditiis corporis minus. Repudiandae libero quae, illo error
+          expedita consectetur possimus voluptate eum esse quam molestiae
+          tempore dignissimos ipsam similique ab quod. Ea earum adipisci rem
+          voluptatem aliquid voluptatum deleniti necessitatibus provident.
+        </p>
+        <p>
+          Dicta eum amet impedit maiores accusamus numquam saepe necessitatibus
+          temporibus ut! Velit ducimus repellendus fuga repudiandae culpa
+          voluptatibus delectus praesentium totam odit ratione, tenetur
+          assumenda, labore esse et nostrum a, aut veritatis. Nihil, voluptas,
+          impedit? Magnam dolorum, iure repellendus vitae.
+        </p>
+        <p>
+          Temporibus voluptatum voluptatibus iste, nam atque dignissimos quam
+          labore sequi adipisci tempore exercitationem quos, libero,
+          reprehenderit facere quasi soluta, itaque at eum cum possimus!
+          Facilis, tempora soluta at quis. Nemo expedita voluptate esse nam ex
+          odit, sequi eveniet quibusdam, dolores?
+        </p>
+        <p>
+          Praesentium laboriosam iste dolore cumque voluptatibus deleniti quia,
+          delectus provident, illum aperiam, atque molestiae. Cum delectus,
+          doloribus expedita eius veritatis assumenda deleniti veniam
+          reprehenderit animi ut, eaque asperiores, dicta incidunt omnis
+          repellendus dolorum enim inventore rerum voluptatem saepe error id.
+        </p>
+        <a
+          href="#frentes"
+          class="popup__close"
+          onclick="enableClick('open-popup')"
+          >close</a
+        >
+      </div>
     </div>
   </body>
 </html>

@@ -62,3 +62,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+const disableClick = elementsClass => {
+  const elements = document.getElementsByClassName(elementsClass);
+
+  for (element of elements) {
+    element.style.pointerEvents = "none";
+  }
+};
+
+const enableClick = elementsClass => {
+  const elements = document.getElementsByClassName(elementsClass);
+
+  for (element of elements) {
+    element.style.pointerEvents = "auto";
+  }
+};
