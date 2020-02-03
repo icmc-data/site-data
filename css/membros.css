@@ -2,11 +2,7 @@
   padding: 10px;
   border-radius: 50%;
   display: inline-block;
-  /* background: yellow;
-  background: -webkit-linear-gradient(yellow, white);
-  background: -o-linear-gradient(yellow, white);
-  background: -moz-linear-gradient(yellow, white);
-  background: linear-gradient(yellow, white); */
+
   background: linear-gradient(
       117.93deg,
       rgb(241, 127, 190) -8.05%,
@@ -16,7 +12,6 @@
 }
 
 /* Position fixes... */
-
 @media only screen and (min-width: 800px) {
   .particles-size {
     height: 900px;
@@ -26,12 +21,7 @@
 @media only screen and (min-width: 800px) {
   .canvas-positioning {
     width: 100%;
-    /* align-items: center; */
-    /* justify-content: center; */
-
     position: absolute;
-
-    /* margin-top: 5%; */
   }
 }
 
