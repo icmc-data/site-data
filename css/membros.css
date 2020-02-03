@@ -1,14 +1,45 @@
-.avatar-border {
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 1px;
-  border-style: solid;
-  border-image: linear-gradient(
-    0deg,
-    rgba(241, 127, 189, 1) 0%,
-    rgba(128, 210, 244, 1) 100%
-  );
+.gradient-wrapper {
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  /* background: yellow;
+  background: -webkit-linear-gradient(yellow, white);
+  background: -o-linear-gradient(yellow, white);
+  background: -moz-linear-gradient(yellow, white);
+  background: linear-gradient(yellow, white); */
+  background: linear-gradient(
+      117.93deg,
+      rgb(241, 127, 190) -8.05%,
+      rgb(128, 209, 244) 115.75%
+    ),
+    #ffffff;
+}
+
+/* Position fixes... */
+
+@media only screen and (min-width: 800px) {
+  .particles-size {
+    height: 900px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .canvas-positioning {
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    position: absolute;
+
+    /* margin-top: 5%; */
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ancestor-spacing {
+    padding: 5%;
+    margin-top: 5%;
+  }
 }
 
 /* Icons and its animations... */
@@ -24,17 +55,7 @@
   color: #fff;
 }
 
-@media only screen and (max-width: 800px) {
-  .ancestor-spacing {
-    padding: 5%;
-    margin-top: 5%;
-  }
-}
-@media only screen and (min-width: 801px) {
-  .ancestor-spacing {
-    padding: 5%;
-  }
-}
+/* GRID STUFF... DON'T TOUCH IT, UNLESS YOU KNOW WHAT YOU'RE DOING! */
 
 /*  SECTIONS  */
 .section {
