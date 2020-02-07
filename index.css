@@ -101,6 +101,20 @@ html {
   margin-bottom: 8%;
 }
 
+@media only screen and (min-width: 1024px) {
+  .right-margin-infos {
+    margin-right: 10vw;
+  }
+}
+
+/* Margin applied in between of all icons on the right of the main icon. */
+/* Mobile-only */
+@media only screen and (max-width: 480px) {
+  .intro-infos {
+    margin-bottom: 10vh;
+  }
+}
+
 .eventos-title {
   /* background-color: #fff; */
   /* border-style: ridge; */

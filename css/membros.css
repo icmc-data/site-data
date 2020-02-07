@@ -12,9 +12,15 @@
 }
 
 /* Position fixes... */
+
+/* IMPORTANT: WHEN ADDING OR DELETING MEMBERS FROM THE WEBSITE, the developer...
+ ... should be cafeful, since the canvas 
+ ... size is fixed with the media query below.
+ ... So, if that's your case, 
+ ... try playing around with the '.particles-size' height property*/
 @media only screen and (min-width: 800px) {
   .particles-size {
-    height: 900px;
+    height: 1400px;
   }
 }
 
@@ -47,7 +53,6 @@
 
 /* GRID STUFF... DON'T TOUCH IT, UNLESS YOU KNOW WHAT YOU'RE DOING! */
 
-/*  SECTIONS  */
 .section {
   clear: both;
   padding: 0px;
@@ -58,7 +63,7 @@
 .col {
   display: block;
   float: left;
-  margin: 1% 0 1% 1.6%;
+  margin: 1% 0 1% 0.75%;
 }
 .col:first-child {
   margin-left: 0;
@@ -88,6 +93,17 @@
   width: 32.26%;
 }
 
+/*  GRID OF THREE  */
+.span_3_of_3 {
+  width: 100%;
+}
+.span_2_of_3 {
+  width: 66.41%;
+}
+.span_1_of_3 {
+  width: 32.83%;
+}
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
   .col {
@@ -96,6 +112,29 @@
   .span_3_of_3,
   .span_2_of_3,
   .span_1_of_3 {
+    width: 100%;
+  }
+}
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+  width: 100%;
+}
+.span_1_of_2 {
+  width: 49.62%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2,
+  .span_1_of_2 {
     width: 100%;
   }
 }
