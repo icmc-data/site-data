@@ -3,7 +3,7 @@
 </p>
 
 # Data Web-Site repository
-This repo was created with the objective of persisting all versions of [Data](http://data.icmc.usp.br/) (a Data Science and Machine Learning extension group at ICMC-USP) websites source code.
+This repo was created with the objective of persisting all versions of [Data]'s(http://data.icmc.usp.br/) (a Data Science and Machine Learning extension group at ICMC-USP) website source code.
 
 ## File Structure
 
