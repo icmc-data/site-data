@@ -10,7 +10,7 @@ This repo was created with the objective of persisting all versions of [Data](ht
 - ```/css``` - All stylesheets used in the project
 - ```/js``` - All external and internal scripts
 - ```/pages``` - All ```.html``` files of the project
-- ```/``` - Configuration files and "index.*" files.
+- ```/``` - Configuration files and ```index.*``` files.
 
 ## Created by
 [David Cairuz](https://github.com/davidcairuz), [João Pedro Mattos](https://github.com/joaopedromattos) e [Tobias Veiga](https://github.com/tobiasveiga).
