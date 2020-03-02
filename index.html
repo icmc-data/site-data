@@ -133,10 +133,11 @@
                           <i class="fas fa-project-diagram fa-5x"></i>
                           <h1 class="title">Comunidade</h1>
                           <p>
-                            Maecenas feugiat nulla at felis rhoncus consectetur.
-                            Fusce turpis orci, ornare vitae finibus quis, semper
-                            vel nibh. Etiam eget ipsum eu sapien volutpat
-                            aliquet vel et orci. Vivamus vel nisi dui.
+                            Por meio de aulas, eventos, grupos de estudo e
+                            palestras, o grupo tem a missão de unir a indústria,
+                            o mundo acadêmico e indivíduos interessados, de
+                            forma que todos possam criar conexões importantes
+                            para sua vida e carreira enquanto aprendem.
                           </p>
                         </div>
                       </div>
@@ -147,10 +148,11 @@
                           <i class="fas fa-lightbulb fa-5x"></i>
                           <h1 class="title">Valores</h1>
                           <p>
-                            Maecenas feugiat nulla at felis rhoncus consectetur.
-                            Fusce turpis orci, ornare vitae finibus quis, semper
-                            vel nibh. Etiam eget ipsum eu sapien volutpat
-                            aliquet vel et orci.
+                            Acreditamos no sonho de marcar a cidade de São
+                            Carlos como um grande polo especializado em Ciência
+                            de Dados, através de pontes construídas em conjunto
+                            com a comunidade acadêmica e a indústria através de
+                            nossos membros e colaboradores.
                           </p>
                         </div>
                       </div>
@@ -242,7 +244,7 @@
                       <div class="card-image">
                         <figure class="image is-4by3">
                           <img
-                            src="https://bulma.io/images/placeholders/1280x960.png"
+                            src="./public/dataDaySiteImagem.jpg"
                             alt="Placeholder image"
                           />
                         </figure>
@@ -254,21 +256,23 @@
                           </div>
                         </div>
 
-                        <div class="content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                          <a href="#">#css</a> <a href="#">#responsive</a>
-                          <br />
-                          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        <div class="content text-center">
+                          Um evento voltado à
+                          <span style="font-weight: bold;"
+                            >comunidade acadêmica</span
+                          >
+                          e à
+                          <span style="font-weight: bold;">indústria</span> com
+                          o propósito de divulgar o que acontece dentro do grupo
+                          e comunicar novas ideias dentro da área de Data
+                          Science!
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="column center">
-                    <!-- Second card -->
+                  <!-- <div class="column center">
                     <div class="card">
-                      <!-- Card image -->
                       <div class="card-image">
                         <figure class="image is-4by3">
                           <img
@@ -284,16 +288,15 @@
                           </div>
                         </div>
 
-                        <div class="content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                          <a href="#">#css</a> <a href="#">#responsive</a>
-                          <br />
-                          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        <div class="content text-center">
+                          Um evento do data voltado à comunidade acadêmica e à
+                          indústria com o propósito de divulgar o que acontece
+                          dentro do grupo e comunicar novas ideias dentro da
+                          área de Data Science!
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
                   <div class="column center">
                     <!-- Third Card -->
@@ -302,7 +305,7 @@
                       <div class="card-image">
                         <figure class="image is-4by3">
                           <img
-                            src="https://bulma.io/images/placeholders/1280x960.png"
+                            src="./public/minicursos.jpg"
                             alt="Placeholder image"
                           />
                         </figure>
@@ -314,12 +317,14 @@
                           </div>
                         </div>
 
-                        <div class="content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                          <a href="#">#css</a> <a href="#">#responsive</a>
-                          <br />
-                          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        <div class="content text-center">
+                          Voltados à prática, os minicursos do
+                          <span style="font-weight: bold;">data</span> procuram
+                          compartilhar conhecimento acerca das
+                          <span style="font-weight: bold;"
+                            >ferramentas e técnicas</span
+                          >mais importantes dentro da Ciência de Dados e são
+                          abertos à comunidade!
                         </div>
                       </div>
                     </div>
@@ -363,7 +368,11 @@
           <div class="columns">
             <div class="column center">
               <a href="">
-                <button class="button button-options is-large">
+                <button
+                  class="button button-options is-large"
+                  id="copy"
+                  onclick="copyToClipboard('data@icmc.usp.br')"
+                >
                   <span class="icon is-large">
                     <i class="fas fa-envelope"></i>
                   </span>
@@ -378,6 +387,16 @@
                     <i class="fab fa-facebook"></i>
                   </span>
                   <span>Facebook</span>
+                </button>
+              </a>
+            </div>
+            <div class="column center">
+              <a href="https://www.linkedin.com/school/data-icmc/">
+                <button class="button button-options is-large">
+                  <span class="icon is-large">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span>LinkedIn</span>
                 </button>
               </a>
             </div>
@@ -409,54 +428,23 @@
         <h1 class="popup__title">
           AULAS
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-          eaque optio vitae in explicabo recusandae sit id sapiente excepturi
-          tempore, nemo, nulla odio deleniti rerum nisi perferendis aut
-          molestias! Incidunt nesciunt iusto praesentium! In at maiores
-          quibusdam enim quis, quam!
+        <p class="frentes-font">
+          Com o objetivo de capacitar estudantes em Ciência de Dados e
+          disseminar o conhecimento na área, oferecemos um curso gratuito sobre
+          o assunto no Instituto de Ciências Matemáticas e de Computação (ICMC)
+          da USP, em São Carlos. A oportunidade é voltada para alunos de
+          graduação e pós-graduação de qualquer instituição de ensino, e também
+          para membros da comunidade são-carlense e da indústria.
         </p>
-        <p>
-          Architecto magni dolores cumque tenetur nemo id aperiam, ratione
-          temporibus at, consectetur totam, fuga et illo rerum earum dicta.
-          Vitae ullam harum enim aliquid hic commodi voluptas cumque iste ex
-          accusantium architecto doloremque reprehenderit, asperiores vero
-          dolor, esse inventore dolorem.
-        </p>
-        <p>
-          Excepturi eaque, reprehenderit dolores, cum molestias repellendus in
-          expedita. Placeat totam, quos pariatur quidem explicabo id harum ab
-          voluptatum. Necessitatibus, aliquam! Dolorum voluptatem ut laudantium
-          excepturi cumque, hic iure impedit ullam accusantium error natus
-          recusandae, quia fuga quo voluptates officiis?
-        </p>
-        <p>
-          Dignissimos debitis eos necessitatibus accusantium natus voluptates
-          illo blanditiis corporis minus. Repudiandae libero quae, illo error
-          expedita consectetur possimus voluptate eum esse quam molestiae
-          tempore dignissimos ipsam similique ab quod. Ea earum adipisci rem
-          voluptatem aliquid voluptatum deleniti necessitatibus provident.
-        </p>
-        <p>
-          Dicta eum amet impedit maiores accusamus numquam saepe necessitatibus
-          temporibus ut! Velit ducimus repellendus fuga repudiandae culpa
-          voluptatibus delectus praesentium totam odit ratione, tenetur
-          assumenda, labore esse et nostrum a, aut veritatis. Nihil, voluptas,
-          impedit? Magnam dolorum, iure repellendus vitae.
-        </p>
-        <p>
-          Temporibus voluptatum voluptatibus iste, nam atque dignissimos quam
-          labore sequi adipisci tempore exercitationem quos, libero,
-          reprehenderit facere quasi soluta, itaque at eum cum possimus!
-          Facilis, tempora soluta at quis. Nemo expedita voluptate esse nam ex
-          odit, sequi eveniet quibusdam, dolores?
-        </p>
-        <p>
-          Praesentium laboriosam iste dolore cumque voluptatibus deleniti quia,
-          delectus provident, illum aperiam, atque molestiae. Cum delectus,
-          doloribus expedita eius veritatis assumenda deleniti veniam
-          reprehenderit animi ut, eaque asperiores, dicta incidunt omnis
-          repellendus dolorum enim inventore rerum voluptatem saepe error id.
+        <p class="frentes-font">
+          <br />
+          Abordamos a derivação dos principais algoritmos de Aprendizado de
+          Máquina, como Regressão Linear, Naive Bayes, SVM e métodos de Arvores.
+          Juntando teoria com prática, ensinamos também bibliotecas populares no
+          ecossistema Python, como Numpy, Pandas e Scikit-Learn, incentivando os
+          alunos através de competições no estilo do Kaggle (link). As aulas
+          ocorrem todo primeiro semestre e incluem um certificado da USP para
+          aqueles que acompanharem as aulas e entregarem as atividades.
         </p>
         <a
           href="#frentes"
@@ -471,54 +459,30 @@
         <h1 class="popup__title">
           PROJETOS
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-          eaque optio vitae in explicabo recusandae sit id sapiente excepturi
-          tempore, nemo, nulla odio deleniti rerum nisi perferendis aut
-          molestias! Incidunt nesciunt iusto praesentium! In at maiores
-          quibusdam enim quis, quam!
+        <p class="frentes-font">
+          Com o objetivo de aplicar o conhecimento obtido nas frentes de estudo
+          do DATA, serão propostos projetos interessantes e desafiadores,
+          alinhados aos temas estudados, de forma que os integrantes do grupo
+          possam ver utilidade naquilo que estão aprendendo e construir um
+          portfólio atraente para a indústria. Os projetos serão desenvolvidos
+          em grupo, com o auxílio de alunos mais experientes, e vão desenvolver
+          não só as capacidades técnicas dos integrantes, como também suas
+          habilidades de comunicação e trabalho em equipe.
         </p>
-        <p>
-          Architecto magni dolores cumque tenetur nemo id aperiam, ratione
-          temporibus at, consectetur totam, fuga et illo rerum earum dicta.
-          Vitae ullam harum enim aliquid hic commodi voluptas cumque iste ex
-          accusantium architecto doloremque reprehenderit, asperiores vero
-          dolor, esse inventore dolorem.
+        <p class="frentes-font">
+          <br />
+          Para auxiliar na execução dos projetos, serão oferecidos alguns
+          workshops sobre tecnologias e áreas mais específicas, complementando o
+          ensino e tornando o integrante do grupo cada vez mais preparado para
+          trabalhar na indústria ou no meio acadêmico.
         </p>
-        <p>
-          Excepturi eaque, reprehenderit dolores, cum molestias repellendus in
-          expedita. Placeat totam, quos pariatur quidem explicabo id harum ab
-          voluptatum. Necessitatibus, aliquam! Dolorum voluptatem ut laudantium
-          excepturi cumque, hic iure impedit ullam accusantium error natus
-          recusandae, quia fuga quo voluptates officiis?
-        </p>
-        <p>
-          Dignissimos debitis eos necessitatibus accusantium natus voluptates
-          illo blanditiis corporis minus. Repudiandae libero quae, illo error
-          expedita consectetur possimus voluptate eum esse quam molestiae
-          tempore dignissimos ipsam similique ab quod. Ea earum adipisci rem
-          voluptatem aliquid voluptatum deleniti necessitatibus provident.
-        </p>
-        <p>
-          Dicta eum amet impedit maiores accusamus numquam saepe necessitatibus
-          temporibus ut! Velit ducimus repellendus fuga repudiandae culpa
-          voluptatibus delectus praesentium totam odit ratione, tenetur
-          assumenda, labore esse et nostrum a, aut veritatis. Nihil, voluptas,
-          impedit? Magnam dolorum, iure repellendus vitae.
-        </p>
-        <p>
-          Temporibus voluptatum voluptatibus iste, nam atque dignissimos quam
-          labore sequi adipisci tempore exercitationem quos, libero,
-          reprehenderit facere quasi soluta, itaque at eum cum possimus!
-          Facilis, tempora soluta at quis. Nemo expedita voluptate esse nam ex
-          odit, sequi eveniet quibusdam, dolores?
-        </p>
-        <p>
-          Praesentium laboriosam iste dolore cumque voluptatibus deleniti quia,
-          delectus provident, illum aperiam, atque molestiae. Cum delectus,
-          doloribus expedita eius veritatis assumenda deleniti veniam
-          reprehenderit animi ut, eaque asperiores, dicta incidunt omnis
-          repellendus dolorum enim inventore rerum voluptatem saepe error id.
+        <p class="frentes-font">
+          <br />
+          Além disso, a frente de projetos também será responsável por organizar
+          eventos abertos, que serão realizados gratuitamente no ICMC, fazendo
+          contato com empresas da área, trazendo boas palestras, providenciando
+          o melhor coffee-break da cidade e criando uma incrível oportunidade de
+          networking para todos que decidirem comparecer.
         </p>
         <a
           href="#frentes"
