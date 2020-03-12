@@ -96,9 +96,22 @@ html {
   width: 100%;
 }
 
-.frentes {
-  margin-top: 8%;
-  margin-bottom: 8%;
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  .frentes {
+    margin-top: 50%;
+    margin-bottom: 8%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .frentes {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -554,4 +567,8 @@ figure.effect-ruby p {
     background-size: contain;
     background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
   }
+}
+
+.frentes-font {
+  font-size: larger;
 }
