@@ -13,7 +13,7 @@ if (port) {
 
   app.use(express.static("."));
 
-  app.listen(port, () => console.log(`Listening to ${port}!`);
+  app.listen(port, () => console.log(`Listening to ${port}!`));
 } else {
   console.error(
     "Please, provide the port number as it follows:\n\n'yarn dev [PORT_NUMBER]'"
