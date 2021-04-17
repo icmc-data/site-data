@@ -20,7 +20,7 @@
  ... try playing around with the '.particles-size' height property*/
 @media only screen and (min-width: 800px) {
   .particles-size {
-    height: 1600px;
+    height: 1200px;
   }
 }
 
