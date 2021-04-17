@@ -1,7 +1,7 @@
 /*
 This file instantiates a webserver to host our static website.
 You shouldn't need to change anything here to add content to the site.
-Feel free to change or contact the resposibles for the latests changes.
+Feel free to change or contact the resposibles for the latest changes.
 */
 
 const port = process.argv[2];
