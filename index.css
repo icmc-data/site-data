@@ -179,19 +179,19 @@ html {
   -moz-box-shadow: 0px 12px 41px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 12px 41px -7px rgba(0, 0, 0, 0.75);
 }
-
+/* 
 @media only screen and (max-width: 1600px) {
   .has-bg-img {
     background: url("public/ICMC-MOBILE.jpeg") center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* 
+    
     background-color: linear-gradient(
       0deg,
       rgba(229, 229, 229, 1) 0%,
       rgba(229, 229, 229, 0) 50%,
       rgba(229, 229, 229, 1) 100%
-    ); */
+    ); 
   }
 }
 
@@ -200,15 +200,15 @@ html {
     background: url("public/ICMC-DESKTOP.jpeg") center center;
     background-repeat: no-repeat;
     background-size: auto;
-    /* 
+     
     background-color: linear-gradient(
       0deg,
       rgba(229, 229, 229, 1) 0%,
       rgba(229, 229, 229, 0) 50%,
       rgba(229, 229, 229, 1) 100%
-    ); */
+    ); 
   }
-}
+} */
 
 @media only screen and (min-width: 1024px) {
   .about-us-columns {
