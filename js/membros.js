@@ -1,121 +1,118 @@
-const membros = [
-  {
-    nome: "teste",
-    descricao: "loren ipsun",
-    img_uri: "teste.com.br/image"
-  },
-  {
-    nome: "teste",
-    descricao: "loren ipsun",
-    img_uri: "teste.com.br/image"
-  },
-  {
-    nome: "teste",
-    descricao: "loren ipsun",
-    img_uri: "teste.com.br/image"
-  },
-  {
-    nome: "teste",
-    descricao: "loren ipsun",
-    img_uri: "teste.com.br/image"
-  },
-  {
-    nome: "teste",
-    descricao: "loren ipsun",
-    img_uri: "teste.com.br/image"
-  },
-  {
-    nome: "teste",
-    descricao: "loren ipsun",
-    img_uri: "teste.com.br/image"
-  },
-  {
-    nome: "teste",
-    descricao: "loren ipsun",
-    img_uri: "teste.com.br/image"
-  }
-];
+// Function to load YAML file
+function loadYAML(file, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                callback(null, xhr.responseText);
+            } else {
+                callback(xhr.statusText, null);
+            }
+        }
+    };
+    xhr.open("GET", file, true);
+    xhr.send();
+}
 
-window.onload = () => {
-  if (window.screen.width > 799) {
-    particlesJS.load(
-      "particles-js",
-      "/public/particles-config-pink.json",
-      function() {
-        console.log("callback - particles.js config loaded");
-      }
-    );
-  }
-};
+function photoHtml(path) {
+    html = "<img " +
+        "src='/public/" + path + "'" +
+        "style='max-width: 200px; display: block; " +
+        "  margin-left: auto; " +
+        "  margin-right: auto;' " +
+        "class='gradient-wrapper'" +
+        "/>"
+    return html;
+}
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(
-    document.querySelectorAll(".navbar-burger"),
-    0
-  );
+function nameHtml(name) {
+    html = "<p class='title center text-center'>" +
+        name +
+        "</p>"
+    return html;
+}
 
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
-    // Add a click event on each of them
-    $navbarBurgers.forEach(el => {
-      el.addEventListener("click", () => {
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
+function descriptionHtml(description) {
+    html = "<p class='subtitle center text-center'>" +
+        description +
+        "</p>"
+    return html;
+}
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle("is-active");
-        $target.classList.toggle("is-active");
-      });
-    });
-  }
+function linkedinHtml(link) {
+    html = "<div class='center'>" +
+    "    <a href='" + link + "'>" +
+    "        <button" +
+    "            class='button linkedin'" +
+    "            style='border-radius: 25px;'" +
+    "        >" +
+    "            <span class='icon is-small'>" +
+    "                <i class='fab fa-linkedin-in'></i>" +
+    "            </span>" +
+    "        </button>" +
+    "    </a>" +
+    "</div>"
+    return html;
+}
+
+// Function to render people from YAML
+function renderPeople(data) {
+    var peopleList = document.getElementById('people-list');
+    var people = jsyaml.load(data);
+    console.log("ola");
+    var array = Object.values(people);
+    console.log(array.length);
+    for (let i = 0; i < array.length;) {
+        let j = i
+        var html = "";
+        html += "<div class='section group'>"
+        for (; j < (i+2); j++){
+            var person = array[j];
+            var li = document.createElement('li');
+                     
+            html += 
+                "<div class='col span_1_of_2'>" +
+                "    <div class='tile  ancestor-spacing' style='margin-top: 3%;'>" +
+                "        <div class='tile is-parent'>" +
+                "            <article class='tile is-child box-overwritten'>";
+            html += nameHtml(person.name);
+            html += photoHtml(person.img);
+            html += descriptionHtml(person.description);
+            html += linkedinHtml(person.linkedin);
+            html += 
+                "           </article>" +
+                "       </div>" +
+                "   </div>" +
+                "</div>"
+
+            }
+        html += "</div>"
+        li.innerHTML = html;
+        peopleList.appendChild(li);
+        i = j;
+        console.log(j);
+
+    };
+    console.log(peopleList);
+    //   console.log(peopleList);
+}
+
+// Load YAML file and render people
+loadYAML('people.yaml', function (error, data) {
+    if (error) {
+        console.error('Error loading YAML file:', error);
+    } else {
+        renderPeople(data);
+    }
+    setPageHeight(data);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Get all "navbar-burger" elements
-  const $navbarItems = Array.prototype.slice.call(
-    document.querySelectorAll(".navbar-item"),
-    0
-  );
 
-  const $navbarBurgers = Array.prototype.slice.call(
-    document.querySelectorAll(".navbar-burger"),
-    0
-  );
+function setPageHeight(data) {
+    var people = jsyaml.load(data);
+    let n = Object.values(people).length;
+    n = n/2;
 
-  // Check if there are any navbar burgers
-  if ($navbarItems.length > 0) {
-    // Add a click event on each of them
-    $navbarItems.forEach(el => {
-      el.addEventListener("click", () => {
-        $navbarBurgers.forEach(el => {
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-          console.log("Element", el);
-          console.log("Target", $target);
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.remove("is-active");
-          $target.classList.remove("is-active");
-        });
-      });
-    });
+    document.getElementById("particles-js").style.height = String(1200*(n/2)) + "px";
+    document.getElementById("test").style.color="black";
   }
-});
-
-const disableClick = elementsClass => {
-  const elements = document.getElementsByClassName(elementsClass);
-
-  for (element of elements) {
-    element.style.pointerEvents = "none";
-  }
-};
-
-const enableClick = elementsClass => {
-  const elements = document.getElementsByClassName(elementsClass);
-
-  for (element of elements) {
-    element.style.pointerEvents = "auto";
-  }
-};

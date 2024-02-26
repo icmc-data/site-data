@@ -125,3 +125,4 @@ function copyToClipboard(text) {
 //   var result = copyToClipboard("data@icmc.usp.br");
 //   console.log("Clipboard result:", result);
 // };
+

@@ -1,0 +1,40 @@
+vitor:
+  name: Vítor Fróis
+  description: 
+    Vítor é estudante de Ciências da Computação. Tem interesse nas áreas de Redes Complexas 
+    e Aprendizado de Máquina Clássico. Um grande fã do jogo de xadrez e um péssimo jogador de futebol.
+  img: frois.jpg
+  linkedin: https://www.linkedin.com/in/vitorfrois/
+
+cj:
+  name: Augusto Nunes
+  description:
+    Augusto é estudante de Estatística e Ciência de Dados na USP de São Carlos. 
+    Se interessa principalmente por Natural Language Processing  (NLP) e Music Information Retrieval (MIR). 
+    Além disso gosta de escutar e mixar músicas de artistas underground do Brasil no SoundCloud.
+  img: cj.jpg
+  linkedin: https://www.linkedin.com/in/augusto-nunes-837381175/
+
+odonto:
+  name: Bernardo Marques
+  description:
+    Bernardo é estudante de Ciências de 
+    Computação na USP. Começou 
+    a se interessar por Ciências de Dados, Machine e 
+    Deep Learning durante seu primeiro ano no curso, 
+    em que focou para participar do grupo Data. Atuou como 
+    secretario do grupo. Interessado em estudar aplicações 
+    da área, principalmente em Natural Language Processing 
+    (NLP) e Computer Vision.
+  img: odonto.png
+  linkedin: https://www.linkedin.com/in/bernardo-marques-costa/
+
+dani:
+  name: Daniel Carvalho
+  description:
+    Daniel é estudante de Ciências de Computação na USP São Carlos. 
+    Suas áreas principais de interesse são NLP, séries temporais e visão computacional. 
+    Foi coordenador na frente de projetos do grupo e é guitarrista nas horas vagas.
+  img: daniel.png
+  linkedin: https://www.linkedin.com/in/daniel-carvalho-aba61717a/
+

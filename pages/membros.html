@@ -1,321 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../index.css" />
-    <link rel="stylesheet" type="text/css" href="../css/membros.css" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="../public/logo-no-text.ico"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../index.css" />
+  <link rel="stylesheet" type="text/css" href="../css/membros.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="../public/logo-no-text.ico" />
 
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-    <script src="../js/particles.js-master/particles.min.js"></script>
-    <script src="../js/membros.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
 
-    <title>Data - Membros</title>
-  </head>
-  <body>
-    <div>
-      <!-- <div id="particles-js"></div> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="/js/particles.js-master/particles.min.js"></script>
+  <script src="/index.js"></script>
 
-      <div class="hero hero-top">
-        <div
-          style="
+  <title>Data - Membros</title>
+</head>
+
+<body>
+  <div>
+
+    <div class="hero hero-top">
+      <div style="
           
           /* position: absolute;  */
           width: 100%;
-          "
-        >
-          <nav
-            class="navbar navbar"
-            style="background-color: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 15%);"
-            role="navigation"
-            aria-label="main navigation"
-          >
-            <div class="navbar-brand">
-              <a class="navbar-item" href="/">
-                <img
-                  src="/public/logo-no-text.svg"
-                  style="height: fit-content; width: auto;"
-                />
+          ">
+        <nav class="navbar navbar"
+          style="background-color: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 15%);" role="navigation"
+          aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              <img src="/public/logo-no-text.svg" style="height: fit-content; width: auto;" />
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+              data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <a href="/pages/frentes.html" class="navbar-item">
+                FRENTES
               </a>
 
-              <a
-                role="button"
-                class="navbar-burger burger"
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="navbarBasicExample"
-              >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+              <a href="/pages/membros.html" class="navbar-item">
+                PESSOAS
               </a>
-            </div>
 
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-end">
-                <a href="/pages/frentes.html" class="navbar-item">
-                  FRENTES
-                </a>
-
-                <a href="/pages/membros.html" class="navbar-item">
-                  PESSOAS
-                </a>
-                
-                <!-- <a href="/pages/projetos.html" class="navbar-item">
+              <!-- <a href="/pages/projetos.html" class="navbar-item">
                   PROJETOS
                 </a> -->
 
-                <a href="/pages/contato.html" class="navbar-item">
-                  CONTATO
-                </a>
-              </div>
+              <a href="/pages/contato.html" class="navbar-item">
+                CONTATO
+              </a>
             </div>
-          </nav>
-        </div>
-
-        <div id="particles-js" class="particles-size" style="height: 3000px;">
-          <div class="canvas-positioning">
-
-            <h1 class="title-frentes" style="color: #4a4a4a">
-              Coordenadores
-            </h1>
-            <div class="section group">
-              <div class="col span_1_of_2">
-                <div class="tile  ancestor-spacing" style="margin-top: 3%;">
-                  <div class="tile is-parent">
-                    <article class="tile is-child box-overwritten">
-                      <img
-                        src="../public/frois.jpg"
-                        alt=""
-                        style="max-width: 200px; display: block;
-                          margin-left: auto;
-                          margin-right: auto;"
-                        class="gradient-wrapper"
-                      />
-                      <br />
-                      <p class="title center text-center">Vítor Fróis</p>
-                      <p class="subtitle center text-center">
-                        Vítor é estudante de Ciências da Computação. Tem interesse nas áreas de Redes Complexas 
-                        e Aprendizado de Máquina Clássico. Um grande fã do jogo de xadrez e um péssimo jogador de futebol.
-                      </p>
-                      <div class="center">
-                        <a href="https://www.linkedin.com/in/vitorfrois/">
-                          <button
-                            class="button linkedin"
-                            style="border-radius: 25px;"
-                          >
-                            <span class="icon is-small">
-                              <i class="fab fa-linkedin-in"></i>
-                            </span>
-                          </button>
-                        </a>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class="col span_1_of_2">
-                <div class="tile  ancestor-spacing" style="margin-top: 3%;">
-                  <div class="tile is-parent">
-                    <article class="tile is-child box-overwritten">
-                      <img
-                        src="../public/cj.jpg"
-                        alt=""
-                        style="max-width: 200px; display: block;
-                          margin-left: auto;
-                          margin-right: auto;"
-                        class="gradient-wrapper"
-                      />
-                      <br />
-                      <p class="title center text-center">Augusto Nunes</p>
-                      <p class="subtitle center text-center">
-                        Augusto é estudante de Estatística e Ciência de Dados na USP de São Carlos. 
-                        Se interessa principalmente por Natural Language Processing  (NLP) e Music Information Retrieval (MIR). 
-                        Além disso gosta de escutar e mixar músicas de artistas underground do Brasil no SoundCloud.
-
-                      </p>
-                      <div class="center">
-                        <a href="https://www.linkedin.com/in/augusto-nunes-837381175/">
-                          <button
-                            class="button linkedin"
-                            style="border-radius: 25px;"
-                          >
-                            <span class="icon is-small">
-                              <i class="fab fa-linkedin-in"></i>
-                            </span>
-                          </button>
-                        </a>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <h1 class="title-frentes " style="color: #4a4a4a;">
-              Ex-Coordenadores
-            </h1>
-
-            <div class="section group">
-              <div class="col span_1_of_2">
-                <div class="tile  ancestor-spacing" style="margin-top: 3%;">
-                  <div class="tile is-parent">
-                    <article class="tile is-child box-overwritten">
-                      <img
-                        src="../public/odonto.png"
-                        alt=""
-                        style="max-width: 200px; display: block;
-                          margin-left: auto;
-                          margin-right: auto;"
-                        class="gradient-wrapper"
-                      />
-                      <br />
-                      <p class="title center text-center">Bernardo Marques</p>
-                      <p class="subtitle center text-center">
-                        Bernardo é estudante de Ciências de 
-                        Computação na USP. Começou 
-                        a se interessar por Ciências de Dados, Machine e 
-                        Deep Learning durante seu primeiro ano no curso, 
-                        em que focou para participar do grupo Data. Atualmente 
-                        é secretario do grupo. Interessado em estudar aplicações 
-                        da área, principalmente em Natural Language Processing 
-                        (NLP) e Computer Vision.
-                      </p>
-                      <div class="center">
-                        <a href="https://www.linkedin.com/in/bernardo-marques-costa/">
-                          <button
-                            class="button linkedin"
-                            style="border-radius: 25px;"
-                          >
-                            <span class="icon is-small">
-                              <i class="fab fa-linkedin-in"></i>
-                            </span>
-                          </button>
-                        </a>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class="col span_1_of_2">
-                <div class="tile  ancestor-spacing" style="margin-top: 3%;">
-                  <div class="tile is-parent">
-                    <article class="tile is-child box-overwritten">
-                      <img
-                        src="../public/daniel.png"
-                        alt=""
-                        style="max-width: 200px; display: block;
-                      margin-left: auto; margin-right: auto;"
-                        class="gradient-wrapper"
-                      />
-                      <br />
-                      <p class="title center text-center">Daniel Carvalho</p>
-                      <p class="subtitle center text-center">
-                        Daniel é estudante de Ciências de Computação na USP São Carlos.  Suas áreas principais de interesse são NLP, séries temporais e visão computacional. É coordenador na frente de projetos do grupo e guitarrista nas horas vagas.
-                      </p>
-                      <div class="center">
-                        <a
-                          href="https://www.linkedin.com/in/daniel-carvalho-aba61717a/"
-                        >
-                          <button
-                            class="button linkedin"
-                            style="border-radius: 25px;"
-                          >
-                            <span class="icon is-small">
-                              <i class="fab fa-linkedin-in"></i>
-                            </span>
-                          </button>
-                        </a>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section group">
-              <div class="col span_1_of_2">
-                <div class="tile  ancestor-spacing" style="margin-top: 3%;">
-                  <div class="tile is-parent">
-                    <article class="tile is-child box-overwritten">
-                      <img
-                        src="../public/vinho.png"
-                        alt=""
-                        style="max-width: 200px; display: block;
-                          margin-left: auto;
-                          margin-right: auto;"
-                        class="gradient-wrapper"
-                      />
-                      <br />
-                      <p class="title center text-center">Guilherme Lourenço</p>
-                      <p class="subtitle center text-center">
-                        Guilherme é estudante de Ciências da Computação na USP. Seu maior interesse é Aprendizado Multimodal e atua como coordenador de eventos no grupo. Fora da faculdade, se interessa muito por música e gosta de uma sinuquinha de vez em quando.
-
-                      </p>
-                      <div class="center">
-                        <a
-                          href="https://www.linkedin.com/in/guitld/"
-                        >
-                          <button
-                            class="button linkedin"
-                            style="border-radius: 25px;"
-                          >
-                            <span class="icon is-small">
-                              <i class="fab fa-linkedin-in"></i>
-                            </span>
-                          </button>
-                        </a>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class="col span_1_of_2">
-                <div class="tile  ancestor-spacing" style="margin-top: 3%;">
-                  <div class="tile is-parent">
-                    
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-
-            
-            
-
-            
-
-            <!-- </div> -->
           </div>
+        </nav>
+      </div>
+
+      <div id="particles-js" class="particles-size" style="height: 3000px;">
+        <div class="canvas-positioning">
+
+          <!-- <h1 class="title-frentes" style="color: #4a4a4a">
+            Coordenadores
+          </h1> -->
+
+          <div id="people-list">
+            <!-- People will be inserted here dynamically -->
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+          <script src="../js/membros.js"></script>
+
+
+          </article>
         </div>
-        <!-- </div> -->
       </div>
+
+
     </div>
-    <footer class="footer" style="background-color: #4a4a4a;">
-      <div class="content has-text-centered">
-        <p style="color: #fff;">
-          Feito com <i class="fas fa-coffee"></i> por
-          <a
-            style="color: #7FD3F5; font-weight: bold;"
-            href="https://github.com/icmc-data/site-data"
-            >Dora e amigos</a
-          >
-        </p>
-      </div>
-    </footer>
-  </body>
+  </div>
+  <footer class="footer" style="background-color: #4a4a4a;">
+    <div class="content has-text-centered">
+      <p style="color: #fff;">
+        Feito com <i class="fas fa-coffee"></i> por
+        <a style="color: #7FD3F5; font-weight: bold;" href="https://github.com/icmc-data/site-data">Dora e amigos</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
