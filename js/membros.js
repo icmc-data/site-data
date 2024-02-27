@@ -113,6 +113,5 @@ function setPageHeight(data) {
     let n = Object.values(people).length;
     n = n/2;
 
-    document.getElementById("particles-js").style.height = String(1200*(n/2)) + "px";
-    document.getElementById("test").style.color="black";
+    // document.getElementById("particles-js").style.height = String(1200*(n/2)) + "px";
   }

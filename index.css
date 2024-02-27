@@ -7,14 +7,22 @@ html {
 }
 
 .hero-top {
-  /* background-image: url("./public/58722639_330106464363279_8769161481318039552_o.png"); */
-  /* background: rgb(0, 99, 255);
-  background: linear-gradient(
-    164deg,
-    rgba(0, 99, 255, 1) 0%,
-    rgba(255, 0, 241, 1) 100%
-  ); */
   position: relative;
+}
+
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-color: #212529; could go on .outer-container as well */
+}
+
+.hero-top .particles-content {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  /* min-height: 800px; */
+  min-height: 700px;
 }
 
 .img-top {

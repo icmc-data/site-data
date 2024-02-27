@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="../index.css" />
-  <link rel="stylesheet" type="text/css" href="../css/membros.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="../public/logos/logo-no-text.ico" />
+  <link rel="stylesheet" type="text/css" href="/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="/index.css" />
+  <link rel="stylesheet" type="text/css" href="/css/membros.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/public/logos/logo-no-text.ico" />
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
 
@@ -16,85 +16,74 @@
   <script src="/js/particles.js-master/particles.min.js"></script>
   <script src="/index.js"></script>
 
-  <title>Data - Membros</title>
+  <title>Membros</title>
 </head>
 
 <body>
-  <div>
-
-    <div class="hero hero-top">
-      <div style="
+  <div class="hero">
+    <div style="
           
           /* position: absolute;  */
           width: 100%;
           ">
-        <nav class="navbar navbar"
-          style="background-color: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 15%);" role="navigation"
-          aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-              <img src="/public/logos/logo-no-text.svg" style="height: fit-content; width: auto;" />
+      <nav class="navbar navbar"
+        style="background-color: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 15%);" role="navigation"
+        aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="/public/logos/logo-no-text.svg" style="height: fit-content; width: auto;" />
+          </a>
+
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="/pages/frentes.html" class="navbar-item">
+              FRENTES
             </a>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-              data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
+            <a href="/pages/membros.html" class="navbar-item">
+              PESSOAS
             </a>
-          </div>
 
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-end">
-              <a href="/pages/frentes.html" class="navbar-item">
-                FRENTES
-              </a>
-
-              <a href="/pages/membros.html" class="navbar-item">
-                PESSOAS
-              </a>
-
-              <!-- <a href="/pages/projetos.html" class="navbar-item">
+            <!-- <a href="/pages/projetos.html" class="navbar-item">
                   PROJETOS
                 </a> -->
 
-              <a href="/pages/contato.html" class="navbar-item">
-                CONTATO
-              </a>
-            </div>
+            <a href="/pages/contato.html" class="navbar-item">
+              CONTATO
+            </a>
           </div>
-        </nav>
-      </div>
-
-      <div id="particles-js" class="particles-size">
-        <div class="canvas-positioning">
-
-          <!-- <h1 class="title-frentes" style="color: #4a4a4a">
-            Coordenadores
-          </h1> -->
-
-          <div id="people-list">
-            <!-- People will be inserted here dynamically -->
-          </div>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
-          <script src="../js/membros.js"></script>
-
-
-          </article>
         </div>
+      </nav>
+    </div>
+
+    <div class="hero-top">
+      <div id="particles-js"></div>
+      <div class="particles-content">
+        <div id="people-list">
+          <!-- People will be inserted here dynamically -->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+        <script src="/js/membros.js"></script>
       </div>
-
-
     </div>
+
+    <footer class="footer" style="background-color: #4a4a4a;">
+      <div class="content has-text-centered">
+        <p style="color: #fff;">
+          Feito com <i class="fas fa-coffee"></i> por
+          <a style="color: #7FD3F5; font-weight: bold;" href="https://github.com/icmc-data/site-data">Dora e amigos</a>
+        </p>
+      </div>
+    </footer>
   </div>
-  <footer class="footer" style="background-color: #4a4a4a;">
-    <div class="content has-text-centered">
-      <p style="color: #fff;">
-        Feito com <i class="fas fa-coffee"></i> por
-        <a style="color: #7FD3F5; font-weight: bold;" href="https://github.com/icmc-data/site-data">Dora e amigos</a>
-      </p>
-    </div>
-  </footer>
 </body>
 
 </html>
