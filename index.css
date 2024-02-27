@@ -156,7 +156,7 @@ html {
 }
 
 .title-github {
-  margin-top: 70px;
+  /* margin-top: 70px; */
   margin-bottom: 2%;
   display: flex;
   flex: 1;
