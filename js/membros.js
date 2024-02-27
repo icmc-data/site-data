@@ -16,7 +16,7 @@ function loadYAML(file, callback) {
 
 function photoHtml(path) {
     html = "<img " +
-        "src='/public/" + path + "'" +
+        "src='/public/people/" + path + "'" +
         "style='max-width: 200px; display: block; " +
         "  margin-left: auto; " +
         "  margin-right: auto;' " +

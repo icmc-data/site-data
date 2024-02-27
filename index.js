@@ -2,7 +2,7 @@
 // For details, reach out to https://github.com/VincentGarreau/particles.js/
 particlesJS.load(
   "particles-js",
-  "/public/particles-config-pink.json",
+  "/public/particles/particles-config-pink.json",
   function() {
     console.log("callback - particles.js config loaded");
   }
