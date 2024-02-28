@@ -49,6 +49,25 @@ andre:
     André é estudante do Bacharelado em Ciência de Dados na USP, 
     atualmente focado em aprofundar seu conhecimento em Séries Temporais e NLP. 
     Está sempre disposto a tomar um cafézinho ou fazer uma trilha.
-  img: andre.jpeg
+  img: andre.jpg
   linkedin: https://www.linkedin.com/in/andre-de-mitri/
 
+miller:
+  name: Miller Anacleto
+  description:
+    Miller é estudante de Ciências da Computação. Tem interesse nas áreas 
+    de Séries Temporais e Aprendizado Profundo. Gosta de pedalar e filme ruim.sim
+  img: 
+  linkedin: https://www.linkedin.com/in/miller-matheus-lima-anacleto-rocha-103a81266/
+
+# aime:
+#   name: Aimê Nobrega
+#   description: 
+#   img:
+#   linkedin: https://www.linkedin.com/in/aime-nobrega/
+
+# aime:
+#   name: Aimê Nobrega
+#   description: 
+#   img:
+#   linkedin: https://www.linkedin.com/in/aime-nobrega/
