@@ -14,6 +14,7 @@ html {
   position: absolute;
   height: 100%;
   width: 100%;
+  
   /* background-color: #212529; could go on .outer-container as well */
 }
 
