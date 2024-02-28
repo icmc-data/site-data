@@ -33,3 +33,22 @@ sampaio:
   img: sampaio.jpg
   linkedin: https://www.linkedin.com/in/gussampaio/
 
+bombril:
+  name: Lucas Brandão
+  description:
+    Lucas é estudante de Ciências de Computação na USP. 
+    Tem interesse nas áreas de Recuperação de Informação Musical (MIR) 
+    e Redes Neurais para Grafos (GNN). Passa grande parte do seu dia 
+    ouvindo música e divagando sobre assuntos aleatórios.
+  img: bombril.jpeg
+  linkedin: https://br.linkedin.com/in/lucas-de-souza-brand%C3%A3o-590b1228b
+
+andre:
+  name: André de Mitri
+  description:
+    André é estudante do Bacharelado em Ciência de Dados na USP, 
+    atualmente focado em aprofundar seu conhecimento em Séries Temporais e NLP. 
+    Está sempre disposto a tomar um cafézinho ou fazer uma trilha.
+  img: andre.jpeg
+  linkedin: https://www.linkedin.com/in/andre-de-mitri/
+
