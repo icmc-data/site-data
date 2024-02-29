@@ -40,9 +40,9 @@ function descriptionHtml(description) {
 }
 
 function roleHtml(role) {
-    html = "<p class='subtitle center text-center'>" +
+    html = "<p class='subtitle center text-center'> <i>" +
         role +
-        "</p>"
+        "</i></p>"
     return html;
 }
 
