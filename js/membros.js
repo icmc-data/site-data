@@ -39,6 +39,13 @@ function descriptionHtml(description) {
     return html;
 }
 
+function roleHtml(role) {
+    html = "<p class='subtitle center text-center'>" +
+        role +
+        "</p>"
+    return html;
+}
+
 function linkedinHtml(link) {
     html = "<div class='center'>" +
     "    <a href='" + link + "'>" +
@@ -76,6 +83,7 @@ function renderPeople(data) {
                 "        <div class='tile is-parent'>" +
                 "            <article class='tile is-child box-overwritten'>";
             html += nameHtml(person.name);
+            html += roleHtml(person.role);
             html += photoHtml(person.img);
             html += descriptionHtml(person.description);
             html += linkedinHtml(person.linkedin);

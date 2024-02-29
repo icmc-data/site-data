@@ -4,6 +4,7 @@ vitor:
     Vítor é estudante de Ciências da Computação. Tem interesse nas áreas de Redes Complexas 
     e Aprendizado de Máquina Clássico. Um grande fã do jogo de xadrez e um péssimo jogador de futebol.
   img: frois.jpg
+  role: Coordenador de estudos em Machine Learning Clássico
   linkedin: https://www.linkedin.com/in/vitorfrois/
 
 cj:
@@ -13,6 +14,7 @@ cj:
     Se interessa principalmente por Natural Language Processing  (NLP) e Music Information Retrieval (MIR). 
     Além disso gosta de escutar e mixar músicas de artistas underground do Brasil no SoundCloud.
   img: cj.jpg
+  role: Secretário
   linkedin: https://www.linkedin.com/in/augusto-nunes-837381175/
 
 theo:
@@ -22,6 +24,7 @@ theo:
     e magia da inteligência artificial que me 
     instiguei a estudar e me interessar pela ciência de dados.
   img: theo.jpeg
+  role: Coordenador de Eventos
   linkedin: https://www.linkedin.com/in/th%C3%A9o-bruno-frey-riffel-19585b20b/
 
 sampaio:
@@ -31,6 +34,7 @@ sampaio:
     Estudo principalmente sobre aplicações de PLN e Visão Computacional.
     Gosto muito de astronomia e a física que faz todo o universo funcionar.
   img: sampaio.jpg
+  role: Coordenador de estudos em Processamento de Linguagem Natural
   linkedin: https://www.linkedin.com/in/gussampaio/
 
 bombril:
@@ -41,6 +45,7 @@ bombril:
     e Redes Neurais para Grafos (GNN). Passa grande parte do seu dia 
     ouvindo música e divagando sobre assuntos aleatórios.
   img: bombril.jpg
+  role: Coordenador de Aulas
   linkedin: https://br.linkedin.com/in/lucas-de-souza-brand%C3%A3o-590b1228b
 
 andre:
@@ -49,6 +54,7 @@ andre:
     André é estudante do Bacharelado em Ciência de Dados na USP, 
     atualmente focado em aprofundar seu conhecimento em Séries Temporais e NLP. 
     Está sempre disposto a tomar um cafézinho ou fazer uma trilha.
+  role: Coordenador de estudos em Explainable AI
   img: andre.jpg
   linkedin: https://www.linkedin.com/in/andre-de-mitri/
 
@@ -57,6 +63,7 @@ miller:
   description:
     Miller é estudante de Ciências da Computação. Tem interesse nas áreas 
     de Séries Temporais e Aprendizado Profundo. Gosta de pedalar e filme ruim.sim
+  role: Coordenador de Marketing
   img: miller.jpg
   linkedin: https://www.linkedin.com/in/miller-matheus-lima-anacleto-rocha-103a81266/
 
