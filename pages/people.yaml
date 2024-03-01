@@ -10,8 +10,8 @@ vitor:
 cj:
   name: Augusto Nunes
   description:
-    Augusto é estudante de Estatística e Ciência de Dados na USP de São Carlos. 
-    Se interessa principalmente por Natural Language Processing  (NLP) e Music Information Retrieval (MIR). 
+    Augusto é estudante de Estatística e Ciência de Dados na USP. 
+    Se interessa principalmente por PLN e Music Information Retrieval. 
     Além disso gosta de escutar e mixar músicas de artistas underground do Brasil no SoundCloud.
   img: cj.jpg
   role: Secretário
@@ -20,9 +20,10 @@ cj:
 theo:
   name: Théo Riffel
   description:
+    Théo é estudante de Ciências da Computação na USP.
     Curioso por natureza, foi do aparente mistério 
-    e magia da inteligência artificial que me 
-    instiguei a estudar e me interessar pela ciência de dados.
+    e magia da inteligência artificial que instigou-se 
+    a estudar e interessar pela Ciência de Dados.
   img: theo.jpeg
   role: Coordenador de Eventos
   linkedin: https://www.linkedin.com/in/th%C3%A9o-bruno-frey-riffel-19585b20b/
@@ -30,9 +31,10 @@ theo:
 sampaio:
   name: Gustavo Sampaio
   description:
+    Gustavo cursa Ciências da Computação na USP
     Me interesso em estudar tudo aquilo que me ajude a entender um pouco melhor o mundo afora.
     Estudo principalmente sobre aplicações de PLN e Visão Computacional.
-    Gosto muito de astronomia e a física que faz todo o universo funcionar.
+    Gosto muito de astronomia e da física que faz todo o universo funcionar.
   img: sampaio.jpg
   role: Coordenador de estudos em Processamento de Linguagem Natural
   linkedin: https://www.linkedin.com/in/gussampaio/
@@ -40,8 +42,8 @@ sampaio:
 bombril:
   name: Lucas Brandão
   description:
-    Lucas é estudante de Ciências de Computação na USP. 
-    Tem interesse nas áreas de Recuperação de Informação Musical (MIR) 
+    Lucas é estudante de Ciências da Computação na USP. 
+    Tem interesse nas áreas de Recuperação de Informação Musical 
     e Redes Neurais para Grafos (GNN). Passa grande parte do seu dia 
     ouvindo música e divagando sobre assuntos aleatórios.
   img: bombril.jpg
@@ -51,8 +53,8 @@ bombril:
 andre:
   name: André de Mitri
   description:
-    André é estudante do Bacharelado em Ciência de Dados na USP, 
-    atualmente focado em aprofundar seu conhecimento em Séries Temporais e NLP. 
+    André é estudante de Ciência de Dados na USP, 
+    atualmente focado em aprofundar seu conhecimento em Séries Temporais e PLN. 
     Está sempre disposto a tomar um cafézinho ou fazer uma trilha.
   role: Coordenador de estudos em Explainable AI
   img: andre.jpg
@@ -61,29 +63,37 @@ andre:
 miller:
   name: Miller Anacleto
   description:
-    Miller é estudante de Ciências da Computação. Tem interesse nas áreas 
+    Miller é estudante de Ciências da Computação na USP. Tem interesse nas áreas 
     de Séries Temporais e Aprendizado Profundo. Gosta de pedalar e filme ruim.
   role: Coordenador de Marketing
   img: miller.jpg
   linkedin: https://www.linkedin.com/in/miller-matheus-lima-anacleto-rocha-103a81266/
 
+
+artur:
+  name: Artur Lima 
+  description: 
+    Artur é estudante de Ciências da Computação na USP.  
+    Interessado na área de PLN e segurança. 
+    Gosta de ler livros e de comidas estranhas
+  img: artur.jpg
+  role: Coordenador de Marketing
+  linkedin: https://www.linkedin.com/in/artur-de-vlieger-336829252/
+
+merlin:
+  name: Gabriel Merlin
+  description:
+    Gabriel é estudante de Ciências da Computação na USP. 
+    Seu interesse de pesquisa é Aprendizado de Máquina, 
+    principalmente envolvendo Séries Temporais. 
+    Fora do ambiente acadêmico, tem gosto pela leitura e Astronomia.
+  img: merlin.jpg
+  role: Coordenador de Eventos
+  linkedin:
+  
 aime:
   name: Aimê Nobrega
   description: 
   img:
   role: Coordenadora de Projetos
   linkedin: https://www.linkedin.com/in/aime-nobrega/
-
-artur:
-  name: Lucas 
-  description: 
-  img:
-  role: Coordenador de Marketing
-  linkedin: 
-
-merlin:
-  name: Gabriel Merlin
-  description:
-  img:
-  role: Coordenador de Eventos
-  linkedin:
