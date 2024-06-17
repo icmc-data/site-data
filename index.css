@@ -14,7 +14,7 @@ html {
   position: absolute;
   height: 100%;
   width: 100%;
-  
+
   /* background-color: #212529; could go on .outer-container as well */
 }
 
@@ -587,4 +587,88 @@ figure.effect-ruby p {
 
 .frentes-font {
   font-size: larger;
+}
+/*comoentrar */
+.como-entrar-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  max-width: 1500px;
+}
+.title-comoentrar {
+  margin-bottom: 2%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.sub-title-comoentrar {
+  margin-bottom: 2%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.p-comoentrar {
+  margin-bottom: 2%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  font-size: larger;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+/* Eventos */
+/* Eventos */
+/* Eventos */
+/* Eventos */
+.eventos-content {
+  max-width: 600px; /* Reduz a largura para que o conteúdo fique mais centralizado */
+  margin: 0 auto;
+  padding: 5% 10%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.title-eventos {
+  margin-bottom: 2%;
+  margin-top: 30px; /* Aumenta a margem superior para afastar do navbar */
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+
+.sub-title-eventos {
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.p-eventos {
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.eventos-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  max-width: 1500px;
 }
