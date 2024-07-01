@@ -1,100 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" type="text/css" href="/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/public/logos/logo-no-text.ico"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <script src="/js/particles.js-master/particles.min.js"></script>
+    <script src="/index.js"></script>
 
-  <link rel="shortcut icon" type="image/x-icon" href="/public/logos/logo-no-text.ico" />
+    <title>Data</title>
+  </head>
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <script src="/js/particles.js-master/particles.min.js"></script>
-  <script src="/index.js"></script>
-
-  <title>Data</title>
-</head>
-
-<body>
-  <div class="hero">
-    <div style="
+  <body>
+    <div class="hero">
+      <div
+        style="
           
           position: absolute; 
           width: 100%;
-          ">
-      <nav class="navbar navbar"
-        style="background-color: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 15%);" role="navigation"
-        aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            <img src="/public/logos/logo-no-text.svg" style="height: fit-content; width: auto;" />
-          </a>
-
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-            data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="/pages/frentes.html" class="navbar-item">
-              FRENTES
+          "
+      >
+        <nav
+          class="navbar navbar"
+          style="background-color: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 15%);"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              <img
+                src="/public/logos/logo-no-text.svg"
+                style="height: fit-content; width: auto;"
+              />
             </a>
 
-            <a href="/pages/membros.html" class="navbar-item">
-              PESSOAS
-            </a>
-
-            <a href="/pages/projetos.html" class="navbar-item">
-                  PROJETOS
-                </a>
-
-            <a href="/pages/contato.html" class="navbar-item">
-              CONTATO
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
-        </div>
-      </nav>
-    </div>
 
-    <div class="hero-top">
-      <div id="particles-js"></div>
-      <div class="particles-content">
-        <div class="columns is-multiline about-us-columns">
-          <!-- Data Logo... -->
-          <div class="column center">
-            <img src="/public/logos/logo.svg" alt="" srcset="" class="main-page-logo" width="50%" height="50%" />
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <a href="/pages/frentes.html" class="navbar-item">
+                FRENTES
+              </a>
+
+              <a href="/pages/membros.html" class="navbar-item">
+                PESSOAS
+              </a>
+
+              <a href="/pages/projetos.html" class="navbar-item">
+                PROJETOS
+              </a>
+
+              <a href="/pages/contato.html" class="navbar-item">
+                CONTATO
+              </a>
+              <a href="/pages/eventos.html" class="navbar-item">EVENTOS</a>
+              <a href="/pages/comoentrar.html" class="navbar-item"
+                >COMO ENTRAR</a
+              >
+            </div>
           </div>
+        </nav>
+      </div>
 
-          <div class="column center">
-            <p style="text-align: center; padding: 5%;"></p>
-            <div class="section right-margin-infos">
-              <div class="columns">
-                <div class="column center">
-                  <div style="text-align: center; text-overflow: ellipsis;" class="intro-infos">
-                    <p style="max-width: 600px; font-size: larger;">
-                      Somos um grupo de Ciência de Dados e Aprendizado de
-                      Máquina localizado no Instituto de Ciências
-                      Matemáticas e de Computação (ICMC) da Universidade
-                      de São Paulo (USP), em São Carlos. Por meio de
-                      aulas, eventos, grupos de estudo e palestras, o
-                      grupo tem a missão de unir a indústria, o mundo
-                      acadêmico e indivíduos interessados, de forma que
-                      todos possam criar conexões importantes para sua
-                      vida e carreira enquanto aprendem. Buscamos acelerar
-                      a cultura de data science, dentro e fora da
-                      universidade, trazendo o estado da arte para mais
-                      perto dos alunos e profissionais da área.
-                    </p>
+      <div class="hero-top">
+        <div id="particles-js"></div>
+        <div class="particles-content">
+          <div class="columns is-multiline about-us-columns">
+            <!-- Data Logo... -->
+            <div class="column center">
+              <img
+                src="/public/logos/logo.svg"
+                alt=""
+                srcset=""
+                class="main-page-logo"
+                width="50%"
+                height="50%"
+              />
+            </div>
+
+            <div class="column center">
+              <p style="text-align: center; padding: 5%;"></p>
+              <div class="section right-margin-infos">
+                <div class="columns">
+                  <div class="column center">
+                    <div
+                      style="text-align: center; text-overflow: ellipsis;"
+                      class="intro-infos"
+                    >
+                      <p style="max-width: 600px; font-size: larger;">
+                        Somos um grupo de Ciência de Dados e Aprendizado de
+                        Máquina localizado no Instituto de Ciências Matemáticas
+                        e de Computação (ICMC) da Universidade de São Paulo
+                        (USP), em São Carlos. Por meio de aulas, eventos, grupos
+                        de estudo e palestras, o grupo tem a missão de unir a
+                        indústria, o mundo acadêmico e indivíduos interessados,
+                        de forma que todos possam criar conexões importantes
+                        para sua vida e carreira enquanto aprendem. Buscamos
+                        acelerar a cultura de data science, dentro e fora da
+                        universidade, trazendo o estado da arte para mais perto
+                        dos alunos e profissionais da área.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -102,21 +136,23 @@
           </div>
         </div>
       </div>
+
+      <!-- Footer -->
+      <footer
+        class="footer"
+        style="background-color: #4a4a4a; margin-top: 0px;"
+      >
+        <div class="content has-text-centered">
+          <p style="color: #fff;">
+            Feito com <i class="fas fa-coffee"></i> por
+            <a
+              style="color: #7FD3F5; font-weight: bold;"
+              href="https://github.com/icmc-data/site-data"
+              >Dora e amigos</a
+            >
+          </p>
+        </div>
+      </footer>
     </div>
-
-
-
-    <!-- Footer -->
-    <footer class="footer" style="background-color: #4a4a4a;">
-      <div class="content has-text-centered">
-        <p style="color: #fff;">
-          Feito com <i class="fas fa-coffee"></i> por
-          <a style="color: #7FD3F5; font-weight: bold;" href="https://github.com/icmc-data/site-data">Dora e
-            amigos</a>
-        </p>
-      </div>
-    </footer>
-  </div>
-</body>
-
+  </body>
 </html>
