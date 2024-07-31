@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #4D4D4D;
+    --secondary: #4D4D4D;
+    --background: #ededed;
+    --background-secondary: #AE6AB7;
+    --button: #EC90C5;
+    --button-text: #fff;
+    --text-secondary: #8CD2F4;
+    --dropdown: #8CD2F4;
+    --dropdown-hover: #8CD2F4;
+    --button-secondary: #8CD2F4;
+    --selected: #8CD2F4;
+    --logo-shadow: #053949;
+    --logo-body: #00d8fe;
+
+    --data-blue: #8CD2F4;
+    --data-pink: #EC90C5;
+    --data-purple: #AE6AB7;
+  }
+  .dark {
+    --primary: #d6deff;
+    --secondary: #0ba6d1;
+    --background: #121212;
+    --background-secondary: #1b1b1b;
+    --button: #097fa5;
+    --button-text: #fff;
+    --text-secondary: #bbbbbb;
+    --dropdown: #2d2d2d;
+    --dropdown-hover: #454545;
+    --button-secondary: #1d1d1d;
+    --selected: #324e70;
+    --logo-shadow: #0a2e36;
+    --logo-body: #097fa5;
+
+    --data-blue: #9BD7F6;
+    --data-pink: #F9A1D3;
+    --data-purple: #C479CE;
+  }
+}
+
+@layer base {
+  div::selection,
+  h1::selection,
+  button::selection,
+  p::selection,
+  span::selection,
+  a::selection,
+  h2::selection {
+    background-color: rgb(52, 233, 194);
+    text-shadow: rgb(17, 74, 160) 0px 0px 7px;
+    color: rgb(196, 9, 181);
+  }
+  body {
+    @apply bg-background text-primary;
+  }
+}
