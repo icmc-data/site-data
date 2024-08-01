@@ -5,11 +5,16 @@ import { usePathname, useSelectedLayoutSegments } from 'next/navigation'
 import React, { useState } from 'react'
 import { FiGlobe } from 'react-icons/fi'
 
-const LangSwitcher: React.FC = () => {
+interface Props {
+  locale: string
+}
+
+const LangSwitcher: React.FC<Props> = ({ locale }) => {
   interface Option {
     country: string
     code: string
   }
+  
   const pathname = usePathname()
   const urlSegments = useSelectedLayoutSegments()
 
@@ -40,7 +45,7 @@ const LangSwitcher: React.FC = () => {
               aria-labelledby='options-menu'
             >
               {options.map(lang => {
-                const isSelected = pathname === `/${lang.code}`
+                const isSelected = locale === lang.code
                 return (
                   <Link
                     key={lang.code}

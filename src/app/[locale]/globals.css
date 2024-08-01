@@ -4,19 +4,18 @@
 
 @layer base {
   :root {
-    --primary: #4D4D4D;
-    --secondary: #4D4D4D;
-    --background: #ededed;
-    --background-secondary: #AE6AB7;
-    --button: #EC90C5;
-    --button-text: #fff;
-    --text-secondary: #8CD2F4;
-    --dropdown: #8CD2F4;
-    --dropdown-hover: #8CD2F4;
-    --button-secondary: #8CD2F4;
-    --selected: #8CD2F4;
-    --logo-shadow: #053949;
-    --logo-body: #00d8fe;
+    --primary: #2b2b2b;
+    --secondary: #097fa5;
+    --background: #ffffff;
+    --background-secondary: #f5f5f5;
+    --button: #0ba6d1;
+    --button-text: #000000;
+    --text-secondary: #444444;
+    --dropdown: #e0e0e0;
+    --dropdown-hover: #cccccc;
+    --button-secondary: #f0f0f0;
+    --selected: #d6deff;
+    
 
     --data-blue: #8CD2F4;
     --data-pink: #EC90C5;
@@ -37,8 +36,6 @@
     --dropdown-hover: #454545;
     --button-secondary: #1d1d1d;
     --selected: #324e70;
-    --logo-shadow: #0a2e36;
-    --logo-body: #097fa5;
 
     --data-blue: #9BD7F6;
     --data-pink: #F9A1D3;
