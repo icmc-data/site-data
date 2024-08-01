@@ -5,6 +5,7 @@ import { FC } from 'react'
 import LogoIcon from '../../icons/logo'
 import LangSwitcher from './LangSwitcher'
 import ThemeSwitch from './ThemeSwitch'
+import Button from './Button'
 
 interface Props {
   locale: string
@@ -34,6 +35,12 @@ export const Header: FC<Props> = ({ locale }) => {
         </Link>
         <Link lang={locale} href={`/pages/learn`}>
           {t('Learn')}
+        </Link>
+
+        <Link lang={locale} href={`/pages/contact`}>
+          <Button variant='secondary' size='medium' className='ml-4'>
+            {t('Contact')}
+          </Button>
         </Link>
       </div>
       <div className='flex flex-row items-center gap-3'>

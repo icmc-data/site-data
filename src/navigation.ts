@@ -13,6 +13,7 @@ export const pathnames = {
   '/pages/fronts': '/pages/fronts',
   '/pages/competitions': '/pages/competitions',
   '/pages/learn': '/pages/learn',
+  '/pages/contact': '/pages/contact'
 
 } satisfies Pathnames<typeof locales>
 
