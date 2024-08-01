@@ -1,5 +1,5 @@
 'use client'
-import { Link } from '@/src/navigation'
+import { Link } from '../../../navigation'
 import { useTranslations } from 'next-intl'
 import { FC } from 'react'
 import LogoIcon from '../../icons/logo'

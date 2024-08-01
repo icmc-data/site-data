@@ -21,6 +21,9 @@
     --data-blue: #8CD2F4;
     --data-pink: #EC90C5;
     --data-purple: #AE6AB7;
+
+    --font-inter: 'Inter', sans-serif;
+    --font-brawler: 'Brawler', serif;
   }
   .dark {
     --primary: #d6deff;
@@ -44,18 +47,11 @@
 }
 
 @layer base {
-  div::selection,
-  h1::selection,
-  button::selection,
-  p::selection,
-  span::selection,
-  a::selection,
-  h2::selection {
-    background-color: rgb(52, 233, 194);
-    text-shadow: rgb(17, 74, 160) 0px 0px 7px;
-    color: rgb(196, 9, 181);
-  }
   body {
     @apply bg-background text-primary;
+    font-family: var(--font-inter);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-brawler);
   }
 }

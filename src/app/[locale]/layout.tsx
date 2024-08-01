@@ -1,11 +1,11 @@
-import { ThemeProvider } from '@/src/app/[locale]/components/ThemeProvider'
+import { ThemeProvider } from './components/ThemeProvider'
 import type { Metadata } from 'next'
 import {
   AbstractIntlMessages,
   NextIntlClientProvider,
   useMessages
 } from 'next-intl'
-import { Inter, Space_Grotesk } from 'next/font/google'
+import { Inter, Brawler } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import { Header } from './components/Header'
 import './globals.css'
@@ -14,10 +14,12 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--inter'
 })
-const space_grotesk = Space_Grotesk({
+const brawler = Brawler({
   subsets: ['latin'],
-  variable: '--font-space-grotesk'
+  weight: '400', 
+  variable: '--font-brawler'
 })
+
 export const metadata: Metadata = {
   title: 'Data ICMC',
   description: 'Grupo de Extensão em Ciência de Dados e Inteligência Artificial da Universidade de São Paulo'
@@ -34,7 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang={locale}
-
+      className={`${inter.variable} ${brawler.variable}`} // Adicione a classe da nova fonte aqui
       suppressHydrationWarning
     >
       <body>

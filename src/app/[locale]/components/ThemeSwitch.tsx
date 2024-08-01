@@ -23,7 +23,7 @@ export default function ThemeSwitch() {
       className='p-2 focus:outline-none'
       aria-label='Toggle Theme'
       onClick={toggleTheme}
-      style={{ backgroundColor: 'transparent' }} // Remove o background
+      style={{ backgroundColor: 'transparent' }} 
     >
       {isDarkMode ? <FiSun size={24} color='var(--primary)' /> : <FiMoon size={24} color='var(--primary)' />}
     </button>
