@@ -16,6 +16,7 @@ export default function DashboardPage() {
                 href="https://www.icmc.usp.br/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-link"
               >
                 &nbsp; ICMC-USP &nbsp;
               </a>

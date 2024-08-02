@@ -15,6 +15,7 @@
     --dropdown-hover: #cccccc;
     --button-secondary: #f0f0f0;
     --selected: #d6deff;
+    --link: #0318cc;
 
     --data-blue: #8CD2F4;
     --data-pink: #EC90C5;
@@ -36,6 +37,9 @@
     --button-secondary: #1d1d1d;
     --selected: #324e70;
 
+    --link: #9BD7F6;
+
+    
     --data-blue: #9BD7F6;
     --data-pink: #F9A1D3;
     --data-purple: #C479CE;
@@ -65,5 +69,11 @@
   }
   .text-primary {
     color: var(--primary);
+  }
+  .text-data-pink {
+    color: var(--data-pink);
+  }
+  .text-link {
+    color: var(--link);
   }
 }
