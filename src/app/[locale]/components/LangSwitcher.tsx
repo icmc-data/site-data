@@ -14,7 +14,7 @@ const LangSwitcher: React.FC<Props> = ({ locale }) => {
     country: string
     code: string
   }
-  
+
   const pathname = usePathname()
   const urlSegments = useSelectedLayoutSegments()
 
@@ -37,7 +37,7 @@ const LangSwitcher: React.FC<Props> = ({ locale }) => {
           <FiGlobe size={24} color='var(--primary)' />
         </button>
         {isOptionsExpanded && (
-          <div className='absolute right-0 mt-2 w-32 origin-top-right rounded-md bg-dropdown shadow-lg'>
+          <div className='absolute right-0 mt-2 w-32 origin-top-right rounded-md bg-dropdown shadow-lg z-50'>
             <div
               className='py-1 flex flex-col items-center'
               role='menu'

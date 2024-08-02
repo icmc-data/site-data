@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
 
   const baseStyles = `focus:outline-none focus:shadow-outline ${
     rounded ? 'rounded-full' : 'rounded'
-  } inline-flex items-center justify-center space-x-2`;
+  } inline-flex items-center justify-center space-x-2 transition-transform duration-200 ease-in-out transform`;
 
   const variantStyles = {
     primary: styleType === 'outline' ? 'border-2 border-data-purple text-data-purple' : 'bg-button text-primary border-2 border-button',
@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
   const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`;
 
   return (
-    <button className={buttonStyles} style={{ padding: '10px' }} {...props}>
+    <button className={`${buttonStyles} hover:scale-110`} style={{ padding: '10px' }} {...props}>
       {children}
     </button>
   );
