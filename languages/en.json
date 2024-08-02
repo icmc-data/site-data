@@ -1,10 +1,14 @@
 {
-  "About": "About",
-  "Competitions": "Competitions",
-  "Fronts": "Fronts",
-  "Learn": "Learn",
-  "Theme": "Theme",
-  "Contact": "Contact",
-  "Learn_More": "Learn more!",
-  "text_test": "Text to test pages"
+	"About": "About",
+	"Competitions": "Competitions",
+	"Fronts": "Fronts",
+	"Learn": "Learn",
+	"Theme": "Theme",
+	"Contact": "Contact",
+	"text_test": "Text to test pages",
+
+	"HeroSection": "SECTION: These are the texts present in the HeroSection",
+		"Extension_Group_of": "Extension Group of",
+		"Small_Description-Data": "focused on Data Science and Machine Learning Through classes, events, study groups and lectures, the entity's mission is to unite the industry, the academic world and interested people, so that everyone can create important connections for their lives and careers while they learn.",
+		"Learn_More": "Learn more!"
 }

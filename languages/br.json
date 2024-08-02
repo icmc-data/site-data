@@ -1,10 +1,14 @@
 {
-  "About": "Sobre",
-  "Competitions": "Competições",
-  "Fronts": "Frentes",
-  "Learn": "Aprender",
-  "Theme": "Tema",
-  "Contact": "Contato",
-  "Learn_More": "Saiba mais!",
-  "text_test": "Texto para testar as páginas"
+	"About": "Sobre",
+	"Competitions": "Competições",
+	"Fronts": "Frentes",
+	"Learn": "Aprender",
+	"Theme": "Tema",
+	"Contact": "Contato",
+	"text_test": "Texto para testar as páginas",
+
+	"HeroSection": "SECTION: Esses são os textos presentes na HeroSection",
+		"Extension_Group_of": "Grupo de Extensão do",
+		"Small_Description-Data": "focado em Ciência de Dados e Aprendizado de Máquina Por meio de aulas, eventos, grupos de estudo e palestras, a entidade tem a missão de unir a indústria, o mundo acadêmico e personas interessadas, de forma que todos possam criar conexões importantes para sua vida e carreira enquanto aprendem.",
+		"Learn_More": "Saiba mais!"
 }

@@ -5,6 +5,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary'
   size?: 'small' | 'medium' | 'large'
   rounded?: boolean
+  styleType?: 'default' | 'outline'
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -12,25 +13,27 @@ const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size = 'medium',
   rounded = false,
+  styleType = 'default',
   className,
   ...props
 }) => {
   const sizeStyles = {
-    small: 'px-2 py-2 text-sm',
-    medium: 'px-4 py-2 text-base font-semibold',
-    large: 'px-6 py-3 text-lg font-semibold'
+    small: 'text-sm',
+    medium: 'text-base font-semibold',
+    large: 'text-lg font-semibold'
   }
 
-  const baseStyles = `focus:outline-none focus:shadow-outline ${rounded ? 'rounded-full' : 'rounded'}`
+  const baseStyles = `focus:outline-none focus:shadow-outline ${rounded ? 'rounded-full' : 'rounded'} inline-flex items-center justify-center space-x-2`
+
   const variantStyles = {
-    primary: 'bg-button text-primary border border-button',
-    secondary: 'bg-secondary text-background border border-secondary'
+    primary: styleType === 'outline' ? 'border-2 border-data-purple text-primary' : 'bg-button text-primary border-2 border-button',
+    secondary: styleType === 'outline' ? 'border-2 border-data-purple text-primary' : 'bg-secondary text-background border-2 border-secondary'
   }
 
   const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`
 
   return (
-    <button className={buttonStyles} {...props}>
+    <button className={buttonStyles} style={{ padding: '10px' }} {...props}>
       {children}
     </button>
   )

@@ -15,7 +15,6 @@
     --dropdown-hover: #cccccc;
     --button-secondary: #f0f0f0;
     --selected: #d6deff;
-    
 
     --data-blue: #8CD2F4;
     --data-pink: #EC90C5;
@@ -50,5 +49,14 @@
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-brawler);
+  }
+}
+
+@layer components {
+  .border-data-purple {
+    border-color: var(--data-purple);
+  }
+  .text-primary {
+    color: var(--primary);
   }
 }
