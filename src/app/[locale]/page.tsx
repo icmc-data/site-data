@@ -10,7 +10,7 @@ export default function DashboardPage() {
       <section className="flex relative py-24">
         <div className="flex items-center space-x-4">
           <div>
-            <p>
+            <p className="leading-loose">
               {t("Extension_Group_of")}
               <a
                 href="https://www.icmc.usp.br/"
@@ -21,6 +21,7 @@ export default function DashboardPage() {
               </a>
               {t("Small_Description-Data")}
             </p>
+            <br />
             <Button variant="secondary" size="medium" styleType="outline">
               {t("Learn_More")}
             </Button>

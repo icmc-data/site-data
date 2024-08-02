@@ -50,11 +50,18 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-brawler);
   }
+  p {
+    @apply text-sm;
+    font-size: 13pt;
+  }
 }
 
 @layer components {
   .border-data-purple {
     border-color: var(--data-purple);
+  }
+  .text-data-purple {
+    color: var(--data-purple);
   }
   .text-primary {
     color: var(--primary);

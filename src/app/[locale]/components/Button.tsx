@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode
-  variant?: 'primary' | 'secondary'
-  size?: 'small' | 'medium' | 'large'
-  rounded?: boolean
-  styleType?: 'default' | 'outline'
+  children: React.ReactNode;
+  variant?: 'primary' | 'secondary';
+  size?: 'small' | 'medium' | 'large';
+  rounded?: boolean;
+  styleType?: 'default' | 'outline';
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -20,23 +20,25 @@ const Button: React.FC<ButtonProps> = ({
   const sizeStyles = {
     small: 'text-sm',
     medium: 'text-base font-semibold',
-    large: 'text-lg font-semibold'
-  }
+    large: 'text-lg font-semibold',
+  };
 
-  const baseStyles = `focus:outline-none focus:shadow-outline ${rounded ? 'rounded-full' : 'rounded'} inline-flex items-center justify-center space-x-2`
+  const baseStyles = `focus:outline-none focus:shadow-outline ${
+    rounded ? 'rounded-full' : 'rounded'
+  } inline-flex items-center justify-center space-x-2`;
 
   const variantStyles = {
-    primary: styleType === 'outline' ? 'border-2 border-data-purple text-primary' : 'bg-button text-primary border-2 border-button',
-    secondary: styleType === 'outline' ? 'border-2 border-data-purple text-primary' : 'bg-secondary text-background border-2 border-secondary'
-  }
+    primary: styleType === 'outline' ? 'border-2 border-data-purple text-data-purple' : 'bg-button text-primary border-2 border-button',
+    secondary: styleType === 'outline' ? 'border-2 border-data-purple text-data-purple' : 'bg-secondary text-background border-2 border-secondary',
+  };
 
-  const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`
+  const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`;
 
   return (
     <button className={buttonStyles} style={{ padding: '10px' }} {...props}>
       {children}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
