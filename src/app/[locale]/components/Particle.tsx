@@ -11,16 +11,42 @@ type Engine = InitParameters[0];
 
 const Particle = () => {
   const [particleColor, setParticleColor] = useState("#EC90C5"); // standard color
+  const [particleOpacity, setParticleOpacity] = useState(0.2); // standard opacity
+
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(async () => {}, []);
 
-  useEffect(() => {
+  const updateParticleSettings = () => {
     // gets the color from the CSS variable
     const color = getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim();
     setParticleColor(color);
+
+    // sets the opacity based on the color
+    if (color === "#EC90C5") {
+      setParticleOpacity(0.3); // set opacity to 30% if color matches
+    } else {
+      setParticleOpacity(0.1); // set opacity to 20% if color doesn't match
+    }
+  };
+
+  useEffect(() => {
+    // initialize particle settings
+    updateParticleSettings();
+
+    // observe changes to the :root element's style attribute
+    const observer = new MutationObserver(() => {
+      updateParticleSettings();
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["style"],
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -54,7 +80,7 @@ const Particle = () => {
             color: particleColor,
             distance: 150,
             enable: true,
-            opacity: 0.2, 
+            opacity: particleOpacity, // set link opacity based on color
             width: 2,
           },
           collisions: {
@@ -68,17 +94,17 @@ const Particle = () => {
             },
             random: true,
             straight: false,
-            speed: 0.5, // decrease particle speed
+            speed: 0.3, // decrease particle speed
           },
           number: {
             density: {
               enable: true,
-              area: 1600, // increase density area for wider distribution
+              area: 2000, // increase density area for wider distribution
             },
-            value: 100, // reduce number of particles to avoid clumping
+            value: 120, // reduce number of particles to avoid clumping
           },
           opacity: {
-            value: 0.2, // set particle opacity to 20%
+            value: particleOpacity, // set particle opacity based on color
           },
           shape: {
             type: "circle",
