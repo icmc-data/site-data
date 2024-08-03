@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Particles, { ParticlesProps } from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
@@ -10,11 +10,18 @@ type InitParameters = Parameters<InitTypeNonNullable>;
 type Engine = InitParameters[0];
 
 const Particle = () => {
+  const [particleColor, setParticleColor] = useState("#EC90C5"); // standard color
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(async () => {}, []);
+
+  useEffect(() => {
+    // gets the color from the CSS variable
+    const color = getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim();
+    setParticleColor(color);
+  }, []);
 
   return (
     <Particles
@@ -34,20 +41,20 @@ const Particle = () => {
           },
           modes: {
             repulse: {
-              distance: 100,
-              duration: 1,
+              distance: 50, // decrease repulsion distance
+              duration: 0.2, // decrease repulsion duration
             },
           },
         },
         particles: {
           color: {
-            value: "#EE0F0F",
+            value: particleColor,
           },
           links: {
-            color: "#EE0F0F",
+            color: particleColor,
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.2, 
             width: 2,
           },
           collisions: {
@@ -55,23 +62,23 @@ const Particle = () => {
           },
           move: {
             enable: true,
-            direction: "top-left",
+            direction: "top-right",
             outModes: {
               default: "bounce",
             },
             random: true,
             straight: false,
-            speed: 1,
+            speed: 0.5, // decrease particle speed
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 1600, // increase density area for wider distribution
             },
-            value: 105,
+            value: 100, // reduce number of particles to avoid clumping
           },
           opacity: {
-            value: 0.5,
+            value: 0.2, // set particle opacity to 20%
           },
           shape: {
             type: "circle",
