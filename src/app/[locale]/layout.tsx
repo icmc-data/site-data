@@ -1,53 +1,54 @@
-import { ThemeProvider } from './components/ThemeProvider'
-import type { Metadata } from 'next'
+import { ThemeProvider } from "./components/ThemeProvider";
+import type { Metadata } from "next";
 import {
   AbstractIntlMessages,
   NextIntlClientProvider,
-  useMessages
-} from 'next-intl'
-import { Inter, Brawler } from 'next/font/google'
-import NextTopLoader from 'nextjs-toploader'
-import { Header } from './components/Header'
-import './globals.css'
+  useMessages,
+} from "next-intl";
+import { Inter, Brawler } from "next/font/google";
+import NextTopLoader from "nextjs-toploader";
+import { Header } from "./components/Header";
+import Particle from "./components/Particle";
+import "./globals.css";
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--inter'
-})
+  subsets: ["latin"],
+  variable: "--inter",
+});
 const brawler = Brawler({
-  subsets: ['latin'],
-  weight: '400', 
-  variable: '--font-brawler'
-})
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-brawler",
+});
 
 export const metadata: Metadata = {
-  title: 'Data ICMC',
-  description: 'Grupo de Extensão em Ciência de Dados e Inteligência Artificial da Universidade de São Paulo'
-}
+  title: "Data ICMC",
+  description:
+    "Grupo de Extensão em Ciência de Dados e Inteligência Artificial da Universidade de São Paulo",
+};
 
 export default function RootLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: {
-  children: React.ReactNode
-  params: { locale: string }
+  children: React.ReactNode;
+  params: { locale: string };
 }) {
-  const messages = useMessages()
+  const messages = useMessages();
   return (
     <html
       lang={locale}
       className={`${inter.variable} ${brawler.variable}`} // Adicione a classe da nova fonte aqui
       suppressHydrationWarning
     >
-      <body>
+      <body className="relative">
+        {" "}
+        {/* Adicione a classe relative para o posicionamento absoluto do Particle */}
         <ThemeProvider
           enableSystem
-          attribute='class'
-          defaultTheme='light'
-          themes={[
-            'light',
-            'dark',
-          ]}
+          attribute="class"
+          defaultTheme="light"
+          themes={["light", "dark"]}
         >
           <NextIntlClientProvider
             locale={locale}
@@ -58,17 +59,23 @@ export default function RootLayout({
               crawlSpeed={200}
               height={3}
               crawl={true}
-              easing='ease'
+              easing="ease"
               speed={200}
-              shadow='0 0 10px #2299DD,0 0 5px #2299DD'
-              color='var(--primary)'
+              shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+              color="var(--primary)"
               showSpinner={false}
             />
             <Header locale={locale} />
-            <main className='mx-auto max-w-screen-2xl'>{children}</main>
+            <div className=" absolute">
+              <Particle />
+            </div>
+            <main className="mx-auto max-w-screen-2xl relative z-10">
+              {children}
+            </main>{" "}
+            {/* Certifique-se de que o conteúdo principal está acima do Particle */}
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
