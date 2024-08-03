@@ -28,7 +28,7 @@ export default function DashboardPage() {
             </Button>
           </div>
         </div>
-        <div className="-mt-30 ml-44">
+        <div className="-mt-30 ml-44 float-animation">
           <LogoIcon width={400} height={400} />
         </div>
       </section>

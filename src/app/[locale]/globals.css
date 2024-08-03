@@ -44,9 +44,19 @@
     --data-pink: #F9A1D3;
     --data-purple: #C479CE;
   }
-}
 
-@layer base {
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
   body {
     @apply bg-background text-primary;
     font-family: var(--font-inter);
@@ -75,5 +85,8 @@
   }
   .text-link {
     color: var(--link);
+  }
+  .float-animation {
+    animation: float 10s ease-in-out infinite;
   }
 }

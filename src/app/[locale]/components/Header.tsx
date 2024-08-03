@@ -24,9 +24,6 @@ export const Header: FC<Props> = ({ locale }) => {
         </div>
       </Link>
       <div className='mx-auto flex items-center gap-10 text-center font-bold'>
-        <Link lang={locale} href={`/pages/about`}>
-          {t('About')}
-        </Link>
         <Link lang={locale} href={`/pages/fronts`}>
           {t('Fronts')}
         </Link>
@@ -38,9 +35,7 @@ export const Header: FC<Props> = ({ locale }) => {
         </Link>
 
         <Link lang={locale} href={`/pages/contact`}>
-          <Button variant='secondary' size='medium' className='ml-4'>
             {t('Contact')}
-          </Button>
         </Link>
       </div>
       <div className='flex flex-row items-center gap-3'>
