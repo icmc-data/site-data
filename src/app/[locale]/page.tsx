@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Button from "./components/Button";
 import Link from "next/link";
 import LogoIcon from "../icons/logo";
+import LottieEye from "./components/LottieEye";
 
 export default function DashboardPage() {
   const t = useTranslations("");
@@ -29,7 +30,7 @@ export default function DashboardPage() {
           </div>
         </div>
         <div className="-mt-30 ml-44 float-animation">
-          <LogoIcon width={400} height={400} />
+        <LottieEye height={500} width={550}  />
         </div>
       </section>
     </div>
