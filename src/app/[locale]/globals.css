@@ -39,7 +39,6 @@
 
     --link: #9BD7F6;
 
-    
     --data-blue: #9BD7F6;
     --data-pink: #F9A1D3;
     --data-purple: #C479CE;
@@ -89,4 +88,7 @@
   .float-animation {
     animation: float 10s ease-in-out infinite;
   }
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
 }

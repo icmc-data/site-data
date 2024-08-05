@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${inter.variable} ${brawler.variable}`} // Adicione a classe da nova fonte aqui
+      className={`overflow-x-hidden ${inter.variable} ${brawler.variable}`} // Adicione a classe overflow-x-hidden aqui
       suppressHydrationWarning
     >
       <body className="relative">
@@ -66,7 +66,7 @@ export default function RootLayout({
               showSpinner={false}
             />
             <Header locale={locale} />
-            <div className=" absolute">
+            <div className="absolute">
               <Particle />
             </div>
             <main className="mx-auto max-w-screen-2xl relative z-10">

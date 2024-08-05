@@ -50,72 +50,74 @@ const Particle = () => {
   }, []);
 
   return (
-    <Particles
-      className="h-screen"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={{
-        fullScreen: { enable: false },
-        fpsLimit: 120,
-        interactivity: {
-          events: {
-            onHover: {
+    <div className="no-horizontal-scroll">
+      <Particles
+        className="h-screen w-screen"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          fullScreen: { enable: false },
+          fpsLimit: 120,
+          interactivity: {
+            events: {
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              repulse: {
+                distance: 50, // decrease repulsion distance
+                duration: 0.2, // decrease repulsion duration
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: particleColor,
+            },
+            links: {
+              color: particleColor,
+              distance: 150,
               enable: true,
-              mode: "repulse",
+              opacity: particleOpacity, // set link opacity based on color
+              width: 2,
             },
-            resize: true,
-          },
-          modes: {
-            repulse: {
-              distance: 50, // decrease repulsion distance
-              duration: 0.2, // decrease repulsion duration
-            },
-          },
-        },
-        particles: {
-          color: {
-            value: particleColor,
-          },
-          links: {
-            color: particleColor,
-            distance: 150,
-            enable: true,
-            opacity: particleOpacity, // set link opacity based on color
-            width: 2,
-          },
-          collisions: {
-            enable: true,
-          },
-          move: {
-            enable: true,
-            direction: "top-right",
-            outModes: {
-              default: "bounce",
-            },
-            random: true,
-            straight: false,
-            speed: 0.3, // decrease particle speed
-          },
-          number: {
-            density: {
+            collisions: {
               enable: true,
-              area: 2000, // increase density area for wider distribution
             },
-            value: 120, // reduce number of particles to avoid clumping
+            move: {
+              enable: true,
+              direction: "top-right",
+              outModes: {
+                default: "bounce",
+              },
+              random: true,
+              straight: false,
+              speed: 0.3, // decrease particle speed
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 3000, // further increase density area for wider distribution
+              },
+              value: 120, // reduce number of particles to avoid clumping
+            },
+            opacity: {
+              value: particleOpacity, // set particle opacity based on color
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              value: { min: 1, max: 5 },
+            },
           },
-          opacity: {
-            value: particleOpacity, // set particle opacity based on color
-          },
-          shape: {
-            type: "circle",
-          },
-          size: {
-            value: { min: 1, max: 5 },
-          },
-        },
-        detectRetina: true,
-      }}
-    />
+          detectRetina: true,
+        }}
+      />
+    </div>
   );
 };
 
