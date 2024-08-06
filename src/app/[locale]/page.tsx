@@ -11,6 +11,7 @@ export default function DashboardPage() {
       <section className="flex relative py-24">
         <div className="flex items-center space-x-4">
           <div>
+            <h1>DATA</h1>
             <p className="leading-loose">
               {t("Extension_Group_of")}
               <a

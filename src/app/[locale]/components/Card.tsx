@@ -14,7 +14,7 @@ const CardComponent: React.FC<CardComponentProps> = ({
   <div className="bg-background-secondary rounded-lg shadow-md overflow-hidden w-96 transform transition-transform duration-300 hover:scale-105">
     <img src={image} alt={title} className="w-full h-72 object-cover" />
     <div className="p-6">
-      <h2 className="text-primary font-inter text-xl mb-2 font-bold  text-center">{title}</h2>
+      <p className="text-primary font-inter text-xl mb-2 font-bold  text-center">{title}</p>
       <p className="text-text-secondary text-description text-center">{description}</p>
     </div>
   </div>

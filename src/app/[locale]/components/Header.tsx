@@ -1,4 +1,5 @@
 'use client'
+import { useState } from 'react'
 import { Link } from '../../../navigation'
 import { useTranslations } from 'next-intl'
 import { FC } from 'react'
@@ -13,10 +14,19 @@ interface Props {
 
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations('')
+  const [selectedPath, setSelectedPath] = useState('')
+
+  const handleLinkClick = (path: string) => {
+    setSelectedPath(path)
+  }
+
+  const getLinkClass = (path: string) => {
+    return selectedPath === path ? 'text-data-purple' : ''
+  }
 
   return (
     <div className='mx-auto flex max-w-screen-2xl items-center justify-between p-5'>
-      <Link lang={locale} href={`/`}>
+      <Link lang={locale} href={`/`} onClick={() => setSelectedPath('')}>
         <div className='flex flex-row items-center'>
           <div className='mb-2 h-14 w-14'>
             <LogoIcon />
@@ -24,18 +34,17 @@ export const Header: FC<Props> = ({ locale }) => {
         </div>
       </Link>
       <div className='mx-auto flex items-center gap-10 text-center font-bold'>
-        <Link lang={locale} href={`/pages/fronts`}>
+        <Link lang={locale} href={`/pages/fronts`} className={getLinkClass('/pages/fronts')} onClick={() => handleLinkClick('/pages/fronts')}>
           {t('Fronts')}
         </Link>
-        <Link lang={locale} href={`/pages/competitions`}>
+        <Link lang={locale} href={`/pages/competitions`} className={getLinkClass('/pages/competitions')} onClick={() => handleLinkClick('/pages/competitions')}>
           {t('Competitions')}
         </Link>
-        <Link lang={locale} href={`/pages/learn`}>
+        <Link lang={locale} href={`/pages/learn`} className={getLinkClass('/pages/learn')} onClick={() => handleLinkClick('/pages/learn')}>
           {t('Learn')}
         </Link>
-
-        <Link lang={locale} href={`/pages/contact`}>
-            {t('Contact')}
+        <Link lang={locale} href={`/pages/contact`} className={getLinkClass('/pages/contact')} onClick={() => handleLinkClick('/pages/contact')}>
+          {t('Contact')}
         </Link>
       </div>
       <div className='flex flex-row items-center gap-3'>
