@@ -1,12 +1,16 @@
-import { useTranslations } from 'next-intl'
+import React from 'react';
+import { useTranslations } from 'next-intl';
+import CardComponent from '../../components/Card';
 
 export default function Fronts() {
-  const t = useTranslations('')
+  const t = useTranslations();
+
   return (
-    <div className='px-32 py-24 text-center text-2xl'>
-      {t(
-        'text_test'
-      )}
+    <div>
+      <CardComponent 
+        title={t('Study_Groups')}
+        description={t('Study_Groups_Description')}
+      />
     </div>
-  )
+  );
 }

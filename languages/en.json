@@ -9,6 +9,10 @@
 
 	"HeroSection": "SECTION: These are the texts present in the HeroSection",
 		"Extension_Group_of": "Extension Group of",
-		"Small_Description-Data": "focused on Data Science and Machine Learning. Through classes, events, study groups and lectures, the entity's mission is to unite the industry, the academic world and interested people, so that everyone can create important connections for their lives and careers while they learn.",
-		"Learn_More": "Learn more"
+		"Small_Description-Data": "focused on Data Science and Machine Learning. Through classes, events, study groups and lectures, the entity's mission is to unite the industry, the academic world and interested people, so that everyone can create important connections for their life and career while learning.",
+		"Learn_More": "Learn more",
+
+	"FrontsSection": "SECTION: These are the texts present in the FrontsSection",
+		"Study_Groups": "Study Groups",
+		"Study_Groups_Description": "In study groups, students meet with the aim of delving deeper into a topic. At the end of their studies, members come together to present results and projects to the rest of the group."
 }
