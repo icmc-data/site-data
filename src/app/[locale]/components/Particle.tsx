@@ -12,6 +12,7 @@ type Engine = InitParameters[0];
 
 const Particle = () => {
   const { resolvedTheme } = useTheme();
+  const [particleColor, setParticleColor] = useState("#EC90C5");
   const [particleOpacity, setParticleOpacity] = useState(0.3);
 
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -22,15 +23,15 @@ const Particle = () => {
 
   const updateParticleSettings = useCallback(() => {
     const color = getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim();
-    const isDarkMode = resolvedTheme === 'dark';
-    setParticleOpacity(isDarkMode ? 0.1 : 0.3);
+    setParticleColor(color);
+    setParticleOpacity(resolvedTheme === 'dark' ? 0.1 : 0.3);
   }, [resolvedTheme]);
 
   useEffect(() => {
-    // initialize particle settings
+    // Inicializa as configurações de partículas
     updateParticleSettings();
 
-    // observe changes to the theme
+    // theme change listener
     const observer = new MutationObserver(updateParticleSettings);
 
     observer.observe(document.documentElement, {
@@ -67,10 +68,10 @@ const Particle = () => {
           },
           particles: {
             color: {
-              value: getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim(),
+              value: particleColor,
             },
             links: {
-              color: getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim(),
+              color: particleColor,
               distance: 150,
               enable: true,
               opacity: particleOpacity,
