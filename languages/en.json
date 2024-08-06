@@ -14,5 +14,20 @@
 
 	"FrontsSection": "SECTION: These are the texts present in the FrontsSection",
 		"Study_Groups": "Study Groups",
-		"Study_Groups_Description": "In study groups, students meet with the aim of delving deeper into a topic. At the end of their studies, members come together to present results and projects to the rest of the group."
+		"Study_Groups_Description": "In study groups, students meet with the aim of delving deeper into a topic. At the end of their studies, members come together to present results and projects to the rest of the group.",
+		
+		"Projects": "Projects",
+		"Projects_Description": "The project front aims to bring together groups to develop applications involving everything from obtaining data to development, training, in addition to visualizing results.",
+
+		"Events": "Events",
+		"Events_Description": "Organizes Data Science events such as DataDay. In addition, it represents the group at opportunity shows, Congresses and Summer Schools.",
+
+		"Marketing": "Marketing",
+		"Marketing_Description": "Marketing aims to promote the group, attract new people through the social networks where DATA is present.",
+
+		"Secretariat": "Secretariat",
+		"Secretariat_Description": "The Secretariat takes care of the group's relationship with USP, facilitating bureaucracy, organizing documents on Github and Drive. It also represents the group in General and Board Assemblies.",
+
+		"Teaching": "Teaching",
+		"Teaching_Description": "The Teaching department organizes courses with the aim of presenting the area of ​​Data Science, both as in-depth courses."
 }

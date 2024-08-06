@@ -61,7 +61,7 @@
     font-family: var(--font-inter);
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-brawler);
+    font-family: var(--font-inter);
   }
   p {
     @apply text-sm;
@@ -87,6 +87,9 @@
   }
   .float-animation {
     animation: float 10s ease-in-out infinite;
+  }
+  .text-description {
+    font-size: 13pt;
   }
 }
 .overflow-x-hidden {
