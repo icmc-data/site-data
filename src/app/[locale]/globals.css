@@ -64,7 +64,10 @@
     font-family: var(--font-brawler);
   }
   h1 {
-    font-size: 53pt;
+    font-size: 45pt;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: var(--primary);
   }
   p {
     @apply text-sm;

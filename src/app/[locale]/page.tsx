@@ -8,7 +8,7 @@ export default function DashboardPage() {
   const t = useTranslations("");
   return (
     <div>
-      <section className="flex relative py-24">
+      <section className="flex relative py-0">
         <div className="flex items-center space-x-4">
           <div>
             <h1>DATA</h1>
