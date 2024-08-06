@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Particles, { ParticlesProps } from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { useTheme } from "next-themes";
 
 type InitType = ParticlesProps["init"];
 type InitTypeNonNullable = NonNullable<InitType>;
@@ -10,8 +11,8 @@ type InitParameters = Parameters<InitTypeNonNullable>;
 type Engine = InitParameters[0];
 
 const Particle = () => {
-  const [particleColor, setParticleColor] = useState("#EC90C5"); // standard color
-  const [particleOpacity, setParticleOpacity] = useState(0.2); // standard opacity
+  const { resolvedTheme } = useTheme();
+  const [particleOpacity, setParticleOpacity] = useState(0.3);
 
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
@@ -19,35 +20,26 @@ const Particle = () => {
 
   const particlesLoaded = useCallback(async () => {}, []);
 
-  const updateParticleSettings = () => {
-    // gets the color from the CSS variable
+  const updateParticleSettings = useCallback(() => {
     const color = getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim();
-    setParticleColor(color);
-
-    // sets the opacity based on the color
-    if (color === "#EC90C5") {
-      setParticleOpacity(0.3); // set opacity to 30% if color matches
-    } else {
-      setParticleOpacity(0.1); // set opacity to 20% if color doesn't match
-    }
-  };
+    const isDarkMode = resolvedTheme === 'dark';
+    setParticleOpacity(isDarkMode ? 0.1 : 0.3);
+  }, [resolvedTheme]);
 
   useEffect(() => {
     // initialize particle settings
     updateParticleSettings();
 
-    // observe changes to the :root element's style attribute
-    const observer = new MutationObserver(() => {
-      updateParticleSettings();
-    });
+    // observe changes to the theme
+    const observer = new MutationObserver(updateParticleSettings);
 
     observer.observe(document.documentElement, {
       attributes: true,
-      attributeFilter: ["style"],
+      attributeFilter: ["class"],
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [updateParticleSettings]);
 
   return (
     <div className="no-horizontal-scroll">
@@ -75,13 +67,13 @@ const Particle = () => {
           },
           particles: {
             color: {
-              value: particleColor,
+              value: getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim(),
             },
             links: {
-              color: particleColor,
+              color: getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim(),
               distance: 150,
               enable: true,
-              opacity: particleOpacity, // set link opacity based on color
+              opacity: particleOpacity,
               width: 2,
             },
             collisions: {
@@ -105,7 +97,7 @@ const Particle = () => {
               value: 120, // reduce number of particles to avoid clumping
             },
             opacity: {
-              value: particleOpacity, // set particle opacity based on color
+              value: particleOpacity,
             },
             shape: {
               type: "circle",
