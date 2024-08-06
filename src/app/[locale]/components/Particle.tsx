@@ -24,7 +24,7 @@ const Particle = () => {
   const updateParticleSettings = useCallback(() => {
     const color = getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim();
     setParticleColor(color);
-    setParticleOpacity(resolvedTheme === 'dark' ? 0.1 : 0.3);
+    setParticleOpacity(resolvedTheme === 'dark' ? 0.2 : 0.5);
   }, [resolvedTheme]);
 
   useEffect(() => {
@@ -95,13 +95,13 @@ const Particle = () => {
                 enable: true,
                 area: 3000, // further increase density area for wider distribution
               },
-              value: 120, // reduce number of particles to avoid clumping
+              value: 150, // reduce number of particles to avoid clumping
             },
             opacity: {
               value: particleOpacity,
             },
             shape: {
-              type: "circle",
+              type: "triangle",
             },
             size: {
               value: { min: 1, max: 5 },

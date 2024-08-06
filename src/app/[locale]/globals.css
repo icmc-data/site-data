@@ -69,6 +69,13 @@
     text-transform: uppercase;
     color: var(--primary);
   }
+
+  h2 {
+    font-size: 20pt;
+    font-weight: 550;
+    color: var(--primary);
+    font-family: var(--font-inter)
+  }
   p {
     @apply text-sm;
     font-size: 13pt;

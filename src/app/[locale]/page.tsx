@@ -3,8 +3,17 @@ import Button from "./components/Button";
 import Link from "next/link";
 import LogoIcon from "../icons/logo";
 import LottieEye from "./components/LottieEye";
+import Sponsors from "./components/Sponsors"; // Certifique-se de importar o componente Sponsors
 
 export default function DashboardPage() {
+  const sponsorsData = [
+    { logoUrl: "/images/icmc-logo.png" },
+    { logoUrl: "/images/brains.png" },
+    { logoUrl: "/images/centerIA.png" },
+    
+    // adicione mais patrocinadores conforme necessário
+  ];
+  
   const t = useTranslations("");
   return (
     <div>
@@ -31,8 +40,13 @@ export default function DashboardPage() {
           </div>
         </div>
         <div className="-mt-30 ml-44 float-animation">
-        <LottieEye height={500} width={550}  />
+          <LottieEye height={500} width={550} />
         </div>
+      </section>
+
+      {/* Seção de patrocinadores */}
+      <section className="mt-10">
+        <Sponsors sponsors={sponsorsData} />
       </section>
     </div>
   );
