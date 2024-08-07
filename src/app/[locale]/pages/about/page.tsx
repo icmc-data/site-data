@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import OrganizingCommittee from "../../components/OrganizingCommittee";
+import people from "../../../../../data/people.json";
 
 export default function About() {
   const t = useTranslations("");
@@ -55,6 +57,8 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <OrganizingCommittee members={people}/>
     </div>
   );
 }
