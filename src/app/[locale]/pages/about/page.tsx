@@ -57,7 +57,7 @@ export default function About() {
           </div>
         </div>
       </section>
-
+      <br />
       <OrganizingCommittee members={people}/>
     </div>
   );

@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
 import Button from "./Button";
 import MemberCard from "./MemberCard";
+import { FaRegHandshake, FaBullhorn, FaCalendarAlt, FaUserTie, FaUsers, FaProjectDiagram, FaRegBuilding, FaChalkboardTeacher } from 'react-icons/fa';
 
 interface Member {
   name: string;
@@ -16,6 +17,18 @@ interface Member {
 interface OrganizingCommitteeProps {
   members: Member[];
 }
+
+const categoryIcons: { [key: string]: JSX.Element } = {
+  "All": <FaUsers />,
+  "Sponsorship": <FaRegHandshake />,
+  "Marketing": <FaBullhorn />,
+  "Events": <FaCalendarAlt />,
+  "Coordinators": <FaUserTie />,
+  "StudyGroup": <FaUsers />,
+  "Projects": <FaProjectDiagram />,
+  "Secretariat": <FaRegBuilding />,
+  "Teaching": <FaChalkboardTeacher />,
+};
 
 const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) => {
   const { resolvedTheme } = useTheme();
@@ -38,12 +51,15 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
           <Button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            variant={selectedCategory === category ? 'primary' : 'secondary'}
+            variant={selectedCategory === category ? 'dataPurple' : 'secondary'}
             size="medium"
             rounded
             className="mx-2 my-2"
           >
-            {t(category)}
+            <span className="flex items-center space-x-2">
+              {categoryIcons[category]}
+              <span>{t(category)}</span>
+            </span>
           </Button>
         ))}
       </div>

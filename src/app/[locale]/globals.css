@@ -74,7 +74,7 @@
     font-size: 20pt;
     font-weight: 550;
     color: var(--primary);
-    font-family: var(--font-inter)
+    font-family: var(--font-inter);
   }
   p {
     @apply text-sm;
@@ -88,6 +88,9 @@
   }
   .text-data-purple {
     color: var(--data-purple);
+  }
+  .bg-data-purple {
+    background-color: var(--data-purple);
   }
   .text-primary {
     color: var(--primary);
@@ -105,6 +108,7 @@
     font-size: 13pt;
   }
 }
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }

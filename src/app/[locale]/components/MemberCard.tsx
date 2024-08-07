@@ -27,32 +27,31 @@ const MemberCard: React.FC<Member> = ({ name, photo, description, categories }) 
   const t = useTranslations('MemberCard');
 
   return (
-    <div className="m-4 text-center">
-      <div className="flex justify-center">
-        <img src={photo} alt={name} className="w-32 h-32 rounded-full" />
-      </div>
-      <h3 className="text-center mt-2">{name}</h3>
-      <p className="text-center">{description}</p>
-      <div className="flex justify-center mt-2 space-x-2">
-        {categories.map((category, idx) => (
-          <Tooltip.Provider key={idx}>
-            <Tooltip.Root>
-              <Tooltip.Trigger asChild>
-                <div className="text-xl cursor-pointer">
+    <Tooltip.Provider>
+      <Tooltip.Root>
+        <Tooltip.Trigger asChild>
+          <div className="m-4 text-center cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-105">
+            <div className="flex justify-center">
+              <img src={photo} alt={name} className="w-32 h-32 rounded-full" />
+            </div>
+            <h3 className="text-center mt-2 text-primary ">{name}</h3>
+            <div className="flex justify-center mt-2 space-x-2">
+              {categories.map((category, idx) => (
+                <div key={idx} className="text-xl text-data-purple">
                   {categoryIcons[category]}
                 </div>
-              </Tooltip.Trigger>
-              <Tooltip.Portal>
-                <Tooltip.Content className="bg-gray-800 text-white text-sm p-2 rounded">
-                  {t(category)}
-                  <Tooltip.Arrow className="fill-gray-800" />
-                </Tooltip.Content>
-              </Tooltip.Portal>
-            </Tooltip.Root>
-          </Tooltip.Provider>
-        ))}
-      </div>
-    </div>
+              ))}
+            </div>
+          </div>
+        </Tooltip.Trigger>
+        <Tooltip.Portal>
+          <Tooltip.Content className="bg-background-secondary text-primary text-description p-2 rounded">
+            <p>{description}</p>
+            <Tooltip.Arrow className="fill-background-secondary" />
+          </Tooltip.Content>
+        </Tooltip.Portal>
+      </Tooltip.Root>
+    </Tooltip.Provider>
   );
 };
 
