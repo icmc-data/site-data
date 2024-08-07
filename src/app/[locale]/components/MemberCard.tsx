@@ -45,7 +45,7 @@ const MemberCard: React.FC<Member> = ({ name, photo, description, categories }) 
           </div>
         </Tooltip.Trigger>
         <Tooltip.Portal>
-          <Tooltip.Content className="bg-background-secondary text-primary text-description p-2 rounded">
+          <Tooltip.Content className="bg-background-secondary text-primary text-description p-4 rounded-lg shadow-lg relative tooltip-balloon z-50">
             <p>{description}</p>
             <Tooltip.Arrow className="fill-background-secondary" />
           </Tooltip.Content>

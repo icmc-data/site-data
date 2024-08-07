@@ -111,6 +111,20 @@
     font-family: var(--font-inter);
     font-size: 14pt;
   }
+  .tooltip-balloon {
+    position: relative;
+    z-index: 50; /* ensure the tooltip is above other elements */
+  }
+  .tooltip-balloon::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--background-secondary) transparent transparent transparent;
+  }
 }
 
 .overflow-x-hidden {
