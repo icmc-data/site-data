@@ -32,8 +32,8 @@ const Sponsors: React.FC<SponsorsProps> = ({ sponsors = [] }) => {
 
   return (
     <div>
-      <h2 className="text-center">{t("Our_Sponsors")}</h2>
-      <p className="text-center">{t("Sponsors_Description")}</p>
+      <h2 className="text-center">{t("InitialPage.Our_Sponsors")}</h2>
+      <p className="text-center">{t("InitialPage.Sponsors_Description")}</p>
       <br />
       <div className="flex flex-wrap justify-center">
         {sponsorImages.map((sponsor, index) => (

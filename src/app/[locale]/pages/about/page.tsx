@@ -15,44 +15,44 @@ export default function About() {
 
             <h2>{t("About")}</h2>
             <p className="leading-loose">
-              {t("About_Description_1")}
+              {t("AboutSection.About_Description_1")}
               <a
                 href="https://www.icmc.usp.br/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-link"
               >
-                {t("ICMC")}
+                {t("AboutSection.ICMC")}
               </a>
-              {t("About_Description_1_2")}
+              {t("AboutSection.About_Description_1_2")}
               <a
                 href="https://www.usp.br/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-link"
               >
-                {t("USP")}
+                {t("AboutSection.USP")}
               </a>
-              {t("About_Description_1_3")}
+              {t("AboutSection.About_Description_1_3")}
             </p>
             <br />
             <p className="leading-loose">
-              {t("About_Description_2")}
+              {t("AboutSection.About_Description_2")}
             </p>
             <br />
             <h2>{t("Mission")}</h2>
             <p className="leading-loose">
-              {t("Mission_Description")}
+              {t("AboutSection.Mission_Description")}
             </p>
             <br />
-            <h2>{t("Impact_And_Relevance")}</h2>
+            <h2>{t("AboutSection.Impact_And_Relevance")}</h2>
             <p className="leading-loose">
-              {t("Impact_And_Relevance_Description")}
+              {t("AboutSection.Impact_And_Relevance_Description")}
             </p>
             <br />
-            <h2>{t("Project_Organization")}</h2>
+            <h2>{t("AboutSection.Project_Organization")}</h2>
             <p className="leading-loose">
-              {t("Project_Organization_Description")}
+              {t("AboutSection.Project_Organization_Description")}
             </p>
           </div>
         </div>

@@ -8,47 +8,47 @@ export default function Fronts() {
   const cardsData = [
     {
       image: "https://via.placeholder.com/250x300",
-      title: t('Study_Groups'),
-      description: t('Study_Groups_Description'),
+      title: t('FrontsSection.Study_Groups'),
+      description: t('FrontsSection.Study_Groups_Description'),
     },
     {
       image: "https://via.placeholder.com/250x300",
-      title: t('Projects'),
-      description: t('Projects_Description'),
+      title: t('FrontsSection.Projects'),
+      description: t('FrontsSection.Projects_Description'),
     },
     {
       image: "https://via.placeholder.com/250x300",
-      title: t('Events'),
-      description: t('Events_Description'),
+      title: t('FrontsSection.Events'),
+      description: t('FrontsSection.Events_Description'),
     },
     {
       image: "https://via.placeholder.com/250x300",
-      title: t('Marketing'),
-      description: t('Marketing_Description'),
+      title: t('FrontsSection.Marketing'),
+      description: t('FrontsSection.Marketing_Description'),
     },
     {
       image: "https://via.placeholder.com/250x300",
-      title: t('Secretariat'),
-      description: t('Secretariat_Description'),
+      title: t('FrontsSection.Secretariat'),
+      description: t('FrontsSection.Secretariat_Description'),
     },
     {
       image: "https://via.placeholder.com/250x300",
-      title: t('Teaching'),
-      description: t('Teaching_Description'),
+      title: t('FrontsSection.Teaching'),
+      description: t('FrontsSection.Teaching_Description'),
     },
   ];
 
   return (
     <div className="flex flex-col items-center min-h-screen py-10">
       <div >
-        <h1>{t("Fronts")}</h1>
+        <h1>{t("Header.Fronts")}</h1>
         <br />
         <p className="leading-loose">
-          {t("Fronts_Description")}
+          {t("FrontsSection.Fronts_Description")}
         </p>
         <br />
         <p className="leading-loose">
-          {t("Fronts_Description_2")}
+          {t("FrontsSection.Fronts_Description_2")}
         </p>
         <br />
       </div>

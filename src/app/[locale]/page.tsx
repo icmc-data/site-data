@@ -1,9 +1,8 @@
 import { useTranslations } from "next-intl";
 import Button from "./components/Button";
-import Link from "next/link";
 import LogoIcon from "../icons/logo";
 import LottieEye from "./components/LottieEye";
-import Sponsors from "./components/Sponsors"; // Certifique-se de importar o componente Sponsors
+import Sponsors from "./components/Sponsors"; 
 
 export default function DashboardPage() {
   const sponsorsData = [
@@ -22,7 +21,7 @@ export default function DashboardPage() {
           <div>
             <h1>DATA</h1>
             <p className="leading-loose">
-              {t("Extension_Group_of")}
+              {t("HeroSection.Extension_Group_of")}
               <a
                 href="https://www.icmc.usp.br/"
                 target="_blank"
@@ -31,11 +30,11 @@ export default function DashboardPage() {
               >
                 &nbsp; ICMC-USP &nbsp;
               </a>
-              {t("Small_Description-Data")}
+              {t("HeroSection.Small_Description-Data")}
             </p>
             <br />
             <Button variant="secondary" size="medium" styleType="outline" pageLink="/pages/about">
-              {t("Learn_More")}
+              {t("HeroSection.Learn_More")}
             </Button>
           </div>
         </div>

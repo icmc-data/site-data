@@ -35,16 +35,16 @@ export const Header: FC<Props> = ({ locale }) => {
       </Link>
       <div className='mx-auto flex items-center gap-10 text-center font-bold'>
         <Link lang={locale} href={`/pages/fronts`} className={getLinkClass('/pages/fronts')} onClick={() => handleLinkClick('/pages/fronts')}>
-          {t('Fronts')}
+          {t('Header.Fronts')}
         </Link>
         <Link lang={locale} href={`/pages/competitions`} className={getLinkClass('/pages/competitions')} onClick={() => handleLinkClick('/pages/competitions')}>
-          {t('Competitions')}
+          {t('Header.Competitions')}
         </Link>
         <Link lang={locale} href={`/pages/learn`} className={getLinkClass('/pages/learn')} onClick={() => handleLinkClick('/pages/learn')}>
-          {t('Learn')}
+          {t('Header.Learn')}
         </Link>
         <Link lang={locale} href={`/pages/contact`} className={getLinkClass('/pages/contact')} onClick={() => handleLinkClick('/pages/contact')}>
-          {t('Contact')}
+          {t('Header.Contact')}
         </Link>
       </div>
       <div className='flex flex-row items-center gap-3'>

@@ -5,7 +5,7 @@ export default function Competitions() {
   return (
     <div className='px-32 py-24 text-center text-2xl'>
       {t(
-        'text_test'
+        'Header.text_test'
       )}
     </div>
   )
