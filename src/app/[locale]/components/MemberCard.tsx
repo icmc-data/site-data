@@ -3,6 +3,7 @@
 import React from "react";
 import { FaRegHandshake, FaBullhorn, FaCalendarAlt, FaUserTie, FaUsers, FaProjectDiagram, FaRegBuilding, FaChalkboardTeacher } from 'react-icons/fa';
 import * as Tooltip from '@radix-ui/react-tooltip';
+import { useTranslations } from 'next-intl';
 
 interface Member {
   name: string;
@@ -12,17 +13,19 @@ interface Member {
 }
 
 const categoryIcons: { [key: string]: JSX.Element } = {
-  "Patrocinio": <FaRegHandshake />,
+  "Sponsorship": <FaRegHandshake />,
   "Marketing": <FaBullhorn />,
-  "Eventos": <FaCalendarAlt />,
-  "Coordenadores": <FaUserTie />,
-  "GrupoEstudos": <FaUsers />,
-  "Projetos": <FaProjectDiagram />,
-  "Secretaria": <FaRegBuilding />,
-  "Ensino": <FaChalkboardTeacher />,
+  "Events": <FaCalendarAlt />,
+  "Coordinators": <FaUserTie />,
+  "StudyGroup": <FaUsers />,
+  "Projects": <FaProjectDiagram />,
+  "Secretariat": <FaRegBuilding />,
+  "Teaching": <FaChalkboardTeacher />,
 };
 
 const MemberCard: React.FC<Member> = ({ name, photo, description, categories }) => {
+  const t = useTranslations('MemberCard');
+
   return (
     <div className="m-4 text-center">
       <div className="flex justify-center">
@@ -41,7 +44,7 @@ const MemberCard: React.FC<Member> = ({ name, photo, description, categories }) 
               </Tooltip.Trigger>
               <Tooltip.Portal>
                 <Tooltip.Content className="bg-gray-800 text-white text-sm p-2 rounded">
-                  {category}
+                  {t(category)}
                   <Tooltip.Arrow className="fill-gray-800" />
                 </Tooltip.Content>
               </Tooltip.Portal>

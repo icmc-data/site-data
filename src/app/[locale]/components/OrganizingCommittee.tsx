@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
-import Button from "./Button"; // ajuste o caminho conforme necessário
-import MemberCard from "./MemberCard"; // ajuste o caminho conforme necessário
+import Button from "./Button";
+import MemberCard from "./MemberCard";
 
 interface Member {
   name: string;
@@ -19,12 +19,12 @@ interface OrganizingCommitteeProps {
 
 const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) => {
   const { resolvedTheme } = useTheme();
-  const t = useTranslations('');
-  const [selectedCategory, setSelectedCategory] = useState<string>('Todos');
-  const categories = ["Todos", "Patrocinio", "Marketing", "Eventos", "Coordenadores", "GrupoEstudos", "Projetos", "Secretaria", "Ensino"];
+  const t = useTranslations('OrganizingCommittee');
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const categories = ["All", "Sponsorship", "Marketing", "Events", "Coordinators", "StudyGroup", "Projects", "Secretariat", "Teaching"];
 
   const filterMembers = (category: string) => {
-    return category === 'Todos'
+    return category === 'All'
       ? members
       : members.filter(member => member.categories.includes(category));
   };
@@ -43,7 +43,7 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
             rounded
             className="mx-2 my-2"
           >
-            {category}
+            {t(category)}
           </Button>
         ))}
       </div>
