@@ -34,7 +34,7 @@ const MemberCard: React.FC<Member> = ({ name, photo, description, categories }) 
             <div className="flex justify-center">
               <img src={photo} alt={name} className="w-32 h-32 rounded-full" />
             </div>
-            <h3 className="text-center mt-2 text-primary ">{name}</h3>
+            <h3 className="text-center mt-2 text-primary font-inter">{name}</h3>
             <div className="flex justify-center mt-2 space-x-2">
               {categories.map((category, idx) => (
                 <div key={idx} className="text-xl text-data-purple">

@@ -13,7 +13,7 @@ export default function About() {
             <br />
             <br />
 
-            <h2>{t("About")}</h2>
+            <h2>{t("Header.About")}</h2>
             <p className="leading-loose">
               {t("AboutSection.About_Description_1")}
               <a
@@ -40,7 +40,7 @@ export default function About() {
               {t("AboutSection.About_Description_2")}
             </p>
             <br />
-            <h2>{t("Mission")}</h2>
+            <h2>{t("AboutSection.Mission")}</h2>
             <p className="leading-loose">
               {t("AboutSection.Mission_Description")}
             </p>

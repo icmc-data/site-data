@@ -107,6 +107,10 @@
   .text-description {
     font-size: 13pt;
   }
+  .font-inter {
+    font-family: var(--font-inter);
+    font-size: 14pt;
+  }
 }
 
 .overflow-x-hidden {

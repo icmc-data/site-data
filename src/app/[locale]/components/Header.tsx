@@ -43,6 +43,9 @@ export const Header: FC<Props> = ({ locale }) => {
         <Link lang={locale} href={`/pages/learn`} className={getLinkClass('/pages/learn')} onClick={() => handleLinkClick('/pages/learn')}>
           {t('Header.Learn')}
         </Link>
+        <Link lang={locale} href={`/pages/projects`} className={getLinkClass('/pages/projects')} onClick={() => handleLinkClick('/pages/learn')}>
+          {t('Header.Projects')}
+        </Link>
         <Link lang={locale} href={`/pages/contact`} className={getLinkClass('/pages/contact')} onClick={() => handleLinkClick('/pages/contact')}>
           {t('Header.Contact')}
         </Link>
