@@ -72,7 +72,6 @@ export default function RootLayout({
             <main className="mx-auto max-w-screen-2xl relative z-10">
               {children}
             </main>{" "}
-            {/* Certifique-se de que o conteúdo principal está acima do Particle */}
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

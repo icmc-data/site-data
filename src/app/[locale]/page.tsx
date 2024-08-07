@@ -34,7 +34,7 @@ export default function DashboardPage() {
               {t("Small_Description-Data")}
             </p>
             <br />
-            <Button variant="secondary" size="medium" styleType="outline">
+            <Button variant="secondary" size="medium" styleType="outline" pageLink="/pages/about">
               {t("Learn_More")}
             </Button>
           </div>

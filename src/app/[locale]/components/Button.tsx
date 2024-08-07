@@ -1,4 +1,6 @@
+'use client'
 import React from 'react';
+import { Link } from '../../../navigation'; 
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
@@ -6,6 +8,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'small' | 'medium' | 'large';
   rounded?: boolean;
   styleType?: 'default' | 'outline';
+  pageLink?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -15,6 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   rounded = false,
   styleType = 'default',
   className,
+  pageLink,
   ...props
 }) => {
   const sizeStyles = {
@@ -33,6 +37,16 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`;
+
+  if (pageLink) {
+    return (
+      <Link href={pageLink}>
+        <button className={`${buttonStyles} hover:scale-110`} style={{ padding: '10px' }} {...props}>
+          {children}
+        </button>
+      </Link>
+    );
+  }
 
   return (
     <button className={`${buttonStyles} hover:scale-110`} style={{ padding: '10px' }} {...props}>
