@@ -30,12 +30,12 @@ const MemberCard: React.FC<Member> = ({ name, photo, description, categories }) 
     <Tooltip.Provider>
       <Tooltip.Root>
         <Tooltip.Trigger asChild>
-          <div className="m-4 text-center cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-105">
-            <div className="flex justify-center">
+          <div className="m-8 text-center cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-105">
+            <div className="flex justify-center mb-4">
               <img src={photo} alt={name} className="w-32 h-32 rounded-full" />
             </div>
-            <h3 className="text-center mt-2 text-primary font-inter">{name}</h3>
-            <div className="flex justify-center mt-2 space-x-2">
+            <h3 className="text-center mt-4 text-primary font-inter">{name}</h3>
+            <div className="flex justify-center mt-4 space-x-4">
               {categories.map((category, idx) => (
                 <div key={idx} className="text-xl text-data-purple">
                   {categoryIcons[category]}
@@ -45,7 +45,7 @@ const MemberCard: React.FC<Member> = ({ name, photo, description, categories }) 
           </div>
         </Tooltip.Trigger>
         <Tooltip.Portal>
-          <Tooltip.Content className="bg-background-secondary text-primary text-description p-4 rounded-lg shadow-lg relative tooltip-balloon z-50">
+          <Tooltip.Content className="bg-background-secondary text-primary text-description p-4 rounded-lg shadow-lg relative tooltip-balloon z-50 max-w-80">
             <p>{description}</p>
             <Tooltip.Arrow className="fill-background-secondary" />
           </Tooltip.Content>

@@ -39,10 +39,18 @@ const Button: React.FC<ButtonProps> = ({
 
   const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`;
 
+  const inlineStyles = {
+    paddingLeft: '17px',
+    paddingRight: '17px',
+    paddingTop: '10px',
+    paddingBottom: '10px',
+
+  };
+
   if (pageLink) {
     return (
       <Link href={pageLink}>
-        <button className={`${buttonStyles} hover:scale-110`} style={{ padding: '10px' }} {...props}>
+        <button className={`${buttonStyles} hover:scale-110`} style={inlineStyles} {...props}>
           {children}
         </button>
       </Link>
@@ -50,7 +58,7 @@ const Button: React.FC<ButtonProps> = ({
   }
 
   return (
-    <button className={`${buttonStyles} hover:scale-110`} style={{ padding: '10px' }} {...props}>
+    <button className={`${buttonStyles} hover:scale-110`} style={inlineStyles} {...props}>
       {children}
     </button>
   );
