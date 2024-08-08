@@ -2,21 +2,32 @@
 
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { useTranslations } from 'next-intl';
 
-interface Sponsor {
-  logoUrl: string;
+interface PhotoProps {
+  imgSrc: string;
+  description?: string;
 }
 
-interface PhotoInterface {
-}
+const Photo: React.FC<PhotoProps> = ({ imgSrc, description }) => {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
-const Photo: React.FC<PhotoInterface> = () => {
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
+  if (!mounted) return null;
+
+  const defaultDescription = "Default description";
 
   return (
-    <div>
-
+    <div className="wrapper">
+      <div className="item">
+        <div className="polaroid">
+          <img src={imgSrc} alt={description || defaultDescription} />
+          <div className="caption">{description || defaultDescription}</div>
+        </div>
+      </div>
     </div>
   );
 };
