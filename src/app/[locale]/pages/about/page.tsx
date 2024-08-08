@@ -13,7 +13,7 @@ export default function About() {
             <h1>DATA</h1>
             <br />
             <br />
-            <Photo imgSrc="https://image.ibb.co/b8UJBc/administration_architecture_big_ben_221166.jpg" description="I Miss London" />
+            <Photo imgSrc="/images/estudos.jpeg" description="I Miss London" />
             <h2>{t("Header.About")}</h2>
             <p className="leading-loose">
               {t("AboutSection.About_Description_1")}
