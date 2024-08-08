@@ -23,6 +23,8 @@
 
     --font-inter: 'Inter', sans-serif;
     --font-brawler: 'Brawler', serif;
+
+    --polaroid-shadow: black;
   }
 
   .dark {
@@ -42,6 +44,9 @@
     --data-blue: #9BD7F6;
     --data-pink: #F9A1D3;
     --data-purple: #C479CE;
+
+    --polaroid-shadow: #C479CE;
+
   }
 
   body {
@@ -138,9 +143,9 @@
   }
 
   .polaroid {
-    background: var(--background);
+    background: var(--background-secondary);
     padding: 1rem;
-    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.11);
   }
 
   .polaroid > img {
@@ -178,7 +183,7 @@
     width: 47%;
     bottom: 30px;
     right: 12px;
-    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.11);
   }
 
   .item:nth-of-type(4n+2) {
@@ -192,7 +197,7 @@
     width: 47%;
     bottom: 30px;
     left: 12px;
-    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.11);
   }
 
   .item:nth-of-type(4n+4) {
@@ -206,7 +211,7 @@
     width: 47%;
     bottom: 30px;
     right: 12px;
-    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.11);
   }
 
   .item:nth-of-type(4n+3) {
@@ -220,7 +225,7 @@
     width: 47%;
     bottom: 30px;
     left: 12px;
-    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.089);
   }
 
   .item:hover {
@@ -238,7 +243,7 @@
     width: 90%;
     bottom: 0%;
     right: 5%;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.034);
     transition: all 0.35s;
   }
 }
