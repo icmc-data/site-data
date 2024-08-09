@@ -144,7 +144,7 @@
 
   .polaroid {
     background: var(--background-secondary);
-    padding: 1rem;
+    
     box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.11);
   }
 
@@ -230,10 +230,9 @@
 
   .item:hover {
     filter: none;
-    transform: scale(1, 1) rotate(0deg) !important;
+    transform: scale(0.7, 0.7) rotate(0deg) !important;
     transition: all 0.35s;
   }
-
   .item:hover .polaroid:before {
     content: '';
     position: absolute;
@@ -246,4 +245,5 @@
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.034);
     transition: all 0.35s;
   }
+
 }

@@ -6,15 +6,15 @@ import { useTheme } from "next-themes";
 interface PhotoProps {
   imgSrc: string;
   description?: string;
-  size?: number;  // Prop para controlar o tamanho
-  rotation?: number; // Prop para controlar a rotação
+  size?: number;  // prop para controlar o tamanho
+  rotation?: number; // prop para controlar a rotação
 }
 
 const Photo: React.FC<PhotoProps> = ({
   imgSrc,
   description,
-  size = 1,  // Tamanho padrão
-  rotation = 0,  // Rotação padrão
+  size = 1, 
+  rotation = 0,  
 }) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
