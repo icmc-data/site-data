@@ -44,10 +44,10 @@ export default function About() {
       <section>
         <div className="flex flex-row items-center justify-center space-x-4">
           <div>
-            <h2>{t("Mission")}</h2>
+            <h2>{t("MissionT")}</h2>
 
             <p className="leading-loose">
-              {t("AboutSection.Mission_Description")}
+              {t("AboutSection.MissionT_Description")}
             </p>
           </div>
           <Photo

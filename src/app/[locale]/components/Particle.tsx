@@ -28,7 +28,6 @@ const Particle = () => {
   }, [resolvedTheme]);
 
   useEffect(() => {
-    // Inicializa as configurações de partículas
     updateParticleSettings();
 
     // theme change listener
@@ -43,74 +42,71 @@ const Particle = () => {
   }, [updateParticleSettings]);
 
   return (
-    <div className="no-horizontal-scroll">
-      <Particles
-        className="h-screen w-screen"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          fullScreen: { enable: false },
-          fpsLimit: 120,
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: "repulse",
-              },
-              resize: true,
+    <Particles
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        fullScreen: { enable: true }, // particles will cover the entire screen
+        fpsLimit: 120,
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "repulse",
             },
-            modes: {
-              repulse: {
-                distance: 50, // decrease repulsion distance
-                duration: 0.2, // decrease repulsion duration
-              },
+            resize: true,
+          },
+          modes: {
+            repulse: {
+              distance: 50,
+              duration: 0.2,
             },
           },
-          particles: {
-            color: {
-              value: particleColor,
+        },
+        particles: {
+          color: {
+            value: particleColor,
+          },
+          links: {
+            color: particleColor,
+            distance: 150,
+            enable: true,
+            opacity: particleOpacity,
+            width: 2,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            enable: true,
+            direction: "top-right",
+            outModes: {
+              default: "bounce",
             },
-            links: {
-              color: particleColor,
-              distance: 150,
+            random: true,
+            straight: false,
+            speed: 0.3,
+          },
+          number: {
+            value: 200, // fixed number of particles
+            density: {
               enable: true,
-              opacity: particleOpacity,
-              width: 2,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              enable: true,
-              direction: "top-right",
-              outModes: {
-                default: "bounce",
-              },
-              random: true,
-              straight: false,
-              speed: 0.3, // decrease particle speed
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 3000, // further increase density area for wider distribution
-              },
-              value: 150, // reduce number of particles to avoid clumping
-            },
-            opacity: {
-              value: particleOpacity,
-            },
-            shape: {
-              type: "triangle",
-            },
-            size: {
-              value: { min: 1, max: 5 },
+              area: 3000,
             },
           },
-          detectRetina: true,
-        }}
-      />
-    </div>
+          opacity: {
+            value: particleOpacity,
+          },
+          shape: {
+            type: "triangle",
+          },
+          size: {
+            value: { min: 1, max: 5 },
+          },
+        },
+        detectRetina: true,
+      }}
+    />
   );
 };
 
