@@ -24,7 +24,7 @@ const Particle = () => {
   const updateParticleSettings = useCallback(() => {
     const color = getComputedStyle(document.documentElement).getPropertyValue("--data-pink").trim();
     setParticleColor(color);
-    setParticleOpacity(resolvedTheme === 'dark' ? 0.2 : 0.5);
+    setParticleOpacity(resolvedTheme === 'dark' ? 0.1 : 0.5);
   }, [resolvedTheme]);
 
   useEffect(() => {
