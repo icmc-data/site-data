@@ -1,64 +1,73 @@
 "use client";
 import { useTranslations } from 'next-intl';
 import PostList from '../../components/PostList';
+import MarkdownRenderer from '../../components/MarkdownRenderer'; 
 import { useEffect, useState } from 'react';
 
 export default function Learn() {
   const t = useTranslations('');
-  const locale = t('DONT_DELETE'); // Obtém o valor da variável DONT_DELETE
+  const locale = t('DONT_DELETE'); // gets the value of the DONT_DELETE variable
   const [markdownFiles, setMarkdownFiles] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedPost, setSelectedPost] = useState<string | null>(null); // stores the selected post
 
   useEffect(() => {
     const loadMarkdownFiles = async () => {
-      setLoading(true); // Inicia o carregamento
+      setLoading(true); // starts loading
       let fileNumber = 1;
       const contents = [];
-      const folder = locale; // Usar diretamente o valor de DONT_DELETE para a pasta
+      const folder = locale; // uses the DONT_DELETE value directly for the folder
 
-      console.log(`Carregando posts da pasta: ${folder}`); // Verificar se o valor da pasta está correto
+      console.log(`Loading posts from folder: ${folder}`); // check if the folder value is correct
 
       while (true) {
         const file = `/learnPosts/${folder}/${fileNumber}.md`;
-        console.log(`Tentando carregar: ${file}`); // Log do arquivo que está tentando carregar
+        console.log(`Trying to load: ${file}`); // log the file it is trying to load
 
         try {
           const response = await fetch(file);
           if (!response.ok) {
-            console.log(`Arquivo não encontrado: ${file}`); // Log quando o arquivo não é encontrado
-            break; // Para o loop se o arquivo não existir
+            console.log(`File not found: ${file}`); // log when the file is not found
+            break; // stops the loop if the file does not exist
           }
           const content = await response.text();
           contents.push(content);
           fileNumber++;
         } catch (error) {
-          console.log(`Erro ao carregar o arquivo: ${file}`, error); // Log do erro, se ocorrer
-          break; // Sai do loop em caso de erro
+          console.log(`Error loading file: ${file}`, error); // log the error, if it occurs
+          break; // exits the loop in case of an error
         }
       }
 
-      console.log('Posts carregados:', contents); // Log dos posts carregados
+      console.log('Loaded posts:', contents); // log the loaded posts
 
-      // Inverte a ordem para que o mais recente seja exibido primeiro
+      // reverses the order so that the most recent one is displayed first
       setMarkdownFiles(contents.reverse());
-      setLoading(false); // Finaliza o carregamento
+      setLoading(false); // finishes loading
     };
 
     loadMarkdownFiles();
-  }, [locale]); // Recarrega os posts se o valor de DONT_DELETE mudar
+  }, [locale]); // reloads the posts if the DONT_DELETE value changes
+
+  const handlePostClick = (content: string) => {
+    setSelectedPost(content); // sets the selected post content
+  };
 
   return (
-    <div className='px-32 py-24 text-center text-2xl'>
+    <div className='px-32 py-24 text-2xl'>
       {loading ? (
-        <div>{t('Loading_Content')}</div>
+        <div>{t('LearnSection.Loading_Content')}</div>
+      ) : selectedPost ? (
+        // if a post is selected, display its content
+        <MarkdownRenderer content={selectedPost} />
       ) : markdownFiles.length > 0 ? (
         <>
-          <PostList markdownFiles={markdownFiles} />
+          <PostList markdownFiles={markdownFiles} onPostClick={handlePostClick} />
           <div className="mt-10 text-left">
           </div>
         </>
       ) : (
-        <div>{t('No_Posts')}</div>
+        <div>{t('LearnSection.No_Posts')}</div>
       )}
     </div>
   );

@@ -6,20 +6,23 @@ type Post = {
   photo: string;
   description: string;
   tags: string[];
+  content: string; // adicionei o conteúdo do post para ser acessado ao clicar
 };
 
 type PostListProps = {
-  markdownFiles: string[]; // Lista de arquivos markdown
+  markdownFiles: string[]; // lista de arquivos markdown
+  onPostClick: (content: string) => void; // função callback para quando um post for clicado
 };
 
-const PostList: React.FC<PostListProps> = ({ markdownFiles }) => {
+const PostList: React.FC<PostListProps> = ({ markdownFiles, onPostClick }) => {
   const posts = markdownFiles.map((fileContent) => {
-    const { data } = matter(fileContent);
+    const { data, content } = matter(fileContent);
     return {
       name: data.name,
       photo: data.photo,
       description: data.description,
       tags: data.tags,
+      content, // inclua o conteúdo do markdown
     } as Post;
   });
 
@@ -29,6 +32,7 @@ const PostList: React.FC<PostListProps> = ({ markdownFiles }) => {
         <div 
           key={index} 
           className="bg-background-secondary dark:bg-background-secondary shadow-md rounded-lg overflow-hidden"
+          onClick={() => onPostClick(post.content)} // chama a função callback ao clicar no post
         >
           <img
             src={post.photo}

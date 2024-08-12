@@ -11,7 +11,7 @@ const MarkdownRenderer: FC<MarkdownRendererProps> = ({ content }) => {
 
   return (
     <div
-      className="prose prose-lg max-w-none"
+      className="prose prose-lg prose-primary dark:prose-dark max-w-none mx-auto p-4 bg-background-secondary rounded-md shadow-lg"
       dangerouslySetInnerHTML={{ __html: htmlContent }}
     />
   );
