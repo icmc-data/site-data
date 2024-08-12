@@ -55,7 +55,8 @@
 		"Posts_Loaded": "Posts carregados",
 		"Back_Button": "Todos os Posts",
 		"Related_Posts": "Posts Relacionados",
-		"No_Related_Posts": "Nenhum post relacionado ainda."
+		"No_Related_Posts": "Nenhum post relacionado ainda.",
+		"Back_To_Previous_Post": "Voltar ao Post Anterior"
 	},
 	"MemberCard": {
 		"Sponsorship": "Patrocínio",

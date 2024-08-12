@@ -55,7 +55,8 @@
 		"Posts_Loaded": "Posts loaded",
 		"Back_Button": "All Posts",
 		"Related_Posts": "Related Posts",
-		"No_Related_Posts": "No related posts yet."
+		"No_Related_Posts": "No related posts yet.",
+		"Back_To_Previous_Post": "Back to Previous Post"
 	},
 	"MemberCard": {
 		"Sponsorship": "Sponsorship",

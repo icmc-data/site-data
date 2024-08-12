@@ -12,6 +12,7 @@ export default function Learn() {
   const [markdownFiles, setMarkdownFiles] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedPost, setSelectedPost] = useState<{ content: string, tags: string[] } | null>(null); // stores the selected post with tags
+  const [postHistory, setPostHistory] = useState<{ content: string, tags: string[] }[]>([]); // stores the history of posts
 
   useEffect(() => {
     const loadMarkdownFiles = async () => {
@@ -52,11 +53,20 @@ export default function Learn() {
   }, [locale]); // reloads the posts if the DONT_DELETE value changes
 
   const handlePostClick = (content: string, tags: string[]) => {
+    if (selectedPost) {
+      setPostHistory([...postHistory, selectedPost]); // Adiciona o post atual ao histórico antes de mudar
+    }
     setSelectedPost({ content, tags }); // sets the selected post content and tags
   };
 
   const handleBackClick = () => {
-    setSelectedPost(null); // resets selectedPost to null to show the list of posts
+    if (postHistory.length > 0) {
+      const lastPost = postHistory[postHistory.length - 1];
+      setSelectedPost(lastPost); // Volta ao último post no histórico
+      setPostHistory(postHistory.slice(0, -1)); // Remove o último post do histórico
+    } else {
+      setSelectedPost(null); // resets selectedPost to null to show the list of posts
+    }
   };
 
   const getRelatedPosts = () => {
@@ -85,7 +95,7 @@ export default function Learn() {
             iconName="FaArrowLeft" // Nome do ícone
             onClick={handleBackClick}
           >
-            {t('LearnSection.Back_Button')}
+            {postHistory.length > 0 ? t('LearnSection.Back_To_Previous_Post') : t('LearnSection.Back_Button')}
           </Button>
           <MarkdownRenderer content={selectedPost.content} />
           <div className="mt-10">
