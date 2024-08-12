@@ -235,6 +235,23 @@
     transition: all 0.35s;
   }
 
+  /* Adicionando efeito de hover para PostList */
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .transition-transform {
+    transition: transform 0.3s ease;
+  }
+
+  .transform {
+    transform: scale(1);
+  }
+
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+
   /* Adicionando estilo para Markdown */
   .prose-primary h1, .prose-primary h2, .prose-primary h3, .prose-primary h4 {
     color: var(--primary);
@@ -327,7 +344,7 @@
 
   .dark .prose-dark strong {
     color: var(--primary);
-    font-weight: bold;
+    font-weight: bold.
   }
 
   .dark .prose-dark ul, .dark .prose-dark ol {

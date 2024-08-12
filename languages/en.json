@@ -57,7 +57,9 @@
 	"LearnSection": {
 		"Loading_Content": "Loading content...",
 		"No_Posts": "No posts have been made yet.",
-		"Posts_Loaded": "Posts loaded"
+		"Posts_Loaded": "Posts loaded",
+		"Back_Button": "All Posts"
+
 	},
 	
 	"MemberCard": {

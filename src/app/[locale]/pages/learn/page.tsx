@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import PostList from '../../components/PostList';
 import MarkdownRenderer from '../../components/MarkdownRenderer'; 
 import { useEffect, useState } from 'react';
+import Button from '../../components/Button'; // Importa o componente Button
 
 export default function Learn() {
   const t = useTranslations('');
@@ -53,13 +54,29 @@ export default function Learn() {
     setSelectedPost(content); // sets the selected post content
   };
 
+  const handleBackClick = () => {
+    setSelectedPost(null); // resets selectedPost to null to show the list of posts
+  };
+
   return (
     <div className='px-32 py-24 text-2xl'>
       {loading ? (
         <div>{t('LearnSection.Loading_Content')}</div>
       ) : selectedPost ? (
-        // if a post is selected, display its content
-        <MarkdownRenderer content={selectedPost} />
+        <div>
+          <Button
+            variant="secondary"
+            size="medium"
+            rounded={false}
+            iconName="FaArrowLeft" 
+            onClick={handleBackClick}
+          >
+            {t('LearnSection.Back_Button')}
+          </Button>
+          <br />
+
+          <MarkdownRenderer content={selectedPost} />
+        </div>
       ) : markdownFiles.length > 0 ? (
         <>
           <PostList markdownFiles={markdownFiles} onPostClick={handlePostClick} />

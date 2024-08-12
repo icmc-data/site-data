@@ -31,7 +31,7 @@ const PostList: React.FC<PostListProps> = ({ markdownFiles, onPostClick }) => {
       {posts.map((post, index) => (
         <div 
           key={index} 
-          className="bg-background-secondary dark:bg-background-secondary shadow-md rounded-lg overflow-hidden"
+          className="bg-background-secondary dark:bg-background-secondary shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 cursor-pointer"
           onClick={() => onPostClick(post.content)} // chama a função callback ao clicar no post
         >
           <img

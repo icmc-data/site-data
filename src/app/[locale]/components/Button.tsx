@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
-import { Link } from '../../../navigation'; 
+import { Link } from '../../../navigation';
+import * as Icons from 'react-icons/fa'; // Importa todos os ícones do FontAwesome
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
@@ -9,6 +10,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   rounded?: boolean;
   styleType?: 'default' | 'outline';
   pageLink?: string;
+  iconName?: keyof typeof Icons; // O nome do ícone opcional
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -19,6 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   styleType = 'default',
   className,
   pageLink,
+  iconName,
   ...props
 }) => {
   const sizeStyles = {
@@ -44,13 +47,15 @@ const Button: React.FC<ButtonProps> = ({
     paddingRight: '17px',
     paddingTop: '10px',
     paddingBottom: '10px',
-
   };
+
+  const IconComponent = iconName ? Icons[iconName] : null; // Obtém o componente de ícone se o nome for fornecido
 
   if (pageLink) {
     return (
       <Link href={pageLink}>
         <button className={`${buttonStyles} hover:scale-110`} style={inlineStyles} {...props}>
+          {IconComponent && <IconComponent className="mr-2" />} {/* Renderiza o ícone se existir */}
           {children}
         </button>
       </Link>
@@ -59,6 +64,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button className={`${buttonStyles} hover:scale-110`} style={inlineStyles} {...props}>
+      {IconComponent && <IconComponent className="mr-2" />} {/* Renderiza o ícone se existir */}
       {children}
     </button>
   );
