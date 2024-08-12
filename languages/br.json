@@ -1,86 +1,81 @@
 {
 	"DONT_DELETE": "br",
 	"Header": {
-	  "About": "Sobre",
-	  "Competitions": "Competições",
-	  "Fronts": "Frentes",
-	  "Learn": "Aprender",
-	  "Theme": "Tema",
-	  "Contact": "Contato",
-	  "Projects": "Projetos",
-	  "text_test": "Texto para testar as páginas"
+		"About": "Sobre",
+		"Competitions": "Competições",
+		"Fronts": "Frentes",
+		"Learn": "Aprender",
+		"Theme": "Tema",
+		"Contact": "Contato",
+		"Projects": "Projetos",
+		"text_test": "Texto para testar as páginas"
 	},
-	
 	"HeroSection": {
-	  "Extension_Group_of": "Grupo de Extensão do",
-	  "Small_Description-Data": "focado em Ciência de Dados e Aprendizado de Máquina. Por meio de aulas, eventos, grupos de estudo e palestras, a entidade tem a missão de unir a indústria, o mundo acadêmico e personas interessadas, de forma que todos possam criar conexões importantes para sua vida e carreira enquanto aprendem.",
-	  "Learn_More": "Saiba mais"
+		"Extension_Group_of": "Grupo de Extensão do",
+		"Small_Description-Data": "focado em Ciência de Dados e Aprendizado de Máquina. Por meio de aulas, eventos, grupos de estudo e palestras, a entidade tem a missão de unir a indústria, o mundo acadêmico e personas interessadas, de forma que todos possam criar conexões importantes para sua vida e carreira enquanto aprendem.",
+		"Learn_More": "Saiba mais"
 	},
-	
 	"InitialPage": {
-	  "Our_Sponsors": "Apoiadores",
-	  "Sponsors_Description": "Instituições que acreditam no projeto"
+		"Our_Sponsors": "Apoiadores",
+		"Sponsors_Description": "Instituições que acreditam no projeto"
 	},
-	
 	"FrontsSection": {
-	  "Fronts_Description": "As frentes do Data ICMC são pilares fundamentais que estruturam e organizam as atividades do nosso grupo. Cada frente é responsável por uma área específica de atuação, trabalhando de forma coordenada para alcançar nossos objetivos de promover o conhecimento em Ciência de Dados e Aprendizado de Máquina. Através dessas frentes, buscamos proporcionar uma experiência enriquecedora não só para os membros, mas também para a comunidade, permitindo que desenvolvam suas habilidades, colaborem em projetos e estabeleçam conexões valiosas.",
-	  "Fronts_Description_2": "Conheça abaixo as diferentes frentes do Data ICMC e como cada uma contribui para o crescimento e fortalecimento do nosso grupo:",
-	  "Study_Groups": "Grupos de Estudos",
-	  "Study_Groups_Description": "Nos grupos de estudos, os alunos se reúnem com o objetivo de aprofundar em um tópico. Ao final dos estudos, os membros se reúnem para apresentar ao restante do grupo resultados e projetos.",
-	  "Projects": "Projetos",
-	  "Projects_Description": "A frente de projetos tem como objetivo reunir grupos para desenvolver aplicações envolvendo desde a obtenção dos dados até o desenvolvimento, treinamento, além da visualização de resultados.",
-	  "Events": "Eventos",
-	  "Events_Description": "Organiza eventos de Ciência de Dados como o DataDay. Além disso, representa o grupo em mostra de oportunidades, Congressos e Escolas de Verão.",
-	  "Marketing": "Marketing",
-	  "Marketing_Description": "O Marketing tem como objetivo divulgar o grupo, atrair novas pessoas através das redes sociais que o DATA está presente.",
-	  "Secretariat": "Secretaria",
-	  "Secretariat_Description": "A Secretaria cuida da relação do grupo com a USP, facilitando burocracias, organizando os documentos no Github e Drive. Também representa o grupo em Assembléias Gerais e da Diretoria.",
-	  "Teaching": "Ensino",
-	  "Teaching_Description": "A frente de Ensino organiza cursos com o objetivo de apresentar a área de Ciência de Dados, tanto como cursos de aprofundamento."
+		"Fronts_Description": "As frentes do Data ICMC são pilares fundamentais que estruturam e organizam as atividades do nosso grupo. Cada frente é responsável por uma área específica de atuação, trabalhando de forma coordenada para alcançar nossos objetivos de promover o conhecimento em Ciência de Dados e Aprendizado de Máquina. Através dessas frentes, buscamos proporcionar uma experiência enriquecedora não só para os membros, mas também para a comunidade, permitindo que desenvolvam suas habilidades, colaborem em projetos e estabeleçam conexões valiosas.",
+		"Fronts_Description_2": "Conheça abaixo as diferentes frentes do Data ICMC e como cada uma contribui para o crescimento e fortalecimento do nosso grupo:",
+		"Study_Groups": "Grupos de Estudos",
+		"Study_Groups_Description": "Nos grupos de estudos, os alunos se reúnem com o objetivo de aprofundar em um tópico. Ao final dos estudos, os membros se reúnem para apresentar ao restante do grupo resultados e projetos.",
+		"Projects": "Projetos",
+		"Projects_Description": "A frente de projetos tem como objetivo reunir grupos para desenvolver aplicações envolvendo desde a obtenção dos dados até o desenvolvimento, treinamento, além da visualização de resultados.",
+		"Events": "Eventos",
+		"Events_Description": "Organiza eventos de Ciência de Dados como o DataDay. Além disso, representa o grupo em mostra de oportunidades, Congressos e Escolas de Verão.",
+		"Marketing": "Marketing",
+		"Marketing_Description": "O Marketing tem como objetivo divulgar o grupo, atrair novas pessoas através das redes sociais que o DATA está presente.",
+		"Secretariat": "Secretaria",
+		"Secretariat_Description": "A Secretaria cuida da relação do grupo com a USP, facilitando burocracias, organizando os documentos no Github e Drive. Também representa o grupo em Assembléias Gerais e da Diretoria.",
+		"Teaching": "Ensino",
+		"Teaching_Description": "A frente de Ensino organiza cursos com o objetivo de apresentar a área de Ciência de Dados, tanto como cursos de aprofundamento."
 	},
-	
 	"AboutSection": {
-	  "About_Description_1": "O Data ICMC é um grupo de extensão do Instituto de Ciências Matemáticas e de Computação ",
-	  "ICMC": "ICMC-USP",
-	  "About_Description_1_2": " da Universidade de São Paulo ",
-	  "USP": "USP",
-	  "About_Description_1_3": " localizado no campus de São Carlos. Fundado em 2019, o grupo é focado em Ciência de Dados e Aprendizado de Máquina. O Data busca integrar estudantes, acadêmicos e profissionais do setor, promovendo a troca de conhecimento e o desenvolvimento de habilidades técnicas. Através de aulas, eventos, grupos de estudo e palestras, o grupo facilita o acesso a tecnologias de ponta e práticas atuais, preparando seus membros para os desafios do mercado de trabalho.",
-	  "About_Description_2": "Os grupos de extensão do ICMC são reconhecidos nacionalmente por sua força e relevância, contribuindo significativamente para o desenvolvimento das áreas de matemática, computação e estatística. O Data ICMC destaca-se ao focar em inteligência artificial e suas aplicações práticas, criando um ambiente propício para inovação e aprendizado contínuo. O grupo organiza eventos como o DataDay e o UnderstandingDL, participa de congressos e competições, e promove projetos que vão desde a coleta e análise de dados até a visualização de resultados.",
-	  "MissionT": "Missão",
-	  "MissionT_Description": "O principal objetivo do Data ICMC é promover o conhecimento e a prática da Ciência de Dados e do Aprendizado de Máquina. Para isso, o grupo organiza cursos e workshops que abrangem desde conceitos introdutórios até temas avançados, capacitando estudantes e profissionais. Através de eventos e competições, o Data ICMC incentiva a aplicação prática dos conhecimentos adquiridos, além de fomentar a pesquisa acadêmica e aplicada, desenvolvendo projetos inovadores.",
-	  "Impact_And_Relevance": "Impacto e Relevância",
-	  "Impact_And_Relevance_Description": "O Data ICMC contribui para o crescimento pessoal e profissional de seus integrantes, fortalecendo a comunidade acadêmica e o setor tecnológico. Através de suas diversas atividades, o grupo forma recursos humanos altamente qualificados, promove a inovação e fortalece a ligação entre a academia e a indústria. O impacto do Data ICMC se estende além dos limites da universidade, alcançando a comunidade em geral e posicionando-se como um importante agente de disseminação de conhecimento e desenvolvimento tecnológico no Brasil.",
-	  "Project_Organization": "Organização do Projeto",
-	  "Project_Organization_Description": "A organização do projeto Data ICMC é conduzida pelos próprios estudantes da Universidade de São Paulo (USP), responsáveis por planejar, coordenar e implementar as atividades do grupo. Trabalhando com professores, pesquisadores e profissionais da indústria, eles garantem que o grupo esteja alinhado com as tendências e demandas do mercado de trabalho, oferecendo aos membros oportunidades de aprendizado e networking."
+		"About_Description_1": "O Data ICMC é um grupo de extensão do Instituto de Ciências Matemáticas e de Computação ",
+		"ICMC": "ICMC-USP",
+		"About_Description_1_2": " da Universidade de São Paulo ",
+		"USP": "USP",
+		"About_Description_1_3": " localizado no campus de São Carlos. Fundado em 2019, o grupo é focado em Ciência de Dados e Aprendizado de Máquina. O Data busca integrar estudantes, acadêmicos e profissionais do setor, promovendo a troca de conhecimento e o desenvolvimento de habilidades técnicas. Através de aulas, eventos, grupos de estudo e palestras, o grupo facilita o acesso a tecnologias de ponta e práticas atuais, preparando seus membros para os desafios do mercado de trabalho.",
+		"About_Description_2": "Os grupos de extensão do ICMC são reconhecidos nacionalmente por sua força e relevância, contribuindo significativamente para o desenvolvimento das áreas de matemática, computação e estatística. O Data ICMC destaca-se ao focar em inteligência artificial e suas aplicações práticas, criando um ambiente propício para inovação e aprendizado contínuo. O grupo organiza eventos como o DataDay e o UnderstandingDL, participa de congressos e competições, e promove projetos que vão desde a coleta e análise de dados até a visualização de resultados.",
+		"MissionT": "Missão",
+		"MissionT_Description": "O principal objetivo do Data ICMC é promover o conhecimento e a prática da Ciência de Dados e do Aprendizado de Máquina. Para isso, o grupo organiza cursos e workshops que abrangem desde conceitos introdutórios até temas avançados, capacitando estudantes e profissionais. Através de eventos e competições, o Data ICMC incentiva a aplicação prática dos conhecimentos adquiridos, além de fomentar a pesquisa acadêmica e aplicada, desenvolvendo projetos inovadores.",
+		"Impact_And_Relevance": "Impacto e Relevância",
+		"Impact_And_Relevance_Description": "O Data ICMC contribui para o crescimento pessoal e profissional de seus integrantes, fortalecendo a comunidade acadêmica e o setor tecnológico. Através de suas diversas atividades, o grupo forma recursos humanos altamente qualificados, promove a inovação e fortalece a ligação entre a academia e a indústria. O impacto do Data ICMC se estende além dos limites da universidade, alcançando a comunidade em geral e posicionando-se como um importante agente de disseminação de conhecimento e desenvolvimento tecnológico no Brasil.",
+		"Project_Organization": "Organização do Projeto",
+		"Project_Organization_Description": "A organização do projeto Data ICMC é conduzida pelos próprios estudantes da Universidade de São Paulo (USP), responsáveis por planejar, coordenar e implementar as atividades do grupo. Trabalhando com professores, pesquisadores e profissionais da indústria, eles garantem que o grupo esteja alinhado com as tendências e demandas do mercado de trabalho, oferecendo aos membros oportunidades de aprendizado e networking."
 	},
-
 	"LearnSection": {
 		"Loading_Content": "Carregando conteúdo...",
 		"No_Posts": "Nenhum post foi feito ainda.",
 		"Posts_Loaded": "Posts carregados",
-		"Back_Button": "Todos os Posts"
+		"Back_Button": "Todos os Posts",
+		"Related_Posts": "Posts Relacionados",
+		"No_Related_Posts": "Nenhum post relacionado ainda."
 	},
-	
 	"MemberCard": {
-	  "Sponsorship": "Patrocínio",
-	  "Marketing": "Marketing",
-	  "Events": "Eventos",
-	  "Coordinators": "Coordenadores",
-	  "StudyGroup": "Grupo de Estudos",
-	  "Projects": "Projetos",
-	  "Secretariat": "Secretaria",
-	  "Teaching": "Ensino"
+		"Sponsorship": "Patrocínio",
+		"Marketing": "Marketing",
+		"Events": "Eventos",
+		"Coordinators": "Coordenadores",
+		"StudyGroup": "Grupo de Estudos",
+		"Projects": "Projetos",
+		"Secretariat": "Secretaria",
+		"Teaching": "Ensino"
 	},
-	
 	"OrganizingCommittee": {
-	  "All": "Todos",
-	  "Sponsorship": "Patrocínio",
-	  "Marketing": "Marketing",
-	  "Events": "Eventos",
-	  "Coordinators": "Coordenadores",
-	  "StudyGroup": "Grupo de Estudos",
-	  "Projects": "Projetos",
-	  "Secretariat": "Secretaria",
-	  "Teaching": "Ensino"
+		"All": "Todos",
+		"Sponsorship": "Patrocínio",
+		"Marketing": "Marketing",
+		"Events": "Eventos",
+		"Coordinators": "Coordenadores",
+		"StudyGroup": "Grupo de Estudos",
+		"Projects": "Projetos",
+		"Secretariat": "Secretaria",
+		"Teaching": "Ensino"
 	}
 }

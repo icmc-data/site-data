@@ -4,13 +4,14 @@ import PostList from '../../components/PostList';
 import MarkdownRenderer from '../../components/MarkdownRenderer'; 
 import { useEffect, useState } from 'react';
 import Button from '../../components/Button'; // Importa o componente Button
+import matter from 'gray-matter'; // Importa o matter para analisar os arquivos markdown
 
 export default function Learn() {
   const t = useTranslations('');
   const locale = t('DONT_DELETE'); // gets the value of the DONT_DELETE variable
   const [markdownFiles, setMarkdownFiles] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedPost, setSelectedPost] = useState<string | null>(null); // stores the selected post
+  const [selectedPost, setSelectedPost] = useState<{ content: string, tags: string[] } | null>(null); // stores the selected post with tags
 
   useEffect(() => {
     const loadMarkdownFiles = async () => {
@@ -50,13 +51,26 @@ export default function Learn() {
     loadMarkdownFiles();
   }, [locale]); // reloads the posts if the DONT_DELETE value changes
 
-  const handlePostClick = (content: string) => {
-    setSelectedPost(content); // sets the selected post content
+  const handlePostClick = (content: string, tags: string[]) => {
+    setSelectedPost({ content, tags }); // sets the selected post content and tags
   };
 
   const handleBackClick = () => {
     setSelectedPost(null); // resets selectedPost to null to show the list of posts
   };
+
+  const getRelatedPosts = () => {
+    if (!selectedPost) return [];
+    return markdownFiles.filter(fileContent => {
+      const { data, content } = matter(fileContent);
+      return (
+        data.tags.some((tag: string) => selectedPost.tags.includes(tag)) &&
+        content !== selectedPost.content
+      );
+    });
+  };
+
+  const relatedPosts = getRelatedPosts();
 
   return (
     <div className='px-32 py-24 text-2xl'>
@@ -68,14 +82,23 @@ export default function Learn() {
             variant="secondary"
             size="medium"
             rounded={false}
-            iconName="FaArrowLeft" 
+            iconName="FaArrowLeft" // Nome do ícone
             onClick={handleBackClick}
           >
             {t('LearnSection.Back_Button')}
           </Button>
-          <br />
-
-          <MarkdownRenderer content={selectedPost} />
+          <MarkdownRenderer content={selectedPost.content} />
+          <div className="mt-10">
+            <h2 className="text-primary dark:text-primary text-2xl font-bold mb-4">{t('LearnSection.Related_Posts')}</h2>
+            {relatedPosts.length > 0 ? (
+              <PostList
+                markdownFiles={relatedPosts}
+                onPostClick={handlePostClick}
+              />
+            ) : (
+              <p>{t('LearnSection.No_Related_Posts')}</p>
+            )}
+          </div>
         </div>
       ) : markdownFiles.length > 0 ? (
         <>
