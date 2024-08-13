@@ -6,9 +6,17 @@ interface PostSearchProps {
   markdownFiles: any[];
   onPostClick: (content: string, tags: string[]) => void;
   locale: string;
+  placeholderText?: string; // Propriedade opcional para o placeholder
+  hideSearchBar?: boolean; // Propriedade opcional para esconder a barra de pesquisa
 }
 
-export default function PostSearch({ markdownFiles, onPostClick, locale }: PostSearchProps) {
+export default function PostSearch({
+  markdownFiles,
+  onPostClick,
+  locale,
+  placeholderText = "Search posts...",
+  hideSearchBar = false, // Valor padrão
+}: PostSearchProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredPosts, setFilteredPosts] = useState(markdownFiles);
 
@@ -32,13 +40,15 @@ export default function PostSearch({ markdownFiles, onPostClick, locale }: PostS
 
   return (
     <div>
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={handleSearchChange}
-        placeholder="Search posts..."
-        className="w-full p-2 mb-4 border rounded border-data-purple text-primary bg-background-secondary"
-      />
+      {!hideSearchBar && (
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={handleSearchChange}
+          placeholder={placeholderText} // Usando o placeholder fornecido ou o padrão
+          className="w-full p-2 mb-4 border rounded border-data-purple text-primary bg-background-secondary"
+        />
+      )}
       <PostList markdownFiles={filteredPosts} onPostClick={onPostClick} locale={locale} page="learn" />
     </div>
   );

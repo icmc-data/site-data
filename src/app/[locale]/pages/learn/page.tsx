@@ -86,7 +86,7 @@ export default function Learn() {
   return (
     <div className='px-32 py-24 text-2xl'>
       {loading ? (
-        <div>{t('LearnSection.Loading_Content')}</div>
+        <div>{t('Posts.Loading_Content')}</div>
       ) : selectedPost ? (
         <div>
           <Button
@@ -96,28 +96,28 @@ export default function Learn() {
             iconName="FaArrowLeft"
             onClick={handleBackClick}
           >
-            {t('LearnSection.Back_Button')}
+            {t('Posts.Back_Button')}
           </Button>
           <MarkdownRenderer content={selectedPost.content} />
           <div className="mt-10">
-            <h3>{t('LearnSection.Related_Posts')}</h3>
+            <h3>{t('Posts.Related_Posts')}</h3>
             {selectedPost.relatedPosts && selectedPost.relatedPosts.length > 0 ? (
               <>
                 <br />
-                <PostSearch markdownFiles={selectedPost.relatedPosts} onPostClick={handlePostClick} locale={locale} />
+                <PostSearch markdownFiles={selectedPost.relatedPosts} onPostClick={handlePostClick} locale={locale} hideSearchBar={true}/>
               </>
             ) : (
-              <p>{t('LearnSection.No_Related_Posts')}</p>
+              <p>{t('Posts.No_Related_Posts')}</p>
             )}
           </div>
         </div>
       ) : markdownFiles.length > 0 ? (
         <>
-          <PostSearch markdownFiles={markdownFiles} onPostClick={handlePostClick} locale={locale} />
+          <PostSearch markdownFiles={markdownFiles} onPostClick={handlePostClick} placeholderText={t('Posts.Search')} locale={locale} />
           <div className="mt-10 text-left"></div>
         </>
       ) : (
-        <div>{t('LearnSection.No_Related_Posts')}</div>
+        <div>{t('Posts.No_Related_Posts')}</div>
       )}
     </div>
   );

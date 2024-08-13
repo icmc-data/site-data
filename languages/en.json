@@ -49,7 +49,9 @@
 		"Project_Organization": "Project Organization",
 		"Project_Organization_Description": "The organization of the Data ICMC project is led by students from the University of São Paulo (USP), who are responsible for planning, coordinating, and implementing the group's activities. Working with professors, researchers, and industry professionals, they ensure that the group is aligned with market trends and demands, offering members learning and networking opportunities."
 	},
-	"LearnSection": {
+	"LearnSection": {},
+	"Posts": {
+		"Search": "Search",
 		"Loading_Content": "Loading content...",
 		"No_Posts": "No posts have been made yet.",
 		"Posts_Loaded": "Posts loaded",

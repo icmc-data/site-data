@@ -49,7 +49,9 @@
 		"Project_Organization": "Organização do Projeto",
 		"Project_Organization_Description": "A organização do projeto Data ICMC é conduzida pelos próprios estudantes da Universidade de São Paulo (USP), responsáveis por planejar, coordenar e implementar as atividades do grupo. Trabalhando com professores, pesquisadores e profissionais da indústria, eles garantem que o grupo esteja alinhado com as tendências e demandas do mercado de trabalho, oferecendo aos membros oportunidades de aprendizado e networking."
 	},
-	"LearnSection": {
+	"LearnSection": {},
+	"Posts": {
+		"Search": "Pesquisar",
 		"Loading_Content": "Carregando conteúdo...",
 		"No_Posts": "Nenhum post foi feito ainda.",
 		"Posts_Loaded": "Posts carregados",
