@@ -1,12 +1,12 @@
 "use client";
 import { useTranslations } from 'next-intl';
-import PostList from '../../components/PostList';
 import MarkdownRenderer from '../../components/MarkdownRenderer'; 
 import { useEffect, useState } from 'react';
 import Button from '../../components/Button';
 import matter from 'gray-matter';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from "@/src/navigation";
+import PostSearch from '../../components/PostSearch'; 
 
 export default function Learn() {
   const t = useTranslations('');
@@ -29,10 +29,10 @@ export default function Learn() {
 
         try {
           const response = await fetch(fileUrl);
-          if (!response.ok) break; // Se a resposta não for OK, paramos de buscar
+          if (!response.ok) break; // se a resposta não for OK, paramos de buscar
           const text = await response.text();
-          const parsedFile = matter(text); // Faz o parse do frontmatter e conteúdo
-          files.push(parsedFile); // Adiciona o conteúdo processado
+          const parsedFile = matter(text); // faz o parse do frontmatter e conteúdo
+          files.push(parsedFile); // adiciona o conteúdo processado
           fileNumber++;
         } catch (error) {
           console.error('Erro ao carregar arquivo:', fileUrl, error);
@@ -54,7 +54,7 @@ export default function Learn() {
       const postNumber = parseInt(post, 10);
       if (!isNaN(postNumber) && postNumber > 0 && postNumber <= markdownFiles.length) {
         const file = markdownFiles[postNumber - 1];
-        handlePostClick(file.content, file.data.tags || [], postNumber);
+        handlePostClick(file.content, file.data.tags || []);
       }
     }
   }, [searchParams, markdownFiles]);
@@ -71,10 +71,11 @@ export default function Learn() {
     return relatedPosts;
   };
 
-  const handlePostClick = (content: string, tags: string[], postIndex: number) => {
-    const relatedPosts = findRelatedPosts(tags, postIndex);
+  const handlePostClick = (content: string, tags: string[]) => {
+    const relatedPosts = findRelatedPosts(tags, 0); // Ajuste conforme necessário
     setSelectedPost({ content, tags, relatedPosts });
   };
+  
 
   const handleBackClick = (event: React.MouseEvent) => {
     event.preventDefault();
@@ -103,7 +104,7 @@ export default function Learn() {
             {selectedPost.relatedPosts && selectedPost.relatedPosts.length > 0 ? (
               <>
                 <br />
-                <PostList markdownFiles={selectedPost.relatedPosts} onPostClick={handlePostClick} locale={locale} page="learn" />
+                <PostSearch markdownFiles={selectedPost.relatedPosts} onPostClick={handlePostClick} locale={locale} />
               </>
             ) : (
               <p>{t('LearnSection.No_Related_Posts')}</p>
@@ -112,7 +113,7 @@ export default function Learn() {
         </div>
       ) : markdownFiles.length > 0 ? (
         <>
-          <PostList markdownFiles={markdownFiles} onPostClick={handlePostClick} locale={locale} page="learn" />
+          <PostSearch markdownFiles={markdownFiles} onPostClick={handlePostClick} locale={locale} />
           <div className="mt-10 text-left"></div>
         </>
       ) : (

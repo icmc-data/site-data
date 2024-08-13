@@ -16,19 +16,21 @@ type PostListProps = {
   page: string;
 };
 
+
+
 const PostList: React.FC<PostListProps> = ({ markdownFiles, onPostClick, locale, page }) => {
   console.log(`Received locale: ${locale}`);
 
   const posts = markdownFiles.map((file, index) => {
     const { data, content } = file;
 
-    console.log('Post frontmatter:', data); // Log dos dados do frontmatter
-    console.log('Post content:', content); // Log do conteúdo do post
+    console.log('Post frontmatter:', data); // log dos dados do frontmatter
+    console.log('Post content:', content); // log do conteúdo do post
 
     return {
-      name: data.name || 'Untitled Post', // Nome do post ou padrão
-      photo: data.photo || '/default-photo.jpg', // Caminho da foto ou padrão
-      description: data.description || 'No description available.', // Descrição do post ou padrão
+      name: data.name || 'Untitled Post', 
+      photo: data.photo || '/default-photo.jpg', 
+      description: data.description || 'No description available.', 
       tags: data.tags || [], 
       content,
       index: index + 1, 
