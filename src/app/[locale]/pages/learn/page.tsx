@@ -3,100 +3,84 @@ import { useTranslations } from 'next-intl';
 import PostList from '../../components/PostList';
 import MarkdownRenderer from '../../components/MarkdownRenderer'; 
 import { useEffect, useState } from 'react';
-import Button from '../../components/Button'; // Importa o componente Button
-import matter from 'gray-matter'; // Importa o matter para analisar os arquivos markdown
-import { useSearchParams } from 'next/navigation'; // Importa useSearchParams para acessar parâmetros da query string
+import Button from '../../components/Button';
+import matter from 'gray-matter';
+import { useSearchParams } from 'next/navigation';
+import { useRouter } from "@/src/navigation";
 
 export default function Learn() {
   const t = useTranslations('');
-  const locale = t('DONT_DELETE'); // gets the value of the DONT_DELETE variable
-  console.log(`Locale: ${locale}`); // Verifica o valor da locale
-  const [markdownFiles, setMarkdownFiles] = useState<string[]>([]);
+  const locale = t('DONT_DELETE');
+  const [markdownFiles, setMarkdownFiles] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedPost, setSelectedPost] = useState<{ content: string, tags: string[] } | null>(null); // stores the selected post with tags
-  const [postHistory, setPostHistory] = useState<{ content: string, tags: string[] }[]>([]); // stores the history of posts
-  const searchParams = useSearchParams(); // useSearchParams para acessar parâmetros de consulta
+  const [selectedPost, setSelectedPost] = useState<{ content: string, tags: string[], relatedPosts: any[] } | null>(null); 
+  const searchParams = useSearchParams();
+  const router = useRouter();
 
   useEffect(() => {
     const loadMarkdownFiles = async () => {
-      setLoading(true); // starts loading
+      setLoading(true);
       let fileNumber = 1;
-      const contents = [];
-      const folder = locale; // uses the DONT_DELETE value directly for the folder
-
-      console.log(`Loading posts from folder: ${folder}`); // check if the folder value is correct
+      const files = [];
+      const folder = locale;
 
       while (true) {
-        const file = `/learnPosts/${folder}/${fileNumber}.md`;
-        console.log(`Trying to load: ${file}`); // log the file it is trying to load
+        const fileUrl = `/learnPosts/${folder}/${fileNumber}.md`;
 
         try {
-          const response = await fetch(file);
-          if (!response.ok) {
-            console.log(`File not found: ${file}`); // log when the file is not found
-            break; // stops the loop if the file does not exist
-          }
-          const content = await response.text();
-          contents.push(content);
+          const response = await fetch(fileUrl);
+          if (!response.ok) break; // Se a resposta não for OK, paramos de buscar
+          const text = await response.text();
+          const parsedFile = matter(text); // Faz o parse do frontmatter e conteúdo
+          files.push(parsedFile); // Adiciona o conteúdo processado
           fileNumber++;
         } catch (error) {
-          console.log(`Error loading file: ${file}`, error); // log the error, if it occurs
-          break; // exits the loop in case of an error
+          console.error('Erro ao carregar arquivo:', fileUrl, error);
+          break;
         }
       }
 
-      console.log('Loaded posts:', contents); // log the loaded posts
-
-      // reverses the order so that the most recent one is displayed first
-      setMarkdownFiles(contents.reverse());
-      setLoading(false); // finishes loading
+      setMarkdownFiles(files.reverse());
+      setLoading(false);
     };
 
     loadMarkdownFiles();
-  }, [locale]); // reloads the posts if the DONT_DELETE value changes
+  }, [locale]);
 
   useEffect(() => {
-    const post = searchParams.get('post'); // Access the "post" query parameter
+    const post = searchParams.get('post');
 
     if (post && markdownFiles.length > 0) {
       const postNumber = parseInt(post, 10);
       if (!isNaN(postNumber) && postNumber > 0 && postNumber <= markdownFiles.length) {
-        const content = markdownFiles[postNumber - 1];
-        const { data, content: markdownContent } = matter(content); // Separa os metadados do conteúdo
-        handlePostClick(markdownContent, data.tags); // Renderiza apenas o conteúdo, sem os metadados
+        const file = markdownFiles[postNumber - 1];
+        handlePostClick(file.content, file.data.tags || [], postNumber);
       }
     }
   }, [searchParams, markdownFiles]);
 
-  const handlePostClick = (content: string, tags: string[]) => {
-    if (selectedPost) {
-      setPostHistory([...postHistory, selectedPost]); // Adiciona o post atual ao histórico antes de mudar
-    }
-    setSelectedPost({ content, tags }); // sets the selected post content and tags
+  const findRelatedPosts = (tags: string[], currentPostIndex: number) => {
+    if (!tags || tags.length === 0) return [];
+
+    const relatedPosts = markdownFiles.filter((file, index) => {
+      if (index + 1 === currentPostIndex) return false; // exclui o post atual
+      const commonTags = file.data.tags?.filter((tag: string) => tags.includes(tag)) || [];
+      return commonTags.length > 0;
+    }).slice(0, 3); // limita a 3 posts relacionados
+
+    return relatedPosts;
   };
 
-  const handleBackClick = () => {
-    if (postHistory.length > 0) {
-      const lastPost = postHistory[postHistory.length - 1];
-      setSelectedPost(lastPost); // Volta ao último post no histórico
-      setPostHistory(postHistory.slice(0, -1)); // Remove o último post do histórico
-    } else {
-      setSelectedPost(null); // resets selectedPost to null to show the list of posts
-    }
+  const handlePostClick = (content: string, tags: string[], postIndex: number) => {
+    const relatedPosts = findRelatedPosts(tags, postIndex);
+    setSelectedPost({ content, tags, relatedPosts });
   };
 
-  const getRelatedPosts = () => {
-    if (!selectedPost) return [];
-    return markdownFiles.filter(fileContent => {
-      const { data, content } = matter(fileContent);
-      return (
-        data.tags.some((tag: string) => selectedPost.tags.includes(tag)) &&
-        content !== selectedPost.content
-      );
-    });
+  const handleBackClick = (event: React.MouseEvent) => {
+    event.preventDefault();
+    setSelectedPost(null);
+    router.push('/pages/learn');
   };
-
-  const relatedPosts = getRelatedPosts();
 
   return (
     <div className='px-32 py-24 text-2xl'>
@@ -108,16 +92,19 @@ export default function Learn() {
             variant="secondary"
             size="medium"
             rounded={false}
-            iconName="FaArrowLeft" // Nome do ícone
+            iconName="FaArrowLeft"
             onClick={handleBackClick}
           >
-            {postHistory.length > 0 ? t('LearnSection.Back_To_Previous_Post') : t('LearnSection.Back_Button')}
+            {t('LearnSection.Back_Button')}
           </Button>
           <MarkdownRenderer content={selectedPost.content} />
           <div className="mt-10">
-            <h2 className="text-primary dark:text-primary text-2xl font-bold mb-4">{t('LearnSection.Related_Posts')}</h2>
-            {relatedPosts.length > 0 ? (
-              <PostList markdownFiles={relatedPosts} onPostClick={handlePostClick} locale={locale} page="learn" />
+            <h3>{t('LearnSection.Related_Posts')}</h3>
+            {selectedPost.relatedPosts && selectedPost.relatedPosts.length > 0 ? (
+              <>
+                <br />
+                <PostList markdownFiles={selectedPost.relatedPosts} onPostClick={handlePostClick} locale={locale} page="learn" />
+              </>
             ) : (
               <p>{t('LearnSection.No_Related_Posts')}</p>
             )}
@@ -129,7 +116,7 @@ export default function Learn() {
           <div className="mt-10 text-left"></div>
         </>
       ) : (
-        <div>{t('LearnSection.No_Posts')}</div>
+        <div>{t('LearnSection.No_Related_Posts')}</div>
       )}
     </div>
   );

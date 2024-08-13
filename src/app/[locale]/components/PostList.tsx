@@ -1,5 +1,4 @@
 import React from 'react';
-import matter from 'gray-matter';
 
 type Post = {
   name: string;
@@ -7,30 +6,36 @@ type Post = {
   description: string;
   tags: string[];
   content: string;
-  index: number; // Adicionei o índice para criar o link correto
+  index: number;
 };
 
 type PostListProps = {
-  markdownFiles: string[];
+  markdownFiles: any[]; // Recebe os arquivos já processados
   onPostClick: (content: string, tags: string[]) => void;
-  locale: string; // Adicione o locale como uma prop
-  page: string; // Adicione a propriedade 'page'
+  locale: string;
+  page: string;
 };
 
 const PostList: React.FC<PostListProps> = ({ markdownFiles, onPostClick, locale, page }) => {
-  console.log(`Received locale: ${locale}`); // Verifica se a locale foi recebida corretamente
+  console.log(`Received locale: ${locale}`);
 
-  const posts = markdownFiles.map((fileContent, index) => {
-    const { data, content } = matter(fileContent);
+  const posts = markdownFiles.map((file, index) => {
+    const { data, content } = file;
+
+    console.log('Post frontmatter:', data); // Log dos dados do frontmatter
+    console.log('Post content:', content); // Log do conteúdo do post
+
     return {
-      name: data.name,
-      photo: data.photo,
-      description: data.description,
-      tags: data.tags,
+      name: data.name || 'Untitled Post', // Nome do post ou padrão
+      photo: data.photo || '/default-photo.jpg', // Caminho da foto ou padrão
+      description: data.description || 'No description available.', // Descrição do post ou padrão
+      tags: data.tags || [], 
       content,
       index: index + 1, 
     } as Post;
   });
+
+  console.log('Posts processed:', posts); // Log dos posts processados
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -42,11 +47,13 @@ const PostList: React.FC<PostListProps> = ({ markdownFiles, onPostClick, locale,
             window.location.href = `/${locale}/pages/${page}?post=${post.index}`;
           }}
         >
-          <img
-            src={post.photo}
-            alt={post.name}
-            className="w-full h-48 object-cover"
-          />
+          {post.photo && (
+            <img
+              src={post.photo}
+              alt={post.name}
+              className="w-full h-48 object-cover"
+            />
+          )}
           <div className="p-4">
             <h2 className="text-primary dark:text-primary font-bold mb-2 font-montserrat text-lg">
               {post.name}
