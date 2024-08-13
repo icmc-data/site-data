@@ -1,13 +1,15 @@
 "use client";
 import { useState } from 'react';
 import PostList from './PostList';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 interface PostSearchProps {
   markdownFiles: any[];
   onPostClick: (content: string, tags: string[]) => void;
   locale: string;
-  placeholderText?: string; // Propriedade opcional para o placeholder
-  hideSearchBar?: boolean; // Propriedade opcional para esconder a barra de pesquisa
+  placeholderText?: string; 
+  hideSearchBar?: boolean; 
 }
 
 export default function PostSearch({
@@ -41,13 +43,18 @@ export default function PostSearch({
   return (
     <div>
       {!hideSearchBar && (
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={handleSearchChange}
-          placeholder={placeholderText} // Usando o placeholder fornecido ou o padrão
-          className="w-full p-2 mb-4 border rounded border-data-purple text-primary bg-background-secondary"
-        />
+        <div className="relative w-full mb-4">
+          <span className="absolute inset-y-0 left-0 flex items-center pl-3">
+            <FontAwesomeIcon icon={faSearch} className="text-data-purple" />
+          </span>
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={handleSearchChange}
+            placeholder={" " + placeholderText} 
+            className="w-full p-2 pl-10 border rounded border-data-purple text-primary bg-background-secondary"
+          />
+        </div>
       )}
       <PostList markdownFiles={filteredPosts} onPostClick={onPostClick} locale={locale} page="learn" />
     </div>
