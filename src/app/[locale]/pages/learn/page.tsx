@@ -10,6 +10,7 @@ import { useSearchParams } from 'next/navigation'; // Importa useSearchParams pa
 export default function Learn() {
   const t = useTranslations('');
   const locale = t('DONT_DELETE'); // gets the value of the DONT_DELETE variable
+  console.log(`Locale: ${locale}`); // Verifica o valor da locale
   const [markdownFiles, setMarkdownFiles] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedPost, setSelectedPost] = useState<{ content: string, tags: string[] } | null>(null); // stores the selected post with tags
@@ -116,10 +117,7 @@ export default function Learn() {
           <div className="mt-10">
             <h2 className="text-primary dark:text-primary text-2xl font-bold mb-4">{t('LearnSection.Related_Posts')}</h2>
             {relatedPosts.length > 0 ? (
-              <PostList
-                markdownFiles={relatedPosts}
-                onPostClick={handlePostClick}
-              />
+              <PostList markdownFiles={relatedPosts} onPostClick={handlePostClick} locale={locale} page="learn" />
             ) : (
               <p>{t('LearnSection.No_Related_Posts')}</p>
             )}
@@ -127,9 +125,8 @@ export default function Learn() {
         </div>
       ) : markdownFiles.length > 0 ? (
         <>
-          <PostList markdownFiles={markdownFiles} onPostClick={handlePostClick} />
-          <div className="mt-10 text-left">
-          </div>
+          <PostList markdownFiles={markdownFiles} onPostClick={handlePostClick} locale={locale} page="learn" />
+          <div className="mt-10 text-left"></div>
         </>
       ) : (
         <div>{t('LearnSection.No_Posts')}</div>

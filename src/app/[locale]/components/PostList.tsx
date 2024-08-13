@@ -7,15 +7,20 @@ type Post = {
   description: string;
   tags: string[];
   content: string;
+  index: number; // Adicionei o índice para criar o link correto
 };
 
 type PostListProps = {
   markdownFiles: string[];
-  onPostClick: (content: string, tags: string[]) => void; // função callback agora passa conteúdo e tags
+  onPostClick: (content: string, tags: string[]) => void;
+  locale: string; // Adicione o locale como uma prop
+  page: string; // Adicione a propriedade 'page'
 };
 
-const PostList: React.FC<PostListProps> = ({ markdownFiles, onPostClick }) => {
-  const posts = markdownFiles.map((fileContent) => {
+const PostList: React.FC<PostListProps> = ({ markdownFiles, onPostClick, locale, page }) => {
+  console.log(`Received locale: ${locale}`); // Verifica se a locale foi recebida corretamente
+
+  const posts = markdownFiles.map((fileContent, index) => {
     const { data, content } = matter(fileContent);
     return {
       name: data.name,
@@ -23,16 +28,19 @@ const PostList: React.FC<PostListProps> = ({ markdownFiles, onPostClick }) => {
       description: data.description,
       tags: data.tags,
       content,
+      index: index + 1, 
     } as Post;
   });
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {posts.map((post, index) => (
+      {posts.map((post) => (
         <div 
-          key={index} 
+          key={post.index} 
           className="bg-background-secondary dark:bg-background-secondary shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 cursor-pointer"
-          onClick={() => onPostClick(post.content, post.tags)} // passa conteúdo e tags ao clicar no post
+          onClick={() => {
+            window.location.href = `/${locale}/pages/${page}?post=${post.index}`;
+          }}
         >
           <img
             src={post.photo}
