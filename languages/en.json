@@ -8,7 +8,9 @@
 		"Theme": "Theme",
 		"Contact": "Contact",
 		"Projects": "Projects",
-		"text_test": "Text to test the pages"
+		"text_test": "Text to test the pages",
+		"Events": "Events"
+
 	},
 	"HeroSection": {
 		"Extension_Group_of": "Extension Group of",
