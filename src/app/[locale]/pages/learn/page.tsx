@@ -5,6 +5,7 @@ import MarkdownRenderer from '../../components/MarkdownRenderer';
 import { useEffect, useState } from 'react';
 import Button from '../../components/Button'; // Importa o componente Button
 import matter from 'gray-matter'; // Importa o matter para analisar os arquivos markdown
+import { useSearchParams } from 'next/navigation'; // Importa useSearchParams para acessar parâmetros da query string
 
 export default function Learn() {
   const t = useTranslations('');
@@ -13,6 +14,7 @@ export default function Learn() {
   const [loading, setLoading] = useState(true);
   const [selectedPost, setSelectedPost] = useState<{ content: string, tags: string[] } | null>(null); // stores the selected post with tags
   const [postHistory, setPostHistory] = useState<{ content: string, tags: string[] }[]>([]); // stores the history of posts
+  const searchParams = useSearchParams(); // useSearchParams para acessar parâmetros de consulta
 
   useEffect(() => {
     const loadMarkdownFiles = async () => {
@@ -51,6 +53,19 @@ export default function Learn() {
 
     loadMarkdownFiles();
   }, [locale]); // reloads the posts if the DONT_DELETE value changes
+
+  useEffect(() => {
+    const post = searchParams.get('post'); // Access the "post" query parameter
+
+    if (post && markdownFiles.length > 0) {
+      const postNumber = parseInt(post, 10);
+      if (!isNaN(postNumber) && postNumber > 0 && postNumber <= markdownFiles.length) {
+        const content = markdownFiles[postNumber - 1];
+        const { data, content: markdownContent } = matter(content); // Separa os metadados do conteúdo
+        handlePostClick(markdownContent, data.tags); // Renderiza apenas o conteúdo, sem os metadados
+      }
+    }
+  }, [searchParams, markdownFiles]);
 
   const handlePostClick = (content: string, tags: string[]) => {
     if (selectedPost) {

@@ -15,10 +15,8 @@ export const pathnames = {
   '/pages/learn': '/pages/learn',
   '/pages/projects': '/pages/projects',
   '/pages/contact': '/pages/contact',
-
-
-
+  '/pages/learn/posts/[id]': '/pages/learn/posts/[id]', // Rota dinâmica para os posts
 } satisfies Pathnames<typeof locales>
 
-export const { Link, redirect, usePathname, useRouter, getPathname } =
+export const { Link, redirect, usePathname, useRouter, createPathname } =
   createLocalizedPathnamesNavigation({ locales, localePrefix, pathnames })
