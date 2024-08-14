@@ -25,11 +25,11 @@ const PageList: React.FC<Props> = ({ pages, pageListName }) => {
         className={`p-2 focus:outline-none ${!pageListName ? 'font-inter text-lg' : ''}`}
         onClick={() => setIsExpanded(!isExpanded)}
         onBlur={() => setIsExpanded(false)}
-        style={{ backgroundColor: 'transparent' }}
+        style={{ backgroundColor: 'transparent', whiteSpace: 'nowrap' }}
         aria-label='Page List'
       >
         {pageListName ? (
-          <span>
+          <span style={{ whiteSpace: 'nowrap' }}>
             {pageListName}
           </span>
         ) : (
@@ -39,7 +39,7 @@ const PageList: React.FC<Props> = ({ pages, pageListName }) => {
       {isExpanded && (
         <div className='absolute top-full left-0 mt-2 min-w-full origin-top-left rounded-md bg-dropdown shadow-lg z-50'>
           <div
-            className='py-1 flex flex-col items-start'
+            className='py-1 flex flex-col items-start overflow-x-auto'
             role='menu'
             aria-orientation='vertical'
             aria-labelledby='page-list-menu'
@@ -60,7 +60,12 @@ const PageList: React.FC<Props> = ({ pages, pageListName }) => {
                         ? 'bg-selected text-primary hover:bg-selected shadow-lg'
                         : 'text-primary'
                     } ${isSelected ? 'backdrop-filter backdrop-blur-md' : ''}`}
-                    style={isSelected ? { backgroundColor: 'rgba(255, 255, 255, 0.2)' } : {}}
+                    style={{
+                      whiteSpace: 'nowrap', // Impede a quebra de linha
+                      overflow: 'hidden', // Oculta o excesso de texto se for muito longo
+                      textOverflow: 'ellipsis', // Adiciona reticências ao texto longo
+                      backgroundColor: isSelected ? 'rgba(255, 255, 255, 0.2)' : undefined,
+                    }}
                   >
                     {page.name}
                   </button>

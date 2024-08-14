@@ -25,12 +25,8 @@ export const Header: FC<Props> = ({ locale }) => {
   };
 
   const pages = [
-    { name: "Fronts", path: "/pages/fronts" },
-    { name: "Competitions", path: "/pages/competitions" },
-    { name: "Learn", path: "/pages/learn" },
-    { name: "Projects", path: "/pages/projects" },
-    { name: "Contact", path: "/pages/contact" },
-    { name: "About", path: "/pages/about" },
+    { name: "Understanding DL", path: "/pages/events/undertandingDL" },
+    { name: "DataDay", path: "/pages/events/dataDay" },
   ];
 
   return (
