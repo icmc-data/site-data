@@ -7,12 +7,14 @@ import matter from 'gray-matter';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from "@/src/navigation";
 import PostSearch from '../../components/PostSearch'; 
+import LoadingOverlay from '../../components/LoadingOverlay';
 
 export default function Learn() {
   const t = useTranslations('');
   const locale = t('DONT_DELETE');
   const [markdownFiles, setMarkdownFiles] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [showLoading, setShowLoading] = useState(true); // Estado adicional para controlar a transição
   const [selectedPost, setSelectedPost] = useState<{ content: string, tags: string[], relatedPosts: any[] } | null>(null); 
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -42,6 +44,9 @@ export default function Learn() {
 
       setMarkdownFiles(files.reverse());
       setLoading(false);
+      
+      // Adiciona um pequeno atraso antes de remover o loading e suavizar a transição
+      setTimeout(() => setShowLoading(false), 300); // 300ms de atraso
     };
 
     loadMarkdownFiles();
@@ -85,39 +90,45 @@ export default function Learn() {
 
   return (
     <div className='px-32 py-24 text-2xl'>
-      {loading ? (
-        <div>{t('Posts.Loading_Content')}</div>
-      ) : selectedPost ? (
-        <div>
-          <Button
-            variant="secondary"
-            size="medium"
-            rounded={false}
-            iconName="FaArrowLeft"
-            onClick={handleBackClick}
-          >
-            {t('Posts.Back_Button')}
-          </Button>
-          <MarkdownRenderer content={selectedPost.content} />
-          <div className="mt-10">
-            <h3>{t('Posts.Related_Posts')}</h3>
-            {selectedPost.relatedPosts && selectedPost.relatedPosts.length > 0 ? (
-              <>
-                <br />
-                <PostSearch markdownFiles={selectedPost.relatedPosts} onPostClick={handlePostClick} locale={locale} hideSearchBar={true}/>
-              </>
-            ) : (
-              <p>{t('Posts.No_Related_Posts')}</p>
-            )}
-          </div>
+      {showLoading ? (
+        <div className="transition-opacity duration-500 opacity-100">
+          <LoadingOverlay /> {/* Exibe o componente de loading com transição */}
         </div>
-      ) : markdownFiles.length > 0 ? (
-        <>
-          <PostSearch markdownFiles={markdownFiles} onPostClick={handlePostClick} placeholderText={t('Posts.Search')} locale={locale} />
-          <div className="mt-10 text-left"></div>
-        </>
       ) : (
-        <div>{t('Posts.No_Related_Posts')}</div>
+        <div className="transition-opacity duration-500 opacity-100">
+          {selectedPost ? (
+            <div>
+              <Button
+                variant="secondary"
+                size="medium"
+                rounded={false}
+                iconName="FaArrowLeft"
+                onClick={handleBackClick}
+              >
+                {t('Posts.Back_Button')}
+              </Button>
+              <MarkdownRenderer content={selectedPost.content} />
+              <div className="mt-10">
+                <h3>{t('Posts.Related_Posts')}</h3>
+                {selectedPost.relatedPosts && selectedPost.relatedPosts.length > 0 ? (
+                  <>
+                    <br />
+                    <PostSearch markdownFiles={selectedPost.relatedPosts} onPostClick={handlePostClick} locale={locale} hideSearchBar={true}/>
+                  </>
+                ) : (
+                  <p>{t('Posts.No_Related_Posts')}</p>
+                )}
+              </div>
+            </div>
+          ) : markdownFiles.length > 0 ? (
+            <>
+              <PostSearch markdownFiles={markdownFiles} onPostClick={handlePostClick} placeholderText={t('Posts.Search')} locale={locale} />
+              <div className="mt-10 text-left"></div>
+            </>
+          ) : (
+            <div>{t('Posts.No_Related_Posts')}</div>
+          )}
+        </div>
       )}
     </div>
   );
