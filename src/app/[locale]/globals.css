@@ -71,6 +71,14 @@
     @apply text-sm;
     font-size: 13pt;
   }
+
+  .no-main-style {
+    all: unset; /* Reseta todos os estilos herdados */
+    display: block; /* Define a propriedade de display */
+    padding: 1rem; /* Qualquer estilo adicional que você quiser */
+    color: var(--primary); /* Definindo uma cor padrão */
+  }
+  
 }
 @media (max-width: 880px) {
   .mobile-menu {
@@ -80,10 +88,13 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 1rem;
     z-index: 50;
-    transition: transform 0.3s ease;
-    transform: translateY(-100%);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0);
+    padding-top: 0; 
+    margin-top: 0; 
   }
 
   .mobile-page-list {
@@ -99,9 +110,10 @@
   }
 
   .mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
     transform: translateY(0);
   }
-
   .mobile-menu a, .mobile-menu button {
     display: block;
     margin: 1rem 0;

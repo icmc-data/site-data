@@ -6,12 +6,12 @@ import Photo from "../../components/Photo";
 export default function About() {
   const t = useTranslations("");
   return (
-    <div className="py-24 text-2xl">
-      <h1>DATA</h1>
+    <div className="py-12 md:py-24 text-xl md:text-2xl">
+      <h1 className="text-center md:text-left">DATA</h1>
 
       <section>
         <br />
-        <p className="leading-loose">
+        <p className="leading-loose px-4 md:px-0">
           {t("AboutSection.About_Description_1")}
           <a
             href="https://www.icmc.usp.br/"
@@ -34,19 +34,18 @@ export default function About() {
         </p>
 
         <br />
-        <h2>{t("AboutSection.Project_Organization")}</h2>
-        <p className="leading-loose">
+        <h2 className="text-center md:text-left">{t("AboutSection.Project_Organization")}</h2>
+        <p className="leading-loose px-4 md:px-0">
           {t("AboutSection.Project_Organization_Description")}
         </p>
         <br />
         <OrganizingCommittee members={people} />
       </section>
-      <section>
-        <div className="flex flex-row items-center justify-center space-x-4">
-          <div>
+      <section className="mt-10 md:mt-20">
+        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-4">
+          <div className="text-center md:text-left">
             <h2>{t("AboutSection.MissionT")}</h2>
-
-            <p className="leading-loose">
+            <p className="leading-loose px-4 md:px-0">
               {t("AboutSection.MissionT_Description")}
             </p>
           </div>
@@ -55,18 +54,18 @@ export default function About() {
             size={0.9}
             rotation={-5}
             description={t("Header.About")}
+            className="mt-6 md:mt-0"
           />
         </div>
       </section>
-      <section>
-        <div>
+      <section className="mt-10 md:mt-20">
+        <div className="text-center md:text-left">
           <h2>{t("AboutSection.Impact_And_Relevance")}</h2>
-          <p className="leading-loose">
+          <p className="leading-loose px-4 md:px-0">
             {t("AboutSection.Impact_And_Relevance_Description")}
           </p>
-          
         </div>
-        <div className="flex flex-col items-center justify-center" style={{marginTop:"-100px"}}>
+        <div className="flex flex-col items-center justify-center mt-6 md:mt-0 md:-mt-10">
           <Photo
             imgSrc="/images/estudos.jpeg"
             size={0.65}
@@ -74,7 +73,6 @@ export default function About() {
           />
         </div>
       </section>
-      
     </div>
   );
 }

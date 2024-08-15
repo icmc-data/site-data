@@ -45,7 +45,7 @@ export default function RootLayout({
         <ThemeProvider
           enableSystem
           attribute="class"
-          defaultTheme="system" 
+          defaultTheme="system" // Alteração aqui para "system"
           themes={["light", "dark"]}
         >
           <NextIntlClientProvider

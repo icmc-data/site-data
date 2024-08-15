@@ -15,8 +15,7 @@ export const pathnames = {
   '/pages/learn': '/pages/learn',
   '/pages/projects': '/pages/projects',
   '/pages/contact': '/pages/contact',
-  '/pages/events/dataDay': '/pages/events/dataDay',
-  '/pages/events/undertandingDL': '/pages/events/undertandingDL',
+  '/pages/dataDay': '/pages/dataDay',
 
 
 

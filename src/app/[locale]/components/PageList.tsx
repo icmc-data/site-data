@@ -6,9 +6,10 @@ interface PageListProps {
   pageListName: string;
   locale: string;
   className?: string;
+  active?: boolean; // Add active prop
 }
 
-const PageList: React.FC<PageListProps> = ({ pages, pageListName, locale, className }) => {
+const PageList: React.FC<PageListProps> = ({ pages, pageListName, locale, className, active }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -33,7 +34,7 @@ const PageList: React.FC<PageListProps> = ({ pages, pageListName, locale, classN
     <div className={`relative ${className}`} ref={dropdownRef}>
       <button
         onClick={() => setDropdownOpen(!dropdownOpen)}
-        className="text-center w-full text-primary"
+        className={`text-center w-full ${active ? 'text-data-purple' : 'text-primary'}`}
       >
         {pageListName}
       </button>

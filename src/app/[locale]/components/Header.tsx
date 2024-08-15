@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { Link } from "@/src/navigation";
+import { Link, usePathname } from "@/src/navigation";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
 import LogoIcon from "../../icons/logo";
@@ -15,17 +15,19 @@ interface Props {
 
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations("");
-  const [selectedPath, setSelectedPath] = useState("");
+  const pathname = usePathname(); // Captura a URL atual
   const [menuOpen, setMenuOpen] = useState(false); // state to control the menu
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const handleLinkClick = (path: string) => {
-    setSelectedPath(path);
-    setMenuOpen(false); // closes the menu when a link is clicked
-  };
+  const eventPages = [
+    { name: "Understanding DL", path: "/pages/undertandingDL" },
+    { name: "DataDay", path: "/pages/dataDay" },
+  ];
+
+  const isEventPage = eventPages.some((page) => pathname === page.path);
 
   const getLinkClass = (path: string) => {
-    return selectedPath === path ? "text-data-purple" : "";
+    return pathname === path || (path === "/pages/events" && isEventPage) ? "text-data-purple" : "";
   };
 
   // close the menu when clicking outside of its scope
@@ -45,14 +47,9 @@ export const Header: FC<Props> = ({ locale }) => {
     };
   }, [menuOpen]);
 
-  const pages = [
-    { name: "Understanding DL", path: "/pages/events/undertandingDL" },
-    { name: "DataDay", path: "/pages/events/dataDay" },
-  ];
-
   return (
     <div className="mx-auto flex max-w-screen-2xl items-center justify-between p-5 z-50 relative">
-      <Link lang={locale} href={`/`} onClick={() => setSelectedPath("")}>
+      <Link lang={locale} href={`/`} className={getLinkClass("/")} onClick={() => setMenuOpen(false)}>
         <div className="flex flex-row items-center">
           <div className="mb-2 h-14 w-14">
             <LogoIcon />
@@ -81,7 +78,7 @@ export const Header: FC<Props> = ({ locale }) => {
             lang={locale}
             href={`/pages/fronts`}
             className={`${getLinkClass("/pages/fronts")} block`}
-            onClick={() => handleLinkClick("/pages/fronts")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Fronts")}
           </Link>
@@ -89,7 +86,7 @@ export const Header: FC<Props> = ({ locale }) => {
             lang={locale}
             href={`/pages/competitions`}
             className={`${getLinkClass("/pages/competitions")} block`}
-            onClick={() => handleLinkClick("/pages/competitions")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Competitions")}
           </Link>
@@ -97,7 +94,7 @@ export const Header: FC<Props> = ({ locale }) => {
             lang={locale}
             href={`/pages/learn`}
             className={`${getLinkClass("/pages/learn")} block`}
-            onClick={() => handleLinkClick("/pages/learn")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Learn")}
           </Link>
@@ -105,20 +102,21 @@ export const Header: FC<Props> = ({ locale }) => {
             lang={locale}
             href={`/pages/projects`}
             className={`${getLinkClass("/pages/projects")} block`}
-            onClick={() => handleLinkClick("/pages/projects")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Projects")}
           </Link>
           <PageList
             locale={locale}
-            pages={pages}
+            pages={eventPages}
             pageListName={t("Header.Events")}
+            active={isEventPage} // Pass the active state
           />
           <Link
             lang={locale}
             href={`/pages/contact`}
             className={`${getLinkClass("/pages/contact")} block`}
-            onClick={() => handleLinkClick("/pages/contact")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Contact")}
           </Link>
@@ -136,7 +134,7 @@ export const Header: FC<Props> = ({ locale }) => {
             lang={locale}
             href={`/pages/fronts`}
             className={getLinkClass("/pages/fronts")}
-            onClick={() => handleLinkClick("/pages/fronts")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Fronts")}
           </Link>
@@ -144,7 +142,7 @@ export const Header: FC<Props> = ({ locale }) => {
             lang={locale}
             href={`/pages/competitions`}
             className={getLinkClass("/pages/competitions")}
-            onClick={() => handleLinkClick("/pages/competitions")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Competitions")}
           </Link>
@@ -152,7 +150,7 @@ export const Header: FC<Props> = ({ locale }) => {
             lang={locale}
             href={`/pages/learn`}
             className={getLinkClass("/pages/learn")}
-            onClick={() => handleLinkClick("/pages/learn")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Learn")}
           </Link>
@@ -160,20 +158,21 @@ export const Header: FC<Props> = ({ locale }) => {
             lang={locale}
             href={`/pages/projects`}
             className={getLinkClass("/pages/projects")}
-            onClick={() => handleLinkClick("/pages/projects")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Projects")}
           </Link>
           <PageList
             locale={locale}
-            pages={pages}
+            pages={eventPages}
             pageListName={t("Header.Events")}
+            active={isEventPage} // Pass the active state
           />
           <Link
             lang={locale}
             href={`/pages/contact`}
             className={getLinkClass("/pages/contact")}
-            onClick={() => handleLinkClick("/pages/contact")}
+            onClick={() => setMenuOpen(false)}
           >
             {t("Header.Contact")}
           </Link>
