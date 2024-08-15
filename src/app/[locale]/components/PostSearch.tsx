@@ -17,7 +17,7 @@ export default function PostSearch({
   onPostClick,
   locale,
   placeholderText = "Search posts...",
-  hideSearchBar = false, // Valor padrão
+  hideSearchBar = false,
 }: PostSearchProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredPosts, setFilteredPosts] = useState(markdownFiles);

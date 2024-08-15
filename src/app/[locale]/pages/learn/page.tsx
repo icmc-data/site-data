@@ -14,7 +14,7 @@ export default function Learn() {
   const locale = t('DONT_DELETE');
   const [markdownFiles, setMarkdownFiles] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [showLoading, setShowLoading] = useState(true); // Estado adicional para controlar a transição
+  const [showLoading, setShowLoading] = useState(true);
   const [selectedPost, setSelectedPost] = useState<{ content: string, tags: string[], relatedPosts: any[] } | null>(null); 
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -31,10 +31,10 @@ export default function Learn() {
 
         try {
           const response = await fetch(fileUrl);
-          if (!response.ok) break; // se a resposta não for OK, paramos de buscar
+          if (!response.ok) break;
           const text = await response.text();
-          const parsedFile = matter(text); // faz o parse do frontmatter e conteúdo
-          files.push(parsedFile); // adiciona o conteúdo processado
+          const parsedFile = matter(text);
+          files.push(parsedFile);
           fileNumber++;
         } catch (error) {
           console.error('Erro ao carregar arquivo:', fileUrl, error);
@@ -45,8 +45,7 @@ export default function Learn() {
       setMarkdownFiles(files.reverse());
       setLoading(false);
       
-      // Adiciona um pequeno atraso antes de remover o loading e suavizar a transição
-      setTimeout(() => setShowLoading(false), 300); // 300ms de atraso
+      setTimeout(() => setShowLoading(false), 300);
     };
 
     loadMarkdownFiles();
@@ -68,16 +67,16 @@ export default function Learn() {
     if (!tags || tags.length === 0) return [];
 
     const relatedPosts = markdownFiles.filter((file, index) => {
-      if (index + 1 === currentPostIndex) return false; // exclui o post atual
+      if (index + 1 === currentPostIndex) return false;
       const commonTags = file.data.tags?.filter((tag: string) => tags.includes(tag)) || [];
       return commonTags.length > 0;
-    }).slice(0, 3); // limita a 3 posts relacionados
+    }).slice(0, 3);
 
     return relatedPosts;
   };
 
   const handlePostClick = (content: string, tags: string[]) => {
-    const relatedPosts = findRelatedPosts(tags, 0); // Ajuste conforme necessário
+    const relatedPosts = findRelatedPosts(tags, 0);
     setSelectedPost({ content, tags, relatedPosts });
   };
   
@@ -89,10 +88,10 @@ export default function Learn() {
   };
 
   return (
-    <div className='px-32 py-24 text-2xl'>
+    <div className="px-4 py-10 md:px-10 md:py-20">
       {showLoading ? (
         <div className="transition-opacity duration-500 opacity-100">
-          <LoadingOverlay /> {/* Exibe o componente de loading com transição */}
+          <LoadingOverlay />
         </div>
       ) : (
         <div className="transition-opacity duration-500 opacity-100">
@@ -109,7 +108,7 @@ export default function Learn() {
               </Button>
               <MarkdownRenderer content={selectedPost.content} />
               <div className="mt-10">
-                <h3>{t('Posts.Related_Posts')}</h3>
+                <h3 className="text-2xl md:text-3xl">{t('Posts.Related_Posts')}</h3>
                 {selectedPost.relatedPosts && selectedPost.relatedPosts.length > 0 ? (
                   <>
                     <br />
