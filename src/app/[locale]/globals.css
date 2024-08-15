@@ -157,6 +157,12 @@
     background-color: var(--background-opacity); /* Aplica a opacidade do fundo */
   }
 
+  .post-item:hover {
+    z-index: 1000; 
+    position: relative;
+    box-shadow: 0 4px 15px var(--background-opacity)
+  }
+
   .text-data-purple {
     color: var(--data-purple);
   }

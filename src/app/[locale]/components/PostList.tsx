@@ -34,7 +34,7 @@ const PostList: React.FC<PostListProps> = ({ markdownFiles, onPostClick, locale,
       {posts.map((post) => (
         <div 
           key={post.index} 
-          className="bg-background-secondary shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 cursor-pointer"
+          className="post-item bg-background-secondary shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 cursor-pointer relative"
           onClick={() => {
             window.location.href = `/${locale}/pages/${page}?post=${post.index}`;
           }}
