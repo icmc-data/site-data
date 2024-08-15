@@ -1,6 +1,5 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -18,26 +17,27 @@ export default function Contact() {
   };
 
   const buttonStyle = {
-    width: "300px", // Largura uniforme para todos os botões
-    height: "100px", // Altura uniforme para todos os botões
     boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.4)",
-    fontSize: "28px",
+    fontSize: "20px", // Tamanho do texto para mobile
+    backgroundColor: "var(--background-secondary)", // Usando variável CSS
+    color: "var(--primary)", // Usando variável CSS para o texto
   };
 
   const iconStyle = {
-    fontSize: "40px", // Tamanho uniforme para todos os ícones
-    marginRight: "16px", // Espaçamento uniforme entre ícone e texto
+    fontSize: "28px", // Tamanho do ícone para mobile
+    marginRight: "12px",
+    color: "var(--primary)", // Usando variável CSS para o ícone
   };
 
   return (
-    <div className="px-32 py-40 text-center">
-      <h1 className="text-3xl mb-16">
-        Faça contato e confira nossos conteúdos!
-      </h1>
-      <div className="flex justify-center space-x-20">
+    <div className="px-4 py-20 md:px-32 md:py-40 text-center">
+      <p className="text-2xl md:text-3xl mb-10 md:mb-16">
+        {t("Contact_Description")}
+      </p>
+      <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-10">
         <button
           onClick={handleEmailClick}
-          className="px-12 py-8 bg-white text-black rounded-3xl shadow-lg flex items-center justify-center"
+          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl shadow-lg flex items-center justify-center whitespace-nowrap"
           style={buttonStyle}
         >
           <FontAwesomeIcon icon={faEnvelope} style={iconStyle} />
@@ -47,7 +47,7 @@ export default function Contact() {
           onClick={() =>
             window.open("https://www.youtube.com/c/DataICMC", "_blank")
           }
-          className="px-12 py-8 bg-white text-black rounded-3xl shadow-lg flex items-center justify-center"
+          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl shadow-lg flex items-center justify-center whitespace-nowrap"
           style={buttonStyle}
         >
           <FontAwesomeIcon icon={faYoutube} style={iconStyle} />
@@ -57,7 +57,7 @@ export default function Contact() {
           onClick={() =>
             window.open("https://instagram.com/data.icmc/", "_blank")
           }
-          className="px-12 py-8 bg-white text-black rounded-3xl shadow-lg flex items-center justify-center"
+          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl shadow-lg flex items-center justify-center whitespace-nowrap"
           style={buttonStyle}
         >
           <FontAwesomeIcon icon={faInstagram} style={iconStyle} />
@@ -70,7 +70,7 @@ export default function Contact() {
               "_blank"
             )
           }
-          className="px-12 py-8 bg-white text-black rounded-3xl shadow-lg flex items-center justify-center"
+          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl shadow-lg flex items-center justify-center whitespace-nowrap"
           style={buttonStyle}
         >
           <FontAwesomeIcon icon={faLinkedin} style={iconStyle} />

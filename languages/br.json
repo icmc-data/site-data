@@ -1,5 +1,6 @@
 {
 	"DONT_DELETE": "br",
+	"Contact_Description": "Entre em contato conosco para saber mais sobre o DATA ICMC, nossas atividades e como você pode participar. Estamos sempre abertos a novas ideias, parcerias e colaborações. Fale conosco!",
 	"Header": {
 		"About": "Sobre",
 		"Competitions": "Competições",
@@ -61,6 +62,7 @@
 		"No_Related_Posts": "Nenhum post relacionado ainda.",
 		"Back_To_Previous_Post": "Voltar ao Post Anterior"
 	},
+	
 	"MemberCard": {
 		"Sponsorship": "Patrocínio",
 		"Marketing": "Marketing",
@@ -82,4 +84,5 @@
 		"Secretariat": "Secretaria",
 		"Teaching": "Ensino"
 	}
+	
 }
