@@ -41,7 +41,7 @@ const Sponsors: React.FC<SponsorsProps> = ({ sponsors = [] }) => {
             <img
               src={sponsor.logoUrl}
               alt={`Sponsor ${index + 1}`}
-              className="w-full max-w-[120px] md:max-w-[180px] lg:max-w-[240px] h-auto"
+              className="w-full max-w-[170px] md:max-w-[180px] lg:max-w-[240px] h-auto"
             />
           </div>
         ))}
