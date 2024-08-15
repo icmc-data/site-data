@@ -72,7 +72,6 @@
     font-size: 13pt;
   }
 }
-
 @media (max-width: 800px) {
   .mobile-menu {
     display: block;
@@ -87,6 +86,18 @@
     transform: translateY(-100%);
   }
 
+  .mobile-page-list {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-page-list .block {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
   .mobile-menu.open {
     transform: translateY(0);
   }
@@ -94,7 +105,6 @@
   .mobile-menu a, .mobile-menu button {
     display: block;
     margin: 1rem 0;
-
     text-decoration: none;
     color: var(--primary);
     text-align: center;
@@ -115,7 +125,6 @@
     padding: 1rem;
   }
 }
-
 
 
 

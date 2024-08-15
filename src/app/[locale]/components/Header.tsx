@@ -74,9 +74,9 @@ export const Header: FC<Props> = ({ locale }) => {
       {/* menu for mobile devices */}
       <div
         ref={menuRef}
-        className={`mobile-menu md:hidden ${menuOpen ? "open" : ""}`}
+        className={`mobile-menu md:hidden absolute left-0 right-0 top-full mt-2 bg-white shadow-md rounded-md ${menuOpen ? "open" : ""}`}
       >
-        <div className="flex flex-col items-center justify-center space-y-6">
+        <div className="flex flex-col items-center justify-center">
           <Link
             lang={locale}
             href={`/pages/fronts`}
@@ -113,7 +113,6 @@ export const Header: FC<Props> = ({ locale }) => {
             locale={locale}
             pages={pages}
             pageListName={t("Header.Events")}
-            className="block"
           />
           <Link
             lang={locale}
