@@ -39,21 +39,21 @@ export default function Fronts() {
   ];
 
   return (
-    <div className="flex flex-col items-center min-h-screen py-10">
-      <div >
-        <h1>{t("Header.Fronts")}</h1>
+    <div className="flex flex-col items-center min-h-screen py-10 px-4 md:px-10">
+      <div className="w-full text-center md:text-left md:max-w-full">
+        <h1 className="text-3xl md:text-5xl font-bold">{t("Header.Fronts")}</h1>
         <br />
-        <p className="leading-loose">
+        <p className="leading-loose text-base md:text-lg">
           {t("FrontsSection.Fronts_Description")}
         </p>
         <br />
-        <p className="leading-loose">
+        <p className="leading-loose text-base md:text-lg">
           {t("FrontsSection.Fronts_Description_2")}
         </p>
         <br />
       </div>
 
-      <div className="p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
+      <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-20">
         {cardsData.map((card, index) => (
           <CardComponent
             key={index}
