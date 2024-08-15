@@ -39,7 +39,7 @@ export default function Fronts() {
   ];
 
   return (
-    <div className="flex flex-col items-center min-h-screen py-10 px-4 md:px-10">
+    <div className="flex flex-col items-center min-h-screen py-10 px-4 md:px-10 mt-24">
       <div className="w-full text-center md:text-left md:max-w-full">
         <h1 className="text-3xl md:text-5xl font-bold">{t("Header.Fronts")}</h1>
         <br />

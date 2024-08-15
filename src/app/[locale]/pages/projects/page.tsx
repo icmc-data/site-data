@@ -88,7 +88,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="px-4 py-10 md:px-10 md:py-20">
+    <div className="px-4 py-10 md:px-10 md:py-20 mt-24">
       {showLoading ? (
         <div className="transition-opacity duration-500 opacity-100">
           <LoadingOverlay />

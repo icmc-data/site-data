@@ -30,7 +30,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="px-4 py-20 md:px-32 md:py-40 text-center">
+    <div className="px-4 py-20 md:px-32 md:py-40 text-center mt-24">
       <p className="text-2xl md:text-3xl mb-10 md:mb-16">
         {t("Contact_Description")}
       </p>

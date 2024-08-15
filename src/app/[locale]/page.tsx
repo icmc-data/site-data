@@ -37,7 +37,7 @@ export default function DashboardPage() {
   
   const t = useTranslations("");
   return (
-    <div>
+    <div className="mt-24">
       <section className={`flex ${isSmallScreen ? 'flex-col-reverse' : 'flex-row'} relative py-0`}>
         <div className={`flex flex-col items-center ${isSmallScreen ? 'text-center' : 'md:flex-row text-left'} space-x-0 md:space-x-4`}>
           <div>

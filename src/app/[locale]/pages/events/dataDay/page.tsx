@@ -31,7 +31,7 @@ export default function DataDay() {
   };
 
   return (
-    <div className="px-32 py-40 text-center">
+    <div className="px-32 py-40 text-center mt-24">
       <h1 className="text-3xl mb-16">
         Faça contato e confira nossos conteúdos!
       </h1>

@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 export default function Competitions() {
   const t = useTranslations('')
   return (
-<div className="py-24 text-2xl">
+<div className="py-24 text-2xl mt-24">
       <section className="flex relative py-0">
         <div className="flex items-center">
           <div>

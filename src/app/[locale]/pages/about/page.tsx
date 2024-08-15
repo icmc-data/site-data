@@ -6,7 +6,7 @@ import Photo from "../../components/Photo";
 export default function About() {
   const t = useTranslations("");
   return (
-    <div className="py-12 md:py-24 text-xl md:text-2xl">
+    <div className="py-12 md:py-24 text-xl md:text-2xl mt-24">
       <h1 className="text-center md:text-left">DATA</h1>
 
       <section>
