@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from '@/src/navigation';
 
 interface PageListProps {
@@ -10,9 +10,27 @@ interface PageListProps {
 
 const PageList: React.FC<PageListProps> = ({ pages, pageListName, locale, className }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false);
+      }
+    };
+
+    if (dropdownOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [dropdownOpen]);
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative ${className}`} ref={dropdownRef}>
       <button
         onClick={() => setDropdownOpen(!dropdownOpen)}
         className="text-center w-full text-primary"
@@ -29,6 +47,7 @@ const PageList: React.FC<PageListProps> = ({ pages, pageListName, locale, classN
                 lang={locale}
                 href={page.path}
                 className="block px-4 py-2 text-primary hover:bg-dropdown-hover text-center whitespace-nowrap"
+                onClick={() => setDropdownOpen(false)} // close dropdown on link click
               >
                 {page.name}
               </Link>
