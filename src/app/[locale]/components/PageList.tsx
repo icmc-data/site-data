@@ -1,82 +1,43 @@
-'use client'
-import React, { useState } from 'react'
-import { capitalize } from '@/lib/utils'
-import { usePathname } from 'next/navigation'
-import { Link } from '@/src/navigation'
-import { FiList } from 'react-icons/fi'
+import React, { useState } from 'react';
+import { Link } from '@/src/navigation';
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
-interface Page {
-  name: string
-  path: string
+interface PageListProps {
+  pages: { name: string; path: string }[];
+  pageListName: string;
+  locale: string;
 }
 
-interface Props {
-  pages: Page[]
-  pageListName?: string // Adiciona a prop opcional
-}
-
-const PageList: React.FC<Props> = ({ pages, pageListName }) => {
-  const pathname = usePathname()
-  const [isExpanded, setIsExpanded] = useState(false)
+const PageList: React.FC<PageListProps> = ({ pages, pageListName, locale }) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <div className='relative flex flex-col items-start'>
+    <div className="relative inline-block text-left">
       <button
-        className={`p-2 focus:outline-none ${!pageListName ? 'font-inter text-lg' : ''}`}
-        onClick={() => setIsExpanded(!isExpanded)}
-        onBlur={() => setIsExpanded(false)}
-        style={{ backgroundColor: 'transparent', whiteSpace: 'nowrap' }}
-        aria-label='Page List'
+        onClick={() => setDropdownOpen(!dropdownOpen)}
+        className="inline-flex justify-center items-center text-primary hover:text-data-purple "
       >
-        {pageListName ? (
-          <span style={{ whiteSpace: 'nowrap' }}>
-            {pageListName}
-          </span>
-        ) : (
-          <FiList size={24} color='var(--primary)' />
-        )}
+        {pageListName}
       </button>
-      {isExpanded && (
-        <div className='absolute top-full left-0 mt-2 min-w-full origin-top-left rounded-md bg-dropdown shadow-lg z-50'>
-          <div
-            className='py-1 flex flex-col items-start overflow-x-auto'
-            role='menu'
-            aria-orientation='vertical'
-            aria-labelledby='page-list-menu'
-          >
-            {pages.map(page => {
-              const isSelected = pathname === page.path
-              return (
-                <Link
-                  key={page.path}
-                  href={page.path}
-                >
-                  <button
-                    onMouseDown={e => {
-                      e.preventDefault()
-                    }}
-                    className={`block w-full px-4 py-2 text-sm rounded-full font-inter ${
-                      isSelected
-                        ? 'bg-selected text-primary hover:bg-selected shadow-lg'
-                        : 'text-primary'
-                    } ${isSelected ? 'backdrop-filter backdrop-blur-md' : ''}`}
-                    style={{
-                      whiteSpace: 'nowrap', // Impede a quebra de linha
-                      overflow: 'hidden', // Oculta o excesso de texto se for muito longo
-                      textOverflow: 'ellipsis', // Adiciona reticências ao texto longo
-                      backgroundColor: isSelected ? 'rgba(255, 255, 255, 0.2)' : undefined,
-                    }}
-                  >
-                    {page.name}
-                  </button>
-                </Link>
-              )
-            })}
+
+      {dropdownOpen && (
+        <div className="absolute z-50 mt-2 w-56 rounded-md shadow-lg bg-background-secondary dark:bg-background ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div className="py-1">
+            {pages.map((page, index) => (
+              <Link
+                key={index}
+                lang={locale}
+                href={page.path}
+                className="block px-4 py-2 text-sm text-primary hover:text-data-purple"
+              >
+                {page.name}
+              </Link>
+            ))}
           </div>
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default PageList
+export default PageList;

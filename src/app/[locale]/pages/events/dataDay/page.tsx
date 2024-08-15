@@ -8,6 +8,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import Hero from "../../../components/Hero";
 
 export default function DataDay() {
   const t = useTranslations("");

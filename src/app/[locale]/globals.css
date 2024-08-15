@@ -73,6 +73,52 @@
   }
 }
 
+@media (max-width: 800px) {
+  .mobile-menu {
+    display: block;
+    background-color: var(--background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 50;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+  }
+
+  .mobile-menu.open {
+    transform: translateY(0);
+  }
+
+  .mobile-menu a, .mobile-menu button {
+    display: block;
+    margin: 1rem 0;
+
+    text-decoration: none;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  .mobile-menu a:hover, .mobile-menu button:hover {
+    color: var(--secondary);
+  }
+
+  .page-list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-list .block {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+
+
+
 @layer components {
   .border-data-purple {
     border-color: var(--data-purple);
