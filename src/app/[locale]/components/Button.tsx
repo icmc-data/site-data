@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
   } inline-flex items-center justify-center space-x-2 transition-transform duration-200 ease-in-out transform`;
 
   const variantStyles = {
-    primary: styleType === 'outline' ? 'border-2 border-data-purple text-data-purple' : 'bg-button text-button-text border-2 border-button',
+    primary: styleType === 'outline' ? 'border-2 border-data-purple text-data-purple' : 'bg-button text-white border-2 border-button',
     secondary: styleType === 'outline' ? 'border-2 border-data-purple text-data-purple' : 'bg-secondary text-background border-2 border-secondary',
     dataPurple: 'bg-data-purple text-background'
   };
