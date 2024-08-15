@@ -37,7 +37,7 @@ const LangSwitcher: React.FC<Props> = ({ locale }) => {
           <FiGlobe size={24} color='var(--primary)' />
         </button>
         {isOptionsExpanded && (
-          <div className='absolute right-0 mt-2 w-32 origin-top-right rounded-md bg-dropdown shadow-lg z-50'>
+          <div className='absolute left-1/2 transform -translate-x-1/2 mt-2 w-24 origin-top rounded-md bg-dropdown shadow-lg z-50'>
             <div
               className='py-1 flex flex-col items-center'
               role='menu'
@@ -56,7 +56,7 @@ const LangSwitcher: React.FC<Props> = ({ locale }) => {
                       onMouseDown={e => {
                         e.preventDefault()
                       }}
-                      className={`block w-full px-4 py-2 text-center text-sm rounded-full ${
+                      className={`block w-full px-2 py-1 text-center text-sm rounded-md ${
                         isSelected
                           ? 'bg-selected text-primary hover:bg-selected shadow-lg'
                           : 'text-secondary'
