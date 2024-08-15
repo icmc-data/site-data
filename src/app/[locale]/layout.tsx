@@ -38,12 +38,10 @@ export default function RootLayout({
   return (
     <html
       lang={locale}
-      className={`overflow-x-hidden ${inter.variable} ${brawler.variable}`} // Adicione a classe overflow-x-hidden aqui
+      className={`overflow-x-hidden ${inter.variable} ${brawler.variable}`}
       suppressHydrationWarning
     >
       <body className="relative">
-        {" "}
-        {/* Adicione a classe relative para o posicionamento absoluto do Particle */}
         <ThemeProvider
           enableSystem
           attribute="class"
@@ -61,17 +59,16 @@ export default function RootLayout({
               crawl={true}
               easing="ease"
               speed={200}
-              shadow="0 0 10px #2299DD,0 0 5px #2299DD"
               color="var(--primary)"
               showSpinner={false}
             />
             <Header locale={locale} />
-            <div className="absolute">
+            <div className="absolute inset-0 z-0">
               <Particle />
             </div>
-            <main className="mx-auto max-w-screen-2xl relative z-10">
+            <main className="relative z-10 mx-auto max-w-screen-2xl p-4 md:p-8">
               {children}
-            </main>{" "}
+            </main>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

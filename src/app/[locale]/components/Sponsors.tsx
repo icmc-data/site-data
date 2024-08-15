@@ -37,11 +37,11 @@ const Sponsors: React.FC<SponsorsProps> = ({ sponsors = [] }) => {
       <br />
       <div className="flex flex-wrap justify-center">
         {sponsorImages.map((sponsor, index) => (
-          <div key={index} className="m-8"> 
+          <div key={index} className="flex justify-center w-full md:w-auto m-4"> 
             <img
               src={sponsor.logoUrl}
               alt={`Sponsor ${index + 1}`}
-              className="max-w-xs max-h-32"
+              className="w-full max-w-[120px] md:max-w-[180px] lg:max-w-[240px] h-auto"
             />
           </div>
         ))}

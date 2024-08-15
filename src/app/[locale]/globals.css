@@ -72,7 +72,7 @@
     font-size: 13pt;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 880px) {
   .mobile-menu {
     display: block;
     background-color: var(--background);

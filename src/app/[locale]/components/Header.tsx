@@ -51,7 +51,7 @@ export const Header: FC<Props> = ({ locale }) => {
   ];
 
   return (
-    <div className="mx-auto flex max-w-screen-2xl items-center justify-between p-5">
+    <div className="mx-auto flex max-w-screen-2xl items-center justify-between p-5 z-50 relative">
       <Link lang={locale} href={`/`} onClick={() => setSelectedPath("")}>
         <div className="flex flex-row items-center">
           <div className="mb-2 h-14 w-14">
@@ -74,7 +74,7 @@ export const Header: FC<Props> = ({ locale }) => {
       {/* menu for mobile devices */}
       <div
         ref={menuRef}
-        className={`mobile-menu md:hidden absolute left-0 right-0 top-full mt-2 bg-white shadow-md rounded-md ${menuOpen ? "open" : ""}`}
+        className={`mobile-menu md:hidden absolute left-0 right-0 top-full mt-2 bg-white shadow-md rounded-md ${menuOpen ? "open" : ""} z-50`}
       >
         <div className="flex flex-col items-center justify-center">
           <Link

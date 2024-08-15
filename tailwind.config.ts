@@ -18,6 +18,9 @@ const config = {
       }
     },
     extend: {
+      screens: {
+        'md': '880px', // Redefinindo o breakpoint 'md' para 880px
+      },
       backgroundImage: {
         'span-bg': 'var(--span-bg)'
       },
@@ -37,9 +40,8 @@ const config = {
         dropdownHover: 'var(--dropdown-hover)',
         buttonSecondary: 'var(--button-secondary)'
       },
-
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', 'var(--rubik)']
+        sans: ['Inter', 'sans-serif'] 
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
