@@ -20,8 +20,8 @@ export const Header: FC<Props> = ({ locale }) => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const eventPages = [
-    { name: "Understanding DL", path: "/pages/undertandingDL" },
-    { name: "DataDay", path: "/pages/dataDay" },
+    { name: "Understanding DL", path: "/pages/events/undertandingDL" },
+    { name: "DataDay", path: "/pages/events/dataDay" },
   ];
 
   const isEventPage = eventPages.some((page) => pathname === page.path);
