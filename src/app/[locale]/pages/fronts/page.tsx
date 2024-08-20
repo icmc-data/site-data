@@ -7,32 +7,32 @@ export default function Fronts() {
 
   const cardsData = [
     {
-      image: "https://via.placeholder.com/250x300",
+      image: "/images/studygroups.jpeg",
       title: t('FrontsSection.Study_Groups'),
       description: t('FrontsSection.Study_Groups_Description'),
     },
     {
-      image: "https://via.placeholder.com/250x300",
+      image: "/images/projects.jpeg",
       title: t('FrontsSection.Projects'),
       description: t('FrontsSection.Projects_Description'),
     },
     {
-      image: "https://via.placeholder.com/250x300",
+      image: "/images/events.jpg",
       title: t('FrontsSection.Events'),
       description: t('FrontsSection.Events_Description'),
     },
     {
-      image: "https://via.placeholder.com/250x300",
+      image: "/images/maketing.jpg",
       title: t('FrontsSection.Marketing'),
       description: t('FrontsSection.Marketing_Description'),
     },
     {
-      image: "https://via.placeholder.com/250x300",
+      image: "/images/secretariat.jpg",
       title: t('FrontsSection.Secretariat'),
       description: t('FrontsSection.Secretariat_Description'),
     },
     {
-      image: "https://via.placeholder.com/250x300",
+      image: "/images/teaching.jpg",
       title: t('FrontsSection.Teaching'),
       description: t('FrontsSection.Teaching_Description'),
     },
