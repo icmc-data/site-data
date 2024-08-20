@@ -19,7 +19,9 @@ export const Header: FC<Props> = ({ locale }) => {
   const [menuOpen, setMenuOpen] = useState(false); // state to control the menu
   const menuRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
-  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   const eventPages = [
     { name: "Understanding DL", path: "/pages/events/undertandingDL" },
@@ -32,7 +34,7 @@ export const Header: FC<Props> = ({ locale }) => {
     return pathname === path || (path === "/pages/events" && isEventPage) ? "text-data-purple" : "";
   };
 
-  // Monitor scroll direction
+  // Monitor scroll direction and visibility
   useEffect(() => {
     let lastScrollTop = 0;
 
@@ -42,9 +44,16 @@ export const Header: FC<Props> = ({ locale }) => {
       if (currentScrollTop > lastScrollTop) {
         // Scrolling down
         setIsScrollingUp(false);
-      } else {
-        // Scrolling up or at the top of the page
+        setIsVisible(false);
+      } else if (currentScrollTop < lastScrollTop && currentScrollTop > 0) {
+        // Scrolling up
         setIsScrollingUp(true);
+        setIsVisible(true);
+        setHasScrolled(true);
+      } else if (currentScrollTop === 0) {
+        // Back to top of the page
+        setIsVisible(true);
+        setHasScrolled(false);
       }
 
       lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
@@ -79,10 +88,9 @@ export const Header: FC<Props> = ({ locale }) => {
   return (
     <div
       ref={headerRef}
-      className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
-        isScrollingUp ? "translate-y-0" : "-translate-y-full"
-      } shadow-md`}
-      style={{ backgroundColor: "var(--background-opacity)" }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isVisible && hasScrolled ? "translate-y-0 bg-background shadow-md" : isVisible ? "translate-y-0 bg-transparent" : "-translate-y-full"
+      }`}
     >
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between p-5">
         <Link lang={locale} href={`/`} className={getLinkClass("/")} onClick={() => setMenuOpen(false)}>
@@ -176,30 +184,6 @@ export const Header: FC<Props> = ({ locale }) => {
             >
               {t("Header.Fronts")}
             </Link>
-            {/* <Link
-              lang={locale}
-              href={`/pages/competitions`}
-              className={getLinkClass("/pages/competitions")}
-              onClick={() => setMenuOpen(false)}
-            >
-              {t("Header.Competitions")}
-            </Link> */}
-            {/* <Link
-              lang={locale}
-              href={`/pages/learn`}
-              className={getLinkClass("/pages/learn")}
-              onClick={() => setMenuOpen(false)}
-            >
-              {t("Header.Learn")}
-            </Link> */}
-            {/* <Link
-              lang={locale}
-              href={`/pages/projects`}
-              className={getLinkClass("/pages/projects")}
-              onClick={() => setMenuOpen(false)}
-            >
-              {t("Header.Projects")}
-            </Link> */}
             <PageList
               locale={locale}
               pages={eventPages}
