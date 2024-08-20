@@ -1,16 +1,30 @@
-<p align="center">
-  <img  width='600' src="https://i.imgur.com/Q9SqHE8.png">
-</p>
+# Data ICMC
 
-# Data Web-Site repository
-This repo was created with the objective of persisting all versions of [Data](http://data.icmc.usp.br/)'s (a Data Science and Machine Learning extension group at ICMC-USP) website source code.
+Welcome to the Data ICMC website repository. This project is built with Next.js and provides information about the Data ICMC group from the Institute of Mathematical and Computer Sciences (ICMC) at the University of São Paulo (USP), located in São Carlos.
 
-## File Structure
+## Prerequisites
 
-- ```/css``` - All stylesheets used in the project
-- ```/js``` - All external and internal scripts
-- ```/pages``` - All ```.html``` files of the project
-- ```/``` - Configuration files and ```index.*``` files.
+Before you begin, ensure you have met the following requirements:
 
-## Created by
-[David Cairuz](https://github.com/davidcairuz), [João Pedro Mattos](https://github.com/joaopedromattos) e [Tobias Veiga](https://github.com/tobiasveiga).
+- You have installed [Node.js](https://nodejs.org/) version 18 or higher.
+- You have installed [Yarn](https://classic.yarnpkg.com/en/docs/install).
+
+## Installation
+
+To install and run the project locally, follow these steps:
+
+1. Clone the repository
+2. Install the dependencies:
+
+    ```sh
+    yarn install
+    ```
+
+3. Start the development server:
+
+    ```sh
+    yarn dev
+    ```
+
+4. Open your browser and navigate to `http://localhost:3000` to see the website.
+
