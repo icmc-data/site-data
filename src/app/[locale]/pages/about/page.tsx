@@ -9,9 +9,9 @@ import peopleEN from "../../../../../data/en/people.json";
 
 export default function About() {
   const t = useTranslations("");
-  const locale = t("DONT_DELETE"); // Determina o idioma atual da página
+  const locale = t("DONT_DELETE"); // determina o idioma atual da página
 
-  // Seleciona o arquivo JSON correto com base no idioma
+  // seleciona o arquivo JSON correto com base no idioma
   const people = locale === "br" ? peopleBR : peopleEN;
 
   return (
