@@ -14,6 +14,7 @@ export default function UnderstandingDL() {
         titleText="Understanding Deep Learning"
         descriptionText="Expanda sua compreensão sobre Inteligência Artificial e suas aplicações"
         buttonText="Inscreva-se"
+        progress={false}
       />
     </div>
   );

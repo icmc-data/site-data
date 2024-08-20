@@ -127,14 +127,6 @@
     ]
   },
   {
-    "name": "André Mitri",
-    "photo": "/images/people/andredimitri.jpg",
-    "description": "Cursa Ciência de Dados na USP, com foco em ML para Séries Temporais. Sempre disponível para um cafézinho ou trilha.",
-    "categories": [
-      "Secretariat"
-    ]
-  },
-  {
     "name": "Ruri",
     "photo": "/images/people/ruri.jpg",
     "description": "Interessado em aprendizado profundo e marketing.",

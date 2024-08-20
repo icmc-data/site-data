@@ -142,14 +142,6 @@
         ]
     },
     {
-        "name": "André Mitri",
-        "photo": "/images/people/andredimitri.jpg",
-        "description": "Data Science student at USP, focusing on ML for Time Series. Always available for a coffee or a hike.",
-        "categories": [
-            "Secretariat"
-        ]
-    },
-    {
         "name": "Ruri",
         "photo": "/images/people/ruri.jpg",
         "description": "Interested in deep learning and marketing.",
