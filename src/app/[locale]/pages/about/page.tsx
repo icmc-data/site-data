@@ -58,13 +58,13 @@ export default function About() {
               {t("AboutSection.MissionT_Description")}
             </p>
           </div>
-          <Photo
+          {/* <Photo
             imgSrc="/images/estudos.jpeg"
             size={0.9}
             rotation={-5}
             description={t("Header.About")}
             className="mt-6 md:mt-0"
-          />
+          /> */}
         </div>
       </section>
       <section className="mt-10 md:mt-20">
@@ -75,11 +75,11 @@ export default function About() {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center mt-6 md:-mt-10">
-          <Photo
+          {/* <Photo
             imgSrc="/images/estudos.jpeg"
             size={0.65}
             description={t("Header.About")}
-          />
+          /> */}
         </div>
       </section>
     </div>

@@ -23,7 +23,7 @@ export const Header: FC<Props> = ({ locale }) => {
 
   const eventPages = [
     { name: "Understanding DL", path: "/pages/events/undertandingDL" },
-    { name: "DataDay", path: "/pages/events/dataDay" },
+    // { name: "DataDay", path: "/pages/events/dataDay" },
   ];
 
   const isEventPage = eventPages.some((page) => pathname === page.path);
@@ -176,30 +176,30 @@ export const Header: FC<Props> = ({ locale }) => {
             >
               {t("Header.Fronts")}
             </Link>
-            <Link
+            {/* <Link
               lang={locale}
               href={`/pages/competitions`}
               className={getLinkClass("/pages/competitions")}
               onClick={() => setMenuOpen(false)}
             >
               {t("Header.Competitions")}
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               lang={locale}
               href={`/pages/learn`}
               className={getLinkClass("/pages/learn")}
               onClick={() => setMenuOpen(false)}
             >
               {t("Header.Learn")}
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               lang={locale}
               href={`/pages/projects`}
               className={getLinkClass("/pages/projects")}
               onClick={() => setMenuOpen(false)}
             >
               {t("Header.Projects")}
-            </Link>
+            </Link> */}
             <PageList
               locale={locale}
               pages={eventPages}

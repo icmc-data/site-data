@@ -69,7 +69,7 @@ const Hero: FC<HeroProps> = ({
         </div>
       </div>
 
-      {/* Modal/Alerta usando @radix-ui/react-dialog */}
+      {/* modal/alerta usando @radix-ui/react-dialog */}
       <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
         <Dialog.Portal>
           <Dialog.Content
