@@ -1,10 +1,19 @@
+"use client";
 import { useTranslations } from "next-intl";
 import OrganizingCommittee from "../../components/OrganizingCommittee";
-import people from "../../../../../data/people.json";
 import Photo from "../../components/Photo";
+
+// Import dos arquivos JSON
+import peopleBR from "../../../../../data/br/people.json";
+import peopleEN from "../../../../../data/en/people.json";
 
 export default function About() {
   const t = useTranslations("");
+  const locale = t("DONT_DELETE"); // Determina o idioma atual da página
+
+  // Seleciona o arquivo JSON correto com base no idioma
+  const people = locale === "br" ? peopleBR : peopleEN;
+
   return (
     <div className="py-12 md:py-24 text-xl md:text-2xl mt-24">
       <h1 className="text-center md:text-left">DATA</h1>
@@ -65,7 +74,7 @@ export default function About() {
             {t("AboutSection.Impact_And_Relevance_Description")}
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center mt-6 md:mt-0 md:-mt-10">
+        <div className="flex flex-col items-center justify-center mt-6 md:-mt-10">
           <Photo
             imgSrc="/images/estudos.jpeg"
             size={0.65}
