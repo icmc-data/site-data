@@ -152,12 +152,12 @@ export const Header: FC<Props> = ({ locale }) => {
             >
               {t("Header.Projects")}
             </Link> */}
-            <PageList
+            {/* <PageList
               locale={locale}
               pages={eventPages}
               pageListName={t("Header.Events")}
               active={isEventPage} // Pass the active state
-            />
+            /> */}
             <Link
               lang={locale}
               href={`/pages/contact`}
@@ -184,12 +184,12 @@ export const Header: FC<Props> = ({ locale }) => {
             >
               {t("Header.Fronts")}
             </Link>
-            <PageList
+            {/* <PageList
               locale={locale}
               pages={eventPages}
               pageListName={t("Header.Events")}
               active={isEventPage} // Pass the active state
-            />
+            /> */}
             <Link
               lang={locale}
               href={`/pages/contact`}
