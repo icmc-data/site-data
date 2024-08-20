@@ -161,5 +161,13 @@
             "StudyGroup",
             "Teaching"
         ]
-    }
+    },
+    {
+        "name": "Gabriel Abreu",
+        "photo": "/images/people/abreu.jpg",
+        "description": "BCC student at ICMC, focused on learning AI, ML and Data Science. Always testing some codes and looking for new ideas (and coffee)!",
+        "categories": [
+          "Events"
+        ]
+      }
 ]
