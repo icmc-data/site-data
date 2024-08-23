@@ -46,7 +46,7 @@ const PageList: React.FC<PageListProps> = ({ pages, pageListName, locale, classN
               <Link
                 key={index}
                 lang={locale}
-                href={page.path}
+                href={page.path as "/pages/about" | "/pages/fronts" | "/pages/competitions" | "/pages/learn" | "/pages/projects" | "/pages/contact" | "/pages/events/dataDay"}
                 className="block px-4 py-2 text-primary hover:bg-dropdown-hover text-center whitespace-nowrap"
                 onClick={() => setDropdownOpen(false)} // close dropdown on link click
               >

@@ -73,7 +73,6 @@ export default function About() {
             size={0.9}
             rotation={-5}
             description={t("Header.About")}
-            className="mt-6 md:mt-0"
           />
         </div>
       </section>
