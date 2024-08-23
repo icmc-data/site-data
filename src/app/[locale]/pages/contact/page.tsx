@@ -17,7 +17,7 @@ export default function Contact() {
   };
 
   const buttonStyle = {
-    boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.4)",
+    boxShadow: "5px 5px 15px rgba(0, 0, 0, 0.1)", // Sombra mais suave
     fontSize: "20px", // Tamanho do texto para mobile
     backgroundColor: "var(--background-secondary)", // Usando variável CSS
     color: "var(--primary)", // Usando variável CSS para o texto
