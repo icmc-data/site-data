@@ -1,7 +1,8 @@
-"use client";
+'use client';
 import { FC, useState } from "react";
 import Button from "./Button";
 import * as Dialog from '@radix-ui/react-dialog';
+import * as Icons from 'react-icons/fa'; // Certifique-se de importar os ícones corretamente
 
 interface HeroProps {
   dateText: string;

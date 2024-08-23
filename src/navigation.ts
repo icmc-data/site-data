@@ -16,11 +16,7 @@ export const pathnames = {
   '/pages/projects': '/pages/projects',
   '/pages/contact': '/pages/contact',
   '/pages/events/dataDay': '/pages/events/dataDay',
+} as const satisfies Pathnames<typeof locales>
 
-
-
-
-} satisfies Pathnames<typeof locales>
-
-export const { Link, redirect, usePathname, useRouter, createPathname } =
+export const { Link, redirect, usePathname, useRouter } =
   createLocalizedPathnamesNavigation({ locales, localePrefix, pathnames })

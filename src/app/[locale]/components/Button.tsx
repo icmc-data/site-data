@@ -3,13 +3,18 @@ import React from 'react';
 import { Link } from '../../../navigation';
 import * as Icons from 'react-icons/fa'; // Importa todos os ícones do FontAwesome
 
+// Importa os pathnames
+import { pathnames } from '../../../navigation';
+// Use os valores de pathnames como literais exatos
+type PageLink = typeof pathnames[keyof typeof pathnames];
+
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'dataPurple';
   size?: 'small' | 'medium' | 'large';
   rounded?: boolean;
   styleType?: 'default' | 'outline';
-  pageLink?: string;
+  pageLink?: PageLink; // Atualiza o tipo para corresponder aos valores literais exatos
   iconName?: keyof typeof Icons; // O nome do ícone opcional
 }
 
