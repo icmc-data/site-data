@@ -140,6 +140,37 @@
   }
 }
 
+/* Custom scrollbar for WebKit browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  width: 6px; /* Adjust the width for the scrollbar */
+  height: 6px; /* Adjust the height for horizontal scrollbar */
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary); /* Change scrollbar color */
+  border-radius: 10px; /* Make scrollbar edges rounded */
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+  background: transparent; /* Make scrollbar track transparent */
+}
+
+/* Custom scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-secondary) transparent;
+}
+
+/* For all browsers (fallback) */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: thin; /* Firefox */
+}
+
+.custom-padding-bottom {
+  padding-bottom: 20px; /* Ajuste este valor conforme necessário */
+}
+
 
 
 @layer components {
