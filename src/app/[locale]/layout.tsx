@@ -5,7 +5,7 @@ import {
   NextIntlClientProvider,
   useMessages,
 } from "next-intl";
-import { Inter, Brawler } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import { Header } from "./components/Header";
 import Particle from "./components/Particle";
@@ -15,10 +15,10 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--inter",
 });
-const brawler = Brawler({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-brawler",
+  weight: ["400", "700"], // você pode ajustar o peso conforme necessário
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -35,17 +35,21 @@ export default function RootLayout({
   params: { locale: string };
 }) {
   const messages = useMessages();
+
+  // Lógica para definir "br" para português e "en" para outros idiomas
+  const languageCode = locale === "pt" ? "br" : "en";
+
   return (
     <html
       lang={locale}
-      className={`overflow-x-hidden ${inter.variable} ${brawler.variable}`}
+      className={`overflow-x-hidden ${inter.variable} ${montserrat.variable}`}
       suppressHydrationWarning
     >
       <body className="relative">
         <ThemeProvider
           enableSystem
           attribute="class"
-          defaultTheme="system" // Alteração aqui para "system"
+          defaultTheme="system"
           themes={["light", "dark"]}
         >
           <NextIntlClientProvider
@@ -62,7 +66,7 @@ export default function RootLayout({
               color="var(--primary)"
               showSpinner={false}
             />
-            <Header locale={locale} />
+            <Header locale={languageCode} />
             <div className="absolute inset-0 z-0">
               <Particle />
             </div>
