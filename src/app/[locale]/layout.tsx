@@ -17,7 +17,7 @@ const inter = Inter({
 });
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "700"], // você pode ajustar o peso conforme necessário
+  weight: ["400", "700"],
   variable: "--font-montserrat",
 });
 
@@ -36,12 +36,12 @@ export default function RootLayout({
 }) {
   const messages = useMessages();
 
-  // Lógica para definir "br" para português e "en" para outros idiomas
-  const languageCode = locale === "pt" ? "br" : "en";
+  // Definindo 'br' como idioma padrão, caso 'locale' não esteja presente ou seja inválido
+  const languageCode = locale || "br";
 
   return (
     <html
-      lang={locale}
+      lang={languageCode}
       className={`overflow-x-hidden ${inter.variable} ${montserrat.variable}`}
       suppressHydrationWarning
     >
@@ -53,7 +53,7 @@ export default function RootLayout({
           themes={["light", "dark"]}
         >
           <NextIntlClientProvider
-            locale={locale}
+            locale={languageCode}
             messages={messages as AbstractIntlMessages}
           >
             <NextTopLoader
