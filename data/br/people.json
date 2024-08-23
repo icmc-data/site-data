@@ -137,6 +137,16 @@
     "special_role": ["Estudos Deep Learning"]
   },
   {
+    "name": "Gabriel Merlin",
+    "photo": "/images/people/merlin.png",
+    "description": "Interesse em Aprendizado de Máquina, especialmente Séries Temporais. Gosta de leitura e Astronomia.",
+    "categories": [
+      "Secretariat",
+      "Coordinators"
+    ],
+    "special_role": ["Estudos de Séries Temporais"]
+  },  
+  {
     "name": "Murilo Leandro",
     "photo": "/images/people/muriloleandro.jpg",
     "description": "Estudante de BCC na USP, sempre aprendendo e ensinando de tudo. Fã de My Little Pony.",
