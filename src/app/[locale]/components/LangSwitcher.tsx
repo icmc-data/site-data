@@ -1,5 +1,4 @@
 'use client'
-import { capitalize } from '@/lib/utils'
 import Link from 'next/link'
 import { usePathname, useSelectedLayoutSegments } from 'next/navigation'
 import React, { useState } from 'react'
@@ -44,30 +43,22 @@ const LangSwitcher: React.FC<Props> = ({ locale }) => {
               aria-orientation='vertical'
               aria-labelledby='options-menu'
             >
-              {options.map(lang => {
-                const isSelected = locale === lang.code
-                return (
-                  <Link
-                    key={lang.code}
-                    href={`/${lang.code}/${urlSegments.join('/')}`}
+              {options.map(lang => (
+                <Link
+                  key={lang.code}
+                  href={`/${lang.code}/${urlSegments.join('/')}`}
+                >
+                  <button
+                    lang={lang.code}
+                    onMouseDown={e => {
+                      e.preventDefault()
+                    }}
+                    className="block w-full px-2 py-1 text-center text-sm rounded-md text-secondary hover:bg-hover"
                   >
-                    <button
-                      lang={lang.code}
-                      onMouseDown={e => {
-                        e.preventDefault()
-                      }}
-                      className={`block w-full px-2 py-1 text-center text-sm rounded-md ${
-                        isSelected
-                          ? 'bg-selected text-primary hover:bg-selected shadow-lg'
-                          : 'text-secondary'
-                      } ${isSelected ? 'backdrop-filter backdrop-blur-md' : ''}`}
-                      style={isSelected ? { backgroundColor: 'rgba(255, 255, 255, 0.2)' } : {}}
-                    >
-                      {lang.country}
-                    </button>
-                  </Link>
-                )
-              })}
+                    {lang.country}
+                  </button>
+                </Link>
+              ))}
             </div>
           </div>
         )}
