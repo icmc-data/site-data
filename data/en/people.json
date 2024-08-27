@@ -1,0 +1,167 @@
+[
+    {
+      "name": "Luiz Felipe",
+      "photo": "/images/people/luizfelipedinizcosta.jpg",
+      "description": "Passionate about technology and learning. Seeks creative solutions for complex problems.",
+      "categories": [
+        "Marketing",
+        "Coordinators",
+        "Events",
+        "Teaching",
+        "Projects"
+      ],
+      "special_role": ["Marketing"]
+    },
+    {
+      "name": "Artur",
+      "photo": "/images/people/artur.jpg",
+      "description": "Computer science student, interested in NLP and security. Enjoys reading books and trying unusual foods.",
+      "categories": [
+        "Marketing"
+      ]
+    },
+    {
+      "name": "Cauê Paiva",
+      "photo": "/images/people/cauepaiva.jpg",
+      "description": "Researcher in AI, LLMs, and Data Science, with a focus on education and public data. National champion of the 2024 AWS Deepracer Competition.",
+      "categories": [
+        "Marketing",
+        "Teaching"
+      ]
+    },
+    {
+      "name": "Vítor Fróis",
+      "photo": "/images/people/vitorfrois.jpg",
+      "description": "Retired chess player and Atlético fan, studying Data Science applications in Complex Systems.",
+      "categories": [
+        "Secretariat",
+        "Coordinators",
+        "StudyGroup"
+      ],
+      "special_role": ["Secretariat", "ML Studies"]
+    },
+    {
+      "name": "Kathy",
+      "photo": "/images/people/kathy.jpg",
+      "description": "Information Systems student. Interested in classical ML, especially Time Series. Enjoys running and reading.",
+      "categories": [
+        "Events",
+        "Secretariat"
+      ]
+    },
+    {
+      "name": "Théo Riffel",
+      "photo": "/images/people/theo.jpg",
+      "description": "Curious by nature, the mystery and magic of AI led me to explore data science.",
+      "categories": [
+        "Events",
+        "Coordinators"
+      ],
+      "special_role": ["Events"]
+    },
+    {
+      "name": "Enzo",
+      "photo": "/images/people/enzo.jpg",
+      "description": "Student interested in machine learning and mathematics. Top 500 in Overwatch.",
+      "categories": [
+        "Teaching",
+        "Coordinators"
+      ],
+      "special_role": ["Teaching"]
+    },
+    {
+      "name": "Sampaio",
+      "photo": "/images/people/sampaio.jpg",
+      "description": "Computer Science student at USP, focused on NLP and Computer Vision. Passionate about astronomy and physics.",
+      "categories": [
+        "StudyGroup",
+        "Coordinators"
+      ],
+      "special_role": ["NLP Studies"]
+    },
+    {
+      "name": "Miller",
+      "photo": "/images/people/miller.jpg",
+      "description": "Computer Science student at USP, interested in Time Series and Deep Learning. Enjoys cycling and watching bad movies.",
+      "categories": [
+        "Marketing"
+      ]
+    },
+    {
+      "name": "Fabio Cavaleti",
+      "photo": "/images/people/fabiocavaleti.jpg",
+      "description": "Values teamwork and is passionate about knowledge exchange. Interested in Computer Vision.",
+      "categories": [
+        "Teaching",
+        "StudyGroup",
+        "Coordinators"
+      ],
+      "special_role": ["CV Studies"]
+    },
+    {
+      "name": "Lucas Brandão",
+      "photo": "/images/people/lucasbrandao.jpg",
+      "description": "Computer Science student at USP. Interested in Music Information Retrieval and Graph Neural Networks.",
+      "categories": [
+        "Secretariat",
+        "Coordinators"
+      ],
+      "special_role": ["DE Studies"]
+    },
+    {
+      "name": "Olavo Morais",
+      "photo": "/images/people/olavomorais.jpg",
+      "description": "Passionate about learning and teaching data science and AI, using them to solve real-world problems.",
+      "categories": [
+        "Teaching",
+        "StudyGroup"
+      ]
+    },
+    {
+      "name": "Francisco Maian",
+      "photo": "/images/people/franciscomaian.jpg",
+      "description": "Data Science student and Big Data enthusiast.",
+      "categories": [
+        "Teaching",
+        "Events"
+      ]
+    },
+    {
+      "name": "Ruri",
+      "photo": "/images/people/ruri.jpg",
+      "description": "Interested in deep learning and marketing.",
+      "categories": [
+        "Marketing",
+        "StudyGroup"
+      ],
+      "special_role": ["Deep Learning Studies"]
+    },
+    {
+        "name": "Gabriel Merlin",
+        "photo": "/images/people/merlin.png",
+        "description": "Interested in Machine Learning, especially Time Series. Enjoys reading and Astronomy.",
+        "categories": [
+          "Secretariat",
+          "Coordinators"
+        ],
+        "special_role": ["TS Studies"]
+      },
+    {
+      "name": "Murilo Leandro",
+      "photo": "/images/people/muriloleandro.jpg",
+      "description": "Computer Science student at USP, always learning and teaching about everything. Fan of My Little Pony.",
+      "categories": [
+        "StudyGroup",
+        "Teaching"
+      ]
+    },
+    {
+      "name": "Gabriel Abreu",
+      "photo": "/images/people/abreu.jpg",
+      "description": "Computer Science student at ICMC, focused on learning AI, ML, and Data Science. Always testing some code and chasing new ideas (and coffee)!",
+      "categories": [
+        "Events"
+      ]
+    }
+  ]
+  

@@ -1,0 +1,168 @@
+[
+  {
+    "name": "Luiz Felipe",
+    "photo": "/images/people/luizfelipedinizcosta.jpg",
+    "description": "Apaixonado por tecnologia e aprendizado. Busca soluções criativas para problemas complexos.",
+    "categories": [
+      "Marketing",
+      "Coordinators",
+      "Events",
+      "Teaching",
+      "Projects"
+    ],
+    "special_role": ["Marketing"]
+  },
+  {
+    "name": "Artur",
+    "photo": "/images/people/artur.jpg",
+    "description": "Estudante de ciências da computação, interessado em PLN e segurança. Gosta de ler livros e de comidas estranhas.",
+    "categories": [
+      "Marketing"
+    ]
+  },
+  {
+    "name": "Cauê Paiva",
+    "photo": "/images/people/cauepaiva.jpg",
+    "description": "Pesquisador em IA, LLMs, e Ciência de Dados, com foco em educação e dados públicos. Campeão nacional da Competição AWS deepracer 2024.",
+    "categories": [
+      "Marketing",
+      "Teaching"
+    ]
+  },
+  {
+    "name": "Vítor Fróis",
+    "photo": "/images/people/vitorfrois.jpg",
+    "description": "Enxadrista aposentado e atleticano, estudando aplicações de Ciência de Dados em Sistemas Complexos.",
+    "categories": [
+      "Secretariat",
+      "Coordinators",
+      "StudyGroup"
+    ],
+    "special_role": ["Secretaria","Estudos ML"]
+  },
+  {
+    "name": "Kathy",
+    "photo": "/images/people/kathy.jpg",
+    "description": "Estudante de Sistemas de Informação. Interessa-se por ML clássico, especialmente Séries Temporais. Gosta de correr e ler.",
+    "categories": [
+      "Events",
+      "Secretariat"
+    ]
+  },
+  {
+    "name": "Théo Riffel",
+    "photo": "/images/people/theo.jpg",
+    "description": "Curioso por natureza, o mistério e a magia da IA me levaram a explorar a ciência de dados.",
+    "categories": [
+      "Events",
+      "Coordinators"
+    ],
+    "special_role": ["Eventos"]
+  },
+  {
+    "name": "Enzo",
+    "photo": "/images/people/enzo.jpg",
+    "description": "Estudante com interesse em machine learning e matemática. Top 500 no Overwatch.",
+    "categories": [
+      "Teaching",
+      "Coordinators"
+    ],
+    "special_role": ["Ensino"]
+  },
+  {
+    "name": "Sampaio",
+    "photo": "/images/people/sampaio.jpg",
+    "description": "Cursa Ciências da Computação na USP, com foco em PLN e Visão Computacional. Apaixonado por astronomia e física.",
+    "categories": [
+      "StudyGroup",
+      "Coordinators"
+    ],
+    "special_role": ["Estudos PLN"]
+  },
+  {
+    "name": "Miller",
+    "photo": "/images/people/miller.jpg",
+    "description": "Estudante de Ciências da Computação na USP, com interesse em Séries Temporais e Aprendizado Profundo. Gosta de pedalar e assistir filmes ruins.",
+    "categories": [
+      "Marketing"
+    ]
+  },
+  {
+    "name": "Fabio Cavaleti",
+    "photo": "/images/people/fabiocavaleti.jpg",
+    "description": "Valoriza a colaboração em equipe e é apaixonado por troca de conhecimentos. Interesse em Visão Computacional.",
+    "categories": [
+      "Teaching",
+      "StudyGroup",
+      "Coordinators"
+    ],
+    "special_role": ["Estudos CV"]
+  },
+  {
+    "name": "Lucas Brandão",
+    "photo": "/images/people/lucasbrandao.jpg",
+    "description": "Estudante de Ciências da Computação na USP. Interesse em Recuperação de Informação Musical e Redes Neurais para Grafos.",
+    "categories": [
+      "Secretariat",
+      "Coordinators"
+    ],
+    "special_role": ["Estudos DE"]
+  },
+  {
+    "name": "Olavo Morais",
+    "photo": "/images/people/olavomorais.jpg",
+    "description": "Paixão por aprender e ensinar ciência de dados e IA, usando-as para solucionar problemas reais.",
+    "categories": [
+      "Teaching",
+      "StudyGroup"
+    ]
+  },
+  {
+    "name": "Francisco Maian", 
+    "photo": "/images/people/franciscomaian.jpg",
+    "description": "Estudante de Ciência de Dados e entusiasta em Big Data",
+    "categories": [
+      "Teaching",
+      "Events"
+    ]
+  },
+  {
+    "name": "Ruri",
+    "photo": "/images/people/ruri.jpg",
+    "description": "Interessado em aprendizado profundo e marketing.",
+    "categories": [
+      "Marketing",
+      "StudyGroup"
+    ],
+    "special_role": ["Estudos Deep Learning"]
+  },
+  {
+    "name": "Gabriel Merlin",
+    "photo": "/images/people/merlin.png",
+    "description": "Interesse em Aprendizado de Máquina, especialmente Séries Temporais. Gosta de leitura e Astronomia.",
+    "categories": [
+      "Secretariat",
+      "Coordinators"
+    ],
+    "special_role": ["Estudos em TS"]
+  },  
+  {
+    "name": "Murilo Leandro",
+    "photo": "/images/people/muriloleandro.jpg",
+    "description": "Estudante de BCC na USP, sempre aprendendo e ensinando de tudo. Fã de My Little Pony.",
+    "categories": [
+      "StudyGroup",
+      "Teaching"
+    ]
+  },
+  {
+    "name": "Gabriel Abreu",
+    "photo": "/images/people/abreu.jpg",
+    "description": "Estudante de BCC no ICMC, focado em aprender IA, ML e Data Science. Sempre testando uns códigos e correndo atrás de novas ideias (e café)!",
+    "categories": [
+      "Events"
+    ]
+  }
+
+
+]

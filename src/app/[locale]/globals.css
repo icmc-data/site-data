@@ -1,0 +1,512 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    --primary: #2b2b2b;
+    --secondary: #EC90C5;
+    --background: #ffffff;
+    --background-secondary: #f5f5f5;
+    --background-opacity: rgba(255, 255, 255, 0.4); /* Nova variável com opacidade */
+    --button: #EC90C5;
+    --button-text: #000000;
+    --text-secondary: #444444;
+    --dropdown: #e0e0e0;
+    --dropdown-hover: #cccccc;
+    --button-secondary: #f0f0f0;
+    --selected: #d6deff;
+    --link: #0318cc;
+
+    --data-blue: #8CD2F4;
+    --data-pink: #EC90C5;
+    --data-purple: #AE6AB7;
+
+    --font-inter: 'Inter', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+  }
+
+  .dark {
+    --primary: #f0f2fc;
+    --secondary: #F9A1D3;
+    --background: #121212;
+    --background-secondary: #1b1b1b;
+    --background-opacity: rgba(18, 18, 18, 0.4); /* Nova variável com opacidade no tema escuro */
+    --button: #F9A1D3;
+    --button-text: #fff;
+    --text-secondary: #bbbbbb;
+    --dropdown: #2d2d2d;
+    --dropdown-hover: #454545;
+    --button-secondary: #1d1d1d;
+    --selected: #324e70;
+    --link: #9BD7F6;
+
+    --data-blue: #9BD7F6;
+    --data-pink: #F9A1D3;
+    --data-purple: #C479CE;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--primary);
+    font-family: var(--font-inter);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-montserrat);
+  }
+
+  h1 {
+    font-size: 45pt;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: var(--primary);
+  }
+
+  h2 {
+    font-size: 20pt;
+    font-weight: 550;
+    color: var(--primary);
+    font-family: var(--font-inter);
+  }
+
+  p {
+    font-size: 0.875rem;
+    font-size: 13pt;
+  }
+
+  .no-main-style {
+    all: unset; /* Reseta todos os estilos herdados */
+    display: block; /* Define a propriedade de display */
+    padding: 1rem; /* Qualquer estilo adicional que você quiser */
+    color: var(--primary); /* Definindo uma cor padrão */
+  }
+  
+}
+@media (max-width: 880px) {
+  .mobile-menu {
+    display: block;
+    background-color: var(--background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0);
+    padding-top: 0; 
+    margin-top: 0; 
+  }
+
+  .mobile-page-list {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-page-list .block {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .mobile-menu a, .mobile-menu button {
+    display: block;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  .mobile-menu a:hover, .mobile-menu button:hover {
+    color: var(--secondary);
+  }
+
+  .page-list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-list .block {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+/* Custom scrollbar for WebKit browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  width: 6px; /* Adjust the width for the scrollbar */
+  height: 6px; /* Adjust the height for horizontal scrollbar */
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary); /* Change scrollbar color */
+  border-radius: 10px; /* Make scrollbar edges rounded */
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+  background: transparent; /* Make scrollbar track transparent */
+}
+
+/* Custom scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-secondary) transparent;
+}
+
+/* For all browsers (fallback) */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: thin; /* Firefox */
+}
+
+.custom-padding-bottom {
+  padding-bottom: 20px; /* Ajuste este valor conforme necessário */
+}
+
+
+
+@layer components {
+  .border-data-purple {
+    border-color: var(--data-purple);
+  }
+
+  .hero-bg-blur {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-opacity); /* Aplica a opacidade do fundo */
+  }
+
+  .post-item:hover {
+    z-index: 1000; 
+    position: relative;
+    box-shadow: 0 4px 15px var(--background-opacity)
+  }
+
+  .text-data-purple {
+    color: var(--data-purple);
+  }
+
+  .bg-data-purple {
+    background-color: var(--data-purple);
+  }
+
+  .text-primary {
+    color: var(--primary);
+  }
+
+  .text-data-pink {
+    color: var(--data-pink);
+  }
+
+  .text-link {
+    color: var(--link);
+  }
+
+  .float-animation {
+    animation: float 10s ease-in-out infinite;
+  }
+
+  .text-description {
+    font-size: 13pt;
+  }
+
+  .font-inter {
+    font-family: var(--font-inter);
+    font-size: 14pt;
+  }
+
+  .tooltip-balloon {
+    position: relative;
+    z-index: 50;
+  }
+
+  .tooltip-balloon::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--background-secondary) transparent transparent transparent;
+  }
+
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .polaroid {
+    background: var(--background-secondary);
+  }
+
+  .polaroid > img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .caption {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2em;
+  }
+
+  .item {
+    width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  
+
+  .item .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+  }
+
+  .item:nth-of-type(4n+1) {
+    transform: scale(0.8, 0.8) rotate(5deg);
+    transition: all 0.35s;
+  }
+
+  .item:nth-of-type(4n+1) .polaroid:before {
+    transform: rotate(6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+  }
+
+  .item:nth-of-type(4n+2) {
+    transform: scale(0.8, 0.8) rotate(-5deg);
+    transition: all 0.35s;
+  }
+
+  .item:nth-of-type(4n+2) .polaroid:before {
+    transform: rotate(-6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+  }
+
+  .item:nth-of-type(4n+4) {
+    transform: scale(0.8, 0.8) rotate(3deg);
+    transition: all 0.35s;
+  }
+
+  .item:nth-of-type(4n+4) .polaroid:before {
+    transform: rotate(4deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+  }
+
+  .item:nth-of-type(4n+3) {
+    transform: scale(0.8, 0.8) rotate(-3deg);
+    transition: all 0.35s;
+  }
+
+  .item:nth-of-type(4n+3) .polaroid:before {
+    transform: rotate(-4deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+  }
+
+  .item:hover {
+    filter: none;
+    transform: scale(0.7, 0.7) rotate(0deg) !important;
+    transition: all 0.35s;
+  }
+
+  .item:hover .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    transition: all 0.35s;
+  }
+
+  /* Adicionando efeito de hover para PostList */
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .transition-transform {
+    transition: transform 0.3s ease;
+  }
+
+  .transform {
+    transform: scale(1);
+  }
+
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+
+  /* Adicionando estilo para Markdown */
+  .prose-primary h1, .prose-primary h2, .prose-primary h3, .prose-primary h4 {
+    color: var(--primary);
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .prose-primary p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  .prose-primary a {
+    color: var(--link);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .prose-primary strong {
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  .prose-primary ul, .prose-primary ol {
+    padding-left: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style-position: inside;
+  }
+
+  .prose-primary blockquote {
+    border-left: 4px solid var(--secondary);
+    padding-left: 1em;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--background-secondary);
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+
+  .prose-primary img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+
+  .prose-primary pre {
+    background-color: var(--background-secondary);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .prose-primary code {
+    background-color: var(--background-secondary);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: var(--font-montserrat);
+    color: var(--secondary);
+  }
+
+  /* Estilo para tema escuro */
+  .dark .prose-dark h1, .dark .prose-dark h2, .dark .prose-dark h3, .dark .prose-dark h4 {
+    color: var(--primary);
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .dark .prose-dark p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  .dark .prose-dark a {
+    color: var(--link);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .dark .prose-dark strong {
+    color: var(--primary);
+    font-weight: bold.
+  }
+
+  .dark .prose-dark ul, .dark .prose-dark ol {
+    padding-left: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style-position: inside;
+  }
+
+  .dark .prose-dark blockquote {
+    border-left: 4px solid var(--secondary);
+    padding-left: 1em;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--background-secondary);
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+
+  .dark .prose-dark img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .prose-dark pre {
+    background-color: var(--background-secondary);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .dark .prose-dark code {
+    background-color: var(--background-secondary);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: var(--font-montserrat);
+    color: var(--secondary);
+  }
+}
