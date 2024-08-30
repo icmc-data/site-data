@@ -10,6 +10,7 @@ import NextTopLoader from "nextjs-toploader";
 import { Header } from "./components/Header";
 import Particle from "./components/Particle";
 import "./globals.css";
+import { Footer } from "../[locale]/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -75,6 +76,7 @@ export default function RootLayout({
             </main>
           </NextIntlClientProvider>
         </ThemeProvider>
+        <Footer />
       </body>
     </html>
   );

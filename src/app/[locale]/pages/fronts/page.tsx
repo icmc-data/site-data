@@ -67,7 +67,6 @@ export default function Fronts() {
           />
         ))}
       </div>
-      <Footer />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl";
 import OrganizingCommittee from "../../components/OrganizingCommittee";
 import Photo from "../../components/Photo";
+import { Footer } from "../../components/Footer";
 
 // Import dos arquivos JSON
 import peopleBR from "../../../../../data/br/people.json";
@@ -86,6 +87,7 @@ export default function About() {
             description={t("Header.About")}
           /> */}
         </div>
+        <Footer />
       </section>
     </div>
   );

@@ -81,7 +81,6 @@ export default function Contact() {
           LinkedIn
         </button>
       </div>
-      <Footer />
     </div>
   );
 }

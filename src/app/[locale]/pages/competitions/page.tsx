@@ -1,9 +1,10 @@
-import { useTranslations } from 'next-intl'
+import { useTranslations } from "next-intl";
+import { Footer } from "../../components/Footer";
 
 export default function Competitions() {
-  const t = useTranslations('')
+  const t = useTranslations("");
   return (
-<div className="py-24 text-2xl mt-24">
+    <div className="py-24 text-2xl mt-24">
       <section className="flex relative py-0">
         <div className="flex items-center">
           <div>
@@ -13,6 +14,7 @@ export default function Competitions() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
-  )
+  );
 }
