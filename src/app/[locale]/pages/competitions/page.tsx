@@ -14,7 +14,6 @@ export default function Competitions() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

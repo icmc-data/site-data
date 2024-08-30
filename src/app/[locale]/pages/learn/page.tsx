@@ -153,7 +153,6 @@ export default function Learn() {
           )}
         </div>
       )}
-      <Footer />
     </div>
   );
 }

@@ -87,7 +87,6 @@ export default function About() {
             description={t("Header.About")}
           /> */}
         </div>
-        <Footer />
       </section>
     </div>
   );
