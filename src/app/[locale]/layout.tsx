@@ -11,6 +11,7 @@ import { Header } from "./components/Header";
 import Particle from "./components/Particle";
 import "./globals.css";
 import { Footer } from "../[locale]/components/Footer";
+import { cookies } from 'next/headers'; // para ler cookies no lado do servidor
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const inter = Inter({
 });
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "700"], // você pode ajustar o peso conforme necessário
+  weight: ["400", "700"],
   variable: "--font-montserrat",
 });
 
@@ -37,15 +38,12 @@ export default function RootLayout({
 }) {
   const messages = useMessages();
 
-  // Lógica para definir "br" para português e "en" para outros idiomas
-  const languageCode = locale === "pt" ? "br" : "en";
+  // ler o cookie para determinar o idioma
+  const userLocaleCookie = cookies().get('preferredLocale')?.value;
+  const languageCode = userLocaleCookie || "br"; // se o cookie não existir, use "br"
 
   return (
-    <html
-      lang={locale}
-      className={`overflow-x-hidden ${inter.variable} ${montserrat.variable}`}
-      suppressHydrationWarning
-    >
+    <html lang={languageCode}>
       <body className="relative">
         <ThemeProvider
           enableSystem
