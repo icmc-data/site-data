@@ -128,6 +128,16 @@ export const Header: FC<Props> = ({ locale }) => {
             >
               {t("Header.Fronts")}
             </Link>
+
+            {/* about page link */}
+            <Link
+              lang={locale}
+              href={`/pages/about`}
+              className={`${getLinkClass("/pages/about")} block`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("Header.About")}
+            </Link>
             {/* <Link
               lang={locale}
               href={`/pages/competitions`}
@@ -183,6 +193,14 @@ export const Header: FC<Props> = ({ locale }) => {
               onClick={() => setMenuOpen(false)}
             >
               {t("Header.Fronts")}
+            </Link>
+            <Link
+              lang={locale}
+              href={`/pages/about`}
+              className={`${getLinkClass("/pages/about")} block`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("Header.About")}
             </Link>
             {/* <PageList
               locale={locale}
