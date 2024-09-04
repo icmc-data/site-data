@@ -7,7 +7,7 @@
     --primary: #2b2b2b;
     --secondary: #EC90C5;
     --background: #ffffff;
-    --background-secondary: #f8f8f8;
+    --background-secondary: #f5f5f5;
     --background-opacity: rgba(255, 255, 255, 0.4); /* Nova variável com opacidade */
     --button: #EC90C5;
     --button-text: #000000;
@@ -33,7 +33,7 @@
     --background-secondary: #1b1b1b;
     --background-opacity: rgba(18, 18, 18, 0.4); /* Nova variável com opacidade no tema escuro */
     --button: #F9A1D3;
-    --button-text: #ffffff;
+    --button-text: #fff;
     --text-secondary: #bbbbbb;
     --dropdown: #2d2d2d;
     --dropdown-hover: #454545;
@@ -44,19 +44,6 @@
     --data-blue: #9BD7F6;
     --data-pink: #F9A1D3;
     --data-purple: #C479CE;
-  }
-
-  html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #root, main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
   }
 
   body {
@@ -88,13 +75,6 @@
     font-size: 13pt;
   }
 
-  footer {
-    background-color: var(--background);
-    color: var(--primary);
-    padding: 1rem;
-    width: 100%;
-  }
-
   .no-main-style {
     all: unset; /* Reseta todos os estilos herdados */
     display: block; /* Define a propriedade de display */
@@ -102,32 +82,7 @@
     color: var(--primary); /* Definindo uma cor padrão */
   }
   
-  .scrollbar-hide::-webkit-scrollbar {
-    width: 6px; /* Ajusta a largura da scrollbar */
-    height: 6px; /* Ajusta a altura da scrollbar horizontal */
-  }
-
-  .scrollbar-hide::-webkit-scrollbar-thumb {
-    background-color: var(--text-secondary); /* Altera a cor da scrollbar */
-    border-radius: 10px; /* Deixa as bordas da scrollbar arredondadas */
-  }
-
-  .scrollbar-hide::-webkit-scrollbar-track {
-    background: transparent; /* Deixa o trilho da scrollbar transparente */
-  }
-
-  .scrollbar-hide {
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: var(--text-secondary) transparent; /* Firefox */
-  }
-
-  .custom-padding-bottom {
-    padding-bottom: 20px; /* Ajuste este valor conforme necessário */
-  }
-  
-  /* Restante do CSS, mantendo seus componentes e estilos personalizados */
 }
-
 @media (max-width: 880px) {
   .mobile-menu {
     display: block;
@@ -162,7 +117,6 @@
     visibility: visible;
     transform: translateY(0);
   }
-
   .mobile-menu a, .mobile-menu button {
     display: block;
     margin: 1rem 0;
@@ -187,6 +141,39 @@
   }
 }
 
+/* Custom scrollbar for WebKit browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  width: 6px; /* Adjust the width for the scrollbar */
+  height: 6px; /* Adjust the height for horizontal scrollbar */
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary); /* Change scrollbar color */
+  border-radius: 10px; /* Make scrollbar edges rounded */
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+  background: transparent; /* Make scrollbar track transparent */
+}
+
+/* Custom scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-secondary) transparent;
+}
+
+/* For all browsers (fallback) */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: thin; /* Firefox */
+}
+
+.custom-padding-bottom {
+  padding-bottom: 20px; /* Ajuste este valor conforme necessário */
+}
+
+
+
 @layer components {
   .border-data-purple {
     border-color: var(--data-purple);
@@ -205,7 +192,7 @@
   .post-item:hover {
     z-index: 1000; 
     position: relative;
-    box-shadow: 0 4px 15px var(--background-opacity);
+    box-shadow: 0 4px 15px var(--background-opacity)
   }
 
   .text-data-purple {
@@ -288,6 +275,7 @@
     margin-top: 2rem;
   }
   
+
   .item .polaroid:before {
     content: '';
     position: absolute;
@@ -365,6 +353,7 @@
     transition: all 0.35s;
   }
 
+  /* Adicionando efeito de hover para PostList */
   .cursor-pointer {
     cursor: pointer;
   }
@@ -381,6 +370,7 @@
     transform: scale(1.05);
   }
 
+  /* Adicionando estilo para Markdown */
   .prose-primary h1, .prose-primary h2, .prose-primary h3, .prose-primary h4 {
     color: var(--primary);
     margin-top: 1.5em;
@@ -450,6 +440,7 @@
     color: var(--secondary);
   }
 
+  /* Estilo para tema escuro */
   .dark .prose-dark h1, .dark .prose-dark h2, .dark .prose-dark h3, .dark .prose-dark h4 {
     color: var(--primary);
     margin-top: 1.5em;
@@ -471,7 +462,7 @@
 
   .dark .prose-dark strong {
     color: var(--primary);
-    font-weight: bold;
+    font-weight: bold.
   }
 
   .dark .prose-dark ul, .dark .prose-dark ol {

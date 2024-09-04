@@ -84,13 +84,15 @@
     "Teaching": "Teaching"
   },
   "Footer": {
-    "Contact_Info": "Contact Information",
+    "ContactInfo": "Contact Information",
     "AllRightsReserved": "All rights reserved.",
-    "Follow_Us": "Follow us",
+    "FollowUs": "Follow us",
     "Resources": "Resources",
     "AboutUs": "About Us",
     "Events": "Events",
     "PrivacyPolicy": "Privacy Policy",
-    "TermsConditions": "Terms & Conditions"
+    "TermsConditions": "Terms & Conditions",
+    "Legal": "Legal"
+
   }
 }

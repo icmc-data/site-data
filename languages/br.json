@@ -85,13 +85,14 @@
     "Teaching": "Ensino"
   },
   "Footer": {
-    "Contact_Info": "Informações de Contato",
+    "ContactInfo": "Informações de Contato",
     "AllRightsReserved": "Todos os direitos reservados.",
-    "Follow_Us": "Siga-nos",
+    "FollowUs": "Siga-nos",
     "Resources": "Recursos",
     "AboutUs": "Sobre Nós",
     "Events": "Eventos",
     "PrivacyPolicy": "Política de Privacidade",
-    "TermsConditions": "Termos & Condições"
+    "TermsConditions": "Termos & Condições",
+    "Legal": "Legal"
   }
 }
