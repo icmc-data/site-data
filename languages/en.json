@@ -89,10 +89,14 @@
     "FollowUs": "Follow us",
     "Resources": "Resources",
     "AboutUs": "About Us",
-    "Events": "Events",
+    "Events": "Understand Deep Learning",
     "PrivacyPolicy": "Privacy Policy",
     "TermsConditions": "Terms & Conditions",
-    "Legal": "Legal"
+    "Legal": "Legal",
+    "Fronts": "Group fronts",
+    "Footer.Courses": "Python for Data Science"
+
+
 
   }
 }

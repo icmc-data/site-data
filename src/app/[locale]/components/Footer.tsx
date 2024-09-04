@@ -40,11 +40,12 @@ export const Footer: FC<Props> = ({ locale }) => {
               <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-primary">{t("Footer.Resources")}</h2>
               <ul className="text-text-secondary dark:text-text-secondary font-medium">
                 <li className="mb-4">
-                  <a href={`/${locale}/sobre`} className="hover:underline">{t("Footer.AboutUs")}</a>
+                  <a href={`/${locale}/pages/about`} className="hover:underline">{t("Footer.AboutUs")}</a>
                 </li>
-                <li>
-                  <a href={`/${locale}/eventos`} className="hover:underline">{t("Footer.Events")}</a>
+                <li className="mb-4">
+                  <a href={`/${locale}/pages/fronts`} className="hover:underline">{t("Footer.Fronts")}</a>
                 </li>
+
               </ul>
             </div>
             <div>
@@ -61,12 +62,14 @@ export const Footer: FC<Props> = ({ locale }) => {
             <div>
               <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-primary">{t("Footer.Legal")}</h2>
               <ul className="text-text-secondary dark:text-text-secondary font-medium">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">{t("Footer.PrivacyPolicy")}</a>
+              <li className="mb-4">
+                  <a href={`/${locale}/pages/events/udl`} className="hover:underline">{t("Footer.Events")}</a>
                 </li>
-                <li>
-                  <a href="#" className="hover:underline">{t("Footer.TermsConditions")}</a>
+                <li className="mb">
+                  <a href={`https://www.youtube.com/watch?v=LxP-r00E2fo&list=PLFE-LjWAAP9Skog9YhRvuNBjWD724c32m`} className="hover:underline">{t("Footer.Courses")}</a>
                 </li>
+
+
               </ul>
             </div>
           </div>

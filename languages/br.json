@@ -90,9 +90,11 @@
     "FollowUs": "Siga-nos",
     "Resources": "Recursos",
     "AboutUs": "Sobre Nós",
-    "Events": "Eventos",
+    "Events": "Understand Deep Learning",
     "PrivacyPolicy": "Política de Privacidade",
     "TermsConditions": "Termos & Condições",
-    "Legal": "Legal"
+    "Legal": "Legal", 
+    "Fronts": "Frentes do grupo",
+    "Courses": "Python para Data Science"
   }
 }
