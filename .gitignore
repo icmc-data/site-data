@@ -29,3 +29,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# for docker
+cron_job_script.sh
+DockerFile.dev
+DockerFile.prod
