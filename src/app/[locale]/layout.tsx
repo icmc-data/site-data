@@ -12,6 +12,7 @@ import Particle from "./components/Particle";
 import "./globals.css";
 import { Footer } from "../[locale]/components/Footer";
 import { cookies } from 'next/headers'; // para ler cookies no lado do servidor
+import Sponsors from "./components/Sponsors";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -41,6 +42,16 @@ export default function RootLayout({
   // ler o cookie para determinar o idioma
   const userLocaleCookie = cookies().get('preferredLocale')?.value;
   const languageCode = userLocaleCookie || "br"; // se o cookie não existir, use "br"
+
+
+
+  const sponsorsData = [
+    { logoUrl: "/images/icmc-logo.png" },
+    { logoUrl: "/images/brains.png" },
+    { logoUrl: "/images/centerIA.png" },
+    
+    // adicione mais patrocinadores conforme necessário
+  ];
 
   return (
     <html lang={languageCode}>
@@ -72,9 +83,10 @@ export default function RootLayout({
             <main className="relative z-10 mx-auto max-w-screen-2xl p-4 md:p-8">
               {children}
             </main>
+        <Footer locale={locale}/>
           </NextIntlClientProvider>
         </ThemeProvider>
-        <Footer />
+
       </body>
     </html>
   );

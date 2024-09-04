@@ -86,7 +86,12 @@
   },
   "Footer": {
     "Contact_Info": "Informações de Contato",
-    "All_Rights_Reserved": "Todos os direitos reservados.",
-    "Follow_Us": "Siga-nos"
+    "AllRightsReserved": "Todos os direitos reservados.",
+    "Follow_Us": "Siga-nos",
+    "Resources": "Recursos",
+    "AboutUs": "Sobre Nós",
+    "Events": "Eventos",
+    "PrivacyPolicy": "Política de Privacidade",
+    "TermsConditions": "Termos & Condições"
   }
 }

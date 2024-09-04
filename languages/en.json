@@ -85,7 +85,12 @@
   },
   "Footer": {
     "Contact_Info": "Contact Information",
-    "All_Rights_Reserved": "All rights reserved.",
-    "Follow_Us": "Follow us"
+    "AllRightsReserved": "All rights reserved.",
+    "Follow_Us": "Follow us",
+    "Resources": "Resources",
+    "AboutUs": "About Us",
+    "Events": "Events",
+    "PrivacyPolicy": "Privacy Policy",
+    "TermsConditions": "Terms & Conditions"
   }
 }

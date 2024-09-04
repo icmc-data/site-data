@@ -3,11 +3,16 @@
 import { FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect, useState, FC } from "react";
 
-export const Footer = () => {
+interface Props {
+  locale: string;
+}
+
+export const Footer: FC<Props> = ({ locale }) => {
   const { resolvedTheme } = useTheme();
   const [logoSrc, setLogoSrc] = useState("/simpleDATAICON.png");
+  const t = useTranslations(""); // Para gerenciar as traduções
 
   useEffect(() => {
     const updatedLogoSrc =
@@ -18,29 +23,31 @@ export const Footer = () => {
   }, [resolvedTheme]);
 
   return (
-    <footer className="bg-background dark:bg-background-secondary">
+    <footer className="bg-background-secondary">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://data.icmc.usp.br/" className="flex items-center">
+            <a href={`/${locale}/`} className="flex items-center">
               <img src={logoSrc} className="h-8 me-3" alt="Data ICMC Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-primary">Data ICMC</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-primary">
+                Data ICMC
+              </span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-primary">Recursos</h2>
+              <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-primary">{t("Footer.Resources")}</h2>
               <ul className="text-text-secondary dark:text-text-secondary font-medium">
                 <li className="mb-4">
-                  <a href="https://data.icmc.usp.br/" className="hover:underline">Sobre Nós</a>
+                  <a href={`/${locale}/sobre`} className="hover:underline">{t("Footer.AboutUs")}</a>
                 </li>
                 <li>
-                  <a href="https://data.icmc.usp.br/eventos" className="hover:underline">Eventos</a>
+                  <a href={`/${locale}/eventos`} className="hover:underline">{t("Footer.Events")}</a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-primary">Siga-nos</h2>
+              <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-primary">{t("Footer.FollowUs")}</h2>
               <ul className="text-text-secondary dark:text-text-secondary font-medium">
                 <li className="mb-4">
                   <a href="https://www.linkedin.com/school/data-icmc/" className="hover:underline">LinkedIn</a>
@@ -51,13 +58,13 @@ export const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-primary">Legal</h2>
+              <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-primary">{t("Footer.Legal")}</h2>
               <ul className="text-text-secondary dark:text-text-secondary font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">Política de Privacidade</a>
+                  <a href="#" className="hover:underline">{t("Footer.PrivacyPolicy")}</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">Termos &amp; Condições</a>
+                  <a href="#" className="hover:underline">{t("Footer.TermsConditions")}</a>
                 </li>
               </ul>
             </div>
@@ -66,7 +73,7 @@ export const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-text-secondary sm:text-center dark:text-text-secondary">
-            © 2024 <a href="https://data.icmc.usp.br/" className="hover:underline">Data ICMC</a>. Todos os Direitos Reservados.
+            © 2024 <a href={`/${locale}/`} className="hover:underline">Data ICMC</a>. {t("Footer.AllRightsReserved")}
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a href="https://www.youtube.com/c/DataICMC" className="text-text-secondary hover:text-primary dark:hover:text-primary me-5">
@@ -87,3 +94,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;
