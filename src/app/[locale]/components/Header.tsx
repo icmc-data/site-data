@@ -31,7 +31,9 @@ export const Header: FC<Props> = ({ locale }) => {
   const isEventPage = eventPages.some((page) => pathname === page.path);
 
   const getLinkClass = (path: string) => {
-    return pathname === path || (path === "/pages/events" && isEventPage) ? "text-data-purple" : "";
+    return pathname === path || (path === "/pages/events" && isEventPage)
+      ? "text-data-purple"
+      : "";
   };
 
   // Monitor scroll direction and visibility
@@ -39,7 +41,8 @@ export const Header: FC<Props> = ({ locale }) => {
     let lastScrollTop = 0;
 
     const handleScroll = () => {
-      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const currentScrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
 
       if (currentScrollTop > lastScrollTop) {
         // Scrolling down
@@ -89,11 +92,20 @@ export const Header: FC<Props> = ({ locale }) => {
     <div
       ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isVisible && hasScrolled ? "translate-y-0 bg-background shadow-md" : isVisible ? "translate-y-0 bg-transparent" : "-translate-y-full"
+        isVisible && hasScrolled
+          ? "translate-y-0 bg-background shadow-md"
+          : isVisible
+            ? "translate-y-0 bg-transparent"
+            : "-translate-y-full"
       }`}
     >
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between p-5">
-        <Link lang={locale} href={`/`} className={getLinkClass("/")} onClick={() => setMenuOpen(false)}>
+        <Link
+          lang={locale}
+          href={`/`}
+          className={getLinkClass("/")}
+          onClick={() => setMenuOpen(false)}
+        >
           <div className="flex flex-row items-center">
             <div className="mb-2 h-14 w-14">
               <LogoIcon />
@@ -162,12 +174,14 @@ export const Header: FC<Props> = ({ locale }) => {
             >
               {t("Header.Projects")}
             </Link> */}
-            {/* <PageList
-              locale={locale}
-              pages={eventPages}
-              pageListName={t("Header.Events")}
-              active={isEventPage} // Pass the active state
-            /> */}
+            {
+              <PageList
+                locale={locale}
+                pages={eventPages}
+                pageListName={t("Header.Events")}
+                active={isEventPage} // Pass the active state
+              />
+            }
             <Link
               lang={locale}
               href={`/pages/contact`}
@@ -202,12 +216,14 @@ export const Header: FC<Props> = ({ locale }) => {
             >
               {t("Header.About")}
             </Link>
-            {/* <PageList
-              locale={locale}
-              pages={eventPages}
-              pageListName={t("Header.Events")}
-              active={isEventPage} // Pass the active state
-            /> */}
+            {
+              <PageList
+                locale={locale}
+                pages={eventPages}
+                pageListName={t("Header.Events")}
+                active={isEventPage} // Pass the active state
+              />
+            }
             <Link
               lang={locale}
               href={`/pages/contact`}
