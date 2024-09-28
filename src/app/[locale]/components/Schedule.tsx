@@ -65,10 +65,8 @@ const Schedule: React.FC = () => {
   };
 
   return (
-    <div className="schedule-container p-6 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-10 text-[var(--primary)]">Agenda do Evento</h1>
-      
-      <div className="text-center mb-6">
+    <>
+      <h2 className="text-[var(--primary)]">CRONOGRAMA</h2>
         <label htmlFor="day-selector" className="text-lg font-semibold mr-2 text-[var(--primary)]">Selecione o dia:</label>
         <select
           id="day-selector"
@@ -82,6 +80,9 @@ const Schedule: React.FC = () => {
             </option>
           ))}
         </select>
+    <div className="schedule-container p-6 max-w-4xl mx-auto">
+      
+      <div className="text-center mb-6">
       </div>
 
       {filteredEvents.length > 0 ? (
@@ -97,6 +98,7 @@ const Schedule: React.FC = () => {
         </p>
       )}
     </div>
+    </>
   );
 };
 

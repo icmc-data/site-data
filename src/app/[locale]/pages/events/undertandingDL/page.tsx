@@ -61,6 +61,7 @@ export default function UnderstandingDL() {
           <strong>Universidade de São Paulo</strong>.
         </p>
       </div>
+      <br />
 
       <Schedule />
       <FAQ />
