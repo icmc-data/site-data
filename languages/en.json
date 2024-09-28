@@ -99,11 +99,12 @@
   "UDLHero": {
     "title": "Understanding Deep Learning 2024",
     "description": "Join us this October for a series of hybrid and online talks featuring renowned researchers from top universities and institutions worldwide, discussing the latest advancements in Deep Learning.",
-    "eventDateTitle": "14-18 October 2024",
+    "eventDateTitle": "14-18 October",
     "dateText": "Join us from 14th to 18th of October 2024 for an in-depth exploration of Deep Learning, covering topics like Generative AI, Explainability, Ethics, AutoML, and advances in Reinforcement Learning.",
     "speakersTitle": "Renowned International Speakers",
     "speakersText": "Hear from experts from Harvard, Stanford, MIT, and institutions like Google Brain and DeepMind. Learn cutting-edge insights from the best minds in AI and expand your knowledge of the future of Deep Learning.",
-    "dateButtonText": "Learn More",
+    "dateButtonText": "Subscribe",
     "speakersButtonText": "View Speakers"
+
   }
 }

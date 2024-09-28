@@ -34,6 +34,9 @@ export default function UnderstandingDL() {
         dateButtonText={t("UDLHero.dateButtonText")}
         eventButtonText={t("UDLHero.speakersButtonText")}
       />
+      <br />
+      <br />
+
 
       <div className="about-event">
         <h2>SOBRE O EVENTO</h2>
