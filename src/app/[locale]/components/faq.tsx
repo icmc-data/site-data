@@ -10,7 +10,7 @@ const FAQ: React.FC = () => {
   const faqs: FAQItem[] = [
     {
       question: "O evento é gratuito?",
-      answer: "Sim, totalmente gratuito!.",
+      answer: "Sim, totalmente gratuito!",
     },
     {
       question: "Onde será o evento?",
