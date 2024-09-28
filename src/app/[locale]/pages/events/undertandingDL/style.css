@@ -1,6 +1,6 @@
 /* colocar o estili central do site */
 #container-principal {
-  display: flex;
+  display: inline-block;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
