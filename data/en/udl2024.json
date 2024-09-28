@@ -1,0 +1,152 @@
+{
+    "days": [
+      {
+        "date": "2024-10-14",
+        "lectures": [
+          {
+            "title": "AI Innovations for the Future",
+            "start_time": "09:00",
+            "end_time": "10:30",
+            "description": "Exploring the latest innovations in Artificial Intelligence and their impact on our daily lives.",
+            "speaker": {
+              "name": "Ana Silva",
+              "photo": "/images/speakers/ana_silva.jpg",
+              "description": "Ana Silva is an Artificial Intelligence specialist focusing on machine learning and AI ethics. She works as a researcher at the Technological Innovation Center."
+            }
+          },
+          {
+            "title": "The Role of Quantum Computing",
+            "start_time": "11:00",
+            "end_time": "12:30",
+            "description": "Discussion on the role of quantum computing and how it can transform technology.",
+            "speaker": {
+              "name": "Carlos Almeida",
+              "photo": "/images/speakers/carlos_almeida.jpg",
+              "description": "Carlos Almeida is a physicist and researcher in quantum computing, with over 10 years of experience in developing quantum algorithms."
+            }
+          },
+          {
+            "title": "Deep Learning: Challenges and Applications",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "description": "An overview of the challenges faced and large-scale applications of Deep Learning.",
+            "speaker": {
+              "name": "Beatriz Ramos",
+              "photo": "/images/speakers/beatriz_ramos.jpg",
+              "description": "Beatriz Ramos is a software engineer and Deep Learning specialist, with experience in leading technology companies."
+            }
+          },
+          {
+            "title": "Data Privacy and Security in AI",
+            "start_time": "16:00",
+            "end_time": "17:30",
+            "description": "How data privacy is being addressed in the context of Artificial Intelligence.",
+            "speaker": {
+              "name": "Diego Costa",
+              "photo": "/images/speakers/diego_costa.jpg",
+              "description": "Diego Costa is a cybersecurity specialist and has been working on data security projects for AI for the past five years."
+            }
+          }
+        ]
+      },
+      {
+        "date": "2024-10-15",
+        "lectures": [
+          {
+            "title": "Collaborative Robotics in Daily Life",
+            "start_time": "09:00",
+            "end_time": "10:30",
+            "description": "Collaborative robots and how they are impacting industry and people's lives.",
+            "speaker": {
+              "name": "Fernanda Nogueira",
+              "photo": "/images/speakers/fernanda_nogueira.jpg",
+              "description": "Fernanda Nogueira is a robotics engineer involved in industrial collaborative robotics projects."
+            }
+          },
+          {
+            "title": "Big Data and Predictive Analytics",
+            "start_time": "11:00",
+            "end_time": "12:30",
+            "description": "Using Big Data to make predictions and perform predictive analysis in various fields.",
+            "speaker": {
+              "name": "Gustavo Ribeiro",
+              "photo": "/images/speakers/gustavo_ribeiro.jpg",
+              "description": "Gustavo Ribeiro is a data scientist with extensive experience in predictive analytics and Big Data."
+            }
+          },
+          {
+            "title": "Global Scale Distributed Computing",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "description": "How distributed computing is being used to solve large-scale problems.",
+            "speaker": {
+              "name": "Helena Souza",
+              "photo": "/images/speakers/helena_souza.jpg",
+              "description": "Helena Souza is a researcher in distributed computing and has worked with cloud infrastructure for the past seven years."
+            }
+          },
+          {
+            "title": "Explainable Neural Networks",
+            "start_time": "16:00",
+            "end_time": "17:30",
+            "description": "Techniques for explaining neural networks and making AI models more transparent.",
+            "speaker": {
+              "name": "Igor Lima",
+              "photo": "/images/speakers/igor_lima.jpg",
+              "description": "Igor Lima is a professor and researcher focused on explainable neural networks and AI transparency."
+            }
+          }
+        ]
+      },
+      {
+        "date": "2024-10-16",
+        "lectures": [
+          {
+            "title": "Augmented Reality in Education",
+            "start_time": "09:00",
+            "end_time": "10:30",
+            "description": "Exploring the use of augmented reality to transform learning.",
+            "speaker": {
+              "name": "Juliana Ferreira",
+              "photo": "/images/speakers/juliana_ferreira.jpg",
+              "description": "Juliana Ferreira is a specialist in educational technologies and an enthusiast of augmented reality in teaching."
+            }
+          },
+          {
+            "title": "Process Automation with AI",
+            "start_time": "11:00",
+            "end_time": "12:30",
+            "description": "Business process automation using Artificial Intelligence.",
+            "speaker": {
+              "name": "Lucas Pereira",
+              "photo": "/images/speakers/lucas_pereira.jpg",
+              "description": "Lucas Pereira is a process automation consultant with experience in corporate AI development."
+            }
+          },
+          {
+            "title": "Predictive Modeling in Healthcare",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "description": "Applying predictive modeling techniques to anticipate health issues.",
+            "speaker": {
+              "name": "Mariana Gonçalves",
+              "photo": "/images/speakers/mariana_goncalves.jpg",
+              "description": "Mariana Gonçalves is a digital health researcher developing predictive models for disease diagnosis."
+            }
+          },
+          {
+            "title": "Blockchain and AI",
+            "start_time": "16:00",
+            "end_time": "17:30",
+            "description": "Combining Blockchain with Artificial Intelligence for new possibilities.",
+            "speaker": {
+              "name": "Nicolas Medeiros",
+              "photo": "/images/speakers/nicolas_medeiros.jpg",
+              "description": "Nicolas Medeiros is a specialist in blockchain and AI, working on projects that combine both technologies."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
