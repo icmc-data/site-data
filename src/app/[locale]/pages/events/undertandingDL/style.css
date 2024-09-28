@@ -32,3 +32,14 @@
   font-weight: bold;
   text-align: center;
 }
+.about-event {
+  border-radius: 10px;
+}
+.about-event a {
+  color: #0d0d0d;
+}
+
+.about-event a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
