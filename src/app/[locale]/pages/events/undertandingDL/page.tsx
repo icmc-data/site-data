@@ -6,6 +6,7 @@ import Hero from "../../../components/Hero";
 import "./style.css";
 import UDLLogo from "@/public/images/UDLLogo.png";
 import UDLLogoWhite from "@/public/images/UDLLogo-white.png";
+import FAQ from "../../../components/faq";
 
 export default function UnderstandingDL() {
   const t = useTranslations("");
@@ -13,7 +14,8 @@ export default function UnderstandingDL() {
   const [logoSrc, setLogoSrc] = useState(UDLLogo.src);
 
   useEffect(() => {
-    const updatedLogoSrc = resolvedTheme === "light" ? UDLLogoWhite.src : UDLLogo.src;
+    const updatedLogoSrc =
+      resolvedTheme === "light" ? UDLLogoWhite.src : UDLLogo.src;
     setLogoSrc(updatedLogoSrc);
   }, [resolvedTheme]);
 
@@ -38,7 +40,7 @@ export default function UnderstandingDL() {
 
       <div className="about-event">
         <h2>SOBRE O EVENTO</h2>
-        <p>
+        <p style={{ paddingTop: "20px" }}>
           O <strong>UnderstandingDL 2024</strong> é um evento internacional
           organizado pelo <strong>Grupo Data</strong> da USP São Carlos, que se
           dedica ao estudo e à disseminação de conhecimento em Data Science no
@@ -58,6 +60,7 @@ export default function UnderstandingDL() {
           <strong>Universidade de São Paulo</strong>.
         </p>
       </div>
+      <FAQ />
     </div>
   );
 }
