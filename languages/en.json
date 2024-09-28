@@ -97,13 +97,13 @@
     "Footer.Courses": "Python for Data Science"
   },
   "UDLHero": {
-    "title": "tetetets",
-    "description": "Here at FlowBite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.",
-    "eventDateTitle": "28 November 2021",
-    "dateText": "Join us at FlowBite 2021 to understand what’s next as the global tech and startup ecosystem rethinks the future of everything.",
-    "speakersTitle": "25+ top notch speakers",
-    "speakersText": "Here you will find keynote speakers, who all are able to talk about Recruiting. Click on the individual keynote speakers to read more about them and their keynotes.",
-    "dateButtonText": "Conference",
-    "speakersButtonText": "View list"
+    "title": "Understanding Deep Learning 2024",
+    "description": "Join us this October for a series of hybrid and online talks featuring renowned researchers from top universities and institutions worldwide, discussing the latest advancements in Deep Learning.",
+    "eventDateTitle": "14-18 October 2024",
+    "dateText": "Join us from 14th to 18th of October 2024 for an in-depth exploration of Deep Learning, covering topics like Generative AI, Explainability, Ethics, AutoML, and advances in Reinforcement Learning.",
+    "speakersTitle": "Renowned International Speakers",
+    "speakersText": "Hear from experts from Harvard, Stanford, MIT, and institutions like Google Brain and DeepMind. Learn cutting-edge insights from the best minds in AI and expand your knowledge of the future of Deep Learning.",
+    "dateButtonText": "Learn More",
+    "speakersButtonText": "View Speakers"
   }
 }
