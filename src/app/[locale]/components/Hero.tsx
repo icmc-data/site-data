@@ -1,5 +1,6 @@
 import { FaCalendarAlt, FaUserFriends } from "react-icons/fa"; // Importando ícones
 import Button from "./Button"; // Importando o componente Button
+import Link from "next/link"; // Importando Link do Next.js
 
 interface HeroProps {
   title: string;
@@ -29,17 +30,18 @@ export default function Hero({
   eventButtonText,
 }: HeroProps) {
   return (
-    <section className="relative w-full p-8 lg:flex lg:items-start lg:justify-between lg:px-32 mt-16 text-center lg:text-left">
+    <section className="relative w-full lg:flex lg:items-start lg:justify-between mt-24 text-center lg:text-left">
       <div className="lg:w-2/3 lg:pr-16">
         <div className="flex flex-col items-center lg:items-start mb-6">
           <h1 className="text-primary dark:text-primary font-montserrat font-bold text-5xl leading-tight mb-4">
             {title}
           </h1>
         </div>
-        <p className="text-text-secondary dark:text-text-secondary text-lg font-inter mb-8 max-w-lg mx-auto lg:mx-0">
+        <p className="text-text-secondary dark:text-text-secondary text-lg font-inter mb-8 w-full mx-auto lg:mx-0">
           {description}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+          {/* Seção Data do Evento */}
           <div className="flex flex-col items-center lg:items-start">
             <FaCalendarAlt className="w-10 h-10 text-primary dark:text-primary mb-4" />
             <div>
@@ -49,17 +51,10 @@ export default function Hero({
               <p className="text-text-secondary dark:text-text-secondary font-inter mb-4">
                 {dateText}
               </p>
-              <Button
-                variant="primary"
-                size="medium"
-                className="mt-4"
-                pageLink={dateLink}
-              >
-                {dateButtonText}
-              </Button>
             </div>
           </div>
 
+          {/* Seção Palestrantes */}
           <div className="flex flex-col items-center lg:items-start">
             <FaUserFriends className="w-10 h-10 text-primary dark:text-primary mb-4" />
             <div>
@@ -69,15 +64,26 @@ export default function Hero({
               <p className="text-text-secondary dark:text-text-secondary font-inter mb-4">
                 {speakersText}
               </p>
-              <Button
-                variant="secondary"
-                size="medium"
-                className="mt-4"
-                pageLink={speakersLink}
-              >
+            </div>
+          </div>
+        </div>
+
+        {/* Botões Alinhados */}
+        <div className="relative mt-8 lg:flex lg:justify-between lg:items-center">
+          {/* Botão Data do Evento (Alinhado à Esquerda) */}
+          <Link href={dateLink} passHref>
+            <Button variant="primary" size="medium">
+              {dateButtonText}
+            </Button>
+          </Link>
+
+          {/* Botão Palestrantes (Alinhado à Direita) */}
+          <div className="lg:ml-auto mt-4 lg:mt-0">
+            <Link href={speakersLink} passHref>
+              <Button variant="secondary" size="medium">
                 {eventButtonText}
               </Button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
