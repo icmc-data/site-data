@@ -52,7 +52,7 @@ export default function RootLayout({
 
   return (
     <html lang={languageCode}>
-      <body className="relative">
+      <body className="relative min-h-screen flex flex-col">
         <ThemeProvider
           enableSystem
           attribute="class"
@@ -77,7 +77,7 @@ export default function RootLayout({
             <div className="absolute inset-0 z-0">
               <Particle />
             </div>
-            <main className="relative z-10 mx-auto max-w-screen-2xl p-4 md:p-8">
+            <main className="relative z-10 mx-auto max-w-screen-2xl p-4 md:p-8 flex-grow">
               {children}
             </main>
             <Footer locale={locale} />

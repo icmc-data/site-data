@@ -17,14 +17,13 @@ export const Footer: FC<Props> = ({ locale }) => {
   useEffect(() => {
     const updatedLogoSrc =
       resolvedTheme === "light"
-        ? "/simpleDATAICON-white.png"  // Altere para o nome do arquivo da logo para whitemode
+        ? "/simpleDATAICON-white.png" // Altere para o nome do arquivo da logo para whitemode
         : "/simpleDATAICON.png";
     setLogoSrc(updatedLogoSrc);
   }, [resolvedTheme]);
 
   return (
-    <footer className="bg-background-secondary relative z-20">
-
+    <footer className="bg-background-secondary relative z-20 mt-auto w-full">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -45,7 +44,6 @@ export const Footer: FC<Props> = ({ locale }) => {
                 <li className="mb-4">
                   <a href={`/${locale}/pages/fronts`} className="hover:underline">{t("Footer.Fronts")}</a>
                 </li>
-
               </ul>
             </div>
             <div>
@@ -62,14 +60,12 @@ export const Footer: FC<Props> = ({ locale }) => {
             <div>
               <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-primary">{t("Footer.Legal")}</h2>
               <ul className="text-text-secondary dark:text-text-secondary font-medium">
-              <li className="mb-4">
+                <li className="mb-4">
                   <a href={`/${locale}/pages/events/udl`} className="hover:underline">{t("Footer.Events")}</a>
                 </li>
-                <li className="mb">
-                  <a href={`https://www.youtube.com/watch?v=LxP-r00E2fo&list=PLFE-LjWAAP9Skog9YhRvuNBjWD724c32m`} className="hover:underline">{t("Footer.Courses")}</a>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=LxP-r00E2fo&list=PLFE-LjWAAP9Skog9YhRvuNBjWD724c32m" className="hover:underline">{t("Footer.Courses")}</a>
                 </li>
-
-
               </ul>
             </div>
           </div>
