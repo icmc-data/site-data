@@ -30,10 +30,10 @@ export default function UnderstandingDL() {
           organizado pelo <strong>Grupo Data</strong> da USP São Carlos, que se
           dedica ao estudo e à disseminação de conhecimento em Data Science no
           Instituto de Ciências Matemáticas e de Computação (ICMC). Se quiser
-          saber mais sobre o Data: <a href="xxxx">clique aqui</a>. O objetivo do
-          evento é reunir pesquisadores de diversas partes do mundo para
-          apresentar suas pesquisas e tornar o conhecimento mais acessível para
-          todos. Entre os temas abordados nas palestras estão{" "}
+          saber mais sobre o Data: <a href="/${locale}/">clique aqui</a>. O
+          objetivo do evento é reunir pesquisadores de diversas partes do mundo
+          para apresentar suas pesquisas e tornar o conhecimento mais acessível
+          para todos. Entre os temas abordados nas palestras estão{" "}
           <strong>LLMs Multilinguais</strong>,{" "}
           <strong>
             Representação de Imagens em Multirresolução usando Redes Neurais
