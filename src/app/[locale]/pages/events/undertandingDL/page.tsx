@@ -6,8 +6,9 @@ import Hero from "../../../components/Hero";
 import "./style.css";
 import UDLLogo from "@/public/images/UDLLogo.png";
 import UDLLogoWhite from "@/public/images/UDLLogo-white.png";
-import FAQ from "../../../components/faq";
+import FAQ from "../../../components/FAQ";
 import Schedule from "../../../components/Schedule";
+import faqData from "@/data/br/udlFaq.json";
 
 export default function UnderstandingDL() {
   const t = useTranslations("");
@@ -38,7 +39,6 @@ export default function UnderstandingDL() {
       <br />
       <br />
 
-
       <div className="about-event">
         <h2>SOBRE O EVENTO</h2>
         <p style={{ paddingTop: "20px" }}>
@@ -64,7 +64,8 @@ export default function UnderstandingDL() {
       <br />
 
       <Schedule />
-      <FAQ />
+
+      <FAQ data={faqData} />
     </div>
   );
 }
