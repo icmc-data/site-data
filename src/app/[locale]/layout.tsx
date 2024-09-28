@@ -5,7 +5,7 @@ import {
   NextIntlClientProvider,
   useMessages,
 } from "next-intl";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Orbitron } from "next/font/google"; // Importando a fonte Orbitron
 import NextTopLoader from "nextjs-toploader";
 import { Header } from "./components/Header";
 import Particle from "./components/Particle";
@@ -22,6 +22,11 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-montserrat",
+});
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-orbitron",
 });
 
 export const metadata: Metadata = {
@@ -51,7 +56,7 @@ export default function RootLayout({
   ];
 
   return (
-    <html lang={languageCode}>
+    <html lang={languageCode} className={`${inter.variable} ${montserrat.variable} ${orbitron.variable}`}>
       <body className="relative min-h-screen flex flex-col">
         <ThemeProvider
           enableSystem

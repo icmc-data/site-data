@@ -12,8 +12,6 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'dataPurple';
   size?: 'small' | 'medium' | 'large';
-  rounded?: boolean;
-  styleType?: 'default' | 'outline';
   pageLink?: PageLink; // Atualiza o tipo para corresponder aos valores literais exatos
   iconName?: keyof typeof Icons; // O nome do ícone opcional
 }
@@ -22,30 +20,20 @@ const Button: React.FC<ButtonProps> = ({
   children,
   variant = 'primary',
   size = 'medium',
-  rounded = false,
-  styleType = 'default',
   className,
   pageLink,
   iconName,
   ...props
 }) => {
   const sizeStyles = {
-    small: 'text-sm',
-    medium: 'text-base font-semibold',
-    large: 'text-lg font-semibold',
+    small: 'text-sm font-bold',
+    medium: 'text-base font-semibold font-bold',
+    large: 'text-lg font-semibold font-bold',
   };
 
-  const baseStyles = `focus:outline-none focus:shadow-outline ${
-    rounded ? 'rounded-full' : 'rounded'
-  } inline-flex items-center justify-center space-x-2 transition-transform duration-200 ease-in-out transform`;
+  const baseStyles = `focus:outline-none focus:shadow-outline bg-data-purple text-white border-2 border-data-purple inline-flex items-center justify-center space-x-2 transition-transform duration-200 ease-in-out transform rounded`;
 
-  const variantStyles = {
-    primary: styleType === 'outline' ? 'border-2 border-data-purple text-data-purple' : 'bg-button text-white border-2 border-button',
-    secondary: styleType === 'outline' ? 'border-2 border-data-purple text-data-purple' : 'bg-secondary text-background border-2 border-secondary',
-    dataPurple: 'bg-data-purple text-background'
-  };
-
-  const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`;
+  const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${className}`;
 
   const inlineStyles = {
     paddingLeft: '17px',

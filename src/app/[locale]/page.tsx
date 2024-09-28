@@ -55,7 +55,7 @@ export default function DashboardPage() {
               {t("HeroSection.Small_Description-Data")}
             </p>
             <br />
-            <Button variant="secondary" size="medium" styleType="outline" pageLink="/pages/about">
+            <Button variant="secondary" size="medium"  pageLink="/pages/about">
               {t("HeroSection.Learn_More")}
             </Button>
           </div>
