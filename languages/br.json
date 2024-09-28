@@ -62,7 +62,6 @@
     "No_Related_Posts": "Nenhum post relacionado ainda.",
     "Back_To_Previous_Post": "Voltar ao Post Anterior"
   },
-
   "MemberCard": {
     "Sponsorship": "Patrocínio",
     "Marketing": "Marketing",
@@ -93,17 +92,18 @@
     "Events": "Understand Deep Learning",
     "PrivacyPolicy": "Política de Privacidade",
     "TermsConditions": "Termos & Condições",
-    "Legal": "Acontecendo...", 
+    "Legal": "Acontecendo...",
     "Fronts": "Frentes do grupo",
     "Courses": "Python para Data Science"
   },
   "UDLHero": {
     "title": "Understanding Deep Learning 2024",
     "description": "Junte-se a nós em outubro para uma série de palestras híbridas e online, com pesquisadores renomados das principais universidades e instituições do mundo, discutindo os últimos avanços em Deep Learning.",
-    "eventDateTitle": "14-18 de Outubro de 2024",
-   "dateText": "Dias 14 a 18 de outubro de 2024 para uma exploração aprofundada de Deep Learning, abordando tópicos como IA Generativa, Explicabilidade, Ética, AutoML e avanços em Reinforcement.",
+    "eventDateTitle": "14-18 de Outubro",
+    "dateText": "Dias 14 a 18 de outubro de 2024 para uma exploração aprofundada de Deep Learning, abordando tópicos como IA Generativa, Explicabilidade, Ética, AutoML e avanços em Reinforcement.",
     "speakersTitle": "Palestrantes Internacionais Renomados",
-   "speakersText": "Ouça especialistas de Harvard, Stanford, MIT e instituições como Google Brain e DeepMind. Insights de ponta dos melhores profissionais em IA.",
-    "speakersButtonText": "Ver Palestrantes"
+    "speakersText": "Ouça especialistas de Harvard, Stanford, MIT e instituições como Google Brain e DeepMind. Insights de ponta dos melhores profissionais em IA.",
+    "speakersButtonText": "Ver Palestrantes",
+    "dateButtonText": "Inscreva-se"
   }
 }
