@@ -1596,6 +1596,11 @@ classnames@2.3.2:
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
 
+classnames@^2.2.6:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
+  integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
+
 client-only@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz"
@@ -3463,7 +3468,7 @@ process@^0.11.1:
   resolved "https://registry.npmjs.org/process/-/process-0.11.10.tgz"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
-prop-types@15.8.1, prop-types@^15.6.2, prop-types@^15.8.1:
+prop-types@15.8.1, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -3492,7 +3497,7 @@ react-day-picker@^8.10.0:
   resolved "https://registry.npmjs.org/react-day-picker/-/react-day-picker-8.10.1.tgz"
   integrity sha512-TMx7fNbhLk15eqcMt+7Z7S2KF7mfTId/XJDjKE8f+IUcFn0l08/kI4FiYTL/0yuOLmEcbR4Fwe3GJf/NiiMnPA==
 
-react-dom@18.2.0, react-dom@^18.2.0:
+react-dom@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -3500,10 +3505,23 @@ react-dom@18.2.0, react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-dom@^18.2.0:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"
+  integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
+  dependencies:
+    loose-envify "^1.1.0"
+    scheduler "^0.23.2"
+
 react-icons@^5.3.0:
   version "5.3.0"
   resolved "https://registry.npmjs.org/react-icons/-/react-icons-5.3.0.tgz"
   integrity sha512-DnUk8aFbTyQPSkCfF8dbX6kQjXA9DktMeJqfjrg6cK9vwQVMxmcA3BfP4QoiztVmEHtwlTgLFsPuH2NskKT6eg==
+
+react-intersection-observer@^8.26.2:
+  version "8.34.0"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.34.0.tgz#6f6e67831c52e6233f6b6cc7eb55814820137c42"
+  integrity sha512-TYKh52Zc0Uptp5/b4N91XydfSGKubEhgZRtcg1rhTKABXijc4Sdr1uTp5lJ8TN27jwUsdXxjHXtHa0kPj704sw==
 
 react-is@^16.10.2, react-is@^16.13.1:
   version "16.13.1"
@@ -3575,10 +3593,26 @@ react-tsparticles@^2.12.2:
   dependencies:
     tsparticles-engine "^2.12.0"
 
-react@18.2.0, react@^18.2.0:
+react-vertical-timeline-component@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-3.6.0.tgz#aeb4b56be3f397b493c847df79521f3bfb3aab71"
+  integrity sha512-l9zulqjIGlRuaQeplGzV4r/tG2RYBpYt84Il8w4IxnJze2cDIGI04MKo3F7f1sHT0Sih1ohEFts8UV23AJS15Q==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.7.2"
+    react-intersection-observer "^8.26.2"
+
+react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+  dependencies:
+    loose-envify "^1.1.0"
+
+react@^18.2.0:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
+  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
   dependencies:
     loose-envify "^1.1.0"
 
@@ -3715,6 +3749,13 @@ scheduler@^0.23.0:
   version "0.23.0"
   resolved "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz"
   integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
+  dependencies:
+    loose-envify "^1.1.0"
+
+scheduler@^0.23.2:
+  version "0.23.2"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.2.tgz#414ba64a3b282892e944cf2108ecc078d115cdc3"
+  integrity sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==
   dependencies:
     loose-envify "^1.1.0"
 

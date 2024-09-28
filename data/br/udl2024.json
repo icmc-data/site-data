@@ -1,52 +1,152 @@
-[
-    {
-        "day": "14-10-2024",
-        "events": [
-            {
-                "id": 1,
-                "title": "Palestra de Abertura",
-                "description": "Uma introdução ao evento UDL 2024, discutindo os principais tópicos e tendências da área.",
-                "startTime": "09:00",
-                "endTime": "10:00",
-                "type": "Opening"
-            },
-            {
-                "id": 2,
-                "title": "Deep Learning para Iniciantes",
-                "description": "Uma palestra introdutória sobre conceitos fundamentais de deep learning.",
-                "startTime": "11:00",
-                "endTime": "12:00",
-                "type": "Technical"
-            },
-            {
-                "id": 3,
-                "title": "Aprendizado Federado",
-                "description": "Explorando as possibilidades do aprendizado federado em aplicações industriais.",
-                "startTime": "14:00",
-                "endTime": "15:00",
-                "type": "Technical"
-            },
-            {
-                "id": 4,
-                "title": "Inteligência Artificial Responsável",
-                "description": "Discussão sobre as implicações éticas e sociais da IA.",
-                "startTime": "16:00",
-                "endTime": "17:00",
-                "type": "Panel"
+{
+    "days": [
+      {
+        "date": "2024-10-14",
+        "lectures": [
+          {
+            "title": "Inovações em IA para o Futuro",
+            "start_time": "09:00",
+            "end_time": "10:30",
+            "description": "Exploração das últimas inovações em Inteligência Artificial e seu impacto em nossas vidas diárias.",
+            "speaker": {
+              "name": "Ana Silva",
+              "photo": "/images/speakers/ana_silva.jpg",
+              "description": "Ana Silva é especialista em Inteligência Artificial com foco em aprendizado de máquina e ética em IA. Trabalha como pesquisadora no Centro de Inovação Tecnológica."
             }
-        ]
-    },
-    {
-        "day": "15-10-2024",
-        "events": [
-            {
-                "id": 5,
-                "title": "Visão Computacional Aplicada",
-                "description": "Como a visão computacional está transformando a indústria.",
-                "startTime": "09:00",
-                "endTime": "10:00",
-                "type": "Technical"
+          },
+          {
+            "title": "O Papel da Computação Quântica",
+            "start_time": "11:00",
+            "end_time": "12:30",
+            "description": "Discussão sobre o papel da computação quântica e como ela pode transformar a tecnologia.",
+            "speaker": {
+              "name": "Carlos Almeida",
+              "photo": "/images/speakers/carlos_almeida.jpg",
+              "description": "Carlos Almeida é um físico e pesquisador em computação quântica, com mais de 10 anos de experiência no desenvolvimento de algoritmos quânticos."
             }
+          },
+          {
+            "title": "Deep Learning: Desafios e Aplicações",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "description": "Uma visão sobre os desafios enfrentados e aplicações em larga escala do Deep Learning.",
+            "speaker": {
+              "name": "Beatriz Ramos",
+              "photo": "/images/speakers/beatriz_ramos.jpg",
+              "description": "Beatriz Ramos é engenheira de software e especialista em Deep Learning, com experiência em empresas de tecnologia de ponta."
+            }
+          },
+          {
+            "title": "Privacidade de Dados e Segurança em IA",
+            "start_time": "16:00",
+            "end_time": "17:30",
+            "description": "Como a privacidade de dados está sendo tratada no contexto de Inteligência Artificial.",
+            "speaker": {
+              "name": "Diego Costa",
+              "photo": "/images/speakers/diego_costa.jpg",
+              "description": "Diego Costa é especialista em cibersegurança e tem trabalhado em projetos de segurança de dados para IA nos últimos cinco anos."
+            }
+          }
         ]
-    }
-]
+      },
+      {
+        "date": "2024-10-15",
+        "lectures": [
+          {
+            "title": "Robótica Colaborativa no Cotidiano",
+            "start_time": "09:00",
+            "end_time": "10:30",
+            "description": "Robôs colaborativos e como estão impactando a indústria e a vida das pessoas.",
+            "speaker": {
+              "name": "Fernanda Nogueira",
+              "photo": "/images/speakers/fernanda_nogueira.jpg",
+              "description": "Fernanda Nogueira é engenheira de robótica e está envolvida em projetos de robótica colaborativa industrial."
+            }
+          },
+          {
+            "title": "Big Data e Análise Preditiva",
+            "start_time": "11:00",
+            "end_time": "12:30",
+            "description": "Utilizando Big Data para fazer previsões e análises preditivas em diversas áreas.",
+            "speaker": {
+              "name": "Gustavo Ribeiro",
+              "photo": "/images/speakers/gustavo_ribeiro.jpg",
+              "description": "Gustavo Ribeiro é cientista de dados com vasta experiência em análise preditiva e Big Data."
+            }
+          },
+          {
+            "title": "Computação Distribuída em Escala Global",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "description": "Como a computação distribuída está sendo usada para resolver grandes problemas.",
+            "speaker": {
+              "name": "Helena Souza",
+              "photo": "/images/speakers/helena_souza.jpg",
+              "description": "Helena Souza é pesquisadora em computação distribuída e tem trabalhado com infraestrutura em nuvem nos últimos sete anos."
+            }
+          },
+          {
+            "title": "Redes Neurais Explicáveis",
+            "start_time": "16:00",
+            "end_time": "17:30",
+            "description": "Técnicas para explicar redes neurais e tornar modelos de IA mais transparentes.",
+            "speaker": {
+              "name": "Igor Lima",
+              "photo": "/images/speakers/igor_lima.jpg",
+              "description": "Igor Lima é professor e pesquisador focado em redes neurais explicáveis e transparência em IA."
+            }
+          }
+        ]
+      },
+      {
+        "date": "2024-10-16",
+        "lectures": [
+          {
+            "title": "Realidade Aumentada na Educação",
+            "start_time": "09:00",
+            "end_time": "10:30",
+            "description": "Explorando o uso da realidade aumentada para transformar o aprendizado.",
+            "speaker": {
+              "name": "Juliana Ferreira",
+              "photo": "/images/speakers/juliana_ferreira.jpg",
+              "description": "Juliana Ferreira é especialista em tecnologias educacionais e entusiasta da realidade aumentada no ensino."
+            }
+          },
+          {
+            "title": "Automação de Processos com IA",
+            "start_time": "11:00",
+            "end_time": "12:30",
+            "description": "Automatização de processos empresariais usando Inteligência Artificial.",
+            "speaker": {
+              "name": "Lucas Pereira",
+              "photo": "/images/speakers/lucas_pereira.jpg",
+              "description": "Lucas Pereira é consultor em automação de processos e tem experiência em desenvolvimento de IA corporativa."
+            }
+          },
+          {
+            "title": "Modelagem Preditiva em Saúde",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "description": "Aplicação de técnicas de modelagem preditiva para prever problemas de saúde.",
+            "speaker": {
+              "name": "Mariana Gonçalves",
+              "photo": "/images/speakers/mariana_goncalves.jpg",
+              "description": "Mariana Gonçalves é pesquisadora em saúde digital e desenvolve modelos preditivos para diagnóstico de doenças."
+            }
+          },
+          {
+            "title": "Blockchain e IA",
+            "start_time": "16:00",
+            "end_time": "17:30",
+            "description": "Combinação do Blockchain com a Inteligência Artificial para novas possibilidades.",
+            "speaker": {
+              "name": "Nicolas Medeiros",
+              "photo": "/images/speakers/nicolas_medeiros.jpg",
+              "description": "Nicolas Medeiros é especialista em blockchain e IA, trabalhando em projetos que unem as duas tecnologias."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
