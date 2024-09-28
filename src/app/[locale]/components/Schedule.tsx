@@ -1,26 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { Timeline } from "primereact/timeline";
-import "primereact/resources/themes/saga-blue/theme.css"; // Tema do PrimeReact
-import "primereact/resources/primereact.min.css"; // Estilos dos componentes
-import "primeicons/primeicons.css"; // Ícones do PrimeReact
+import "primereact/resources/themes/saga-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
 import eventData from "@/data/br/udl2024.json";
 import Image from "next/image";
-import { FaRegClock } from "react-icons/fa"; // Importando ícone de relógio do react-icons
+import { FaRegClock } from "react-icons/fa";
+import { Fade } from "react-awesome-reveal"; // Importando a animação Fade
 
 const Schedule: React.FC = () => {
   const weekDays = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
-
-  // Transformando os dados para serem usados no Timeline do PrimeReact
   const [selectedDay, setSelectedDay] = useState<string>(eventData.days[0]?.date || "");
   const [filteredEvents, setFilteredEvents] = useState<any[]>([]);
 
   useEffect(() => {
-    // Filtrando eventos do dia selecionado
     const eventsForDay = eventData.days
       .find((day) => day.date === selectedDay)
       ?.lectures.map((lecture) => ({
         ...lecture,
-        time: `${lecture.start_time} - ${lecture.end_time}`, // Somente horário da palestra
+        time: `${lecture.start_time} - ${lecture.end_time}`,
         status: `Palestra de ${lecture.speaker.name}`,
       })) || [];
     setFilteredEvents(eventsForDay);
@@ -37,7 +35,7 @@ const Schedule: React.FC = () => {
 
   const customMarker = () => {
     return (
-      <span className="pi pi-calendar text-3xl text-data-purple"></span> // Usando ícone de calendário para representar eventos com cor adaptada
+      <span className="pi pi-calendar text-3xl text-data-purple"></span>
     );
   };
 
@@ -67,37 +65,38 @@ const Schedule: React.FC = () => {
   return (
     <>
       <h2 className="text-[var(--primary)]">CRONOGRAMA</h2>
-        <label htmlFor="day-selector" className="text-lg font-semibold mr-2 text-[var(--primary)]">Selecione o dia:</label>
-        <select
-          id="day-selector"
-          value={selectedDay}
-          onChange={handleDayChange}
-          className="p-2 border rounded-lg text-[var(--primary)] bg-[var(--background-secondary)]"
-        >
-          {eventData.days.map((day) => (
-            <option key={day.date} value={day.date}>
-              {getDayOfWeek(day.date)}
-            </option>
-          ))}
-        </select>
-    <div className="schedule-container p-6 max-w-4xl mx-auto">
-      
-      <div className="text-center mb-6">
+      <label htmlFor="day-selector" className="text-lg font-semibold mr-2 text-[var(--primary)]">
+        Selecione o dia:
+      </label>
+      <select
+        id="day-selector"
+        value={selectedDay}
+        onChange={handleDayChange}
+        className="p-2 border rounded-lg text-[var(--primary)] bg-[var(--background-secondary)]"
+      >
+        {eventData.days.map((day) => (
+          <option key={day.date} value={day.date}>
+            {getDayOfWeek(day.date)}
+          </option>
+        ))}
+      </select>
+      <div className="schedule-container p-6 max-w-4xl mx-auto">
+        <div className="text-center mb-6"></div>
+        {filteredEvents.length > 0 ? (
+          <Fade triggerOnce>
+            <Timeline
+              value={filteredEvents}
+              align="alternate"
+              marker={customMarker}
+              content={customContent}
+            />
+          </Fade>
+        ) : (
+          <p className="text-center text-lg text-[var(--text-secondary)]">
+            Nenhum evento disponível no momento.
+          </p>
+        )}
       </div>
-
-      {filteredEvents.length > 0 ? (
-        <Timeline
-          value={filteredEvents}
-          align="alternate" // Alterna os lados da timeline para criar um visual dinâmico
-          marker={customMarker}
-          content={customContent}
-        />
-      ) : (
-        <p className="text-center text-lg text-[var(--text-secondary)]">
-          Nenhum evento disponível no momento.
-        </p>
-      )}
-    </div>
     </>
   );
 };
