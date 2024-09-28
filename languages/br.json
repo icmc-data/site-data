@@ -96,5 +96,15 @@
     "Legal": "Acontecendo...", 
     "Fronts": "Frentes do grupo",
     "Courses": "Python para Data Science"
+  },
+  "UDLHero": {
+    "title": "Discover new product and best possibilities",
+    "description": "Here at FlowBite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.",
+    "eventDateTitle": "28 November 2021",
+    "dateText": "Join us at FlowBite 2021 to understand what’s next as the global tech and startup ecosystem, rethinks the future of everything.",
+    "speakersTitle": "25+ top notch speakers",
+    "speakersText": "Here you will find keynote speakers, who all are able to talk about Recruiting. Click on the individual keynote speakers and read more about them and their keynotes.",
+    "dateButtonText": "Conference",
+    "speakersButtonText": "View list"
   }
 }
