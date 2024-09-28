@@ -7,6 +7,7 @@ import "./style.css";
 import UDLLogo from "@/public/images/UDLLogo.png";
 import UDLLogoWhite from "@/public/images/UDLLogo-white.png";
 import FAQ from "../../../components/faq";
+import Schedule from "../../../components/Schedule";
 
 export default function UnderstandingDL() {
   const t = useTranslations("");
@@ -60,6 +61,8 @@ export default function UnderstandingDL() {
           <strong>Universidade de São Paulo</strong>.
         </p>
       </div>
+
+      <Schedule />
       <FAQ />
     </div>
   );
