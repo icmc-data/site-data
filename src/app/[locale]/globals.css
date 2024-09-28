@@ -8,12 +8,7 @@
     --secondary: #ec90c5;
     --background: #ffffff;
     --background-secondary: #f5f5f5;
-    --background-opacity: rgba(
-      255,
-      255,
-      255,
-      0.4
-    ); /* Nova variável com opacidade */
+    --background-opacity: rgba( 255, 255, 255,0.4); /* Nova variável com opacidade */
     --button: #ec90c5;
     --button-text: #000000;
     --text-secondary: #444444;
@@ -36,12 +31,7 @@
     --secondary: #f9a1d3;
     --background: #121212;
     --background-secondary: #1b1b1b;
-    --background-opacity: rgba(
-      18,
-      18,
-      18,
-      0.4
-    ); /* Nova variável com opacidade no tema escuro */
+    --background-opacity: rgba( 18,18,18,0.4); /* Nova variável com opacidade no tema escuro */
     --button: #f9a1d3;
     --button-text: #fff;
     --text-secondary: #bbbbbb;
