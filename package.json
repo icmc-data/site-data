@@ -55,6 +55,7 @@
     "react-tsparticles": "^2.12.2",
     "react-vertical-timeline-component": "^3.6.0",
     "recharts": "^2.12.0",
+    "sharp": "^0.33.5",
     "swiper": "^11.0.3",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
