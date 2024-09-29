@@ -111,7 +111,6 @@ export default function Learn() {
               <Button
                 variant="secondary"
                 size="medium"
-                rounded={false}
                 iconName="FaArrowLeft"
                 onClick={handleBackClick}
               >
