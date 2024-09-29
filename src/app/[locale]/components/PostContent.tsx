@@ -18,9 +18,9 @@ const PostContent: React.FC<PostContentProps> = ({ selectedPost, onBackClick, on
       <Button
         variant="secondary"
         size="medium"
-        rounded={false}
         iconName="FaArrowLeft"
         onClick={onBackClick}
+        className="rounded-md" // Adicionei a classe CSS para bordas arredondadas, caso necessário
       >
         Voltar
       </Button>
