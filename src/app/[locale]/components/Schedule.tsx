@@ -3,12 +3,28 @@ import { Timeline } from "primereact/timeline";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
-import eventData from "@/data/br/udl2024.json";
 import Image from "next/image";
 import { FaRegClock } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal"; // Importando a animação Fade
+import PropTypes from 'prop-types';
 
-const Schedule: React.FC = () => {
+interface EventData {
+  days: {
+    date: string;
+    lectures: {
+      title: string;
+      description: string;
+      start_time: string;
+      end_time: string;
+      speaker: {
+        name: string;
+        photo: string;
+      };
+    }[];
+  }[];
+}
+
+const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
   const weekDays = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
   const [selectedDay, setSelectedDay] = useState<string>(eventData.days[0]?.date || "");
   const [filteredEvents, setFilteredEvents] = useState<any[]>([]);
@@ -22,7 +38,7 @@ const Schedule: React.FC = () => {
         status: `Palestra de ${lecture.speaker.name}`,
       })) || [];
     setFilteredEvents(eventsForDay);
-  }, [selectedDay]);
+  }, [selectedDay, eventData]);
 
   const handleDayChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDay(event.target.value);
@@ -99,6 +115,28 @@ const Schedule: React.FC = () => {
       </div>
     </>
   );
+};
+
+Schedule.propTypes = {
+  eventData: PropTypes.shape({
+    days: PropTypes.arrayOf(
+      PropTypes.shape({
+        date: PropTypes.string.isRequired,
+        lectures: PropTypes.arrayOf(
+          PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            start_time: PropTypes.string.isRequired,
+            end_time: PropTypes.string.isRequired,
+            speaker: PropTypes.shape({
+              name: PropTypes.string.isRequired,
+              photo: PropTypes.string.isRequired
+            }).isRequired
+          }).isRequired
+        ).isRequired
+      }).isRequired
+    ).isRequired
+  }).isRequired
 };
 
 export default Schedule;

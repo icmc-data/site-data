@@ -8,12 +8,24 @@ import UDLLogo from "@/public/images/UDLLogo.png";
 import UDLLogoWhite from "@/public/images/UDLLogo-white.png";
 import FAQ from "../../../components/FAQ";
 import Schedule from "../../../components/Schedule";
-import faqData from "@/data/br/udlFaq.json";
+
+// Importa os arquivos JSON para ambos os idiomas
+import eventDataBr from "@/data/br/udl2024.json";
+import eventDataEn from "@/data/en/udl2024.json";
+import faqDataBr from "@/data/br/udlFaq.json";
+import faqDataEn from "@/data/en/udlFaq.json";
 
 export default function UnderstandingDL() {
   const t = useTranslations("");
   const { resolvedTheme } = useTheme();
   const [logoSrc, setLogoSrc] = useState(UDLLogo.src);
+
+  // Determina o idioma atual da página
+  const locale = t("DONT_DELETE");  // Presumo que "DONT_DELETE" é a sua chave para obter o locale
+
+  // Seleciona os dados corretos com base no idioma
+  const eventData = locale === "br" ? eventDataBr : eventDataEn;
+  const faqData = locale === "br" ? faqDataBr : faqDataEn;
 
   useEffect(() => {
     const updatedLogoSrc =
@@ -74,7 +86,7 @@ export default function UnderstandingDL() {
       </div>
       <br />
 
-      <Schedule />
+      <Schedule eventData={eventData} />
 
       <FAQ data={faqData} />
     </div>
