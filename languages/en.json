@@ -103,7 +103,7 @@
     "dateText": "Join us from 14th to 18th of October 2024 for an in-depth exploration of Deep Learning, covering topics like Generative AI, Explainability, Ethics, AutoML, and advances in Reinforcement Learning.",
     "speakersTitle": "Renowned International Speakers",
     "speakersText": "Hear from experts from Harvard, Stanford, MIT, and institutions like Google Brain and DeepMind. Learn cutting-edge insights from the best minds in AI and expand your knowledge of the future of Deep Learning.",
-    "dateButtonText": "Subscribe",
+    "dateButtonText": "Register",
     "speakersButtonText": "View Speakers"
   },
   "Schedule_Title": "SCHEDULE",
@@ -117,6 +117,28 @@
     "Friday": "Friday",
     "Saturday": "Saturday"
   },
-  "Speakers_UDL": "UDL Speakers"
+  "Speakers_UDL": "UDL Speakers",
+  "RegisterUDL": {
+    "RegisterForEvent": "Register for UDL Event",
+    "FullName": "Full Name",
+    "Email": "Email",
+    "MobileNumber": "Mobile Number",
+    "TelegramHandle": "Telegram @",
+    "Optional": "Optional",
+    "USPNumber": "USP Number",
+    "USPNumberTooltip": "The event is open to everyone; the USP number is only requested for internal control.",
+    "AgreeTerms": "I agree to the",
+    "TermsAndConditions": "terms and conditions",
+    "RegisterButton": "Register",
+    "TermsTitle": "Terms and Conditions",
+    "TermsContent": "By registering for UnderstandingDL 2024, you voluntarily accept all set terms and conditions: The event will take place in a hybrid format, with in-person sessions at USP São Carlos and live broadcasts through Data's YouTube channel. All content, including lectures, slides, and supporting materials, is copyrighted and belongs to the speakers or the Data Group, unless otherwise stated. By participating, you consent to the use of your image and voice in photos, videos, and other recordings for promotional purposes, without compensation. Your personal data will only be used for event organization and communication, and we commit not to share your information without your explicit consent, except as required by law. The Data Group reserves the right to change the schedule or cancel the event due to force majeure, notifying all registrants in advance. We are not responsible for technical or internet connection issues that may prevent participation in the event. By registering, you assume all risks associated with your participation in the event.",
+    "AgreeAndClose": "Agree and Close",
+    "InvalidEmail": "Please enter a valid email containing \"@\".",
+    "InvalidMobileNumber": "Please enter a valid mobile number with 11 digits.",
+    "FixErrorsAlert": "Please fix the errors before submitting the form.",
+    "FormSuccess": "Form successfully submitted!",
+    "FormError": "Error submitting the form:"
+  }
+
 
 }
