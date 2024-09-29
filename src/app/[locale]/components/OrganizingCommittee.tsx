@@ -46,26 +46,24 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
 
   return (
     <div>
-<div className="overflow-x-auto whitespace-nowrap mb-4 scrollbar-hide">
-  <div className="inline-flex justify-center space-x-4 min-w-full custom-padding-bottom">
-    {categories.map((category) => (
-      <Button
-        key={category}
-        onClick={() => setSelectedCategory(category)}
-        variant={selectedCategory === category ? 'dataPurple' : 'secondary'}
-        size="medium"
-        rounded
-        className="inline-block"
-      >
-        <span className="flex items-center space-x-2">
-          {categoryIcons[category]}
-          <span>{t(category)}</span>
-        </span>
-      </Button>
-    ))}
-  </div>
-</div>
-
+      <div className="overflow-x-auto whitespace-nowrap mb-4 scrollbar-hide">
+        <div className="inline-flex justify-center space-x-4 min-w-full custom-padding-bottom">
+          {categories.map((category) => (
+            <Button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              variant={selectedCategory === category ? 'dataPurple' : 'secondary'}
+              size="medium"
+              className="inline-block rounded-md" // Adicionei a classe CSS para bordas arredondadas
+            >
+              <span className="flex items-center space-x-2">
+                {categoryIcons[category]}
+                <span>{t(category)}</span>
+              </span>
+            </Button>
+          ))}
+        </div>
+      </div>
 
       <div className="flex flex-wrap justify-center">
         {filteredMembers.map((member, index) => (
