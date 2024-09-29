@@ -34,7 +34,7 @@ export default function UnderstandingDL() {
   }, [resolvedTheme]);
 
   return (
-    <div>
+    <div className="mt-32">
       <Hero
         title={t("UDLHero.title")}
         description={t("UDLHero.description")}
@@ -43,8 +43,8 @@ export default function UnderstandingDL() {
         speakersTitle={t("UDLHero.speakersTitle")}
         speakersText={t("UDLHero.speakersText")}
         imgLink={logoSrc}
-        dateLink="/pages/about"
-        speakersLink="/pages/speakers"
+        dateLink="/pages/about"  // Certifique-se de que este link também esteja correto
+        speakersLink={`/${locale}/pages/events/undertandingDL/speakers`}
         dateButtonText={t("UDLHero.dateButtonText")}
         eventButtonText={t("UDLHero.speakersButtonText")}
       />
@@ -60,9 +60,9 @@ export default function UnderstandingDL() {
           Instituto de Ciências Matemáticas e de Computação (ICMC). Se quiser
           saber mais sobre o Data:{" "}
           <a
-            href="/${locale}/"
+            href={`/${locale}/`}
             style={{
-              color: resolvedTheme === "light" ? "var(--link)" : "var(--link)", // Usa a cor de link apropriada para o modo claro ou escuro
+              color: resolvedTheme === "light" ? "var(--link)" : "var(--link)", 
             }}
           >
             Clique aqui

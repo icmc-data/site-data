@@ -30,10 +30,10 @@ export default function Hero({
   eventButtonText,
 }: HeroProps) {
   return (
-    <section className="relative w-full lg:flex lg:items-start lg:justify-between mt-24 text-center lg:text-left">
+    <section className="relative w-full lg:flex lg:items-start lg:justify-between text-center lg:text-left">
       <div className="lg:w-2/3 lg:pr-16">
         <div className="flex flex-col items-center lg:items-start mb-6">
-          <h1 className="text-primary dark:text-primary font-montserrat font-bold text-5xl leading-tight mb-4">
+          <h1 className="text-primary dark:text-primary font-montserrat font-bold leading-tight mb-4">
             {title}
           </h1>
         </div>

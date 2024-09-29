@@ -37,11 +37,11 @@ export default function DashboardPage() {
   
   const t = useTranslations("");
   return (
-    <div className="mt-24">
+    <div className="mt-32">
       <section className={`flex ${isSmallScreen ? 'flex-col-reverse' : 'flex-row'} relative py-0`}>
         <div className={`flex flex-col items-center ${isSmallScreen ? 'text-center' : 'md:flex-row text-left'} space-x-0 md:space-x-4`}>
           <div>
-            <h1 className="text-3xl md:text-5xl">DATA</h1>
+            <h1 className="">DATA</h1>
             <p className="leading-loose text-base md:text-lg">
               {t("HeroSection.Extension_Group_of")}
               <a
