@@ -105,5 +105,16 @@
     "speakersText": "Ouça especialistas de Harvard, Stanford, MIT e instituições como Google Brain e DeepMind. Insights de ponta dos melhores profissionais em IA.",
     "speakersButtonText": "Ver Palestrantes",
     "dateButtonText": "Inscreva-se"
+  },
+  "Schedule_Title": "CRONOGRAMA",
+  "Select_Day": "Selecionar o dia",
+  "Weekdays": {
+    "Sunday": "Domingo",
+    "Monday": "Segunda",
+    "Tuesday": "Terça",
+    "Wednesday": "Quarta",
+    "Thursday": "Quinta",
+    "Friday": "Sexta",
+    "Saturday": "Sábado"
   }
 }

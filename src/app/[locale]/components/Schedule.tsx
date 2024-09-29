@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import { Timeline } from "primereact/timeline";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import Image from "next/image";
 import { FaRegClock } from "react-icons/fa";
-import { Fade } from "react-awesome-reveal"; // Importando a animação Fade
+import { Fade } from "react-awesome-reveal";
 import PropTypes from 'prop-types';
 
 interface EventData {
@@ -25,7 +26,16 @@ interface EventData {
 }
 
 const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
-  const weekDays = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+  const t = useTranslations("");
+  const weekDays = [
+    t("Weekdays.Sunday"),
+    t("Weekdays.Monday"),
+    t("Weekdays.Tuesday"),
+    t("Weekdays.Wednesday"),
+    t("Weekdays.Thursday"),
+    t("Weekdays.Friday"),
+    t("Weekdays.Saturday")
+  ];
   const [selectedDay, setSelectedDay] = useState<string>(eventData.days[0]?.date || "");
   const [filteredEvents, setFilteredEvents] = useState<any[]>([]);
 
@@ -80,9 +90,9 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
 
   return (
     <>
-      <h2 className="text-[var(--primary)]">CRONOGRAMA</h2>
+      <h2 className="text-[var(--primary)]">{t("Schedule_Title")}</h2>
       <label htmlFor="day-selector" className="text-lg font-semibold mr-2 text-[var(--primary)]">
-        Selecione o dia:
+        {t("Select_Day")}:
       </label>
       <select
         id="day-selector"

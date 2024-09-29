@@ -105,6 +105,17 @@
     "speakersText": "Hear from experts from Harvard, Stanford, MIT, and institutions like Google Brain and DeepMind. Learn cutting-edge insights from the best minds in AI and expand your knowledge of the future of Deep Learning.",
     "dateButtonText": "Subscribe",
     "speakersButtonText": "View Speakers"
-
+  },
+  "Schedule_Title": "SCHEDULE",
+  "Select_Day": "Select Day",
+  "Weekdays": {
+    "Sunday": "Sunday",
+    "Monday": "Monday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wednesday",
+    "Thursday": "Thursday",
+    "Friday": "Friday",
+    "Saturday": "Saturday"
   }
+
 }
