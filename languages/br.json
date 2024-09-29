@@ -117,5 +117,26 @@
     "Friday": "Sexta",
     "Saturday": "Sábado"
   },
-  "Speakers_UDL": "Palestrantes da UDL"
+  "Speakers_UDL": "Palestrantes da UDL",
+  "RegisterUDL": {
+    "RegisterForEvent": "Registrar para o Evento UDL",
+    "FullName": "Nome Completo",
+    "Email": "Email",
+    "MobileNumber": "Número de Celular",
+    "TelegramHandle": "Telegram @",
+    "Optional": "Opcional",
+    "USPNumber": "Número USP",
+    "USPNumberTooltip": "O evento é aberto a todos; o Número USP é solicitado apenas para controle interno.",
+    "AgreeTerms": "Eu concordo com os",
+    "TermsAndConditions": "termos e condições",
+    "RegisterButton": "Registrar",
+    "TermsTitle": "Termos e Condições",
+    "TermsContent": "Ao se inscrever no UnderstandingDL 2024, você aceita voluntariamente todos os termos e condições estabelecidos: O evento ocorrerá em formato híbrido, com sessões presenciais na USP São Carlos e transmissões ao vivo pelo canal do Data no YouTube. Todos os conteúdos, incluindo palestras, slides e materiais de apoio, são protegidos por direitos autorais e pertencem aos palestrantes ou ao Grupo Data, salvo indicação em contrário. Ao participar, você autoriza o uso de sua imagem e voz em fotos, vídeos e outras gravações, para fins promocionais, sem remuneração. Seus dados pessoais serão utilizados apenas para organização e comunicação do evento, comprometendo-nos a não compartilhar suas informações sem seu consentimento explícito, exceto conforme exigido por lei. O Grupo Data reserva-se o direito de alterar o cronograma ou cancelar o evento por motivos de força maior, notificando todos os inscritos com antecedência. Não nos responsabilizamos por problemas técnicos ou de conexão à internet que possam impedir a participação no evento. Ao se inscrever, você assume todos os riscos associados à sua participação no evento.",
+    "AgreeAndClose": "Concordar e Fechar",
+    "InvalidEmail": "Por favor, insira um email válido contendo \"@\".",
+    "InvalidMobileNumber": "Por favor, insira um número de celular válido com 11 dígitos.",
+    "FixErrorsAlert": "Por favor, corrija os erros antes de enviar o formulário.",
+    "FormSuccess": "Formulário enviado com sucesso!",
+    "FormError": "Erro ao enviar o formulário:"
+  }
 }
