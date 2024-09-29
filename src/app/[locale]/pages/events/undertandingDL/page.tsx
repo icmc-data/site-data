@@ -62,10 +62,7 @@ export default function UnderstandingDL() {
           <a
             href="/${locale}/"
             style={{
-              color:
-                resolvedTheme === "light"
-                  ? "var(--link)"
-                  : "var(--link)", // Usa a cor de link apropriada para o modo claro ou escuro
+              color: resolvedTheme === "light" ? "var(--link)" : "var(--link)", // Usa a cor de link apropriada para o modo claro ou escuro
             }}
           >
             Clique aqui
