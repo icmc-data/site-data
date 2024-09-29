@@ -31,7 +31,8 @@ const Button: React.FC<ButtonProps> = ({
     large: 'text-lg font-semibold font-bold',
   };
 
-  const baseStyles = `focus:outline-none focus:shadow-outline bg-data-purple text-white border-2 border-data-purple inline-flex items-center justify-center space-x-2 transition-transform duration-200 ease-in-out transform rounded`;
+  // Ajuste a classe de borda arredondada diretamente no baseStyles
+  const baseStyles = `focus:outline-none focus:shadow-outline bg-data-purple text-white border-2 border-data-purple inline-flex items-center justify-center space-x-2 transition-transform duration-200 ease-in-out transform rounded-md`;
 
   const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${className}`;
 
