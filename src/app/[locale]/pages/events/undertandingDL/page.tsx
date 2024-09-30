@@ -62,10 +62,48 @@ export default function UnderstandingDL() {
 
       <div className="about-event">
         <h2>{t("AboutEvent.Parte_1")}</h2>
-        <p style={{ paddingTop: "20px" }}>{t("AboutEvent.Parte_2")}</p>
+        <p
+          style={{ paddingTop: "20px", fontWeight: "bold", display: "inline" }}
+        >
+          {t("AboutEvent.Parte_2")}
+        </p>
+        <p style={{ display: "inline" }}>
+          {t("AboutEvent.Parte_3")}{" "}
+          <span style={{ fontWeight: "bold" }}>{t("AboutEvent.Parte_4")}</span>{" "}
+          {t("AboutEvent.Parte_5")}{" "}
+          <span style={{ fontWeight: "bold" }}>
+            {t("AboutEvent.Parte_5-1")}
+          </span>
+          . {t("AboutEvent.Parte_6")}
+          <span
+            style={{
+              fontWeight: "bold",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+            onClick={() => (window.location.href = `/${locale}/`)}
+          >
+            {t("AboutEvent.Parte_7")}
+          </span>
+        </p>{" "}
         <br />
-        <p>{t("AboutEvent.Parte_3")}</p>
+        <p style={{ display: "inline" }}>
+          {t("AboutEvent.Parte_8")}{" "}
+          <span style={{ fontWeight: "bold" }}>{t("AboutEvent.Parte_9")}</span>.
+        </p>
+        <p style={{ display: "inline" }}>
+          {t("AboutEvent.Parte_10")}{" "}
+          <span style={{ fontWeight: "bold" }}>{t("AboutEvent.Parte_11")}</span>{" "}
+          {t("AboutEvent.Parte_12")}
+          <span style={{ fontWeight: "bold" }}>
+            {t("AboutEvent.Parte_13")}
+          </span>{" "}
+          {t("AboutEvent.Parte_14")}
+          <span style={{ fontWeight: "bold" }}>{t("AboutEvent.Parte_15")}</span>
+          .
+        </p>
       </div>
+
       <br />
       <br />
       <Schedule eventData={eventData} />

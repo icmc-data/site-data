@@ -141,7 +141,20 @@
   },
   "AboutEvent": {
     "Parte_1": "SOBRE O EVENTO",
-    "Parte_2": "O UnderstandingDL 2024 é um evento internacional organizado pelo grupo Data da USP São Carlos,do Instituto de Ciências Matemáticas e de Computação (ICMC). Ddedicado ao estudo e à disseminação do conhecimento em Ciência de Dados ao público interno e externo à universidade. Se você deseja saber mais sobre o Data: Clique Aqui.",
-    "Parte_3": "O objetivo do evento é reunir pesquisadores de várias partes do mundo para apresentar suas pesquisas e tornar o conhecimento mais acessível a todos. Entre os temas abordados nas palestras estão LLMs Multilíngues, Representação de Imagem em Multirresolução usando Redes Neurais, entre muitos outros. O UnderstandingDL 2024 visa dar visibilidade aos pesquisadores e suas contribuições. Grupos como Brains e C4AI apoiam e patrocinam o evento, juntamente com o apoio da maior universidade da América Latina, Universidade de São Paulo."
+    "Parte_2": "O UnderstandingDL 2024 ",
+    "Parte_3": "é um evento internacional organizado pelo grupo",
+    "Parte_4": "Data",
+    "Parte_5": "da USP São Carlos, ",
+    "Parte_5-1": "do Instituto de Ciências Matemáticas e de Computação (ICMC)",
+    "Parte_6": "Dedicado ao estudo e à disseminação do conhecimento em Ciência de Dados ao público interno e externo à universidade. Se você deseja saber mais sobre o Data: ",
+    "Parte_7": "Clique Aqui.",
+    "Parte_8": " O objetivo do evento é reunir pesquisadores de várias partes do mundo para apresentar suas pesquisas e tornar o conhecimento mais acessível a todos. Entre os temas abordados nas palestras estão",
+    "Parte_9": "LLMs Multilíngues, Representação de Imagem em Multirresolução usando Redes Neurais, entre muitos outros",
+    "Parte_10": " O UnderstandingDL 2024 visa dar visibilidade aos pesquisadores e suas contribuições. Grupos como",
+    "Parte_11": "Brains",
+    "Parte_12": "e ",
+    "Parte_13": "C4AI",
+    "Parte_14": "apoiam e patrocinam o evento, juntamente com o apoio da maior universidade da América Latina,",
+    "Parte_15": " a Universidade de São Paulo"
   }
 }

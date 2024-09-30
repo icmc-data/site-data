@@ -141,7 +141,20 @@
   },
   "AboutEvent": {
     "Parte_1": "ABOUT THE EVENT",
-    "Parte_2": "UnderstandingDL 2024 is an international event organized by the Data group at USP São Carlos, from the Institute of Mathematical and Computer Sciences (ICMC). It is dedicated to the study and dissemination of knowledge in Data Science to the public both inside and outside the university. If you want to know more about Data: Click Here.",
-    "Parte_3": "The objective of the event is to bring together researchers from various parts of the world to present their research and make knowledge more accessible to everyone. Among the topics covered in the lectures are Multilingual LLMs, Multiresolution Image Representation using Neural Networks, among many others. UnderstandingDL 2024 aims to give visibility to researchers and their contributions. Groups such as Brains and C4AI support and sponsor the event, along with the support of the largest university in Latin America, the University of São Paulo."
+    "Parte_2": "The UnderstandingDL 2024 ",
+    "Parte_3": "is an international event organized by the group ",
+    "Parte_4": "Data ",
+    "Parte_5": "at USP São Carlos, ",
+    "Parte_5-1": "of the Institute of Mathematical and Computer Sciences (ICMC) ",
+    "Parte_6": "Dedicated to the study and dissemination of knowledge in Data Science to both the internal and external public of the university. If you want to know more about Data: ",
+    "Parte_7": "Click Here.",
+    "Parte_8": " The goal of the event is to bring together researchers from various parts of the world to present their research and make knowledge more accessible to everyone. Among the topics covered in the lectures are ",
+    "Parte_9": "Multilingual LLMs, Image Representation in Multiresolution using Neural Networks, among many others ",
+    "Parte_10": " The UnderstandingDL 2024 aims to give visibility to researchers and their contributions. Groups like ",
+    "Parte_11": "Brains ",
+    "Parte_12": "and ",
+    "Parte_13": "C4AI ",
+    "Parte_14": "support and sponsor the event, along with the support of the largest university in Latin America, ",
+    "Parte_15": " the University of São Paulo "
   }
 }
