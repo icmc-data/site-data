@@ -8,23 +8,12 @@ type CustomMiddleware = (req: NextRequest) => Promise<NextRequest | NextResponse
 const customMiddleware: CustomMiddleware = async req => {
   console.log('Custom middleware executed before next-intl');
 
-  // Verifica se o cookie `preferredLocale` está presente
-  const preferredLocale = req.cookies.get('preferredLocale')?.value;
-
-  if (!preferredLocale) {
-    // Define o cookie `preferredLocale` como "br" se não existir
-    const response = NextResponse.next();
-    response.cookies.set('preferredLocale', 'br', { path: '/' });
-    return response;
-  }
-
-  // Verifica se a URL não contém o locale e redireciona para o locale preferido
   const pathname = req.nextUrl.pathname;
 
   // Caso a rota não contenha o prefixo do locale
   if (!locales.some(locale => pathname.startsWith(`/${locale}`))) {
     const url = req.nextUrl.clone();
-    url.pathname = `/${preferredLocale}${pathname}`;
+    url.pathname = `/br${pathname}`;
     return NextResponse.redirect(url);
   }
 
