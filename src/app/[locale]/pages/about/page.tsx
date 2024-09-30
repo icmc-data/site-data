@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl";
 import OrganizingCommittee from "../../components/OrganizingCommittee";
 import Photo from "../../components/Photo";
 
-
 // Import dos arquivos JSON
 import peopleBR from "../../../../../data/br/people.json";
 import peopleEN from "../../../../../data/en/people.json";

@@ -8,6 +8,8 @@ import UDLLogo from "@/public/images/UDLLogo.png";
 import UDLLogoWhite from "@/public/images/UDLLogo-white.png";
 import FAQ from "../../../components/FAQ";
 import Schedule from "../../../components/Schedule";
+import LogoIcon from "../../../../icons/logo";
+import Sponsors from "../../../components/Sponsors";
 
 // Importa os arquivos JSON para ambos os idiomas
 import eventDataBr from "@/data/br/udl2024.json";
@@ -21,7 +23,7 @@ export default function UnderstandingDL() {
   const [logoSrc, setLogoSrc] = useState(UDLLogo.src);
 
   // Determina o idioma atual da página
-  const locale = t("DONT_DELETE");  // Presumo que "DONT_DELETE" é a sua chave para obter o locale
+  const locale = t("DONT_DELETE"); // Presumo que "DONT_DELETE" é a sua chave para obter o locale
 
   // Seleciona os dados corretos com base no idioma
   const eventData = locale === "br" ? eventDataBr : eventDataEn;
@@ -33,6 +35,13 @@ export default function UnderstandingDL() {
     setLogoSrc(updatedLogoSrc);
   }, [resolvedTheme]);
 
+  const sponsorsData = [
+    { logoUrl: "/images/icmc-logo.png" },
+    { logoUrl: "/images/brains.png" },
+    { logoUrl: "/images/centerIA.png" },
+
+    // adicione mais patrocinadores conforme necessário
+  ];
   return (
     <div className="mt-32">
       <Hero
@@ -52,39 +61,18 @@ export default function UnderstandingDL() {
       <br />
 
       <div className="about-event">
-        <h2>SOBRE O EVENTO</h2>
-        <p style={{ paddingTop: "20px" }}>
-          O <strong>UnderstandingDL 2024</strong> é um evento internacional
-          organizado pelo <strong>Grupo Data</strong> da USP São Carlos, que se
-          dedica ao estudo e à disseminação de conhecimento em Data Science no
-          Instituto de Ciências Matemáticas e de Computação (ICMC). Se quiser
-          saber mais sobre o Data:{" "}
-          <a
-            href={`/${locale}/`}
-            style={{
-              color: resolvedTheme === "light" ? "var(--link)" : "var(--link)", 
-            }}
-          >
-            Clique aqui
-          </a>
-          . O objetivo do evento é reunir pesquisadores de diversas partes do
-          mundo para apresentar suas pesquisas e tornar o conhecimento mais
-          acessível para todos. Entre os temas abordados nas palestras estão{" "}
-          <strong>LLMs Multilinguais</strong>,{" "}
-          <strong>
-            Representação de Imagens em Multirresolução usando Redes Neurais
-          </strong>
-          , entre muitos outros. O <strong>UnderstandingDL 2024</strong> busca
-          dar visibilidade aos pesquisadores e suas contribuições. Grupos como o{" "}
-          <strong>Brains</strong> e o <strong>C4AI</strong> apoiam e patrocinam
-          o evento, além do suporte da maior universidade da América Latina, a{" "}
-          <strong>Universidade de São Paulo</strong>.
-        </p>
+        <h2>{t("AboutEvent.Parte_1")}</h2>
+        <p style={{ paddingTop: "20px" }}>{t("AboutEvent.Parte_2")}</p>
+        <br />
+        <p>{t("AboutEvent.Parte_3")}</p>
       </div>
       <br />
-
+      <br />
       <Schedule eventData={eventData} />
-
+      {/* Seção de patrocinadores */}
+      <section className="mt-10">
+        <Sponsors sponsors={sponsorsData} />
+      </section>
       <FAQ data={faqData} />
     </div>
   );

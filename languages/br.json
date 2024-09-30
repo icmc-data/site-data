@@ -138,5 +138,10 @@
     "FixErrorsAlert": "Por favor, corrija os erros antes de enviar o formulário.",
     "FormSuccess": "Formulário enviado com sucesso!",
     "FormError": "Erro ao enviar o formulário:"
+  },
+  "AboutEvent": {
+    "Parte_1": "SOBRE O EVENTO",
+    "Parte_2": "O UnderstandingDL 2024 é um evento internacional organizado pelo grupo Data da USP São Carlos,do Instituto de Ciências Matemáticas e de Computação (ICMC). Ddedicado ao estudo e à disseminação do conhecimento em Ciência de Dados ao público interno e externo à universidade. Se você deseja saber mais sobre o Data: Clique Aqui.",
+    "Parte_3": "O objetivo do evento é reunir pesquisadores de várias partes do mundo para apresentar suas pesquisas e tornar o conhecimento mais acessível a todos. Entre os temas abordados nas palestras estão LLMs Multilíngues, Representação de Imagem em Multirresolução usando Redes Neurais, entre muitos outros. O UnderstandingDL 2024 visa dar visibilidade aos pesquisadores e suas contribuições. Grupos como Brains e C4AI apoiam e patrocinam o evento, juntamente com o apoio da maior universidade da América Latina, Universidade de São Paulo."
   }
 }

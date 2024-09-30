@@ -138,7 +138,10 @@
     "FixErrorsAlert": "Please fix the errors before submitting the form.",
     "FormSuccess": "Form successfully submitted!",
     "FormError": "Error submitting the form:"
+  },
+  "AboutEvent": {
+    "Parte_1": "ABOUT THE EVENT",
+    "Parte_2": "UnderstandingDL 2024 is an international event organized by the Data group at USP São Carlos, from the Institute of Mathematical and Computer Sciences (ICMC). It is dedicated to the study and dissemination of knowledge in Data Science to the public both inside and outside the university. If you want to know more about Data: Click Here.",
+    "Parte_3": "The objective of the event is to bring together researchers from various parts of the world to present their research and make knowledge more accessible to everyone. Among the topics covered in the lectures are Multilingual LLMs, Multiresolution Image Representation using Neural Networks, among many others. UnderstandingDL 2024 aims to give visibility to researchers and their contributions. Groups such as Brains and C4AI support and sponsor the event, along with the support of the largest university in Latin America, the University of São Paulo."
   }
-
-
 }
