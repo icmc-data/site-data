@@ -30,14 +30,14 @@ export default function Hero({
   eventButtonText,
 }: HeroProps) {
   return (
-    <section className="relative w-full lg:flex lg:items-start lg:justify-between text-center lg:text-left">
-      <div className="lg:w-2/3 lg:pr-16">
+    <section className="relative w-full flex flex-col lg:flex-row items-center lg:items-start justify-between text-center lg:text-left p-4">
+      <div className="w-full lg:w-2/3 lg:pr-16 mb-6">
         <div className="flex flex-col items-center lg:items-start mb-6">
-          <h1 className="text-primary dark:text-primary font-montserrat font-bold leading-tight mb-4">
+          <h1 className="text-primary dark:text-primary font-montserrat font-bold leading-tight text-3xl sm:text-5xl mb-4">
             {title}
           </h1>
         </div>
-        <p className="text-text-secondary dark:text-text-secondary text-lg font-inter mb-8 w-full mx-auto lg:mx-0">
+        <p className="text-text-secondary dark:text-text-secondary text-base sm:text-lg font-inter mb-8 mx-2 sm:mx-4 lg:w-full lg:mx-0">
           {description}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
@@ -66,24 +66,22 @@ export default function Hero({
           </div>
         </div>
 
-        <div className="relative mt-8 lg:flex lg:justify-between lg:items-center">
+        <div className="relative mt-8 flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:justify-between lg:items-center">
           <Link href={dateLink} passHref>
             <Button variant="primary" size="medium">
               {dateButtonText}
             </Button>
           </Link>
 
-          <div className="lg:ml-auto mt-4 lg:mt-0">
-            <Link href={speakersLink} passHref>
-              <Button variant="secondary" size="medium">
-                {eventButtonText}
-              </Button>
-            </Link>
-          </div>
+          <Link href={speakersLink} passHref>
+            <Button variant="secondary" size="medium" className="lg:ml-auto mt-4 lg:mt-0">
+              {eventButtonText}
+            </Button>
+          </Link>
         </div>
       </div>
       <div
-        className="lg:w-1/3 mt-8 lg:mt-0 h-96 bg-cover bg-center rounded-lg"
+        className="w-full lg:w-1/3 mt-8 lg:mt-0 h-72 bg-cover bg-center rounded-lg"
         style={{
           backgroundImage: `url('${imgLink}')`,
         }}
