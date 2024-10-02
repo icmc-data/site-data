@@ -110,7 +110,7 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
 
   return (
     <>
-      <h2 className="text-[var(--primary)] text-center mb-6">
+      <h2 className="text-[var(--primary)]  mb-6">
         {t("Schedule_Title")}
       </h2>
       <div className="text-center mb-6">

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
@@ -8,7 +8,6 @@ import UDLLogo from "@/public/images/UDLLogo.png";
 import UDLLogoWhite from "@/public/images/UDLLogo-white.png";
 import FAQ from "../../../components/FAQ";
 import Schedule from "../../../components/Schedule";
-import LogoIcon from "../../../../icons/logo";
 import Sponsors from "../../../components/Sponsors";
 
 // Importa os arquivos JSON para ambos os idiomas
@@ -39,9 +38,9 @@ export default function UnderstandingDL() {
     { logoUrl: "/images/icmc-logo.png" },
     { logoUrl: "/images/brains.png" },
     { logoUrl: "/images/centerIA.png" },
-
     // adicione mais patrocinadores conforme necessário
   ];
+
   return (
     <div className="mt-32">
       <Hero
@@ -60,47 +59,31 @@ export default function UnderstandingDL() {
       <br />
       <br />
 
-      <div className="about-event">
-        <h2>{t("AboutEvent.Parte_1")}</h2>
-        <p
-          style={{ paddingTop: "20px", fontWeight: "bold", display: "inline" }}
-        >
-          {t("AboutEvent.Parte_2")}
-        </p>
-        <p style={{ display: "inline" }}>
-          {t("AboutEvent.Parte_3")}{" "}
-          <span style={{ fontWeight: "bold" }}>{t("AboutEvent.Parte_4")}</span>{" "}
-          {t("AboutEvent.Parte_5")}{" "}
-          <span style={{ fontWeight: "bold" }}>
-            {t("AboutEvent.Parte_5-1")}
-          </span>
-          . {t("AboutEvent.Parte_6")}
+        <h2 className="text-3xl font-bold text-[var(--primary)] mb-6">
+          {t("AboutEvent.Parte_1")}
+        </h2>
+      <div className="about-event  mx-auto px-2 md:px-4 lg:px-8">
+        <p className="text-lg text-[var(--text-secondary)] mb-6 leading-relaxed">
+          <span className="font-bold">{t("AboutEvent.Parte_2")}</span> {t("AboutEvent.Parte_3")}
+          <span className="font-bold"> {t("AboutEvent.Parte_4")}</span> {t("AboutEvent.Parte_5")}
+          <span className="font-bold"> {t("AboutEvent.Parte_5-1")}</span>. {t("AboutEvent.Parte_6")}
           <span
-            style={{
-              fontWeight: "bold",
-              textDecoration: "underline",
-              cursor: "pointer",
-            }}
+            className="font-bold underline cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] transition-colors duration-300"
             onClick={() => (window.location.href = `/${locale}/`)}
           >
+            {" "}
             {t("AboutEvent.Parte_7")}
           </span>
-        </p>{" "}
-        <br />
-        <p style={{ display: "inline" }}>
-          {t("AboutEvent.Parte_8")}{" "}
-          <span style={{ fontWeight: "bold" }}>{t("AboutEvent.Parte_9")}</span>.
         </p>
-        <p style={{ display: "inline" }}>
-          {t("AboutEvent.Parte_10")}{" "}
-          <span style={{ fontWeight: "bold" }}>{t("AboutEvent.Parte_11")}</span>{" "}
-          {t("AboutEvent.Parte_12")}
-          <span style={{ fontWeight: "bold" }}>
-            {t("AboutEvent.Parte_13")}
-          </span>{" "}
-          {t("AboutEvent.Parte_14")}
-          <span style={{ fontWeight: "bold" }}>{t("AboutEvent.Parte_15")}</span>
-          .
+        <p className="text-lg text-[var(--text-secondary)] mb-6 leading-relaxed">
+          {t("AboutEvent.Parte_8")}
+          <span className="font-bold"> {t("AboutEvent.Parte_9")}</span>.
+        </p>
+        <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
+          {t("AboutEvent.Parte_10")}
+          <span className="font-bold"> {t("AboutEvent.Parte_11")}</span> {t("AboutEvent.Parte_12")}
+          <span className="font-bold"> {t("AboutEvent.Parte_13")}</span> {t("AboutEvent.Parte_14")}
+          <span className="font-bold"> {t("AboutEvent.Parte_15")}</span>.
         </p>
       </div>
 
