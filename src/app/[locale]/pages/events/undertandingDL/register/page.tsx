@@ -1,7 +1,8 @@
 'use client';
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Button from "@/src/app/[locale]/components/Button";
 import { FiInfo } from 'react-icons/fi';
+import { FaChevronDown } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
 
 // Definição de tipos para o formulário
@@ -34,6 +35,7 @@ const RegisterUDL = () => {
 
   const [errors, setErrors] = useState<Errors>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const bottomRef = useRef<HTMLDivElement>(null);
 
   const validateEmail = (email: string): boolean => {
     return email.includes('@');
@@ -142,6 +144,10 @@ const RegisterUDL = () => {
     setModalOpen(!modalOpen);
   };
 
+  const scrollToBottom = () => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="max-w-md mx-auto mt-32">
       <h1 className="text-2xl font-bold mb-6 text-center" style={{ color: "var(--primary)" }}>{t('RegisterForEvent')}</h1>
@@ -247,17 +253,26 @@ const RegisterUDL = () => {
       {/* Modal de Termos e Condições */}
       {modalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-5 border shadow-lg rounded-md z-60" style={{ backgroundColor: "var(--background)", borderColor: "var(--secondary)" }}>
-            <div className="text-center">
+          <div
+            className="bg-white p-5 border shadow-lg rounded-md z-60 max-w-sm max-h-[500px] w-full overflow-y-auto relative"
+            style={{ backgroundColor: "var(--background)", borderColor: "var(--secondary)" }}
+          >
+            <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-medium" style={{ color: "var(--primary)" }}>{t('TermsTitle')}</h3>
-              <div className="mt-2 px-7 py-3">
-                <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{t('TermsContent')}</p>
-              </div>
-              <div className="flex justify-center px-4 py-3">
-                <Button variant="primary" onClick={toggleModal}>
-                  {t('AgreeAndClose')}
-                </Button>
-              </div>
+              <button
+                onClick={scrollToBottom}
+                className="text-[var(--primary)] hover:text-[var(--secondary)] transition duration-300 ease-in-out"
+              >
+                <FaChevronDown className="w-6 h-6 animate-bounce" />
+              </button>
+            </div>
+            <div className="mt-2 px-7 py-3">
+              <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{t('TermsContent')}</p>
+            </div>
+            <div ref={bottomRef} className="flex justify-center px-4 py-3">
+              <Button variant="primary" onClick={toggleModal}>
+                {t('AgreeAndClose')}
+              </Button>
             </div>
           </div>
         </div>
