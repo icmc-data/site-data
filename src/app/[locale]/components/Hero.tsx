@@ -82,7 +82,7 @@ export default function Hero({
         </div>
       </div>
       <div
-  className="w-full lg:w-1/3 mt-8 lg:mt-0 bg-cover bg-center rounded-lg min-h-[200px] max-h-[400px] aspect-[4/3]"
+  className="w-full lg:w-1/3 mt-8 lg:mt-0 bg-contain bg-center rounded-lg min-h-[200px] max-h-[400px] aspect-[4/3] bg-no-repeat"
   style={{
     backgroundImage: `url('${imgLink}')`,
   }}
