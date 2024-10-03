@@ -9,7 +9,6 @@ import { FaRegClock } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 import PropTypes from "prop-types";
 
-
 interface EventData {
   days: {
     date: string;
@@ -51,7 +50,9 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
         .find((day) => day.date === selectedDay)
         ?.lectures.map((lecture) => ({
           ...lecture,
-          time: lecture.end_time ? `${lecture.start_time} - ${lecture.end_time}` : lecture.start_time,
+          time: lecture.end_time
+            ? `${lecture.start_time} - ${lecture.end_time}`
+            : lecture.start_time,
           status: `Palestra de ${lecture.speaker.name}`,
         })) || [];
     setFilteredEvents(eventsForDay);
@@ -74,19 +75,13 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
   };
 
   const getDayOfWeek = (dateString: string) => {
-    // Criar um objeto Date a partir da string de data no formato "YYYY-MM-DD"
     const date = new Date(dateString);
-  
-    // Verificar se a data é válida
     if (isNaN(date.getTime())) {
       return "Invalid Date";
     }
-  
-    // Retornar o nome do dia da semana a partir do array `weekDays`
     return weekDays[date.getDay()];
   };
-  
-  
+
   const customMarker = () => {
     return <span className="pi pi-calendar text-3xl text-data-purple"></span>;
   };
@@ -111,8 +106,8 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
           </p>
         </div>
         <div className="flex items-center text-[var(--text-secondary)]">
-        <FaRegClock className="mr-2 text-lg text-[var(--data-purple)]" />
-        <span className="text-[var(--data-purple)] font-bold">{item.time}</span>
+          <FaRegClock className="mr-2 text-lg text-[var(--data-purple)] font-bold" />
+          <span className="text-[var(--data-purple)] font-bold">{item.time}</span>
         </div>
       </div>
     );
@@ -120,9 +115,7 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
 
   return (
     <>
-      <h2 className="text-[var(--primary)]  mb-6">
-        {t("Schedule_Title")}
-      </h2>
+      <h2 className="text-[var(--primary)]  mb-6">{t("Schedule_Title")}</h2>
       <div className="text-center mb-6">
         <label
           htmlFor="day-selector"
@@ -147,12 +140,12 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
       <div className="schedule-container p-4 max-w-4xl mx-auto">
         {filteredEvents.length > 0 ? (
           isMobileView ? (
-            // Lista de Eventos no Mobile
-            <ul className="bg-[var(--background-secondary)] rounded-lg p-4 space-y-4 shadow-md">
+            // lista de Eventos no Mobile
+            <ul className="bg-[var(--background-secondary)] rounded-lg p-4 space-y-6 shadow-md">
               {filteredEvents.map((event, index) => (
                 <li
                   key={index}
-                  className="border-b border-[var(--primary)] pb-4 last:border-none"
+                  className="border-b border-[var(--primary)] pb-6 last:border-none"
                 >
                   <h3 className="text-xl font-bold text-[var(--primary)] mb-2">
                     {event.title}
@@ -172,7 +165,8 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
                       {event.speaker.name}
                     </p>
                   </div>
-                  <div className="flex items-center text-[var(--text-secondary)]">
+                  <br />
+                  <div className="flex items-center text-[var(--data-purple)] font-bold">
                     <FaRegClock className="mr-2 text-lg" />
                     <span>{event.time}</span>
                   </div>
