@@ -37,9 +37,10 @@ export default function Hero({
             {title}
           </h1>
         </div>
-        <p className="text-text-secondary dark:text-text-secondary text-base sm:text-lg font-inter mb-8 mx-2 sm:mx-4 lg:w-full lg:mx-0">
+        <p className="text-text-secondary dark:text-text-secondary font-inter mb-4">
           {description}
         </p>
+        <br />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
           <div className="flex flex-col items-center lg:items-start">
             <FaCalendarAlt className="w-10 h-10 text-primary dark:text-primary mb-4" />
@@ -81,11 +82,11 @@ export default function Hero({
         </div>
       </div>
       <div
-        className="w-full lg:w-1/3 mt-8 lg:mt-0 h-72 bg-cover bg-center rounded-lg"
-        style={{
-          backgroundImage: `url('${imgLink}')`,
-        }}
-      ></div>
+  className="w-full lg:w-1/3 mt-8 lg:mt-0 bg-cover bg-center rounded-lg min-h-[200px] max-h-[400px] aspect-[4/3]"
+  style={{
+    backgroundImage: `url('${imgLink}')`,
+  }}
+></div>
     </section>
   );
 }

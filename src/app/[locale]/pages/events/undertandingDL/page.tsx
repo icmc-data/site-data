@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import Hero from "../../../components/Hero";
 import "./style.css";
-import UDLLogo from "@/public/images/UDLLogo.png";
+import UDLLogo from "@/public/images/udl2024/UDLLogo.png";
 import UDLLogoWhite from "@/public/images/UDLLogo-white.png";
 import FAQ from "../../../components/FAQ";
 import Schedule from "../../../components/Schedule";
