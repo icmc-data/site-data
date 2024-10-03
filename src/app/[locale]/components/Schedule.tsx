@@ -6,6 +6,8 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import Image from "next/image";
 import { FaRegClock } from "react-icons/fa";
+import { FiYoutube } from "react-icons/fi";
+
 import { Fade } from "react-awesome-reveal";
 import PropTypes from "prop-types";
 
@@ -16,11 +18,12 @@ interface EventData {
       title: string;
       description: string;
       start_time: string;
-      end_time?: string;
+      end_time?: string | null;
       speaker: {
         name: string;
         photo: string;
       };
+      eventReminder: string;
     }[];
   }[];
 }
@@ -105,10 +108,19 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
             {item.speaker.name}
           </p>
         </div>
-        <div className="flex items-center text-[var(--text-secondary)]">
+        <div className="flex items-center text-[var(--text-secondary)] mb-4">
           <FaRegClock className="mr-2 text-lg text-[var(--data-purple)] font-bold" />
           <span className="text-[var(--data-purple)] font-bold">{item.time}</span>
         </div>
+        <a
+          href={item.eventReminder}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center text-[var(--data-purple)] font-bold hover:text-[var(--primary)]"
+        >
+          <FiYoutube className="mr-2 text-lg" />
+          {t("Watch_Lecture")}
+        </a>
       </div>
     );
   };
@@ -140,7 +152,7 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
       <div className="schedule-container p-4 max-w-4xl mx-auto">
         {filteredEvents.length > 0 ? (
           isMobileView ? (
-            // lista de Eventos no Mobile
+            // Lista de Eventos no Mobile
             <ul className="bg-[var(--background-secondary)] rounded-lg p-4 space-y-6 shadow-md">
               {filteredEvents.map((event, index) => (
                 <li
@@ -150,7 +162,7 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
                   <h3 className="text-xl font-bold text-[var(--primary)] mb-2">
                     {event.title}
                   </h3>
-                  <p className="text-[var(--text-secondary)] mb-2">
+                  <p className="text-[var(--text-secondary)] mb-4">
                     {event.description}
                   </p>
                   <div className="flex items-center mb-2">
@@ -165,11 +177,19 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
                       {event.speaker.name}
                     </p>
                   </div>
-                  <br />
-                  <div className="flex items-center text-[var(--data-purple)] font-bold">
-                    <FaRegClock className="mr-2 text-lg" />
-                    <span>{event.time}</span>
+                  <div className="flex items-center text-[var(--text-secondary)] mb-4 mt-4">
+                    <FaRegClock className="mr-2 text-lg text-[var(--data-purple)] font-bold" />
+                    <span className="text-[var(--data-purple)] font-bold">{event.time}</span>
                   </div>
+                  <a
+                    href={event.eventReminder}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-[var(--data-purple)] font-bold hover:text-[var(--primary)]"
+                  >
+                    <FiYoutube className="mr-2 text-lg" />
+                    {t("Watch_Lecture")}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -204,7 +224,8 @@ Schedule.propTypes = {
             title: PropTypes.string.isRequired,
             description: PropTypes.string.isRequired,
             start_time: PropTypes.string.isRequired,
-            end_time: PropTypes.string.isRequired,
+            end_time: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([null])]),
+            eventReminder: PropTypes.string.isRequired,
             speaker: PropTypes.shape({
               name: PropTypes.string.isRequired,
               photo: PropTypes.string.isRequired,

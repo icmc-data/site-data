@@ -11,7 +11,8 @@
             "name": "Sebastian Ruder",
             "photo": "/images/udl2024/sebastian_ruder.png",
             "description": "Sebastian Ruder é um cientista pesquisador da Cohere, especialista em LLMs multilinguais, com passagem pela Google DeepMind."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/OHz5kWhZ6wk?si=YJ27V1UXQtUOjkGW"
         },
         {
           "title": "Metrized Deep Learning",
@@ -21,7 +22,8 @@
             "name": "Jeremy Bernstein",
             "photo": "/images/udl2024/jeremy_bernstein.png",
             "description": "Jeremy Bernstein é pesquisador de pós-doutorado no MIT, especializado em inteligência natural e artificial."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/KajoqXWjV_s?si=BXb3lQMicmhD1q7F"
         }
       ]
     },
@@ -36,7 +38,8 @@
             "name": "Bruno Ribeiro",
             "photo": "/images/udl2024/bruno_ribeiro.png",
             "description": "Bruno Ribeiro é professor na Purdue University, especialista em aprendizado de máquina e generalização de modelos."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/lJ9KKO0RLTw?si=WESBBkffyQ-WWx6w"
         },
         {
           "title": "Representação de Imagens em Multirresolução usando Redes Neurais",
@@ -46,7 +49,8 @@
             "name": "Hallison Paz",
             "photo": "/images/udl2024/hallison_paz.png",
             "description": "Hallison Paz é pesquisador em AI Graphics, co-criador do canal Programação Dinâmica e especialista em computação gráfica."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/s6p5Z6QfK-w?si=5D5Jh-gJEMP7G2Wy"
         },
         {
           "title": "Generative Models for Biomolecular Prediction, Dynamics, and Design",
@@ -56,7 +60,8 @@
             "name": "Hannes Stärk",
             "photo": "/images/udl2024/hannes_stark.png",
             "description": "Hannes Stärk é doutorando no MIT, focado em modelos generativos para biomoléculas."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/E-T_LM3tdOE?si=Byjw0Iw5ZlUviAqX"
         }
       ]
     },
@@ -71,7 +76,8 @@
             "name": "Marzieh Fadaee",
             "photo": "/images/udl2024/marzieh_fadaee.png",
             "description": "Marzieh Fadaee é pesquisadora na Cohere for AI, onde trabalha com modelos de linguagem multilíngues e lidera a iniciativa Aya."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/cs9stkgI_IA?si=vqWi2QI8m21BvhL6"
         },
         {
           "title": "Graph Neural Networks",
@@ -81,7 +87,8 @@
             "name": "Petar Veličković",
             "photo": "/images/udl2024/petar_velickovic.png",
             "description": "Petar Veličković é pesquisador sênior no Google DeepMind, especialista em aprendizado geométrico e grafos."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/WxCIT48HJlQ?si=JAuQ64Y73kEu1Vnq"
         },
         {
           "title": "An Introduction to Reinforcement Learning",
@@ -91,7 +98,8 @@
             "name": "Victor Pugliese",
             "photo": "/images/udl2024/victor_pugliese.png",
             "description": "Victor Pugliese é doutorando na UNIFESP, especializado em aprendizado por reforço e otimização."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/o9600GM2L6s?si=7OfSjeSAQDqctETa"
         }
       ]
     },
@@ -106,7 +114,8 @@
             "name": "Marlos C. Machado",
             "photo": "/images/udl2024/marlos_machado.png",
             "description": "Marlos C. Machado é professor na Universidade de Alberta, especializado em aprendizado de reforço e aprendizado contínuo."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/RlFO4q8FLxc?si=VasaaUnk6YHn0dl6"
         },
         {
           "title": "Introduction to Topological Deep Learning",
@@ -116,7 +125,8 @@
             "name": "Mathilde Papillon",
             "photo": "/images/udl2024/mathilde_papillon.png",
             "description": "Mathilde Papillon é doutoranda na UC Santa Barbara, focada em deep learning e percepção de movimento."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/yDHpL01byew?si=fItvAhLpHvB5mVzz"
         }
       ]
     },
@@ -131,7 +141,8 @@
             "name": "João Guilherme Madeira Araújo",
             "photo": "/images/udl2024/joao_araújo.png",
             "description": "Estudante de Ciencias da Computação no ICMC, medalhista em mais de 30 olimpíadas dos conhecimento e co-fundador do CodCad."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/W34xtKWCy6o?si=DXhKgD26SepJ0buj"
         },
         {
           "title": "Using Deep Learning to Detect Fake News",
@@ -141,7 +152,8 @@
             "name": "Rafael Geurgas Zavarizz",
             "photo": "/images/udl2024/rafael_zavarizz.png",
             "description": "Rafael Zavarizz é pós-doutor na Purdue University, especializado em aprendizado profundo e PLN para detecção de fake news."
-          }
+          },
+          "eventReminder": "https://www.youtube.com/live/lt80n4zuf_8?si=vZK6o3SCZd2o7ZAO"
         }
       ]
     }

@@ -67,6 +67,7 @@ export default function UnderstandingDL() {
           <span className="font-bold">{t("AboutEvent.Parte_2")}</span> {t("AboutEvent.Parte_3")}
           <span className="font-bold"> {t("AboutEvent.Parte_4")}</span> {t("AboutEvent.Parte_5")}
           <span className="font-bold"> {t("AboutEvent.Parte_5-1")}</span>. {t("AboutEvent.Parte_6")}
+          <br />
           <span
             className="font-bold underline cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] transition-colors duration-300"
             onClick={() => (window.location.href = `/${locale}/`)}
