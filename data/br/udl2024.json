@@ -1,152 +1,149 @@
 {
-    "days": [
-      {
-        "date": "2024-10-14",
-        "lectures": [
-          {
-            "title": "Inovações em IA para o Futuro",
-            "start_time": "09:00",
-            "end_time": "10:30",
-            "description": "Exploração das últimas inovações em Inteligência Artificial e seu impacto em nossas vidas diárias.",
-            "speaker": {
-              "name": "Ana Silva",
-              "photo": "/images/speakers/ana_silva.jpg",
-              "description": "Ana Silva é especialista em Inteligência Artificial com foco em aprendizado de máquina e ética em IA. Trabalha como pesquisadora no Centro de Inovação Tecnológica."
-            }
-          },
-          {
-            "title": "O Papel da Computação Quântica",
-            "start_time": "11:00",
-            "end_time": "12:30",
-            "description": "Discussão sobre o papel da computação quântica e como ela pode transformar a tecnologia.",
-            "speaker": {
-              "name": "Carlos Almeida",
-              "photo": "/images/speakers/carlos_almeida.jpg",
-              "description": "Carlos Almeida é um físico e pesquisador em computação quântica, com mais de 10 anos de experiência no desenvolvimento de algoritmos quânticos."
-            }
-          },
-          {
-            "title": "Deep Learning: Desafios e Aplicações",
-            "start_time": "14:00",
-            "end_time": "15:30",
-            "description": "Uma visão sobre os desafios enfrentados e aplicações em larga escala do Deep Learning.",
-            "speaker": {
-              "name": "Beatriz Ramos",
-              "photo": "/images/speakers/beatriz_ramos.jpg",
-              "description": "Beatriz Ramos é engenheira de software e especialista em Deep Learning, com experiência em empresas de tecnologia de ponta."
-            }
-          },
-          {
-            "title": "Privacidade de Dados e Segurança em IA",
-            "start_time": "16:00",
-            "end_time": "17:30",
-            "description": "Como a privacidade de dados está sendo tratada no contexto de Inteligência Artificial.",
-            "speaker": {
-              "name": "Diego Costa",
-              "photo": "/images/speakers/diego_costa.jpg",
-              "description": "Diego Costa é especialista em cibersegurança e tem trabalhado em projetos de segurança de dados para IA nos últimos cinco anos."
-            }
+  "days": [
+    {
+      "date": "2024-10-14",
+      "lectures": [
+        {
+          "title": "Multilingual LLMs",
+          "start_time": "13:00",
+          "description": "Sebastian Ruder é um cientista pesquisador da Cohere, mora em Berlim, Alemanha, e trabalha construindo Large Language Models (LLMs) multilinguais. Anteriormente, foi pesquisador na Google DeepMind e completou seu doutorado em Processamento de Linguagem Natural e Deep Learning no Insight Research Centre for Data Analytics.",
+          "speaker": {
+            "name": "Sebastian Ruder",
+            "photo": "/images/udl2024/sebastian_ruder.png",
+            "description": "Sebastian Ruder é um cientista pesquisador da Cohere, especialista em LLMs multilinguais, com passagem pela Google DeepMind."
           }
-        ]
-      },
-      {
-        "date": "2024-10-15",
-        "lectures": [
-          {
-            "title": "Robótica Colaborativa no Cotidiano",
-            "start_time": "09:00",
-            "end_time": "10:30",
-            "description": "Robôs colaborativos e como estão impactando a indústria e a vida das pessoas.",
-            "speaker": {
-              "name": "Fernanda Nogueira",
-              "photo": "/images/speakers/fernanda_nogueira.jpg",
-              "description": "Fernanda Nogueira é engenheira de robótica e está envolvida em projetos de robótica colaborativa industrial."
-            }
-          },
-          {
-            "title": "Big Data e Análise Preditiva",
-            "start_time": "11:00",
-            "end_time": "12:30",
-            "description": "Utilizando Big Data para fazer previsões e análises preditivas em diversas áreas.",
-            "speaker": {
-              "name": "Gustavo Ribeiro",
-              "photo": "/images/speakers/gustavo_ribeiro.jpg",
-              "description": "Gustavo Ribeiro é cientista de dados com vasta experiência em análise preditiva e Big Data."
-            }
-          },
-          {
-            "title": "Computação Distribuída em Escala Global",
-            "start_time": "14:00",
-            "end_time": "15:30",
-            "description": "Como a computação distribuída está sendo usada para resolver grandes problemas.",
-            "speaker": {
-              "name": "Helena Souza",
-              "photo": "/images/speakers/helena_souza.jpg",
-              "description": "Helena Souza é pesquisadora em computação distribuída e tem trabalhado com infraestrutura em nuvem nos últimos sete anos."
-            }
-          },
-          {
-            "title": "Redes Neurais Explicáveis",
-            "start_time": "16:00",
-            "end_time": "17:30",
-            "description": "Técnicas para explicar redes neurais e tornar modelos de IA mais transparentes.",
-            "speaker": {
-              "name": "Igor Lima",
-              "photo": "/images/speakers/igor_lima.jpg",
-              "description": "Igor Lima é professor e pesquisador focado em redes neurais explicáveis e transparência em IA."
-            }
+        },
+        {
+          "title": "Metrized Deep Learning",
+          "start_time": "14:30",
+          "description": "Jeremy Bernstein é um pesquisador de pós-doutorado no CSAIL do MIT, com foco nas bases matemáticas da inteligência natural e artificial.",
+          "speaker": {
+            "name": "Jeremy Bernstein",
+            "photo": "/images/udl2024/jeremy_bernstein.png",
+            "description": "Jeremy Bernstein é pesquisador de pós-doutorado no MIT, especializado em inteligência natural e artificial."
           }
-        ]
-      },
-      {
-        "date": "2024-10-16",
-        "lectures": [
-          {
-            "title": "Realidade Aumentada na Educação",
-            "start_time": "09:00",
-            "end_time": "10:30",
-            "description": "Explorando o uso da realidade aumentada para transformar o aprendizado.",
-            "speaker": {
-              "name": "Juliana Ferreira",
-              "photo": "/images/speakers/juliana_ferreira.jpg",
-              "description": "Juliana Ferreira é especialista em tecnologias educacionais e entusiasta da realidade aumentada no ensino."
-            }
-          },
-          {
-            "title": "Automação de Processos com IA",
-            "start_time": "11:00",
-            "end_time": "12:30",
-            "description": "Automatização de processos empresariais usando Inteligência Artificial.",
-            "speaker": {
-              "name": "Lucas Pereira",
-              "photo": "/images/speakers/lucas_pereira.jpg",
-              "description": "Lucas Pereira é consultor em automação de processos e tem experiência em desenvolvimento de IA corporativa."
-            }
-          },
-          {
-            "title": "Modelagem Preditiva em Saúde",
-            "start_time": "14:00",
-            "end_time": "15:30",
-            "description": "Aplicação de técnicas de modelagem preditiva para prever problemas de saúde.",
-            "speaker": {
-              "name": "Mariana Gonçalves",
-              "photo": "/images/speakers/mariana_goncalves.jpg",
-              "description": "Mariana Gonçalves é pesquisadora em saúde digital e desenvolve modelos preditivos para diagnóstico de doenças."
-            }
-          },
-          {
-            "title": "Blockchain e IA",
-            "start_time": "16:00",
-            "end_time": "17:30",
-            "description": "Combinação do Blockchain com a Inteligência Artificial para novas possibilidades.",
-            "speaker": {
-              "name": "Nicolas Medeiros",
-              "photo": "/images/speakers/nicolas_medeiros.jpg",
-              "description": "Nicolas Medeiros é especialista em blockchain e IA, trabalhando em projetos que unem as duas tecnologias."
-            }
+        }
+      ]
+    },
+    {
+      "date": "2024-10-15",
+      "lectures": [
+        {
+          "title": "The Next AI Frontier: Can Neural Networks Master Abstract Relational Reasoning?",
+          "start_time": "13:00",
+          "description": "Bruno Ribeiro é professor na Purdue University e trabalha com aprendizado de máquina, com foco em generalização para domínios além dos observados durante o treinamento.",
+          "speaker": {
+            "name": "Bruno Ribeiro",
+            "photo": "/images/udl2024/bruno_ribeiro.png",
+            "description": "Bruno Ribeiro é professor na Purdue University, especialista em aprendizado de máquina e generalização de modelos."
           }
-        ]
-      }
-    ]
-  }
-  
+        },
+        {
+          "title": "Representação de Imagens em Multirresolução usando Redes Neurais",
+          "start_time": "14:30",
+          "description": "Hallison Paz é pesquisador na área de AI Graphics, que une inteligência artificial e computação gráfica. Ele apresentará uma arquitetura de redes neurais para representação de sinais em multirresolução.",
+          "speaker": {
+            "name": "Hallison Paz",
+            "photo": "/images/udl2024/hallison_paz.png",
+            "description": "Hallison Paz é pesquisador em AI Graphics, co-criador do canal Programação Dinâmica e especialista em computação gráfica."
+          }
+        },
+        {
+          "title": "Generative Models for Biomolecular Prediction, Dynamics, and Design",
+          "start_time": "16:00",
+          "description": "Hannes Stärk é doutorando no MIT e trabalha com modelos generativos aplicados à biomoléculas, explorando como esses modelos podem prever e projetar biomoléculas.",
+          "speaker": {
+            "name": "Hannes Stärk",
+            "photo": "/images/udl2024/hannes_stark.png",
+            "description": "Hannes Stärk é doutorando no MIT, focado em modelos generativos para biomoléculas."
+          }
+        }
+      ]
+    },
+    {
+      "date": "2024-10-16",
+      "lectures": [
+        {
+          "title": "Multilingual Language Models: Benefits and Barriers",
+          "start_time": "13:00",
+          "description": "Marzieh Fadaee é cientista pesquisadora sênior na Cohere for AI, onde foca em pesquisa fundamental em Processamento de Linguagem Natural (PLN) e construção de modelos multilíngues.",
+          "speaker": {
+            "name": "Marzieh Fadaee",
+            "photo": "/images/udl2024/marzieh_fadaee.png",
+            "description": "Marzieh Fadaee é pesquisadora na Cohere for AI, onde trabalha com modelos de linguagem multilíngues e lidera a iniciativa Aya."
+          }
+        },
+        {
+          "title": "Graph Neural Networks",
+          "start_time": "14:30",
+          "description": "Petar Veličković é pesquisador sênior no Google DeepMind e professor afiliado na Universidade de Cambridge, com foco em deep learning geométrico e aprendizado em grafos.",
+          "speaker": {
+            "name": "Petar Veličković",
+            "photo": "/images/udl2024/petar_velickovic.png",
+            "description": "Petar Veličković é pesquisador sênior no Google DeepMind, especialista em aprendizado geométrico e grafos."
+          }
+        },
+        {
+          "title": "An Introduction to Reinforcement Learning",
+          "start_time": "16:00",
+          "description": "Victor Ulisses Pugliese é doutorando em Ciência da Computação pela UNIFESP, com foco em aprendizado por reforço e problemas de otimização.",
+          "speaker": {
+            "name": "Victor Pugliese",
+            "photo": "/images/udl2024/victor_pugliese.png",
+            "description": "Victor Pugliese é doutorando na UNIFESP, especializado em aprendizado por reforço e otimização."
+          }
+        }
+      ]
+    },
+    {
+      "date": "2024-10-17",
+      "lectures": [
+        {
+          "title": "Revisiting the Fundamentals of Deep Reinforcement Learning for Learning Continually",
+          "start_time": "13:00",
+          "description": "Marlos C. Machado é professor assistente na Universidade de Alberta e pesquisador em aprendizado de reforço contínuo, com foco em generalização e aprendizado sequencial.",
+          "speaker": {
+            "name": "Marlos C. Machado",
+            "photo": "/images/udl2024/marlos_machado.png",
+            "description": "Marlos C. Machado é professor na Universidade de Alberta, especializado em aprendizado de reforço e aprendizado contínuo."
+          }
+        },
+        {
+          "title": "Introduction to Topological Deep Learning",
+          "start_time": "14:30",
+          "description": "Mathilde Papillon é doutoranda na University of California, Santa Barbara, e pesquisa a interseção das percepções computacionais e humanas do movimento através do Deep Learning.",
+          "speaker": {
+            "name": "Mathilde Papillon",
+            "photo": "/images/udl2024/mathilde_papillon.png",
+            "description": "Mathilde Papillon é doutoranda na UC Santa Barbara, focada em deep learning e percepção de movimento."
+          }
+        }
+      ]
+    },
+    {
+      "date": "2024-10-18",
+      "lectures": [
+        {
+          "title": "João Guilherme Madeira Araújo",
+          "start_time": "13:00",
+          "description": "João Guilherme Madeira Araújo é estudante de Ciencias da Computação no Instituto de Ciencias Matemáticas e Computação, medalhista em mais de 30 olimpíadas dos conhecimento e co-fundador do CodCad, plataforma de ensino de programação gratuita.",
+          "speaker": {
+            "name": "João Guilherme Madeira Araújo",
+            "photo": "/images/udl2024/joao_araújo.png",
+            "description": "Estudante de Ciencias da Computação no ICMC, medalhista em mais de 30 olimpíadas dos conhecimento e co-fundador do CodCad."
+          }
+        },
+        {
+          "title": "Using Deep Learning to Detect Fake News",
+          "start_time": "16:00",
+          "description": "Rafael Geurgas Zavarizz é pesquisador de pós-doutorado na Purdue University, onde utilizou aprendizado profundo e técnicas de PLN para detectar fake news durante a pandemia.",
+          "speaker": {
+            "name": "Rafael Geurgas Zavarizz",
+            "photo": "/images/udl2024/rafael_zavarizz.png",
+            "description": "Rafael Zavarizz é pós-doutor na Purdue University, especializado em aprendizado profundo e PLN para detecção de fake news."
+          }
+        }
+      ]
+    }
+  ]
+}

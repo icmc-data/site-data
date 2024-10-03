@@ -9,6 +9,7 @@ import { FaRegClock } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 import PropTypes from "prop-types";
 
+
 interface EventData {
   days: {
     date: string;
@@ -16,7 +17,7 @@ interface EventData {
       title: string;
       description: string;
       start_time: string;
-      end_time: string;
+      end_time?: string;
       speaker: {
         name: string;
         photo: string;
@@ -28,13 +29,13 @@ interface EventData {
 const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
   const t = useTranslations("");
   const weekDays = [
-    t("Weekdays.Sunday"),
     t("Weekdays.Monday"),
     t("Weekdays.Tuesday"),
     t("Weekdays.Wednesday"),
     t("Weekdays.Thursday"),
     t("Weekdays.Friday"),
     t("Weekdays.Saturday"),
+    t("Weekdays.Sunday"),
   ];
   const [selectedDay, setSelectedDay] = useState<string>(
     eventData.days[0]?.date || ""
@@ -50,7 +51,7 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
         .find((day) => day.date === selectedDay)
         ?.lectures.map((lecture) => ({
           ...lecture,
-          time: `${lecture.start_time} - ${lecture.end_time}`,
+          time: lecture.end_time ? `${lecture.start_time} - ${lecture.end_time}` : lecture.start_time,
           status: `Palestra de ${lecture.speaker.name}`,
         })) || [];
     setFilteredEvents(eventsForDay);
@@ -73,10 +74,19 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
   };
 
   const getDayOfWeek = (dateString: string) => {
+    // Criar um objeto Date a partir da string de data no formato "YYYY-MM-DD"
     const date = new Date(dateString);
+  
+    // Verificar se a data é válida
+    if (isNaN(date.getTime())) {
+      return "Invalid Date";
+    }
+  
+    // Retornar o nome do dia da semana a partir do array `weekDays`
     return weekDays[date.getDay()];
   };
-
+  
+  
   const customMarker = () => {
     return <span className="pi pi-calendar text-3xl text-data-purple"></span>;
   };
@@ -101,8 +111,8 @@ const Schedule: React.FC<{ eventData: EventData }> = ({ eventData }) => {
           </p>
         </div>
         <div className="flex items-center text-[var(--text-secondary)]">
-          <FaRegClock className="mr-2 text-xl" />
-          <span>{item.time}</span>
+        <FaRegClock className="mr-2 text-lg text-[var(--data-purple)]" />
+        <span className="text-[var(--data-purple)] font-bold">{item.time}</span>
         </div>
       </div>
     );
