@@ -36,6 +36,8 @@ const RegisterUDL = () => {
 
   const [errors, setErrors] = useState<Errors>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [modalMessage, setModalMessage] = useState<string>("");
+  const [termsModalOpen, setTermsModalOpen] = useState<boolean>(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   const validateEmail = (email: string): boolean => {
@@ -128,7 +130,7 @@ const RegisterUDL = () => {
         body: formDataGoogle,
         mode: "no-cors"
       });
-      console.log(t('FormSuccess'));
+      setModalMessage(t('FormSuccess'));
       setFormData({
         fullName: "",
         email: "",
@@ -137,12 +139,18 @@ const RegisterUDL = () => {
         uspNumber: ""
       });
     } catch (error) {
-      console.error(t('FormError'), error);
+      setModalMessage(t('FormError'));
+    } finally {
+      setModalOpen(true);
     }
   };
 
   const toggleModal = () => {
     setModalOpen(!modalOpen);
+  };
+
+  const toggleTermsModal = () => {
+    setTermsModalOpen(!termsModalOpen);
   };
 
   const scrollToBottom = () => {
@@ -239,9 +247,9 @@ const RegisterUDL = () => {
 
         {/* Termos e Condições */}
         <div className="flex items-center mb-5">
-          <input id="terms" type="checkbox" className="w-4 h-4 rounded focus:ring-3" required onClick={toggleModal} style={{ backgroundColor: "var(--background-secondary)", borderColor: "var(--secondary)" }} />
+          <input id="terms" type="checkbox" className="w-4 h-4 rounded focus:ring-3" required style={{ backgroundColor: "var(--background-secondary)", borderColor: "var(--secondary)" }} />
           <label htmlFor="terms" className="ml-2 text-sm font-medium" style={{ color: "var(--primary)" }}>
-            {t('AgreeTerms')} <a href="#" style={{ color: "var(--link)" }} onClick={toggleModal}>{t('TermsAndConditions')}</a>
+            {t('AgreeTerms')} <a href="#" style={{ color: "var(--link)" }} onClick={toggleTermsModal}>{t('TermsAndConditions')}</a>
           </label>
         </div>
 
@@ -251,36 +259,56 @@ const RegisterUDL = () => {
         </Button>
       </form>
 
-      {/* Modal de Termos e Condições */}
+      {/* Modal de Mensagem */}
       {modalOpen &&
-  createPortal(
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div
-        className="bg-white p-5 border shadow-lg rounded-md max-w-sm max-h-[500px] w-full overflow-y-auto relative"
-        style={{ backgroundColor: "var(--background)", borderColor: "var(--secondary)" }}
-      >
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="text-lg font-medium" style={{ color: "var(--primary)" }}>{t('TermsTitle')}</h3>
-          <button
-            onClick={scrollToBottom}
-            className="text-[var(--primary)] hover:text-[var(--secondary)] transition duration-300 ease-in-out"
-          >
-            <FaChevronDown className="w-6 h-6 animate-bounce" />
-          </button>
-        </div>
-        <div className="mt-2 px-7 py-3">
-          <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{t('TermsContent')}</p>
-        </div>
-        <div ref={bottomRef} className="flex justify-center px-4 py-3">
-          <Button variant="primary" onClick={toggleModal}>
-            {t('AgreeAndClose')}
-          </Button>
-        </div>
-      </div>
-    </div>,
-    document.body
-  )
-}
+        createPortal(
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+            <div
+              className="bg-white p-5 border shadow-lg rounded-md max-w-sm max-h-[500px] w-full overflow-y-auto relative"
+              style={{ backgroundColor: "var(--background)", borderColor: "var(--secondary)" }}
+            >
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg font-medium" style={{ color: "var(--primary)" }}>{modalMessage}</h3>
+                <button onClick={toggleModal} className="text-[var(--primary)] hover:text-[var(--secondary)] transition duration-300 ease-in-out">
+                  X
+                </button>
+              </div>
+              <div ref={bottomRef} className="flex justify-center px-4 py-3">
+                <Button variant="primary" onClick={toggleModal}>
+                  {t('AgreeAndClose')}
+                </Button>
+              </div>
+            </div>
+          </div>,
+          document.body
+        )}
+
+      {/* Modal de Termos e Condições */}
+      {termsModalOpen &&
+        createPortal(
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+            <div
+              className="bg-white p-5 border shadow-lg rounded-md max-w-sm max-h-[500px] w-full overflow-y-auto relative"
+              style={{ backgroundColor: "var(--background)", borderColor: "var(--secondary)" }}
+            >
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg font-medium" style={{ color: "var(--primary)" }}>{t('TermsTitle')}</h3>
+                <button onClick={scrollToBottom} className="text-[var(--primary)] hover:text-[var(--secondary)] transition duration-300 ease-in-out">
+                  <FaChevronDown className="w-6 h-6 animate-bounce" />
+                </button>
+              </div>
+              <div className="mt-2 px-7 py-3">
+                <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{t('TermsContent')}</p>
+              </div>
+              <div ref={bottomRef} className="flex justify-center px-4 py-3">
+                <Button variant="primary" onClick={toggleTermsModal}>
+                  {t('AgreeAndClose')}
+                </Button>
+              </div>
+            </div>
+          </div>,
+          document.body
+        )}
     </div>
   );
 };
