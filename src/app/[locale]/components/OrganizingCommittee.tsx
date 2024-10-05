@@ -5,7 +5,15 @@ import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
 import Button from "./Button";
 import MemberCard from "./MemberCard";
-import { FaBullhorn, FaCalendarAlt, FaUserTie, FaUsers, FaProjectDiagram, FaRegBuilding, FaChalkboardTeacher } from 'react-icons/fa';
+import {
+  FaBullhorn,
+  FaCalendarAlt,
+  FaUserTie,
+  FaUsers,
+  FaProjectDiagram,
+  FaRegBuilding,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
 
 interface Member {
   name: string;
@@ -20,27 +28,36 @@ interface OrganizingCommitteeProps {
 }
 
 const categoryIcons: { [key: string]: JSX.Element } = {
-  "All": <FaUsers />,
-  "Marketing": <FaBullhorn />,
-  "Events": <FaCalendarAlt />,
-  "Coordinators": <FaUserTie />,
-  "StudyGroup": <FaUsers />,
-  "Projects": <FaProjectDiagram />,
-  "Secretariat": <FaRegBuilding />,
-  "Teaching": <FaChalkboardTeacher />,
+  All: <FaUsers />,
+  Marketing: <FaBullhorn />,
+  Events: <FaCalendarAlt />,
+  Coordinators: <FaUserTie />,
+  StudyGroup: <FaUsers />,
+  Projects: <FaProjectDiagram />,
+  Secretariat: <FaRegBuilding />,
+  Teaching: <FaChalkboardTeacher />,
 };
 
 const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) => {
   const { resolvedTheme } = useTheme();
-  const t = useTranslations('OrganizingCommittee');
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
-  const categories = ["All", "Marketing", "Events", "Coordinators", "StudyGroup", "Projects", "Secretariat", "Teaching"];
+  const t = useTranslations("OrganizingCommittee");
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const categories = [
+    "All",
+    "Marketing",
+    "Events",
+    "Coordinators",
+    "StudyGroup",
+    "Projects",
+    "Secretariat",
+    "Teaching",
+  ];
   const [isMobileView, setIsMobileView] = useState<boolean>(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth < 1380);
+      setIsMobileView(window.innerWidth < 1166);
     };
 
     handleResize(); // Check on mount
@@ -52,9 +69,9 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
   }, []);
 
   const filterMembers = (category: string) => {
-    return category === 'All'
+    return category === "All"
       ? members
-      : members.filter(member => member.categories.includes(category));
+      : members.filter((member) => member.categories.includes(category));
   };
 
   const filteredMembers = filterMembers(selectedCategory);
@@ -66,14 +83,19 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
           <div className="relative inline-block text-left">
             <button
               type="button"
-              className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-[var(--background)] px-3 py-2 text-sm font-semibold text-[var(--primary)] shadow-sm ring-1 ring-inset ring-[var(--dropdown)] hover:bg-[var(--background-secondary)]"
+              className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-[var(--background-secondary)] px-3 py-2 text-sm font-semibold text-[var(--primary)] shadow-sm ring-1 ring-inset ring-[var(--dropdown)] hover:bg-[var(--background)]"
               id="menu-button"
               aria-expanded={isDropdownOpen}
               aria-haspopup="true"
               onClick={() => setIsDropdownOpen((prev) => !prev)}
             >
               {t(selectedCategory)}
-              <svg className="-mr-1 h-5 w-5 text-[var(--text-secondary)]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg
+                className="-mr-1 h-5 w-5 text-[var(--text-secondary)]"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
                 <path
                   fillRule="evenodd"
                   d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
@@ -83,15 +105,20 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
             </button>
 
             {isDropdownOpen && (
-              <div className="absolute z-10 mt-2 left-1/2 transform -translate-x-1/2 w-56 origin-top rounded-md bg-[var(--background)] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
+              <div
+                className="absolute z-10 mt-2 left-1/2 transform -translate-x-1/2 w-56 origin-top rounded-md bg-[var(--background-secondary)] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="menu-button"
+                tabIndex={-1}
+              >
                 <div className="py-1" role="none">
                   {categories.map((category) => (
                     <a
                       key={category}
                       href="#"
-                      className={`flex items-center gap-x-2 block px-4 py-2 text-sm text-[var(--primary)] hover:bg-[var(--dropdown-hover)] transition-all ${
-                        selectedCategory === category ? 'bg-data-purple text-white' : ''
+                      className={`block px-4 py-2 text-sm text-[var(--primary)] hover:bg-[var(--dropdown-hover)] transition-all ${
+                        selectedCategory === category ? "bg-data-purple text-white" : ""
                       }`}
                       role="menuitem"
                       tabIndex={-1}
@@ -110,20 +137,22 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
             )}
           </div>
         ) : (
-          <div className="flex flex-col md:flex-row md:justify-center space-y-4 md:space-y-0 md:space-x-4 min-w-full custom-padding-bottom">
+          <div className="flex flex-wrap justify-center space-x-4 min-w-full custom-padding-bottom">
             {categories.map((category) => (
-              <Button
+              <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                variant={selectedCategory === category ? 'dataPurple' : 'secondary'}
-                size="small"
-                className="inline-block rounded-md px-4 py-2 text-sm sm:text-base w-full md:w-auto"
+                className={`px-4 py-2 rounded-md text-sm font-semibold transition-all mb-5 ${
+                  selectedCategory === category
+                    ? "bg-data-purple text-white"
+                    : "bg-[var(--background-secondary)] text-[var(--primary)] hover:bg-[var(--dropdown-hover)]"
+                }`}
               >
                 <span className="flex items-center space-x-2">
                   {categoryIcons[category]}
                   <span>{t(category)}</span>
                 </span>
-              </Button>
+              </button>
             ))}
           </div>
         )}
@@ -131,7 +160,7 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
 
       <div className="flex flex-wrap justify-center gap-6">
         {filteredMembers.map((member, index) => (
-          <div key={index} className="text-center ">
+          <div key={index} className="text-center">
             <MemberCard
               name={member.name}
               photo={member.photo}
@@ -140,7 +169,7 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
             />
             {selectedCategory === "Coordinators" && member.special_role && (
               <div className="flex flex-col items-center mt-2 text-sm text-data-purple font-montserrat break-words max-w-xs mx-auto">
-                <p>{member.special_role.join(' & ')}</p>
+                <p>{member.special_role.join(" & ")}</p>
               </div>
             )}
           </div>
