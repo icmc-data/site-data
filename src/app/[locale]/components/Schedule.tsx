@@ -53,9 +53,10 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
   const [isMobileView, setIsMobileView] = useState<boolean>(
     typeof window !== "undefined" && window.innerWidth < 810
   );
+  const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    const eventsForDay = 
+    const eventsForDay =
       eventData.days
         .find((day) => day.date === selectedDay)
         ?.lectures.map((lecture) => ({
@@ -80,16 +81,17 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
     };
   }, []);
 
-  const handleDayChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    setSelectedDay(event.target.value);
-  };
-
   const getDayOfWeek = (dateString: string): string => {
     const date = new Date(dateString);
     if (isNaN(date.getTime())) {
       return "Invalid Date";
     }
     return weekDays[date.getDay()];
+  };
+
+  const handleDayChange = (day: string) => {
+    setSelectedDay(day);
+    setIsDropdownOpen(false);
   };
 
   const customMarker = () => {
@@ -136,24 +138,68 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
     <>
       <h2 className="text-[var(--primary)] mb-6">{t("Schedule_Title")}</h2>
       <div className="text-center mb-6">
-        <label
-          htmlFor="day-selector"
-          className="text-lg font-semibold mr-2 text-[var(--primary)]"
-        >
-          {t("Select_Day")}:
-        </label>
-        <select
-          id="day-selector"
-          value={selectedDay}
-          onChange={handleDayChange}
-          className="p-2 border rounded-lg text-[var(--primary)] bg-[var(--background-secondary)]"
-        >
-          {eventData.days.map((day) => (
-            <option key={day.date} value={day.date}>
-              {getDayOfWeek(day.date)}
-            </option>
-          ))}
-        </select>
+        {isMobileView ? (
+          <div className="relative inline-block text-left">
+            <button
+              type="button"
+              className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-[var(--background-secondary)] px-3 py-2 text-sm font-semibold text-[var(--primary)] shadow-sm ring-1 ring-inset ring-[var(--dropdown)] hover:bg-[var(--background)]"
+              id="menu-button"
+              aria-expanded={isDropdownOpen}
+              aria-haspopup="true"
+              onClick={() => setIsDropdownOpen((prev) => !prev)}
+            >
+              {getDayOfWeek(selectedDay)}
+              <svg className="-mr-1 h-5 w-5 text-[var(--text-secondary)]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+
+            {isDropdownOpen && (
+              <div className="absolute z-10 mt-2 left-1/2 transform -translate-x-1/2 w-56 origin-top rounded-md bg-[var(--background-secondary)] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
+                <div className="py-1" role="none">
+                  {eventData.days.map((day) => (
+                    <a
+                      key={day.date}
+                      href="#"
+                      className={`block px-4 py-2 text-sm text-[var(--primary)] hover:bg-[var(--dropdown-hover)] transition-all ${
+                        selectedDay === day.date ? 'bg-data-purple text-white' : ''
+                      }`}
+                      role="menuitem"
+                      tabIndex={-1}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleDayChange(day.date);
+                      }}
+                    >
+                      {getDayOfWeek(day.date)}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="flex flex-wrap justify-center space-x-4 min-w-full custom-padding-bottom">
+            {eventData.days.map((day) => (
+              <button
+                key={day.date}
+                onClick={() => handleDayChange(day.date)}
+                className={`px-4 py-2 rounded-md text-sm font-semibold transition-all ${
+                  selectedDay === day.date
+                    ? 'bg-data-purple text-white'
+                    : 'bg-[var(--background-secondary)] text-[var(--primary)] hover:bg-[var(--dropdown-hover)]'
+                }`}
+              >
+                {getDayOfWeek(day.date)}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="text-center mb-6">
