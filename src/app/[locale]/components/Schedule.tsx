@@ -21,7 +21,7 @@ interface Lecture {
   end_time?: string | null;
   eventReminder: string;
   speaker: Speaker;
-  time: string;
+  time?: string;
 }
 
 interface Day {
