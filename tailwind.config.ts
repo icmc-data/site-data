@@ -20,6 +20,7 @@ const config = {
     extend: {
       screens: {
         'md': '880px', // Redefinindo o breakpoint 'md' para 880px
+        'lg': '1380px', // Adicionando o breakpoint 'lg' para 1380px
       },
       backgroundImage: {
         'span-bg': 'var(--span-bg)'
@@ -52,4 +53,4 @@ const config = {
   plugins: [require('tailwindcss-animate')]
 } satisfies Config
 
-export default config
+export default config;

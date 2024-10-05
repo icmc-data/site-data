@@ -36,19 +36,19 @@ const MemberCard: React.FC<Member> = ({ name, photo, description, categories, sp
       <Tooltip.Root open={isTooltipOpen} onOpenChange={setIsTooltipOpen}>
         <Tooltip.Trigger asChild>
           <div 
-            className="m-8 text-center cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-105"
+            className="m-4 text-center cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-105 w-72 max-w-full sm:w-60"
             onClick={handleToggleTooltip}
           >
             <div className="flex justify-center mb-4">
-              <img src={photo} alt={name} className="w-32 h-32 rounded-full object-cover" />
+              <img src={photo} alt={name} className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover" />
             </div>
-            <h3 className="text-center mt-4 text-primary font-inter">{name}</h3>
+            <h3 className="text-center mt-4 text-primary font-inter text-sm sm:text-base">{name}</h3>
             {categories.includes("Coordinators") && special_role && (
-              <p className="text-center mt-2 text-sm text-gray-500">{special_role}</p>
+              <p className="text-center mt-2 text-xs sm:text-sm text-gray-500">{special_role}</p>
             )}
             <div className="flex justify-center mt-4 space-x-4">
               {categories.map((category, idx) => (
-                <div key={idx} className="text-xl text-data-purple">
+                <div key={idx} className="text-base sm:text-lg text-data-purple">
                   {categoryIcons[category]}
                 </div>
               ))}
@@ -57,7 +57,7 @@ const MemberCard: React.FC<Member> = ({ name, photo, description, categories, sp
         </Tooltip.Trigger>
         <Tooltip.Portal>
           <Tooltip.Content 
-            className="bg-background-secondary text-primary text-description p-4 rounded-lg shadow-lg relative tooltip-balloon z-50 max-w-80"
+            className="bg-background-secondary text-primary text-xs p-4 rounded-lg shadow-lg relative tooltip-balloon z-50 max-w-xs sm:max-w-sm"
             sideOffset={5}
           >
             <p className="text-center">{description}</p>
