@@ -72,11 +72,12 @@ const Speakers: React.FC = () => {
           return (
             <div
               key={index}
-              className={`rounded-lg shadow-lg p-4 flex flex-col items-center text-center bg-background text-primary dark:bg-background-secondary dark:text-secondary transition-transform transform hover:scale-105 cursor-pointer ${
+              className={`rounded-lg shadow-lg p-4 flex flex-col items-center text-center bg-background text-primary dark:bg-background-secondary dark:text-secondary cursor-pointer ${
                 shouldExpand ? "mb-8" : "mb-4"
               } ${
                 isExpanded ? "border-2 border-[var(--data-purple)]" : "border"
               }`}
+              
               onClick={() => handleExpandToggle(index)}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
