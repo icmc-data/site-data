@@ -7,7 +7,7 @@
         {
           "title": "Multilingual LLMs",
           "start_time": "13:00",
-          "description": "Sebastian Ruder é um cientista pesquisador da Cohere, mora em Berlim, Alemanha, e trabalha construindo Large Language Models (LLMs) multilinguais. Anteriormente, foi pesquisador na Google DeepMind e completou seu doutorado em Processamento de Linguagem Natural e Deep Learning no Insight Research Centre for Data Analytics.",
+          "description": "Sebastian Ruder é um cientista pesquisador baseado em Berlim, Alemanha. Ele lidera a equipe de Multilinguismo na Cohere, cuja missão é melhorar as capacidades multilíngues dos grandes modelos de linguagem (LLMs) da Cohere. Antes disso, ele foi um cientista pesquisador no Google DeepMind. Ele concluiu seu PhD em Processamento de Linguagem Natural (NLP) no Insight Research Centre for Data Analytics, enquanto trabalhava como cientista pesquisador na startup de análise de texto AYLIEN, sediada em Dublin. Anteriormente, ele estudou Linguística Computacional na Universidade de Heidelberg, Alemanha, e no Trinity College, Dublin.",
           "speaker": {
             "name": "Sebastian Ruder",
             "photo": "/images/udl2024/sebastian_ruder.png",
@@ -18,7 +18,7 @@
         {
           "title": "Metrized Deep Learning",
           "start_time": "14:30",
-          "description": "Jeremy Bernstein é um pesquisador de pós-doutorado no CSAIL do MIT, com foco nas bases matemáticas da inteligência natural e artificial.",
+          "description": "Jeremy Bernstein é bacharel em Física Experimental e Teórica pelo Trinity College, e Ph.D. em Computação e Sistemas Neurais pelo Caltech atualmente é pesquisador de pós-doutorado no Massachusetts Institute of Technology (MIT). Sua pesquisa se concentra nas bases matemáticas da inteligência natural e artificial. Entre seus principais interesses estão a descoberta das leis computacionais e estatísticas que regem a inteligência, tanto natural quanto artificial, com o objetivo de projetar sistemas de aprendizado mais eficientes, automáticos e úteis na prática, além de explorar as implicações sociais da inteligência artificial.",
           "speaker": {
             "name": "Jeremy Bernstein",
             "photo": "/images/udl2024/jeremy_bernstein.png",
@@ -32,20 +32,20 @@
       "date": "2024-10-15",
       "lectures": [
         {
-          "title": "The Next AI Frontier: Can Neural Networks Master Abstract Relational Reasoning?",
+          "title": "Fundamentos da transferibilidade entre domínios em redes neurais",
           "start_time": "13:00",
-          "description": "Bruno Ribeiro é professor na Purdue University e trabalha com aprendizado de máquina, com foco em generalização para domínios além dos observados durante o treinamento.",
+          "description": "Bruno Ribeiro é professor associado no Departamento de Ciência da Computação da Purdue University e professor associado visitante na Stanford University entre 2023-2024. Antes de ingressar na Purdue, ele obteve um BSc e MEng pela UFRJ, um Ph.D. pela University of Massachusetts Amherst e foi um pós-doutorado na Carnegie Mellon University. Ribeiro fez contribuições significativas na interseção entre aprendizado profundo geométrico, redes neurais de grafos, robustez fora da distribuição e aprendizado de máquina. Ribeiro recebeu um prêmio NSF CAREER em 2020 sobre os fundamentos do aprendizado de máquina de grafos, um Amazon Research Award em 2022 e vários prêmios de melhor artigo.",
           "speaker": {
             "name": "Bruno Ribeiro",
             "photo": "/images/udl2024/bruno_ribeiro.png",
-            "description": "Bruno Ribeiro é professor na Purdue University, especialista em aprendizado de máquina e generalização de modelos."
+            "description": "Bruno Ribeiro é professor associado no Departamento de Ciência da Computação da Purdue University e professor associado visitante na Stanford University entre 2023-2024. Antes de ingressar na Purdue, ele obteve um BSc e MEng pela UFRJ, um Ph.D. pela University of Massachusetts Amherst e foi um pós-doutorado na Carnegie Mellon University. Ribeiro fez contribuições significativas na interseção entre aprendizado profundo geométrico, redes neurais de grafos, robustez fora da distribuição e aprendizado de máquina. Ribeiro recebeu um prêmio NSF CAREER em 2020 sobre os fundamentos do aprendizado de máquina de grafos, um Amazon Research Award em 2022 e vários prêmios de melhor artigo."
           },
           "eventReminder": "https://www.youtube.com/live/lJ9KKO0RLTw?si=WESBBkffyQ-WWx6w"
         },
         {
           "title": "Representação de Imagens em Multirresolução usando Redes Neurais",
           "start_time": "14:30",
-          "description": "Hallison Paz é pesquisador na área de AI Graphics, que une inteligência artificial e computação gráfica. Ele apresentará uma arquitetura de redes neurais para representação de sinais em multirresolução.",
+          "description": "Hallison Paz é pesquisador em AI Graphics, interseção entre inteligência artificial e computação gráfica, e co-criador do canal Programação Dinâmica e do projeto Matemática Elementar para Computação. É graduado em engenharia de computação pelo Instituto Militar de Engenharia, além de mestre e doutorando no laboratório de visão computacional e computação gráfica (Visgraf) do Instituto Nacional de Matemática Pura e Aplicada, onde pesquisa aplicações de machine learning para novas mídias. Tem experiência na análise, projeto e desenvolvimento de soluções e modelos de inteligência artificial, e passagem como pesquisador no Reality Labs Research, divisão de realidade virtual e aumentada da Meta.",
           "speaker": {
             "name": "Hallison Paz",
             "photo": "/images/udl2024/hallison_paz.png",
@@ -56,11 +56,11 @@
         {
           "title": "Generative Models for Biomolecular Prediction, Dynamics, and Design",
           "start_time": "16:00",
-          "description": "Hannes Stärk é doutorando no MIT e trabalha com modelos generativos aplicados à biomoléculas, explorando como esses modelos podem prever e projetar biomoléculas.",
+          "description": "Apresentamos três caminhos nos quais achamos que modelos generativos são especialmente valiosos para modelar biomoléculas. 1) Tarefas de predição difíceis podem ser melhor abordadas com modelos generativos que podem sugerir e classificar múltiplas soluções (por exemplo, encaixe). 2) A dinâmica e conformações de biomoléculas podem ser capturadas com modelos generativos (por exemplo, conjuntos conformacionais de proteínas e trajetórias de MD). 3) O design de novas biomoléculas pode ser acelerado, informado por amostras ou probabilidades de modelos generativos (por exemplo, ligante de proteína ou design de DNA regulatório).",
           "speaker": {
             "name": "Hannes Stärk",
             "photo": "/images/udl2024/hannes_stark.png",
-            "description": "Hannes Stärk é doutorando no MIT, focado em modelos generativos para biomoléculas."
+            "description": "Apresentamos três caminhos nos quais achamos que modelos generativos são especialmente valiosos para modelar biomoléculas. 1) Tarefas de predição difíceis podem ser melhor abordadas com modelos generativos que podem sugerir e classificar múltiplas soluções (por exemplo, encaixe). 2) A dinâmica e conformações de biomoléculas podem ser capturadas com modelos generativos (por exemplo, conjuntos conformacionais de proteínas e trajetórias de MD). 3) O design de novas biomoléculas pode ser acelerado, informado por amostras ou probabilidades de modelos generativos (por exemplo, ligante de proteína ou design de DNA regulatório)."
           },
           "eventReminder": "https://www.youtube.com/live/E-T_LM3tdOE?si=Byjw0Iw5ZlUviAqX"
         }
@@ -70,20 +70,20 @@
       "date": "2024-10-16",
       "lectures": [
         {
-          "title": "Multilingual Language Models: Benefits and Barriers",
+          "title": "Modelos de Linguagem Multilíngue: benefícios e barreiras",
           "start_time": "13:00",
-          "description": "Marzieh Fadaee é cientista pesquisadora sênior na Cohere for AI, onde foca em pesquisa fundamental em Processamento de Linguagem Natural (PLN) e construção de modelos multilíngues.",
+          "description": "Processamento de Linguagem Natural Multilingual tem desempenhado um papel fundamental nos recentes avanços dos LLM 's. A habilidade de entender e gerar textos em múltiplas línguas expandiu as capacidades desses modelos, tornando eles mais versáteis e acessíveis para uma audiência global. Nessa palestra, nós exploramos o atual estado de LLM 's multilingual, abordando desafios e oportunidades que virão pela frente. A discussão irá cobrir tópicos críticos como a escassez de bases de dados multilíngues, avaliação e benchmarking de modelos multilíngues, e das considerações de segurança ao lidar com diversas línguas. Adicionalmente, a palestra vai destacar os desafios e ganhos de esforços globais open science, como o Aya, para construir estado-da-arte modelos e bases de dados multilíngues. Finalmente, nós discutimos as áreas inexploradas em PLN multilíngue, providenciando insights para direções para pesquisas futuras e os esforços contínuos para melhorar a performance e aplicabilidade dos LLMs.",
           "speaker": {
             "name": "Marzieh Fadaee",
             "photo": "/images/udl2024/marzieh_fadaee.png",
-            "description": "Marzieh Fadaee é pesquisadora na Cohere for AI, onde trabalha com modelos de linguagem multilíngues e lidera a iniciativa Aya."
+            "description": "Marzieh Fadaee é uma cientista pesquisadora sênior na Cohere for AI, um laboratório de pesquisa sem fins lucrativos da Cohere, onde ela foca em investigação fundamental e resolução de desafios complexos em Processamento de Linguagem Natural (PLN) e construir e melhorar modelos de linguagem. Ela co-lidera a iniciativa Aya, a qual levou à criação do maior dataset de instrução multilingual e do desenvolvimento de uma série de estado-da-arte modelos de linguagem multilingual. Antes de se juntar à Cohere for AI, Marzieh foi a pesquisadora líder de NLP/ML na Zeta Alpha Vector, onde ela foi a pioneira em abordagens inovativas para a descoberta e organização do conhecimento. Ela tem um doutorado pela Universidade de Amsterdã onde estudou modelos de redes neurais para tradução."
           },
           "eventReminder": "https://www.youtube.com/live/cs9stkgI_IA?si=vqWi2QI8m21BvhL6"
         },
         {
           "title": "Graph Neural Networks",
           "start_time": "14:30",
-          "description": "Petar Veličković é pesquisador sênior no Google DeepMind e professor afiliado na Universidade de Cambridge, com foco em deep learning geométrico e aprendizado em grafos.",
+          "description": "Petar Veličković é pesquisador sênior no Google DeepMind, professor afiliado na Universidade de Cambridge e associado do Clare Hall, Cambridge. Ele possui um doutorado em Ciência da Computação pela Universidade de Cambridge (Trinity College). Sua pesquisa se concentra em geometric deep learning—desenvolvendo arquiteturas de redes neurais que respeitam as invariâncias e simetrias nos dados (um tema sobre o qual ele co-escreveu um proto-livro). Por suas contribuições, ele é reconhecido como um ELLIS Scholar no Programa de Geometric Deep Learning. Seu foco principal é em aprendizado de representação para grafos e suas aplicações no raciocínio algorítmico (destacado no VentureBeat). Ele é o primeiro autor dos Graph Attention Networks—uma camada de convolução popular para grafos—e do Deep Graph Infomax—um pipeline de aprendizado auto-supervisionado popular para grafos (destacado no ZDNet). Sua pesquisa foi utilizada para melhorar significativamente as previsões de tempo de viagem no Google Maps (destacada na CNBC, Endgadget, VentureBeat, CNET, The Verge e ZDNet), além de orientar a intuição de matemáticos na formulação de novos teoremas e conjecturas de alto nível.",
           "speaker": {
             "name": "Petar Veličković",
             "photo": "/images/udl2024/petar_velickovic.png",
@@ -92,9 +92,9 @@
           "eventReminder": "https://www.youtube.com/live/WxCIT48HJlQ?si=JAuQ64Y73kEu1Vnq"
         },
         {
-          "title": "An Introduction to Reinforcement Learning",
+          "title": "Uma introdução ao aprendizado por reforço",
           "start_time": "16:00",
-          "description": "Victor Ulisses Pugliese é doutorando em Ciência da Computação pela UNIFESP, com foco em aprendizado por reforço e problemas de otimização.",
+          "description": "Victor Ulisses Pugliese é um doutorando em Ciência da Computação pela UNIFESP, com foco em Aprendizado por Reforço e Problemas de Otimização. Ele também possui mestrado pelo ITA em engenharia da computação, focado em Aprendizado de Máquina, Problemas Supervisionados e Concept Drift. Possui MBA em Engenharia de Software com métodos ágeis, pelo IGTI. É graduado em análise de sistemas pelo IFSP. Pugliesi tem mais de dez publicações acadêmicas em Aprendizado de Máquina e Engenharia de Software. Tem experiência profissional como desenvolvedor em diversas linguagens de programação. Ele tem 4 anos de experiência no campo de ciência de dados na companhia Compsis utilizando python, Neo4J, Kafka, Airflow e outras tecnologias. Adicionalmente, ele fundou o GDG de Caraguatatuba, para providenciar conversas técnicas e tecnológicas entre sua comunidade.",
           "speaker": {
             "name": "Victor Pugliese",
             "photo": "/images/udl2024/victor_pugliese.png",
@@ -108,20 +108,20 @@
       "date": "2024-10-17",
       "lectures": [
         {
-          "title": "Revisiting the Fundamentals of Deep Reinforcement Learning for Learning Continually",
+          "title": "Revisitando os fundamentos da aprendizagem por reforço profundo para aprender continuamente",
           "start_time": "13:00",
-          "description": "Marlos C. Machado é professor assistente na Universidade de Alberta e pesquisador em aprendizado de reforço contínuo, com foco em generalização e aprendizado sequencial.",
+          "description": "A capacidade de aprender continuamente é essencial em um mundo complexo e em mudança. Isto também é verdade para agentes artificiais orientados por objetivos que interagem com o mundo. Para terem sucesso, os agentes de aprendizagem contínua, à semelhança dos agentes mais tradicionais, precisam de enfrentar os desafios de exploração, generalização e atribuição de créditos inerentes aos problemas de tomada de decisão sequencial. No entanto, o aspecto interminável do problema coloca novos desafios, de tal forma que soluções bem estabelecidas, como as provenientes da literatura tradicional de aprendizagem por reforço profundo, não são tão eficazes. Nesta palestra, revisitarei alguns dos princípios básicos da aprendizagem por reforço profundo e discutirei como as técnicas tradicionais têm dificuldade em enfrentar os desafios fundamentais da tomada de decisões sequenciais no ambiente de aprendizagem contínua. Também apresentarei alguns de nossos resultados recentes mostrando a eficácia das abstrações temporais no combate à exploração, os benefícios de aproveitar representações discretas para uma melhor generalização e como lidar com o fenômeno bem documentado das redes neurais que perdem sua capacidade de aprender ao longo do tempo.",
           "speaker": {
             "name": "Marlos C. Machado",
             "photo": "/images/udl2024/marlos_machado.png",
-            "description": "Marlos C. Machado é professor na Universidade de Alberta, especializado em aprendizado de reforço e aprendizado contínuo."
+            "description": "Marlos C. Machado é professor assistente na Universidade de Alberta. Seus interesses de pesquisa residem amplamente em aprendizado de máquina, especificamente em aprendizado de reforço (profundo), aprendizado de representação, aprendizado contínuo e aplicações no mundo real de todos os itens acima. Ele também é bolsista do Alberta Machine Intelligence Institute (Amii), diretor do Canada CIFAR AI através da Amii e investigador principal do grupo Reinforcement Learning and Artificial Intelligence (RLAI). Ele completou seu bacharelado e mestrado na UFMG, Brasil, e seu doutorado na Universidade de Alberta. Durante seu doutorado, entre outras coisas, ele introduziu estocasticidade e modos de jogo no popular Arcade Learning Environment, e popularizou a ideia de exploração temporalmente estendida por meio de opções, introduzindo a ideia de opções próprias. Antes de se tornar professor, foi pesquisador da DeepMind e do Google Brain por quatro anos; durante esse período ele fez diversas contribuições para o aprendizado por reforço, incluindo a aplicação do aprendizado por reforço profundo para controlar os balões estratosféricos de Loon, publicado na Nature. Sua pesquisa foi apresentada em mídias populares como BBC, Bloomberg TV, The Verge e Wired."
           },
           "eventReminder": "https://www.youtube.com/live/RlFO4q8FLxc?si=VasaaUnk6YHn0dl6"
         },
         {
-          "title": "Introduction to Topological Deep Learning",
+          "title": "Introdução ao aprendizado profundo topológico",
           "start_time": "14:30",
-          "description": "Mathilde Papillon é doutoranda na University of California, Santa Barbara, e pesquisa a interseção das percepções computacionais e humanas do movimento através do Deep Learning.",
+          "description": "Mathilde Papillon é doutoranda pela University of California Santa Barbara. Papillon cursou bacharelado em física na McGill University, em Montreal, no Canadá. Atualmente investiga a interseção das percepções computacionais e humanas do movimento por meio de Deep Learning. Hoje trabalha no Geometric Intelligence Lab, University California, Santa Barbara.",
           "speaker": {
             "name": "Mathilde Papillon",
             "photo": "/images/udl2024/mathilde_papillon.png",

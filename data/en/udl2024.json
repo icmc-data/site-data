@@ -7,18 +7,18 @@
         {
           "title": "Multilingual LLMs",
           "start_time": "13:00",
-          "description": "Sebastian Ruder is a research scientist at Cohere, based in Berlin, Germany, working on building multilingual Large Language Models (LLMs). Previously, he was a researcher at Google DeepMind and completed his Ph.D. in Natural Language Processing and Deep Learning at the Insight Research Centre for Data Analytics.",
+          "description": "Sebastian Ruder is a research scientist based in Berlin, Germany. He leads the Multilinguality team at Cohere whose mission is to improve the multilingual capabilities of Cohere's large language models (LLMs). Before that he was a research scientist at Google DeepMind. He completed his PhD in Natural Language Processing (NLP) at the Insight Research Centre for Data Analytics, while working as a research scientist at Dublin-based text analytics startup AYLIEN. Previously, he studied Computational Linguistics at the University of Heidelberg, Germany and at Trinity College, Dublin.",
           "speaker": {
             "name": "Sebastian Ruder",
             "photo": "/images/udl2024/sebastian_ruder.png",
-            "description": "Sebastian Ruder is a research scientist at Cohere specializing in multilingual LLMs, with previous experience at Google DeepMind."
+            "description": "Sebastian Ruder is a research scientist based in Berlin, Germany. He leads the Multilinguality team at Cohere whose mission is to improve the multilingual capabilities of Cohere's large language models (LLMs). Before that he was a research scientist at Google DeepMind. He completed his PhD in Natural Language Processing (NLP) at the Insight Research Centre for Data Analytics, while working as a research scientist at Dublin-based text analytics startup AYLIEN. Previously, he studied Computational Linguistics at the University of Heidelberg, Germany and at Trinity College, Dublin."
           },
           "eventReminder": "https://www.youtube.com/live/OHz5kWhZ6wk?si=YJ27V1UXQtUOjkGW"
         },
         {
           "title": "Metrized Deep Learning",
           "start_time": "14:30",
-          "description": "Jeremy Bernstein is a postdoctoral researcher at MIT's CSAIL, focusing on the mathematical foundations of natural and artificial intelligence.",
+          "description": "Jeremy Bernstein holds a bachelor's degree in Experimental and Theoretical Physics from Trinity College, and a Ph.D. in Computing and Neural Systems from Caltech and is currently a postdoctoral researcher at the Massachusetts Institute of Technology (MIT). His research focuses on the mathematical foundations of natural and artificial intelligence. His main interests include discovering the computational and statistical laws that govern intelligence, both natural and artificial, with the aim of designing more efficient, automatic and practically useful learning systems, as well as exploring the social implications of artificial intelligence.",
           "speaker": {
             "name": "Jeremy Bernstein",
             "photo": "/images/udl2024/jeremy_bernstein.png",
@@ -32,20 +32,20 @@
       "date": "2024-10-15",
       "lectures": [
         {
-          "title": "The Next AI Frontier: Can Neural Networks Master Abstract Relational Reasoning?",
+          "title": "Foundations of Cross-Domain Transferability in Neural Networks",
           "start_time": "13:00",
-          "description": "Bruno Ribeiro is a professor at Purdue University and works with machine learning, focusing on generalization to domains beyond those observed during training.",
+          "description": "Bruno Ribeiro is an Associate Professor in the Department of Computer Science at Purdue University and a Visiting Associate Professor at Stanford University between 2023-2024. Before joining Purdue, he earned a BSc and MEng from UFRJ, a Ph.D. from the University of Massachusetts Amherst, and was a postdoctoral fellow at Carnegie Mellon University. Ribeiro has made significant contributions in the intersection between geometric deep learning, graph neural networks, out-of-distribution robustness, and machine learning. Ribeiro received an NSF CAREER award in 2020 on the foundations of graph machine learning, an Amazon Research Award in 2022, and multiple best paper awards..",
           "speaker": {
             "name": "Bruno Ribeiro",
             "photo": "/images/udl2024/bruno_ribeiro.png",
-            "description": "Bruno Ribeiro is a professor at Purdue University, specializing in machine learning and generalization of models."
+            "description": "Bruno Ribeiro is an Associate Professor in the Department of Computer Science at Purdue University and a Visiting Associate Professor at Stanford University between 2023-2024. Before joining Purdue, he earned a BSc and MEng from UFRJ, a Ph.D. from the University of Massachusetts Amherst, and was a postdoctoral fellow at Carnegie Mellon University. Ribeiro has made significant contributions in the intersection between geometric deep learning, graph neural networks, out-of-distribution robustness, and machine learning. Ribeiro received an NSF CAREER award in 2020 on the foundations of graph machine learning, an Amazon Research Award in 2022, and multiple best paper awards."
           },
           "eventReminder": "https://www.youtube.com/live/lJ9KKO0RLTw?si=WESBBkffyQ-WWx6w"
         },
         {
           "title": "Multiresolution Image Representation using Neural Networks",
           "start_time": "14:30",
-          "description": "Hallison Paz is a researcher in AI Graphics, combining artificial intelligence and computer graphics. He will present a neural network architecture for multiresolution signal representation.",
+          "description": " Hallison Paz is a researcher in AI Graphics, the intersection between artificial intelligence and computer graphics, and co-creator of the Dynamic Programming channel and the Elementary Maths for Computing project. He has a degree in computer engineering from the Military Engineering Institute (Brazil), and is a master's and doctoral student at the computer vision and computer graphics laboratory (Visgraf) of the National Institute of Pure and Applied Mathematics, where he researches machine learning applications for new media. He has experience in analysing, designing and developing artificial intelligence solutions and models, and works as a researcher at Reality Labs Research, Meta's virtual and augmented reality division.",
           "speaker": {
             "name": "Hallison Paz",
             "photo": "/images/udl2024/hallison_paz.png",
@@ -60,7 +60,7 @@
           "speaker": {
             "name": "Hannes Stärk",
             "photo": "/images/udl2024/hannes_stark.png",
-            "description": "Hannes Stärk is a Ph.D. student at MIT focused on generative models for biomolecules."
+            "description": "We lay out three avenues in which we think generative models are especially valuable for modeling biomolecules. 1) Hard prediction tasks can be better addressed with generative models that can suggest and rank multiple solutions (e.g., docking). 2) The dynamics and conformations of biomolecules can be captured with generative models (e.g., protein conformational ensembles and MD trajectories). 3) Designing new biomolecules can be accelerated, informed by samples or likelihoods from generative models (e.g., protein binder or regulatory DNA design)."
           },
           "eventReminder": "https://www.youtube.com/live/E-T_LM3tdOE?si=Byjw0Iw5ZlUviAqX"
         }
@@ -72,18 +72,18 @@
         {
           "title": "Multilingual Language Models: Benefits and Barriers",
           "start_time": "13:00",
-          "description": "Marzieh Fadaee is a senior research scientist at Cohere for AI, focusing on fundamental research in Natural Language Processing (NLP) and building multilingual language models.",
+          "description": "Multilingual Natural Language Processing has played a pivotal role in the recent advancements of LLMs. The ability to understand and generate text in multiple languages has expanded the capabilities of these models, making them more versatile and accessible to a global audience. In this talk, we explore the current landscape of multilingual LLMs, addressing the challenges and opportunities that lie ahead. The discussion will cover critical topics such as the scarcity of multilingual datasets, the evaluation and benchmarking of multilingual models, and the unique safety considerations when dealing with diverse languages. Additionally, the talk will highlight the challenges and gains of global open science efforts, such as Aya, to build state-of-the-art multilingual models and datasets. Finally, we discuss the unexplored areas in multilingual NLP, providing insights into potential future research directions and the ongoing efforts to enhance the performance and applicability of LLMs.",
           "speaker": {
             "name": "Marzieh Fadaee",
             "photo": "/images/udl2024/marzieh_fadaee.png",
-            "description": "Marzieh Fadaee is a researcher at Cohere for AI, working on multilingual language models and co-leading the Aya initiative."
+            "description": "Marzieh Fadaee is a Senior Research Scientist at Cohere for AI, the non-profit research lab of Cohere, where she focuses on fundamental research and solving complex challenges in Natural Language Processing (NLP) and building and improving language models. She co-leads the Aya initiative, which led to the creation of the largest multilingual instruction dataset and the development of a series of state-of-the-art multilingual language models. Before joining Cohere for AI, Marzieh was the NLP/ML Research Lead at Zeta Alpha Vector, where she pioneered innovative approaches to knowledge discovery and organization. She holds a PhD from the University of Amsterdam where she studied neural machine translation models."
           },
           "eventReminder": "https://www.youtube.com/live/cs9stkgI_IA?si=vqWi2QI8m21BvhL6"
         },
         {
           "title": "Graph Neural Networks",
           "start_time": "14:30",
-          "description": "Petar Veličković is a senior researcher at Google DeepMind and an affiliate lecturer at the University of Cambridge, focusing on geometric deep learning and graph learning.",
+          "description": "Petar Veličković is a senior researcher at Google DeepMind, an affiliate lecturer at the University of Cambridge and an associate of Clare Hall, Cambridge. He holds a PhD in Computer Science from the University of Cambridge (Trinity College). His research focuses on geometric deep learning-developing neural network architectures that respect invariances and symmetries in data (a topic on which he co-wrote a proto-book). For his contributions, he is recognised as an ELLIS Scholar in the Geometric Deep Learning Programme. His main focus is on graph representation learning and its applications in algorithmic reasoning (featured on VentureBeat). He is the first author of Graph Attention Networks-a popular convolution layer for graphs-and Deep Graph Infomax-a popular self-supervised learning pipeline for graphs (featured on ZDNet). His research has been used to significantly improve travel time predictions on Google Maps (featured on CNBC, Endgadget, VentureBeat, CNET, The Verge and ZDNet), as well as guiding mathematicians' intuition in formulating new high-level theorems and conjectures.",
           "speaker": {
             "name": "Petar Veličković",
             "photo": "/images/udl2024/petar_velickovic.png",
@@ -94,7 +94,7 @@
         {
           "title": "An Introduction to Reinforcement Learning",
           "start_time": "16:00",
-          "description": "Victor Ulisses Pugliese is a Ph.D. student in Computer Science at UNIFESP, focusing on reinforcement learning and optimization problems.",
+          "description": "Victor Ulisses Pugliese. He is a Ph.D. candidate in Computer Science at UNIFESP, focusing on Reinforcement Learning and Optimization Problems. He is also a master at ITA in Computing Engineering, focusing on Machine Learning, Supervised Problems, and Concept Drift. MBA in Software Engineering with Agile Methods, by IGTI. Systems Analyst graduated by IFSP. Pugliese has more than ten academic publications in Machine Learning and Software Engineering. He has professional experience as a developer in several programming languages. He had 4 years in the field of data science by the company Compsis, with python, neo4j, kafka, airflow, and other technologies. In addition, he founded the GDG's Caraguatatuba, to provide technical and technological conversations in his community.",
           "speaker": {
             "name": "Victor Pugliese",
             "photo": "/images/udl2024/victor_pugliese.png",
@@ -110,18 +110,18 @@
         {
           "title": "Revisiting the Fundamentals of Deep Reinforcement Learning for Learning Continually",
           "start_time": "13:00",
-          "description": "Marlos C. Machado is an assistant professor at the University of Alberta and a researcher in continuous reinforcement learning, focusing on generalization and sequential learning.",
+          "description": "The ability to learn continually is essential in a complex and changing world. This is also true for goal-driven artificial agents that interact with the world. To succeed, continual learning agents, similarly to more traditional agents, need to tackle the challenges of exploration, generalization, and credit assignment inherent to sequential decision-making problems. However, the never-ending aspect of the problem poses new challenges such that well-established solutions, such as those coming from the traditional deep reinforcement learning literature, are not so effective. In this talk, I will revisit some of the basics of deep reinforcement learning, and I will discuss how traditional techniques struggle with the fundamental challenges of sequential decision-making in the continual learning setting. I will also present some of our recent results showing the effectiveness of temporal abstractions in tackling exploration, the benefits of harnessing discrete representations for better generalization, and how to deal with the well-documented phenomenon of neural networks losing their ability to learn over time.",
           "speaker": {
             "name": "Marlos C. Machado",
             "photo": "/images/udl2024/marlos_machado.png",
-            "description": "Marlos C. Machado is a professor at the University of Alberta, specializing in reinforcement learning and continuous learning."
+            "description": "Marlos C. Machado is an assistant professor at the University of Alberta. His research interests lie broadly in machine learning, specifically in (deep) reinforcement learning, representation learning, continual learning, and real-world applications of all the above. He is also an Alberta Machine Intelligence Institute (Amii) Fellow, a Canada CIFAR AI Chair through Amii, and a principal investigator in the Reinforcement Learning and Artificial Intelligence (RLAI) group. He completed his B.Sc. and M.Sc. at UFMG, Brazil, and his Ph.D. at the University of Alberta. During his Ph.D., among other things, he introduced stochasticity and game modes in the popular Arcade Learning Environment, and he popularized the idea of temporally-extended exploration through options, introducing the idea of eigenoptions. Before becoming a professor, he was a researcher at DeepMind and at Google Brain for four years; during which time he made several contributions to reinforcement learning, including the application of deep reinforcement learning to control Loon’s stratospheric balloons, published in Nature. His research has been featured in popular media such as BBC, Bloomberg TV, The Verge, and Wired."
           },
           "eventReminder": "https://www.youtube.com/live/RlFO4q8FLxc?si=VasaaUnk6YHn0dl6"
         },
         {
           "title": "Introduction to Topological Deep Learning",
           "start_time": "14:30",
-          "description": "Mathilde Papillon is a Ph.D. candidate at the University of California, Santa Barbara, researching the intersection of computational and human perceptions of movement through deep learning.",
+          "description": "Mathilde Papillon is a PhD candidate at the University of California Santa Barbara. Papillon holds a bachelor’s degree on physics from McGill University, in Montreal, Canada. She is currently researching the intersection of computational and human perceptions of movement through Deep Learning. She currently works at the Geometric Intelligence Lab, University California, Santa Barbara. ",
           "speaker": {
             "name": "Mathilde Papillon",
             "photo": "/images/udl2024/mathilde_papillon.png",
@@ -148,7 +148,7 @@
         {
           "title": "Using Deep Learning to Detect Fake News",
           "start_time": "16:00",
-          "description": "Rafael Geurgas Zavarizz is a postdoctoral researcher at Purdue University, where he used deep learning and NLP techniques to detect fake news during the pandemic.",
+          "description": "Rafael is a postdoctoral researcher at Purdue University, with a PhD in applied physics from UNICAMP, where he used deep learning and NLP techniques to detect fake news on Twitter during the COVID-19 pandemic.",
           "speaker": {
             "name": "Rafael Geurgas Zavarizz",
             "photo": "/images/udl2024/rafael_zavarizz.png",
