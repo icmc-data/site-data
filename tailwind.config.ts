@@ -20,7 +20,7 @@ const config = {
     extend: {
       screens: {
         'md': '880px', // Redefinindo o breakpoint 'md' para 880px
-        'lg': '1380px', // Adicionando o breakpoint 'lg' para 1380px
+        'lg': '1166px', // Redefinindo o breakpoint 'lg' para 1166px
       },
       backgroundImage: {
         'span-bg': 'var(--span-bg)'
