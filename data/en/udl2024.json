@@ -135,7 +135,7 @@
           "description": "The Araceli project is a UNICAMP-UFMG-USP partnership that develops Artificial Intelligence solutions for the automatic detection of child sexual abuse material (CSAM).  In this Seminar we will talk about the process of working with these materials, how to obtain results without having direct access to sensitive content and specific work carried out with Self-supervision and Few-shot Learning protocols.",
           "speaker": {
             "name": "Leo Sampaio Ferraz Ribeiro",
-            "photo": "/images/udl2024/leosampaio.jpg",
+            "photo": "/images/udl2024/leo_sampaio.png",
             "description": "Professor at ICMC-USP. She obtained her PhD in Computer Science from ICMC-USP and was a post-doctoral researcher at the State University of Campinas (Unicamp). She works as a researcher in the field of Computer Vision, with specific experience in the development of multimodal models for cross-domain search. In addition to the multimodal search problem, she also works on the recognition of sensitive content under low-data protocols and domain generalisation."
           },
           "eventReminder": "https://www.youtube.com/live/fh0yOKnt6is?si=eGOqaEGS5ZRtXgQY"
