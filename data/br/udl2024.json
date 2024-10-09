@@ -128,6 +128,17 @@
             "description": "Mathilde Papillon é doutoranda na UC Santa Barbara, focada em deep learning e percepção de movimento."
           },
           "eventReminder": "https://www.youtube.com/live/yDHpL01byew?si=fItvAhLpHvB5mVzz"
+        },
+        {
+          "title": "Inteligência Artificial no Combate ao Abuso Sexual Infantil",
+          "start_time": "16:00",
+          "description": "O projeto Araceli é uma parceria UNICAMP-UFMG-USP que desenvolve soluções de Inteligência Artificial para a detecção automática de materiais de abuso sexual infantil (child sexual abuse material, CSAM). Contamos com colaborações essenciais com a Polícia Federal e Polícia Técnico-Científica do Estado de São Paulo, pois apenas profissionais treinados podem manipular este tipo de dado. Neste Seminário vamos falar sobre o processo de trabalhar com estes materiais, como obter resultados sem ter acesso direto ao conteúdo sensível e trabalhos específicos realizados com protocolos de Auto-supervisão e Aprendizado Few-shot.",
+          "speaker": {
+            "name": "Leo Sampaio Ferraz Ribeiro",
+            "photo": "/images/udl2024/mathilde_papillon.png",
+            "description": "Professora doutora no ICMC-USP. Obteve o título de Doutora em Ciências de Computação pelo ICMC-USP e foi pesquisadora em pós-doutorado na Universidade Estadual de Campinas (Unicamp). Atua como pesquisadora da área de Visão Computacional, com experiência específica no desenvolvimento de modelos multimodais voltados para busca entre domínios. Além do problema de busca multimodal a pesquisadora atua também no reconhecimento de conteúdos sensíveis sob protocolos de poucos dados e generalização de domínios."
+          },
+          "eventReminder": "https://www.youtube.com/live/yDHpL01byew?si=fItvAhLpHvB5mVzz"
         }
       ]
     },
@@ -137,7 +148,7 @@
         {
           "title": "João Guilherme Madeira Araújo",
           "start_time": "13:00",
-          "description": "João é um engenheiro de pesquisa brasileiro que trabalha no Google DeepMind em Londres. João trabalhou em LLMs, Aprendizado por Reforço e Teoria de Categorias para Aprendizado Profundo, e é apaixonado por tentar entender completamente como e por que o Aprendizado Profundo funciona. Ele também adora matemática e gosta de jogar jogos de tabuleiro e pintar.",
+          "description": "João é um pesquisador brasileiro que trabalha no Google DeepMind em Londres. João trabalhou em LLMs, Aprendizado por Reforço e Teoria de Categoria para Aprendizado Profundo, e é apaixonado por tentar entender como e por que o Aprendizado Profundo funciona. Ele também adora matemática e gosta de jogar jogos de tabuleiro e pintar miniaturas.",
           "speaker": {
             "name": "João Guilherme Madeira Araújo",
             "photo": "/images/udl2024/joao_araújo.png",
@@ -148,7 +159,7 @@
         {
           "title": "Using Deep Learning to Detect Fake News",
           "start_time": "16:00",
-          "description": "Rafael Geurgas Zavarizz é pesquisador de pós-doutorado na Purdue University, onde utilizou aprendizado profundo e técnicas de PLN para detectar fake news durante a pandemia.",
+          "description": "Rafael é um pesquisador de pós-doutorado na Universidade de Purdue, tem doutorado em física aplicada pela UNICAMP, onde utilizou aprendizado profundo e técnicas de PLN para detectar fake news no Twitter durante a pandemia do COVID-19.",
           "speaker": {
             "name": "Rafael Geurgas Zavarizz",
             "photo": "/images/udl2024/rafael_zavarizz.png",

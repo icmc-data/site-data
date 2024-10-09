@@ -128,6 +128,17 @@
             "description": "Mathilde Papillon is a Ph.D. candidate at UC Santa Barbara, focused on deep learning and perception of movement."
           },
           "eventReminder": "https://www.youtube.com/live/yDHpL01byew?si=fItvAhLpHvB5mVzz"
+        },
+        {
+          "title": "Artificial Intelligence in the Fight against Child Sexual Abuse",
+          "start_time": "16:00",
+          "description": "The Araceli project is a UNICAMP-UFMG-USP partnership that develops Artificial Intelligence solutions for the automatic detection of child sexual abuse material (CSAM).  In this Seminar we will talk about the process of working with these materials, how to obtain results without having direct access to sensitive content and specific work carried out with Self-supervision and Few-shot Learning protocols.",
+          "speaker": {
+            "name": "Leo Sampaio Ferraz Ribeiro",
+            "photo": "/images/udl2024/leosampaio.jpg",
+            "description": "Professor at ICMC-USP. She obtained her PhD in Computer Science from ICMC-USP and was a post-doctoral researcher at the State University of Campinas (Unicamp). She works as a researcher in the field of Computer Vision, with specific experience in the development of multimodal models for cross-domain search. In addition to the multimodal search problem, she also works on the recognition of sensitive content under low-data protocols and domain generalisation."
+          },
+          "eventReminder": "https://www.youtube.com/live/yDHpL01byew?si=fItvAhLpHvB5mVzz"
         }
       ]
     },
@@ -137,7 +148,7 @@
         {
           "title": "João Guilherme Madeira Araújo",
           "start_time": "13:00",
-          "description": "João is a Brazilian Research Engineer working at Google DeepMind in London. João has worked on LLMs, Reinforcement Learning, and Category Theory for Deep Learning, and is passionate about trying to fully understand how and why Deep Learning works. He also loves maths and likes playing board games and painting.",
+          "description": "João is a Brazilian Research Engineer working at Google DeepMind in London. João has worked on LLMs, Reinforcement Learning, and Category Theory for Deep Learning, and is passionate about trying to fully understand how and why Deep Learning works. He also loves maths and likes playing board games and painting miniatures.",
           "speaker": {
             "name": "João Guilherme Madeira Araújo",
             "photo": "/images/udl2024/joao_araújo.png",
