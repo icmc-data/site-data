@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
@@ -51,22 +51,25 @@ export default function UnderstandingDL() {
         speakersTitle={t("UDLHero.speakersTitle")}
         speakersText={t("UDLHero.speakersText")}
         imgLink={logoSrc}
-        dateLink={`/${locale}/pages/events/undertandingDL/register`} // Certifique-se de que este link também esteja correto
-        speakersLink={`/${locale}/pages/events/undertandingDL/speakers`}
+        dateLink={`/${locale}/pages/events/understandingDL/register`} // Certifique-se de que este link também esteja correto
+        speakersLink={`/${locale}/pages/events/understandingDL/speakers`}
         dateButtonText={t("UDLHero.dateButtonText")}
         eventButtonText={t("UDLHero.speakersButtonText")}
       />
       <br />
       <br />
 
-        <h2 className="text-3xl font-bold text-[var(--primary)] mb-6">
-          {t("AboutEvent.Parte_1")}
-        </h2>
+      <h2 className="text-3xl font-bold text-[var(--primary)] mb-6">
+        {t("AboutEvent.Parte_1")}
+      </h2>
       <div className="about-event  mx-auto px-2 md:px-4 lg:px-8">
         <p className="text-lg text-[var(--text-secondary)] mb-6 leading-relaxed">
-          <span className="font-bold">{t("AboutEvent.Parte_2")}</span> {t("AboutEvent.Parte_3")}
-          <span className="font-bold"> {t("AboutEvent.Parte_4")}</span> {t("AboutEvent.Parte_5")}
-          <span className="font-bold"> {t("AboutEvent.Parte_5-1")}</span>. {t("AboutEvent.Parte_6")}
+          <span className="font-bold">{t("AboutEvent.Parte_2")}</span>{" "}
+          {t("AboutEvent.Parte_3")}
+          <span className="font-bold"> {t("AboutEvent.Parte_4")}</span>{" "}
+          {t("AboutEvent.Parte_5")}
+          <span className="font-bold"> {t("AboutEvent.Parte_5-1")}</span>.{" "}
+          {t("AboutEvent.Parte_6")}
           <br />
           <span
             className="font-bold underline cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] transition-colors duration-300"
@@ -82,8 +85,10 @@ export default function UnderstandingDL() {
         </p>
         <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
           {t("AboutEvent.Parte_10")}
-          <span className="font-bold"> {t("AboutEvent.Parte_11")}</span> {t("AboutEvent.Parte_12")}
-          <span className="font-bold"> {t("AboutEvent.Parte_13")}</span> {t("AboutEvent.Parte_14")}
+          <span className="font-bold"> {t("AboutEvent.Parte_11")}</span>{" "}
+          {t("AboutEvent.Parte_12")}
+          <span className="font-bold"> {t("AboutEvent.Parte_13")}</span>{" "}
+          {t("AboutEvent.Parte_14")}
           <span className="font-bold"> {t("AboutEvent.Parte_15")}</span>.
         </p>
       </div>

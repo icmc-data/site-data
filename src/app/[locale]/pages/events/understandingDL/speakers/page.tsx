@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import speakerData from "@/data/br/udl2024.json";
@@ -75,7 +75,6 @@ const Speakers: React.FC = () => {
               className={`rounded-lg shadow-lg p-4 flex flex-col items-center text-center bg-background text-primary dark:bg-background-secondary dark:text-secondary cursor-pointer ${
                 isExpanded ? "border-2 border-[var(--data-purple)]" : "border"
               }`}
-              
               onClick={() => handleExpandToggle(index)}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}

@@ -56,7 +56,7 @@
         {
           "title": "Generative Models for Biomolecular Prediction, Dynamics, and Design",
           "start_time": "16:00",
-          "description": "Apresentamos três caminhos nos quais achamos que modelos generativos são especialmente valiosos para modelar biomoléculas. 1) Tarefas de predição difíceis podem ser melhor abordadas com modelos generativos que podem sugerir e classificar múltiplas soluções (por exemplo, encaixe). 2) A dinâmica e conformações de biomoléculas podem ser capturadas com modelos generativos (por exemplo, conjuntos conformacionais de proteínas e trajetórias de MD). 3) O design de novas biomoléculas pode ser acelerado, informado por amostras ou probabilidades de modelos generativos (por exemplo, ligante de proteína ou design de DNA regulatório).",
+          "description": "Hannes Stärk é um aluno do terceiro ano de doutorado no MIT trabalhando com Regina Barzilay e Tommi Jaakkola em modelos generativos para biomoléculas.",
           "speaker": {
             "name": "Hannes Stärk",
             "photo": "/images/udl2024/hannes_stark.png",
@@ -135,7 +135,7 @@
           "description": "O projeto Araceli é uma parceria UNICAMP-UFMG-USP que desenvolve soluções de Inteligência Artificial para a detecção automática de materiais de abuso sexual infantil (child sexual abuse material, CSAM). Contamos com colaborações essenciais com a Polícia Federal e Polícia Técnico-Científica do Estado de São Paulo, pois apenas profissionais treinados podem manipular este tipo de dado. Neste Seminário vamos falar sobre o processo de trabalhar com estes materiais, como obter resultados sem ter acesso direto ao conteúdo sensível e trabalhos específicos realizados com protocolos de Auto-supervisão e Aprendizado Few-shot.",
           "speaker": {
             "name": "Leo Sampaio Ferraz Ribeiro",
-            "photo": "/images/udl2024/leosampoaio.png",
+            "photo": "/images/udl2024/leo_sampaio.png",
             "description": "Professora doutora no ICMC-USP. Obteve o título de Doutora em Ciências de Computação pelo ICMC-USP e foi pesquisadora em pós-doutorado na Universidade Estadual de Campinas (Unicamp). Atua como pesquisadora da área de Visão Computacional, com experiência específica no desenvolvimento de modelos multimodais voltados para busca entre domínios. Além do problema de busca multimodal a pesquisadora atua também no reconhecimento de conteúdos sensíveis sob protocolos de poucos dados e generalização de domínios."
           },
           "eventReminder": "https://www.youtube.com/live/fh0yOKnt6is?si=eGOqaEGS5ZRtXgQY"
