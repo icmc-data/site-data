@@ -48,7 +48,9 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
     t("Weekdays.Saturday"),
     t("Weekdays.Sunday"),
   ];
-  const [selectedDay, setSelectedDay] = useState<string>(eventData.days[0]?.date || "");
+  const [selectedDay, setSelectedDay] = useState<string>(
+    eventData.days[0]?.date || ""
+  );
   const [filteredEvents, setFilteredEvents] = useState<Lecture[]>([]);
   const [isMobileView, setIsMobileView] = useState<boolean>(
     typeof window !== "undefined" && window.innerWidth < 810
@@ -119,7 +121,9 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
         </div>
         <div className="flex items-center text-[var(--text-secondary)] mb-4">
           <FaRegClock className="mr-2 text-lg text-[var(--data-purple)] font-bold" />
-          <span className="text-[var(--data-purple)] font-bold">{item.time}</span>
+          <span className="text-[var(--data-purple)] font-bold">
+            {item.time}
+          </span>
         </div>
         <a
           href={item.eventReminder}
@@ -133,7 +137,6 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
       </div>
     );
   };
-  
 
   return (
     <>
@@ -150,7 +153,12 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
               onClick={() => setIsDropdownOpen((prev) => !prev)}
             >
               {getDayOfWeek(selectedDay)}
-              <svg className="-mr-1 h-5 w-5 text-[var(--text-secondary)]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg
+                className="-mr-1 h-5 w-5 text-[var(--text-secondary)]"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
                 <path
                   fillRule="evenodd"
                   d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
@@ -160,15 +168,22 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
             </button>
 
             {isDropdownOpen && (
-              <div className="absolute z-10 mt-2 left-1/2 transform -translate-x-1/2 w-56 origin-top rounded-md bg-[var(--background-secondary)] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
+              <div
+                className="absolute z-10 mt-2 left-1/2 transform -translate-x-1/2 w-56 origin-top rounded-md bg-[var(--background-secondary)] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="menu-button"
+                tabIndex={-1}
+              >
                 <div className="py-1" role="none">
                   {eventData.days.map((day) => (
                     <a
                       key={day.date}
                       href="#"
                       className={`block px-4 py-2 text-sm text-[var(--primary)] hover:bg-[var(--dropdown-hover)] transition-all ${
-                        selectedDay === day.date ? 'bg-data-purple text-white' : ''
+                        selectedDay === day.date
+                          ? "bg-data-purple text-white"
+                          : ""
                       }`}
                       role="menuitem"
                       tabIndex={-1}
@@ -192,8 +207,8 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
                 onClick={() => handleDayChange(day.date)}
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-all ${
                   selectedDay === day.date
-                    ? 'bg-data-purple text-white'
-                    : 'bg-[var(--background-secondary)] text-[var(--primary)] hover:bg-[var(--dropdown-hover)]'
+                    ? "bg-data-purple text-white"
+                    : "bg-[var(--background-secondary)] text-[var(--primary)] hover:bg-[var(--dropdown-hover)]"
                 }`}
               >
                 {getDayOfWeek(day.date)}
@@ -220,7 +235,10 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
           isMobileView ? (
             <ul className="bg-[var(--background-secondary)] rounded-lg p-4 space-y-6 shadow-md">
               {filteredEvents.map((event, index) => (
-                <li key={index} className="border-b border-[var(--primary)] pb-6 last:border-none">
+                <li
+                  key={index}
+                  className="border-b border-[var(--primary)] pb-6 last:border-none"
+                >
                   <h3 className="text-xl font-bold text-[var(--primary)] mb-2">
                     {event.title}
                   </h3>
@@ -241,7 +259,9 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
                   </div>
                   <div className="flex items-center text-[var(--text-secondary)] mb-4 mt-4">
                     <FaRegClock className="mr-2 text-lg text-[var(--data-purple)] font-bold" />
-                    <span className="text-[var(--data-purple)] font-bold">{event.time}</span>
+                    <span className="text-[var(--data-purple)] font-bold">
+                      {event.time}
+                    </span>
                   </div>
                   <a
                     href={event.eventReminder}
@@ -257,7 +277,12 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
             </ul>
           ) : (
             <Fade triggerOnce>
-              <Timeline value={filteredEvents} align="alternate" marker={customMarker} content={customContent} />
+              <Timeline
+                value={filteredEvents}
+                align="alternate"
+                marker={customMarker}
+                content={customContent}
+              />
             </Fade>
           )
         ) : (
