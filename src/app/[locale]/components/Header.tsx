@@ -24,7 +24,7 @@ export const Header: FC<Props> = ({ locale }) => {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const eventPages = [
-    { name: "Understanding DL", path: "/pages/events/understandingDL" },
+    { name: "Understanding DL", path: "/pages/events/undertandingDL" },
     // { name: "DataDay", path: "/pages/events/dataDay" },
   ];
 

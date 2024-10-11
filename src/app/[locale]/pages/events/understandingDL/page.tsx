@@ -10,8 +10,6 @@ import FAQ from "../../../components/FAQ";
 import Schedule, { EventData } from "../../../components/Schedule";
 import Sponsors from "../../../components/Sponsors";
 
-
-
 // Importa os arquivos JSON para ambos os idiomas
 import eventDataBr from "@/data/br/udl2024.json";
 import eventDataEn from "@/data/en/udl2024.json";
@@ -53,8 +51,8 @@ export default function UnderstandingDL() {
         speakersTitle={t("UDLHero.speakersTitle")}
         speakersText={t("UDLHero.speakersText")}
         imgLink={logoSrc}
-        dateLink={`/${locale}/pages/events/understandingDL/register`} // Certifique-se de que este link também esteja correto
-        speakersLink={`/${locale}/pages/events/understandingDL/speakers`}
+        dateLink={`/${locale}/pages/events/undertandingDL/register`} // Certifique-se de que este link também esteja correto
+        speakersLink={`/${locale}/pages/events/undertandingDL/speakers`}
         dateButtonText={t("UDLHero.dateButtonText")}
         eventButtonText={t("UDLHero.speakersButtonText")}
       />
