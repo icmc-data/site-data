@@ -107,7 +107,7 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
         <p className="text-[var(--text-secondary)] mb-4">{item.description}</p>
         <div className="flex items-center mb-4">
           <Image
-            src={item.speaker.photo}
+            src={item.speaker.photo || "/images/fallback-photo.png"} // Fallback para evitar undefined
             alt={item.speaker.name}
             width={50}
             height={50}
@@ -133,6 +133,7 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
       </div>
     );
   };
+  
 
   return (
     <>
