@@ -51,8 +51,8 @@ export default function UnderstandingDL() {
         speakersTitle={t("UDLHero.speakersTitle")}
         speakersText={t("UDLHero.speakersText")}
         imgLink={logoSrc}
-        dateLink={`/${locale}/pages/events/undertandingDL/register`} // Certifique-se de que este link também esteja correto
-        speakersLink={`/${locale}/pages/events/undertandingDL/speakers`}
+        dateLink={`/${locale}/pages/events/understandingDL/register`} // Certifique-se de que este link também esteja correto
+        speakersLink={`/${locale}/pages/events/understandingDL/speakers`}
         dateButtonText={t("UDLHero.dateButtonText")}
         eventButtonText={t("UDLHero.speakersButtonText")}
       />
