@@ -157,6 +157,17 @@
           "eventReminder": "https://www.youtube.com/live/t3KBLHGghRg?si=JYTQA5MrYp7v6Fof"
         },
         {
+          "title": "Uma visão geral amigável dos transformadores e do mecanismo de atenção",
+          "start_time": "14:30",
+          "description": "Nesta palestra, aprenderemos a arquitetura de um transformador, incluindo suas partes importantes, como a rede neural feedforward, tokenização e codificação posicional. Uma ênfase especial será feita em embeddings e no mecanismo de atenção, e como eles capturam o contexto do texto. Esta palestra é aberta a todos os públicos.",
+          "speaker": {
+            "name": "Luis Serrano",
+            "photo": "/images/udl2024/luis_Serrano.png",
+            "description": "Luis Serrano é o autor de Grokking Machine Learning e o criador do popular canal educacional do YouTube Serrano.Academy. Luis trabalhou em grandes modelos de linguagem na Cohere, em inteligência artificial no Google e na Apple e como cientista de pesquisa de IA quântica na Zapata Computing. Ele tem cursos populares de ML em plataformas como Udacity e Coursera. Luis tem um PhD em matemática pela University of Michigan e um mestrado e bacharelado pela University of Waterloo."
+          },
+          "eventReminder": "https://www.youtube.com/live/NDG-4Q2fLP8?si=yr6On1QVIV0W8AQu"
+        },
+        {
           "title": "Deep Learning aplicado ao diagnóstico de transtornos de saúde mental (depressão) utilizando material genético humano (DNA) e fatores ambientais.",
           "start_time": "16:00",
           "description": "Rafael é um pesquisador de pós-doutorado na Universidade de Purdue, tem doutorado em física aplicada pela UNICAMP, onde utilizou aprendizado profundo e técnicas de PLN para detectar fake news no Twitter durante a pandemia do COVID-19.",
