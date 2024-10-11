@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Timeline } from "primereact/timeline";
 import "primereact/resources/themes/saga-blue/theme.css";
@@ -29,7 +29,7 @@ interface Day {
   lectures: Lecture[];
 }
 
-interface EventData {
+export interface EventData {  // Exportação adicionada
   days: Day[];
 }
 
