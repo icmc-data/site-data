@@ -60,7 +60,7 @@
           "speaker": {
             "name": "Hannes Stärk",
             "photo": "/images/udl2024/hannes_stark.png",
-            "description": "We lay out three avenues in which we think generative models are especially valuable for modeling biomolecules. 1) Hard prediction tasks can be better addressed with generative models that can suggest and rank multiple solutions (e.g., docking). 2) The dynamics and conformations of biomolecules can be captured with generative models (e.g., protein conformational ensembles and MD trajectories). 3) Designing new biomolecules can be accelerated, informed by samples or likelihoods from generative models (e.g., protein binder or regulatory DNA design)."
+            "description": "Hannes Stärk is a Ph.D. student at MIT, working on generative models for biomolecules, exploring how these models can predict and design biomolecules."
           },
           "eventReminder": "https://www.youtube.com/live/eykxZeUDlKo?si=oKaaHZhfCT_74Y7x"
         }
@@ -135,6 +135,7 @@
           "description": "The Araceli project is a UNICAMP-UFMG-USP partnership that develops Artificial Intelligence solutions for the automatic detection of child sexual abuse material (CSAM).  In this Seminar we will talk about the process of working with these materials, how to obtain results without having direct access to sensitive content and specific work carried out with Self-supervision and Few-shot Learning protocols.",
           "speaker": {
             "name": "Leo Sampaio Ferraz Ribeiro",
+            "photo": "/images/udl2024/leo_sampaio.png",
             "description": "Professor at ICMC-USP. She obtained her PhD in Computer Science from ICMC-USP and was a post-doctoral researcher at the State University of Campinas (Unicamp). She works as a researcher in the field of Computer Vision, with specific experience in the development of multimodal models for cross-domain search. In addition to the multimodal search problem, she also works on the recognition of sensitive content under low-data protocols and domain generalisation."
           },
           "eventReminder": "https://www.youtube.com/live/fh0yOKnt6is?si=eGOqaEGS5ZRtXgQY"
