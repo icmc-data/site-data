@@ -7,9 +7,15 @@ type CustomMiddleware = (req: NextRequest) => Promise<NextRequest | NextResponse
 
 const customMiddleware: CustomMiddleware = async req => {
   console.log('Custom middleware executed before next-intl');
-
+  
   const pathname = req.nextUrl.pathname;
-
+  
+  if(pathname == "/br/pages/events/undertandingDL"){
+    const url = req.nextUrl.clone();
+    url.pathname= "/br/pages/events/understandingDL"
+    return NextResponse.redirect(url)
+  }
+  
   // Caso a rota não contenha o prefixo do locale
   if (!locales.some(locale => pathname.startsWith(`/${locale}`))) {
     const url = req.nextUrl.clone();
