@@ -80,7 +80,7 @@ const Speakers: React.FC = () => {
               onMouseLeave={handleMouseLeave}
             >
               <Image
-                src={speaker.photo}
+                src={speaker.photo || "/path/to/default/image.jpg"}
                 alt={speaker.name}
                 width={150}
                 height={150}
