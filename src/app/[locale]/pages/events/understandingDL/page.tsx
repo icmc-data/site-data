@@ -7,8 +7,10 @@ import "./style.css";
 import UDLLogo from "@/public/images/udl2024/UDLLogo.png";
 import UDLLogoWhite from "@/public/images/UDLLogo-white.png";
 import FAQ from "../../../components/FAQ";
-import Schedule from "../../../components/Schedule";
+import Schedule, { EventData } from "../../../components/Schedule";
 import Sponsors from "../../../components/Sponsors";
+
+
 
 // Importa os arquivos JSON para ambos os idiomas
 import eventDataBr from "@/data/br/udl2024.json";

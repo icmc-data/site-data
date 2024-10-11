@@ -11,7 +11,7 @@ import { Fade } from "react-awesome-reveal";
 
 interface Speaker {
   name: string;
-  photo: string;
+  photo?: string;
 }
 
 interface Lecture {
