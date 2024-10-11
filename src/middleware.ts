@@ -17,6 +17,13 @@ const customMiddleware: CustomMiddleware = async req => {
     return NextResponse.redirect(url);
   }
 
+  // redireciona a URL incorreta "undertandingDL" pra correta "understandingDL"
+  if (pathname.includes('/events/undertandingDL')) {
+    const correctedUrl = req.nextUrl.clone();
+    correctedUrl.pathname = pathname.replace('/events/undertandingDL', '/events/understandingDL');
+    return NextResponse.redirect(correctedUrl);
+  }
+
   return req;
 };
 
@@ -31,12 +38,10 @@ export default async function middleware(
 ): Promise<ReturnType<typeof intlMiddleware>> {
   const result = await customMiddleware(req);
 
-  // Se `customMiddleware` retornar `NextResponse`, usar essa resposta
   if (result instanceof NextResponse) {
     return result;
   }
 
-  // Caso contrário, continuar com o `intlMiddleware`
   return intlMiddleware(result);
 }
 
