@@ -247,7 +247,7 @@ const Schedule: React.FC<ScheduleProps> = ({ eventData }) => {
                   </p>
                   <div className="flex items-center mb-2">
                     <Image
-                      src={event.speaker.photo}
+                      src={event?.speaker?.photo || ''}
                       alt={event.speaker.name}
                       width={40}
                       height={40}
