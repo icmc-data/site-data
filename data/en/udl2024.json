@@ -81,13 +81,13 @@
           "eventReminder": "https://www.youtube.com/live/i8hQeFD-P1I?si=u1mU4bl4wywPRis2"
         },
         {
-          "title": "Graph Neural Networks",
+          "title": "Geometric Deep Learning",
           "start_time": "14:30",
-          "description": "Petar Veličković is a senior researcher at Google DeepMind, an affiliate lecturer at the University of Cambridge and an associate of Clare Hall, Cambridge. He holds a PhD in Computer Science from the University of Cambridge (Trinity College). His research focuses on geometric deep learning-developing neural network architectures that respect invariances and symmetries in data (a topic on which he co-wrote a proto-book). For his contributions, he is recognised as an ELLIS Scholar in the Geometric Deep Learning Programme. His main focus is on graph representation learning and its applications in algorithmic reasoning (featured on VentureBeat). He is the first author of Graph Attention Networks-a popular convolution layer for graphs-and Deep Graph Infomax-a popular self-supervised learning pipeline for graphs (featured on ZDNet). His research has been used to significantly improve travel time predictions on Google Maps (featured on CNBC, Endgadget, VentureBeat, CNET, The Verge and ZDNet), as well as guiding mathematicians' intuition in formulating new high-level theorems and conjectures.",
+          "description": "While learning generic functions in high dimensions is a cursed estimation problem, most tasks of interest are not generic, and come with essential pre-defined regularities arising from the underlying low-dimensionality and structure of the physical world. Exploiting the known symmetries of a large system is a powerful and classical remedy against the curse of dimensionality, and forms the basis of most physical theories. Deep learning systems are no exception.",
           "speaker": {
             "name": "Petar Veličković",
             "photo": "/images/udl2024/petar_velickovic.png",
-            "description": "Petar Veličković is a senior researcher at Google DeepMind, specializing in geometric deep learning and graph learning."
+            "description": "Petar Veličković is a Staff Research Scientist at Google DeepMind, Affiliated Lecturer at the University of Cambridge, and an Associate of Clare Hall, Cambridge. He holds a PhD in Computer Science from the University of Cambridge (Trinity College), obtained under the supervision of Pietro Liò. His research concerns geometric deep learning—devising neural network architectures that respect the invariances and symmetries in data (a topic he has co-written a proto-book about). He is recognised as an ELLIS Scholar in the Geometric Deep Learning Program. Particularly, he focuses on graph representation learning and its applications in algorithmic reasoning (featured in VentureBeat). He is the first author of Graph Attention Networks—a popular convolutional layer for graphs—and Deep Graph Infomax—a popular self-supervised learning pipeline for graphs (featured in ZDNet)."
           },
           "eventReminder": "https://www.youtube.com/live/IZS0IUxdWfs?si=VMHfeMEa_iBNubJ"
         },
