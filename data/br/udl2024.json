@@ -119,13 +119,13 @@
           "eventReminder": "https://www.youtube.com/live/DNkSa8A3bAs?si=sR1N7Kee2N3E1ESp"
         },
         {
-          "title": "Introdução ao aprendizado profundo topológico",
+          "title": "IA e Tomada de Decisão Autônoma: O Dilema Ético",
           "start_time": "14:30",
-          "description": "Mathilde Papillon é doutoranda pela University of California Santa Barbara. Papillon cursou bacharelado em física na McGill University, em Montreal, no Canadá. Atualmente investiga a interseção das percepções computacionais e humanas do movimento por meio de Deep Learning. Hoje trabalha no Geometric Intelligence Lab, University California, Santa Barbara.",
+          "description": "Os sistemas autônomos que tomam decisões por conta própria, como veículos autônomos, sistemas de recomendação de sentenças judiciais, assistentes de saúde ou mesmo IA em processos de contratação, apresentam dilemas éticos complexos. O avanço dessas tecnologias exige uma reflexão profunda sobre quem é responsável pelos erros ou consequências inesperadas que surgem dessas decisões. Esses sistemas estão cada vez mais assumindo papéis críticos que impactam diretamente a vida das pessoas, e as questões sobre responsabilidade, confiabilidade e transparência são fundamentais. Responsabilidade na Pesquisa e Desenvolvimento: Pesquisadores e desenvolvedores de IA têm a responsabilidade de considerar essas questões desde as primeiras fases de desenvolvimento de algoritmos. Essas considerações levantam a pergunta crítica: até que ponto devemos permitir que sistemas autônomos tomem decisões de grande impacto sem intervenção humana, e como podemos garantir que essas decisões sejam sempre justas, transparentes e responsáveis?",
           "speaker": {
-            "name": "Mathilde Papillon",
-            "photo": "/images/udl2024/mathilde_papillon.png",
-            "description": "Mathilde Papillon é doutoranda na UC Santa Barbara, focada em deep learning e percepção de movimento."
+            "name": "Nida Da Hora",
+            "photo": "/images/udl2024/mathilde_ninadaora.png",
+            "description": "Minha pesquisa visa mitigar o racismo algorítmico através da interseção entre justiça e inteligência artificial no meu mestrado na Unicamp. Fui premiada com o Ford Foundation Global Fellowship 2024, o prêmio Forbes Under 30, o Sabia Award da Universidade de Cambridge e estou listada entre as 100 pessoas mais influentes em Ética em IA. Em 2020, fundei o Instituto da Hora, dedicado ao avanço dos direitos digitais no Brasil e à promoção de uma abordagem mais coletiva e crítica do campo da inteligência artificial na sociedade. Sou pesquisador sênior em Data Scientist na Thoughtworks Brasil e colaboro ativamente em conselhos da sociedade civil, indústria e governo, liderando e influenciando políticas e inovações responsáveis em IA."
           },
           "eventReminder": "https://www.youtube.com/live/xh1lZYqNwfk?si=IPr18hmZMSwCaFQk"
         },
