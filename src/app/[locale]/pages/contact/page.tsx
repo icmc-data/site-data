@@ -1,12 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faYoutube,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { AiOutlineMail, AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
+import { PiLinkedinLogo } from "react-icons/pi";
 import { Footer } from "../../components/Footer";
 
 export default function Contact() {
@@ -18,7 +13,6 @@ export default function Contact() {
   };
 
   const buttonStyle = {
-    boxShadow: "5px 5px 15px rgba(0, 0, 0, 0.1)", // Sombra mais suave
     fontSize: "20px", // Tamanho do texto para mobile
     backgroundColor: "var(--background-secondary)", // Usando variável CSS
     color: "var(--primary)", // Usando variável CSS para o texto
@@ -41,30 +35,30 @@ export default function Contact() {
       >
         <button
           onClick={handleEmailClick}
-          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl shadow-lg flex items-center justify-center whitespace-nowrap"
+          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl  flex items-center justify-center whitespace-nowrap"
           style={buttonStyle}
         >
-          <FontAwesomeIcon icon={faEnvelope} style={iconStyle} />
+          <AiOutlineMail style={iconStyle} />
           E-mail
         </button>
         <button
           onClick={() =>
             window.open("https://www.youtube.com/c/DataICMC", "_blank")
           }
-          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl shadow-lg flex items-center justify-center whitespace-nowrap"
+          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl flex items-center justify-center whitespace-nowrap"
           style={buttonStyle}
         >
-          <FontAwesomeIcon icon={faYoutube} style={iconStyle} />
+          <AiOutlineYoutube style={iconStyle} />
           YouTube
         </button>
         <button
           onClick={() =>
             window.open("https://instagram.com/data.icmc/", "_blank")
           }
-          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl shadow-lg flex items-center justify-center whitespace-nowrap"
+          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl flex items-center justify-center whitespace-nowrap"
           style={buttonStyle}
         >
-          <FontAwesomeIcon icon={faInstagram} style={iconStyle} />
+          <AiOutlineInstagram style={iconStyle} />
           Instagram
         </button>
         <button
@@ -74,10 +68,10 @@ export default function Contact() {
               "_blank"
             )
           }
-          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl shadow-lg flex items-center justify-center whitespace-nowrap"
+          className="w-full md:w-auto px-6 py-4 md:px-8 md:py-6 rounded-3xl flex items-center justify-center whitespace-nowrap"
           style={buttonStyle}
         >
-          <FontAwesomeIcon icon={faLinkedin} style={iconStyle} />
+          <PiLinkedinLogo style={iconStyle} />
           LinkedIn
         </button>
       </div>
