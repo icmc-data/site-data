@@ -7,7 +7,7 @@ import LogoIcon from "../../icons/logo";
 import LangSwitcher from "./LangSwitcher";
 import ThemeSwitch from "./ThemeSwitch";
 import PageList from "./PageList";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"; // imports updated icons
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 interface Props {
   locale: string;
@@ -15,17 +15,14 @@ interface Props {
 
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations("");
-  const pathname = usePathname(); // Captura a URL atual
-  const [menuOpen, setMenuOpen] = useState(false); // state to control the menu
+  const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(true);
-  const [isScrollingUp, setIsScrollingUp] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const eventPages = [
     { name: "Understanding DL", path: "/pages/events/understandingDL" },
-    // { name: "DataDay", path: "/pages/events/dataDay" },
   ];
 
   const isEventPage = eventPages.some((page) => pathname === page.path);
@@ -36,30 +33,9 @@ export const Header: FC<Props> = ({ locale }) => {
       : "";
   };
 
-  // Monitor scroll direction and visibility
   useEffect(() => {
-    let lastScrollTop = 0;
-
     const handleScroll = () => {
-      const currentScrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-
-      if (currentScrollTop > lastScrollTop) {
-        // Scrolling down
-        setIsScrollingUp(false);
-        setIsVisible(false);
-      } else if (currentScrollTop < lastScrollTop && currentScrollTop > 0) {
-        // Scrolling up
-        setIsScrollingUp(true);
-        setIsVisible(true);
-        setHasScrolled(true);
-      } else if (currentScrollTop === 0) {
-        // Back to top of the page
-        setIsVisible(true);
-        setHasScrolled(false);
-      }
-
-      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+      setHasScrolled(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -92,11 +68,7 @@ export const Header: FC<Props> = ({ locale }) => {
     <div
       ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isVisible && hasScrolled
-          ? "translate-y-0 bg-background shadow-md"
-          : isVisible
-            ? "translate-y-0 bg-transparent"
-            : "-translate-y-full"
+        hasScrolled ? "bg-background shadow-md" : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between p-5">
@@ -113,7 +85,6 @@ export const Header: FC<Props> = ({ locale }) => {
           </div>
         </Link>
 
-        {/* hamburger menu button for mobile */}
         <div className="flex md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? (
@@ -124,7 +95,7 @@ export const Header: FC<Props> = ({ locale }) => {
           </button>
         </div>
 
-        {/* menu for mobile devices */}
+        {/* Menu for mobile devices */}
         <div
           ref={menuRef}
           className={`mobile-menu md:hidden absolute left-0 right-0 top-full mt-2 bg-white shadow-md rounded-md ${
@@ -140,8 +111,6 @@ export const Header: FC<Props> = ({ locale }) => {
             >
               {t("Header.Fronts")}
             </Link>
-
-            {/* about page link */}
             <Link
               lang={locale}
               href={`/pages/about`}
@@ -150,36 +119,12 @@ export const Header: FC<Props> = ({ locale }) => {
             >
               {t("Header.About")}
             </Link>
-            {/* <Link
-              lang={locale}
-              href={`/pages/competitions`}
-              className={`${getLinkClass("/pages/competitions")} block`}
-              onClick={() => setMenuOpen(false)}
-            >
-              {t("Header.Competitions")}
-            </Link> */}
-            {/* <Link
-              lang={locale}
-              href={`/pages/learn`}
-              className={`${getLinkClass("/pages/learn")} block`}
-              onClick={() => setMenuOpen(false)}
-            >
-              {t("Header.Learn")}
-            </Link> */}
-            {/* <Link
-              lang={locale}
-              href={`/pages/projects`}
-              className={`${getLinkClass("/pages/projects")} block`}
-              onClick={() => setMenuOpen(false)}
-            >
-              {t("Header.Projects")}
-            </Link> */}
             {
               <PageList
                 locale={locale}
                 pages={eventPages}
                 pageListName={t("Header.Events")}
-                active={isEventPage} // Pass the active state
+                active={isEventPage}
               />
             }
             <Link
@@ -197,7 +142,7 @@ export const Header: FC<Props> = ({ locale }) => {
           </div>
         </div>
 
-        {/* default menu for larger screens */}
+        {/* Default menu for larger screens */}
         <div className="hidden md:flex flex-1 flex-col items-center gap-10 text-center font-bold">
           <div className="flex gap-10 items-center">
             <Link
@@ -221,7 +166,7 @@ export const Header: FC<Props> = ({ locale }) => {
                 locale={locale}
                 pages={eventPages}
                 pageListName={t("Header.Events")}
-                active={isEventPage} // Pass the active state
+                active={isEventPage}
               />
             }
             <Link
@@ -235,7 +180,7 @@ export const Header: FC<Props> = ({ locale }) => {
           </div>
         </div>
 
-        {/* theme and language switcher for desktop */}
+        {/* Theme and language switcher for desktop */}
         <div className="hidden md:flex flex-row items-center gap-3">
           <ThemeSwitch />
           <LangSwitcher locale={locale} />
