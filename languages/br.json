@@ -137,7 +137,8 @@
     "InvalidMobileNumber": "Por favor, insira um número de celular válido com 11 dígitos.",
     "FixErrorsAlert": "Por favor, corrija os erros antes de enviar o formulário.",
     "FormSuccess": "Formulário enviado com sucesso!",
-    "FormError": "Erro ao enviar o formulário:"
+    "FormError": "Erro ao enviar o formulário:",
+    "EventNotOpen": "O evento não está aberto para inscrições."
   },
   "AboutEvent": {
     "Parte_1": "SOBRE O EVENTO",

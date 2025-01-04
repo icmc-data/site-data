@@ -137,7 +137,8 @@
     "InvalidMobileNumber": "Please enter a valid mobile number with 11 digits.",
     "FixErrorsAlert": "Please fix the errors before submitting the form.",
     "FormSuccess": "Form successfully submitted!",
-    "FormError": "Error submitting the form:"
+    "FormError": "Error submitting the form:",
+    "EventNotOpen": "The event is not open for registration."
   },
   "AboutEvent": {
     "Parte_1": "ABOUT THE EVENT",
