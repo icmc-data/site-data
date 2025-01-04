@@ -8,7 +8,7 @@ export default function Fronts() {
 
   const cardsData = [
     {
-      image: "/images/studygroups.jpeg",
+      image: "/images/studygroups.png",
       title: t("FrontsSection.Study_Groups"),
       description: t("FrontsSection.Study_Groups_Description"),
     },
@@ -23,12 +23,12 @@ export default function Fronts() {
       description: t("FrontsSection.Events_Description"),
     },
     {
-      image: "/images/maketing.jpg",
+      image: "/images/maketing.png",
       title: t("FrontsSection.Marketing"),
       description: t("FrontsSection.Marketing_Description"),
     },
     {
-      image: "/images/secretariat.jpg",
+      image: "/images/secretariat.png",
       title: t("FrontsSection.Secretariat"),
       description: t("FrontsSection.Secretariat_Description"),
     },
@@ -42,7 +42,7 @@ export default function Fronts() {
   return (
     <div className="flex flex-col items-center min-h-screen py-10 px-4 md:px-10 mt-24">
       <div className="w-full text-center md:text-left md:max-w-full">
-        <h1 className="text-3xl md:text-5xl font-bold">{t("Header.Fronts")}</h1>
+      <h1 className="text-4xl font-bold">{t("Header.Fronts")}</h1>
         <br />
         <p className="leading-loose text-base md:text-lg">
           {t("FrontsSection.Fronts_Description")}
