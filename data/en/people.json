@@ -11,8 +11,8 @@
   },
   {
     "name": "Cauê Paiva",
-    "photo": "/images/people/cauepaiva.png",
-    "description": "Researcher in AI, LLMs, and Data Science, focusing on education and public data. National champion of the AWS Deepracer Competition 2024.",
+    "photo": "/images/people/cauepaiva.jpg",
+    "description": "Researcher in AI, LLMs, and Data Science, focusing on education and public data. National champion of the AWS Deepracer 2024 competition.",
     "categories": [
       "Teaching",
       "Projects",
@@ -22,7 +22,7 @@
   },
   {
     "name": "Kathy",
-    "photo": "/images/people/kathy.png",
+    "photo": "/images/people/kathy.jpg",
     "description": "Information Systems student. Interested in classical ML, especially Time Series. Loves running and reading.",
     "categories": [
       "Events",
@@ -32,7 +32,7 @@
   },
   {
     "name": "Enzo",
-    "photo": "/images/people/enzo.png",
+    "photo": "/images/people/enzo.jpg",
     "description": "Student interested in machine learning and mathematics. Top 500 in Overwatch.",
     "categories": [
       "Teaching",
@@ -42,18 +42,18 @@
   },
   {
     "name": "Miller",
-    "photo": "/images/people/miller.png",
+    "photo": "/images/people/miller.jpg",
     "description": "Computer Science student at USP, interested in Time Series and Deep Learning. Enjoys cycling and watching bad movies.",
     "categories": [
       "Secretariat",
-      "StudyGroup",
+      "Study Group",
       "Coordinators"
     ],
     "special_role": ["Deep Learning Studies", "Secretariat"]
   },
   {
     "name": "Francisco Maian",
-    "photo": "/images/people/franciscomaian.png",
+    "photo": "/images/people/franciscomaian.jpg",
     "description": "Data Science student and Big Data enthusiast.",
     "categories": [
       "Teaching",
@@ -62,27 +62,27 @@
   },
   {
     "name": "Ruri",
-    "photo": "/images/people/ruri.png",
+    "photo": "/images/people/ruri.jpg",
     "description": "Interested in linguistics and deep learning. Enjoys sitcoms and fantasy books.",
     "categories": [
       "Marketing",
-      "StudyGroup"
+      "Study Group"
     ],
     "special_role": ["Deep Learning Studies"]
   },
   {
     "name": "Murilo Leandro",
-    "photo": "/images/people/muriloleandro.png",
-    "description": "Computer Science student at USP, always learning and teaching. My Little Pony fan.",
+    "photo": "/images/people/muriloleandro.jpg",
+    "description": "BCC student at USP, always learning and teaching. My Little Pony fan.",
     "categories": [
-      "StudyGroup",
+      "Study Group",
       "Teaching"
     ]
   },
   {
     "name": "Gabriel Abreu",
-    "photo": "/images/people/abreu.png",
-    "description": "Computer Science student at USP, focused on learning AI, ML, and Data Science. Always testing codes and chasing new ideas!",
+    "photo": "/images/people/abreu.jpg",
+    "description": "BCC student at USP, focused on learning AI, ML, and Data Science. Always testing code and chasing new ideas!",
     "categories": [
       "Events"
     ],
@@ -92,20 +92,20 @@
   {
     "name": "Matheo Angelo",
     "photo": "/images/people/matheoangelo.png",
-    "description": "Data Science student at ICMC, researching Graph Neural Networks. Likes listening to Cocteau Twins and watching cat memes.",
+    "description": "Data Science student at ICMC, researching Graph Neural Networks. Loves listening to Cocteau Twins and watching cat memes.",
     "categories": ["Events"],
     "linkedin": "https://www.linkedin.com/in/matheo-angelo-61334622a"
   },
   {
     "name": "Nicolas Maia",
     "photo": "/images/people/nicolasmaia.png",
-    "description": "Computer Science student at USP, focused on machine learning and biotech. Enjoys reading, especially fantasy and suspense, and playing volleyball.",
+    "description": "BCC student at USP, focused on machine learning and biotech. Enjoys reading, especially fantasy and suspense, and playing volleyball.",
     "categories": ["Teaching"]
   },
   {
     "name": "Ligia Keiko",
     "photo": "/images/people/ligiakeiko.png",
-    "description": "Enjoys learning about AI and its everyday applications, especially NLP and image processing (OCR). In her free time, she draws and sculpts with cold porcelain clay.",
+    "description": "Loves learning about AI and its applications in everyday life, especially NLP and image processing (OCR). In her free time, she draws and sculpts with cold porcelain.",
     "categories": ["Teaching"],
     "special_role": ["Teaching"],
     "linkedin": "https://br.linkedin.com/in/ligia-keiko-carvalho-19084221b"
@@ -113,15 +113,15 @@
   {
     "name": "Victor Zaneti",
     "photo": "/images/people/victorzaneti.png",
-    "description": "Statistics and Data Science student at USP, interested in AI, machine learning, and data analysis. Always seeking new opportunities to practice and improve his skills.",
+    "description": "Statistics and Data Science student at USP, interested in AI, machine learning, and data analysis. Always seeking new opportunities for practice and improvement.",
     "categories": ["Events", "Marketing"],
     "linkedin": "https://www.linkedin.com/in/victor-zaneti/"
   },
   {
-    "name": "Mariana Barbosa Queroz",
+    "name": "Mariana Queroz",
     "photo": "/images/people/marianabarbosaqueroz.png",
-    "description": "Computational physics student at USP, interested in machine learning and its applications. Enjoys reading and pop divas.",
-    "categories": ["Marketing", "Events"],
+    "description": "Computational Physics student at USP, interested in machine learning and its applications. Loves reading and pop divas.",
+    "categories": ["Marketing", "Events", "Coordinators"],
     "special_role": ["Marketing"],
     "linkedin": "https://www.linkedin.com/in/marianabq/"
   },
@@ -131,5 +131,31 @@
     "description": "Computer Science student at USP, always motivated to learn.",
     "categories": ["Teaching"],
     "linkedin": "https://www.linkedin.com/in/leticia-bneves/"
+  },
+  {
+    "name": "Arthur Ramos",
+    "photo": "/images/people/arthurramos.png",
+    "description": "Computer Science student at USP, interested in machine learning and neural networks. Fan of The Beatles.",
+    "categories": ["Teaching"],
+    "linkedin": "https://www.linkedin.com/in/arthur-ramos-9b81b9201/"
+  },
+  {
+    "name": "Matheu Alves",
+    "photo": "/images/people/matheualves.png",
+    "description": "Statistics and Data Science student at USP, interested in AI, especially ML. Enjoys drumming, training, and playing chess as hobbies.",
+    "categories": ["Marketing", "Events"]
+  },
+  {
+    "name": "João Pedro Godoy",
+    "photo": "/images/people/joaopedrogodoy.png",
+    "description": "Computer Science student at USP, interested in various fields of Data Science. Likes training, listening to music, and programming.",
+    "categories": ["Teaching"],
+    "linkedin": "https://www.linkedin.com/in/jo%C3%A3o-pedro-alves-notari-godoy-5154bb325/"
+  },
+  {
+    "name": "Glauco Fleury",
+    "photo": "/images/people/glaucofleury.png",
+    "description": "Computer Science student at USP, curious about ML, AI, and Statistics. Enjoys reading, gardening as a hobby, and listening to music.",
+    "categories": ["Teaching"]
   }
 ]

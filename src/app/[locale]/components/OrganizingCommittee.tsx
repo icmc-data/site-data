@@ -47,7 +47,7 @@ const OrganizingCommittee: React.FC<OrganizingCommitteeProps> = ({ members }) =>
     "Marketing",
     "Events",
     "Coordinators",
-    "StudyGroup",
+    // "StudyGroup",
     "Projects",
     "Secretariat",
     "Teaching",
