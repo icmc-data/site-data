@@ -31,7 +31,7 @@ export default function ImageWithModal({
       {/* Modal */}
       {isOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-[9999] overflow-hidden"
+          className="fixed inset-0 flex items-center justify-center z-[9999]"
           style={{
             backgroundColor: "var(--background-opacity)", // Fundo com opacidade
             backdropFilter: "blur(20px)", // Desfoque forte
@@ -39,7 +39,7 @@ export default function ImageWithModal({
           onClick={toggleModal}
         >
           <div
-            className={`relative w-full h-full max-w-screen-lg mx-auto p-4 ${modalClassName}`}
+            className={`relative p-4 ${modalClassName}`}
             style={{
               backgroundColor: "var(--background-secondary)", // Fundo do modal
               color: "var(--text-secondary)", // Texto do modal
@@ -49,10 +49,10 @@ export default function ImageWithModal({
           >
             {/* Botão de fechar */}
             <button
-              className="absolute top-2 right-2 flex items-center justify-center w-8 h-8 rounded-full shadow-md"
+              className="absolute top-2 right-2 flex items-center justify-center w-8 h-8 rounded-full "
               style={{
-                backgroundColor: "var(--button-secondary)", // Fundo do botão
-                color: "var(--button)", // Cor do texto
+                backgroundColor: "var(--background-secondary)", // Fundo do botão
+                color: "var(--data-purple)", // Cor do texto
                 fontSize: "1.2rem",
               }}
               onClick={toggleModal}
@@ -61,15 +61,15 @@ export default function ImageWithModal({
             </button>
 
             {/* Imagem no modal */}
-            <div className="w-full h-auto max-h-[90vh] overflow-hidden">
+            <div className="w-full max-w-screen-sm sm:max-w-md md:max-w-lg lg:max-w-2xl">
               <Image
                 src={src}
                 alt={alt}
-                layout="responsive" // Ajuste automático ao contêiner
-                width={1200} // Proporção para layout
-                height={800} // Proporção para layout
+                layout="responsive" // Garante que a imagem seja responsiva
+                width={1500} // Ajuste conforme necessário
+                height={800} // Proporção será mantida
                 quality={100} // Alta qualidade
-                className="w-full h-auto object-contain rounded-lg"
+                className="rounded-lg"
               />
             </div>
           </div>
