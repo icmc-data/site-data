@@ -56,9 +56,10 @@ const Speakers: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 mt-32">
-      <h1 className="text-primary dark:text-primary font-montserrat font-bold leading-tight text-3xl sm:text-5xl mb-8">
+          <h1 className="text-4xl font-bold">
         {t("Speakers_UDL")}
       </h1>
+      <br />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {allSpeakers.map((speaker, index) => {
           const isExpanded = expandedSpeaker === index;

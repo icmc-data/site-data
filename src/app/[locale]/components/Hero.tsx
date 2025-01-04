@@ -33,7 +33,7 @@ export default function Hero({
     <section className="relative w-full flex flex-col lg:flex-row items-center lg:items-start justify-between text-center lg:text-left p-4">
       <div className="w-full lg:w-2/3 lg:pr-16 mb-6">
         <div className="flex flex-col items-center lg:items-start mb-6">
-          <h1 className="text-primary dark:text-primary font-montserrat font-bold leading-tight text-3xl sm:text-5xl mb-4">
+          <h1 className="text-4xl font-bold">
             {title}
           </h1>
         </div>

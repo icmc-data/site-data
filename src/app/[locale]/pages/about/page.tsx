@@ -15,9 +15,9 @@ export default function About() {
 
   return (
     <div className="py-8 md:py-16 text-xl md:text-2xl mt-20">
-      <h1 className="text-primary dark:text-primary font-montserrat font-bold leading-tight text-3xl sm:text-5xl mb-2">
-        DATA
-      </h1>
+
+      <h1 className="text-4xl font-bold">DATA</h1>
+      <br />
 
       <section className="mb-8 md:mb-16">
         <p className="leading-relaxed px-4 md:px-0">
