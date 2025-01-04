@@ -20,7 +20,6 @@ export default function ImageWithModal({
 
   return (
     <div>
-      {/* Imagem clicável */}
       <img
         src={src}
         alt={alt}
@@ -33,26 +32,26 @@ export default function ImageWithModal({
         <div
           className="fixed inset-0 flex items-center justify-center z-[9999]"
           style={{
-            backgroundColor: "var(--background-opacity)", // Fundo com opacidade
-            backdropFilter: "blur(20px)", // Desfoque forte
+            backgroundColor: "var(--background-opacity)", 
+            backdropFilter: "blur(20px)",
           }}
           onClick={toggleModal}
         >
           <div
             className={`relative p-4 ${modalClassName}`}
             style={{
-              backgroundColor: "var(--background-secondary)", // Fundo do modal
-              color: "var(--text-secondary)", // Texto do modal
-              borderRadius: "12px", // Bordas arredondadas
+              backgroundColor: "var(--background-secondary)", 
+              color: "var(--text-secondary)", 
+              borderRadius: "12px", 
             }}
-            onClick={(e) => e.stopPropagation()} // Previne o fechamento ao clicar na imagem
+            onClick={(e) => e.stopPropagation()} 
           >
             {/* Botão de fechar */}
             <button
               className="absolute top-2 right-2 flex items-center justify-center w-8 h-8 rounded-full "
               style={{
-                backgroundColor: "var(--background-secondary)", // Fundo do botão
-                color: "var(--data-purple)", // Cor do texto
+                backgroundColor: "var(--background-secondary)", 
+                color: "var(--data-purple)", 
                 fontSize: "1.2rem",
               }}
               onClick={toggleModal}
@@ -65,10 +64,10 @@ export default function ImageWithModal({
               <Image
                 src={src}
                 alt={alt}
-                layout="responsive" // Garante que a imagem seja responsiva
-                width={1500} // Ajuste conforme necessário
-                height={800} // Proporção será mantida
-                quality={100} // Alta qualidade
+                layout="responsive" 
+                width={1500} 
+                height={800} 
+                quality={100} 
                 className="rounded-lg"
               />
             </div>
