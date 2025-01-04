@@ -84,7 +84,8 @@
     "photo": "/images/people/abreu.jpg",
     "description": "BCC student at USP, focused on learning AI, ML, and Data Science. Always testing code and chasing new ideas!",
     "categories": [
-      "Events"
+      "Events",
+      "Coordinators"
     ],
     "special_role": ["Events"],
     "linkedin": "https://www.linkedin.com/in/gabriel-abreubr"

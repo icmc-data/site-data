@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { FaBullhorn, FaCalendarAlt, FaUserTie, FaUsers, FaProjectDiagram, FaRegBuilding, FaChalkboardTeacher } from 'react-icons/fa';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 interface Member {
   name: string;
@@ -40,7 +41,15 @@ const MemberCard: React.FC<Member> = ({ name, photo, description, categories, sp
             onClick={handleToggleTooltip}
           >
             <div className="flex justify-center mb-4">
-              <img src={photo} alt={name} className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover" />
+              <Image
+                src={photo}
+                alt={name}
+                width={128} 
+                height={128} 
+                className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover"
+                quality={100} 
+                priority 
+              />
             </div>
             <h3 className="text-center mt-4 text-primary font-inter text-sm sm:text-base">{name}</h3>
             {categories.includes("Coordinators") && special_role && (
