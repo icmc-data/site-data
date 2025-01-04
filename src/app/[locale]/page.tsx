@@ -1,27 +1,22 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Button from "./components/Button";
-import LogoIcon from "../icons/logo";
-import LottieEye from "./components/LottieEye";
-import Sponsors from "./components/Sponsors"; 
+import Sponsors from "./components/Sponsors";
+import ImageWithModal from "./components/ImageWithModal";
 import { useEffect, useState } from "react";
 
 export default function DashboardPage() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
       setIsSmallScreen(width <= 1200);
-      setIsMobile(width <= 880);
     };
 
-    // Definindo o estado inicial e adicionando o listener
     handleResize();
     window.addEventListener("resize", handleResize);
 
-    // Cleanup do listener ao desmontar o componente
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -31,18 +26,25 @@ export default function DashboardPage() {
     { logoUrl: "/images/icmc-logo.png" },
     { logoUrl: "/images/brains.png" },
     { logoUrl: "/images/centerIA.png" },
-    
-    // adicione mais patrocinadores conforme necessário
   ];
-  
+
   const t = useTranslations("");
   return (
     <div className="mt-32">
-      <section className={`flex ${isSmallScreen ? 'flex-col-reverse' : 'flex-row'} relative py-0`}>
-        <div className={`flex flex-col items-center ${isSmallScreen ? 'text-center' : 'md:flex-row text-left'} space-x-0 md:space-x-4`}>
+      <section
+        className={`flex ${
+          isSmallScreen ? "flex-col-reverse" : "flex-row"
+        } relative py-0`}
+      >
+        <div
+          className={`flex flex-col items-center ${
+            isSmallScreen ? "text-center" : "md:flex-row text-left"
+          } space-x-0 md:space-x-4`}
+        >
           <div>
-            <h1 className="">DATA</h1>
-            <p className="leading-loose text-base md:text-lg">
+           {isSmallScreen ? <br /> : ""} 
+            <h1 className="text-4xl font-bold">DATA</h1>
+            <p className="leading-loose text-base md:text-lg mt-4">
               {t("HeroSection.Extension_Group_of")}
               <a
                 href="https://www.icmc.usp.br/"
@@ -55,16 +57,30 @@ export default function DashboardPage() {
               {t("HeroSection.Small_Description-Data")}
             </p>
             <br />
-            <Button variant="secondary" size="medium"  pageLink="/pages/about">
+            <Button variant="secondary" size="medium" pageLink="/pages/about">
               {t("HeroSection.Learn_More")}
             </Button>
           </div>
         </div>
-        <div className={`flex justify-center -mt-[100px] -mb-[50px] ${isSmallScreen ? '' : 'md:-mt-30 ml-44'} float-animation`}>
-          <LottieEye 
-            height={isSmallScreen ? 300 : 500} 
-            width={isSmallScreen ? 300 : 500}
+        <div
+          className={`flex justify-center ${
+            isSmallScreen ? "mt-6" : "md:ml-10"
+          }`}
+        >
+      
+          <ImageWithModal
+            src="/images/members.jpeg"
+            alt={t("AboutSection.Members_Image_Alt")}
+            className={`${
+              isSmallScreen
+                ? "w-full max-w-screen-sm rounded-md shadow-lg object-cover" // Para telas menores
+                : "max-w-screen-sm rounded-md shadow-lg object-cover" // Para telas maiores
+            }`}
+            
+
+            modalClassName="max-w-5xl"
           />
+         
         </div>
       </section>
 

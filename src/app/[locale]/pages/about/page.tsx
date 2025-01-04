@@ -1,7 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
 import OrganizingCommittee from "../../components/OrganizingCommittee";
-import Photo from "../../components/Photo";
 
 // Import dos arquivos JSON
 import peopleBR from "../../../../../data/br/people.json";
@@ -43,6 +42,7 @@ export default function About() {
           {t("AboutSection.About_Description_1_3")}
         </p>
 
+
         <h2 className="text-center md:text-left mt-8 md:mt-16">
           {t("AboutSection.Project_Organization")}
         </h2>
@@ -76,14 +76,8 @@ export default function About() {
             {t("AboutSection.Impact_And_Relevance_Description")}
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center mt-8 md:mt-16">
-          {/* <Photo
-            imgSrc="/images/estudos.jpeg"
-            size={0.65}
-            description={t("Header.About")}
-          /> */}
-        </div>
+        <div className="flex flex-col items-center justify-center mt-8 md:mt-16"></div>
       </section>
     </div>
   );
-} 
+}
