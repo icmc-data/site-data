@@ -20,7 +20,7 @@ export default function About() {
       <br />
 
       <section className="mb-8 md:mb-16">
-        <p className="leading-relaxed px-4 md:px-0">
+        <p className="text-center md:text-left leading-relaxed px-4 md:px-0">
           {t("AboutSection.About_Description_1")}
           <a
             href="https://www.icmc.usp.br/"
@@ -46,7 +46,7 @@ export default function About() {
         <h2 className="text-center md:text-left mt-8 md:mt-16">
           {t("AboutSection.Project_Organization")}
         </h2>
-        <p className="leading-relaxed px-4 md:px-0 mt-2 md:mt-4">
+        <p className=" text-center md:text-left leading-relaxed px-4 md:px-0 mt-2 md:mt-4">
           {t("AboutSection.Project_Organization_Description")}
         </p>
         <div className="mt-8 md:mt-16">
