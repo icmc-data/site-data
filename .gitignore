@@ -34,3 +34,5 @@ next-env.d.ts
 cron_job_script.sh
 DockerFile.dev
 DockerFile.prod
+Dockerfile
+Dockerfile.save
