@@ -12,12 +12,12 @@ interface Props {
 export const Footer: FC<Props> = ({ locale }) => {
   const { resolvedTheme } = useTheme();
   const [logoSrc, setLogoSrc] = useState("/simpleDATAICON.png");
-  const t = useTranslations(""); // Para gerenciar as traduções
+  const t = useTranslations(""); 
 
   useEffect(() => {
     const updatedLogoSrc =
       resolvedTheme === "light"
-        ? "/simpleDATAICON-white.png" // Altere para o nome do arquivo da logo para whitemode
+        ? "/simpleDATAICON-white.png" 
         : "/simpleDATAICON.png";
     setLogoSrc(updatedLogoSrc);
   }, [resolvedTheme]);
@@ -73,7 +73,7 @@ export const Footer: FC<Props> = ({ locale }) => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-text-secondary sm:text-center dark:text-text-secondary">
-            © 2024 <a href={`/${locale}/`} className="hover:underline">Data ICMC</a>. {t("Footer.AllRightsReserved")}
+            © 2025 <a href={`/${locale}/`} className="hover:underline">Data ICMC</a>. {t("Footer.AllRightsReserved")}
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a href="https://www.youtube.com/c/DataICMC" className="text-text-secondary hover:text-primary dark:hover:text-primary me-5">
