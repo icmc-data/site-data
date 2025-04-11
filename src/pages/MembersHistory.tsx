@@ -8,7 +8,8 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const MembersHistory = () => {
   const { t, ready } = useTranslation("membershistory");
@@ -33,6 +34,16 @@ const MembersHistory = () => {
       <ParticlesBackground />
       <main className="min-h-screen pt-24 pb-16">
         <div className="container mx-auto px-4 md:px-8">
+          {/* Botão para voltar para a página About */}
+          <div className="mb-8">
+            <Link to="/about">
+              <Button variant="ghost" className="flex items-center gap-2">
+                <ChevronLeft size={16} />
+                {t("back_button", "Voltar para About")}
+              </Button>
+            </Link>
+          </div>
+
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-4xl font-bold">{t("title")}</h1>
 
