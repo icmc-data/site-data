@@ -26,5 +26,5 @@ To install and run the project locally, follow these steps:
     yarn dev
     ```
 
-4. Open your browser and navigate to `http://localhost:3000` to see the website.
+4. Open your browser and navigate to `http://localhost:5173` to see the website.
 
