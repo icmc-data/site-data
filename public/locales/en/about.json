@@ -1,4 +1,3 @@
-
 {
   "title": "ABOUT",
   "description": "Data ICMC is an extension group from the Institute of Mathematical and Computer Sciences ICMC-USP of the University of São Paulo USP located on the São Carlos campus. Founded in 2019, the group is focused on Data Science and Machine Learning. Data seeks to integrate students, academics, and industry professionals, promoting knowledge exchange and the development of technical skills. Through classes, events, study groups, and lectures, the group facilitates access to cutting-edge technologies and current practices, preparing its members for the challenges of the job market.",
@@ -6,7 +5,10 @@
     "title": "Project Organization",
     "description": "The organization of the Data ICMC project is conducted by the students of the University of São Paulo (USP), responsible for planning, coordinating, and implementing the group's activities. Working with professors, researchers, and industry professionals, they ensure that the group is aligned with market trends and demands, offering members opportunities for learning and networking.",
     "members": "Members"
-
+  },
+  "historyCTA": {
+    "text": "Want to explore the history of Data ICMC over the years?",
+    "button": "Visit our timeline of memories"
   },
   "categories": {
     "all": "All",
