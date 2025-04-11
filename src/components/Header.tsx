@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { Sun, Moon, Globe } from "lucide-react";
+import { Sun, Moon, Globe, Menu } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 import {
   DropdownMenu,
@@ -18,14 +18,11 @@ export function Header() {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
-    // Force reload resources for the current page
     window.localStorage.setItem("i18nextLng", lng);
   };
 
-  // Effect to reload page content when language changes
   useEffect(() => {
     const handleLanguageChange = () => {
-      // This will refresh the translations when language changes
       i18n.reloadResources(i18n.language, [
         "common",
         "home",
@@ -38,14 +35,11 @@ export function Header() {
     };
 
     i18n.on("languageChanged", handleLanguageChange);
-
-    return () => {
-      i18n.off("languageChanged", handleLanguageChange);
-    };
+    return () => i18n.off("languageChanged", handleLanguageChange);
   }, [i18n]);
 
   return (
-    <header className="py-4  md:px-8 backdrop-blur-md bg-background/80 fixed w-full top-0 z-50">
+    <header className="py-4 md:px-8 backdrop-blur-md bg-background/80 fixed w-full top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <img
@@ -55,6 +49,7 @@ export function Header() {
           />
         </Link>
 
+        {/* Menu desktop */}
         <div className="hidden md:flex gap-6">
           <NavLink href="/fronts" isActive={location.pathname === "/fronts"}>
             {t("navigation.fronts")}
@@ -68,22 +63,21 @@ export function Header() {
           >
             {t("navigation.events")}
           </NavLink>
-
           <NavLink
             href="/learn"
             isActive={location.pathname.startsWith("/learn")}
           >
             {t("navigation.learn")}
           </NavLink>
-
           <NavLink href="/contact" isActive={location.pathname === "/contact"}>
             {t("navigation.contact")}
           </NavLink>
         </div>
 
-        <div className="flex items-center gap-4">
+        {/* Ações (tema, idioma e menu mobile) */}
+        <div className="flex items-center gap-2 md:gap-4">
           <Button variant="ghost" size="icon" onClick={toggleTheme}>
-            {theme === "dark" ? <Sun size={20} /> : <Moon size={0} />}
+            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
           </Button>
 
           <DropdownMenu>
@@ -92,7 +86,6 @@ export function Header() {
                 <Globe size={20} />
               </Button>
             </DropdownMenuTrigger>
-
             <DropdownMenuContent align="end">
               <DropdownMenuItem
                 onClick={() => changeLanguage("pt")}
@@ -108,6 +101,34 @@ export function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+
+          {/* Menu mobile */}
+          <div className="md:hidden">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu size={22} />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem asChild>
+                  <Link to="/fronts">{t("navigation.fronts")}</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/about">{t("navigation.about")}</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/events">{t("navigation.events")}</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/learn">{t("navigation.learn")}</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/contact">{t("navigation.contact")}</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
         </div>
       </div>
     </header>

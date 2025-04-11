@@ -38,7 +38,7 @@ export function Footer() {
             <div>
               <h3 className="font-semibold mb-4">{t("footer.happening")}</h3>
               <ul className="space-y-2">
-                <li><Link to="/events" className="text-muted-foreground hover:text-foreground transition-colors">Machine Learning Course</Link></li>
+                <li><Link to="/learn" className="text-muted-foreground hover:text-foreground transition-colors">Machine Learning Course</Link></li>
                 <li><Link to="/events" className="text-muted-foreground hover:text-foreground transition-colors">LoG Conference</Link></li>
               </ul>
             </div>

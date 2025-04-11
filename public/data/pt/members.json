@@ -15,10 +15,6 @@
     "description": "Pesquisador em IA, LLMs e Ciência de Dados, com foco em educação e dados públicos. Campeão nacional da competição AWS Deepracer 2024.",
     "categories": [
       "Teaching",
-      "Projects",
-      "Coordinators"
-    ],
-    "funcao_especial": [
       "Projects"
     ]
   },
@@ -30,6 +26,9 @@
       "Events",
       "Secretariat",
       "Coordinators"
+    ],
+    "funcao_especial": [
+      "Projects"
     ],
     "linkedin": "https://www.linkedin.com/in/katielylacerda/"
   },

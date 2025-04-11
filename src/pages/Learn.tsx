@@ -28,7 +28,9 @@ const Learn = () => {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h2 className="text-xl font-bold mb-2">{t("pythoncourse.title")}</h2>
+                  <h2 className="text-xl font-bold mb-2">
+                    {t("pythoncourse.title")}
+                  </h2>
                   <div className="flex items-center text-sm text-muted-foreground mb-4">
                     <Calendar size={16} className="mr-1" />
                     <span>{t("pythoncourse.date")}</span>
@@ -57,7 +59,9 @@ const Learn = () => {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h2 className="text-xl font-bold mb-2">{t("mlcourse.title")}</h2>
+                  <h2 className="text-xl font-bold mb-2">
+                    {t("mlcourse.title")}
+                  </h2>
                   <div className="flex items-center text-sm text-muted-foreground mb-4">
                     <Calendar size={16} className="mr-1" />
                     <span>{t("mlcourse.date")}</span>

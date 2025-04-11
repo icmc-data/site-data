@@ -9,7 +9,7 @@
       }
     },
     "mlcourse": {
-      "title": "IMachine Learning Course",
+      "title": "Machine Learning Course",
       "date": "March 21 to May 2, 2025",
       "description": "Free course promoted by the DATA extension group at ICMC-USP, intended for anyone interested in learning more about machine learning. Classes are held on Fridays, from 2:00 PM to 4:00 PM, at the Fernão Stella de Rodrigues Germano auditorium at ICMC, with live streaming on the DATA YouTube channel. Basic prior knowledge in Python, vectors, and matrices is recommended. Topics include linear and non-linear classifiers, recommendation algorithms, and neural networks.",
       "actions": {

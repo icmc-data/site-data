@@ -4,7 +4,8 @@
   "description": "O Data ICMC é um grupo de extensão do Instituto de Ciências Matemáticas e de Computação ICMC-USP da Universidade de São Paulo USP localizado no campus de São Carlos. Fundado em 2019, o grupo é focado em Ciência de Dados e Aprendizado de Máquina. O Data busca integrar estudantes, acadêmicos e profissionais do setor, promovendo a troca de conhecimento e o desenvolvimento de habilidades técnicas. Através de aulas, eventos, grupos de estudo e palestras, o grupo facilita o acesso a tecnologias de ponta e práticas atuais, preparando seus membros para os desafios do mercado de trabalho.",
   "organization": {
     "title": "Organização do Projeto",
-    "description": "A organização do projeto Data ICMC é conduzida pelos próprios estudantes da Universidade de São Paulo (USP), responsáveis por planejar, coordenar e implementar as atividades do grupo. Trabalhando com professores, pesquisadores e profissionais da indústria, eles garantem que o grupo esteja alinhado com as tendências e demandas do mercado de trabalho, oferecendo aos membros oportunidades de aprendizado e networking."
+    "description": "A organização do projeto Data ICMC é conduzida pelos próprios estudantes da Universidade de São Paulo (USP), responsáveis por planejar, coordenar e implementar as atividades do grupo. Trabalhando com professores, pesquisadores e profissionais da indústria, eles garantem que o grupo esteja alinhado com as tendências e demandas do mercado de trabalho, oferecendo aos membros oportunidades de aprendizado e networking.",
+    "members": "Membros"
   },
   "categories": {
     "all": "Todos",

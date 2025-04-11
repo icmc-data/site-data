@@ -2,7 +2,7 @@
 [
   {
     "name": "Luiz Felipe",
-    "photo": "/images/people/luizfelipedinizcosta.png",
+    "photo": "/images/about/members/luizfelipedinizcosta.png",
     "description": "Passionate about technology and learning. Seeks creative solutions for complex problems.",
     "categories": [
       "Teaching",
@@ -12,30 +12,30 @@
   },
   {
     "name": "Cauê Paiva",
-    "photo": "/images/people/cauepaiva.jpg",
+    "photo": "/images/about/members/cauepaiva.jpg",
     "description": "Researcher in AI, LLMs and Data Science, with a focus on education and public data. National champion of the AWS Deepracer 2024 competition.",
     "categories": [
       "Teaching",
-      "Projects",
-      "Coordinators"
-    ],
-    "funcao_especial": [
       "Projects"
     ]
+
   },
   {
     "name": "Kathy",
-    "photo": "/images/people/kathy.jpg",
+    "photo": "/images/about/members/kathy.jpg",
     "description": "Information Systems student. Interested in classical ML, especially Time Series. Loves running and reading.",
     "categories": [
       "Events",
+      "Secretariat"
+    ],
+    "funcao_especial": [
       "Secretariat"
     ],
     "linkedin": "https://www.linkedin.com/in/katielylacerda/"
   },
   {
     "name": "Enzo",
-    "photo": "/images/people/enzo.jpg",
+    "photo": "/images/about/members/enzo.jpg",
     "description": "Student interested in machine learning and mathematics. Top 500 in Overwatch.",
     "categories": [
       "Teaching",
@@ -47,7 +47,7 @@
   },
   {
     "name": "Miller",
-    "photo": "/images/people/miller.jpg",
+    "photo": "/images/about/members/miller.jpg",
     "description": "Computer Science student at USP, interested in Time Series and Deep Learning. Likes cycling and watching bad movies.",
     "categories": [
       "Secretariat",
@@ -61,7 +61,7 @@
   },
   {
     "name": "Francisco Maian",
-    "photo": "/images/people/franciscomaian.jpg",
+    "photo": "/images/about/members/franciscomaian.jpg",
     "description": "Data Science student and Big Data enthusiast.",
     "categories": [
       "Teaching",
@@ -70,7 +70,7 @@
   },
   {
     "name": "Ruri",
-    "photo": "/images/people/ruri.jpg",
+    "photo": "/images/about/members/ruri.jpg",
     "description": "Interested in linguistics and deep learning. Likes sitcoms and fantasy books.",
     "categories": [
       "Marketing",
@@ -82,7 +82,7 @@
   },
   {
     "name": "Murilo Leandro",
-    "photo": "/images/people/muriloleandro.jpg",
+    "photo": "/images/about/members/muriloleandro.jpg",
     "description": "BCC student at USP, always learning and teaching. Fan of My Little Pony.",
     "categories": [
       "Study Group",
@@ -91,7 +91,7 @@
   },
   {
     "name": "Gabriel Abreu",
-    "photo": "/images/people/abreu.jpg",
+    "photo": "/images/about/members/abreu.jpg",
     "description": "BCC student at USP, focused on learning AI, ML, and Data Science. Always testing code and pursuing new ideas!",
     "categories": [
       "Events",
@@ -104,7 +104,7 @@
   },
   {
     "name": "Matheo Angelo",
-    "photo": "/images/people/matheoangelo.png",
+    "photo": "/images/about/members/matheoangelo.png",
     "description": "Data Science student at ICMC, researching Graph Neural Networks. Likes to listen to Cocteau Twins and watch cat memes.",
     "categories": [
       "Events"
@@ -113,7 +113,7 @@
   },
   {
     "name": "Nicolas Maia",
-    "photo": "/images/people/nicolasmaia.png",
+    "photo": "/images/about/members/nicolasmaia.png",
     "description": "BCC student at USP, focused on machine learning and biotech. Likes reading, especially fantasy and suspense, and playing volleyball.",
     "categories": [
       "Teaching"
@@ -121,7 +121,7 @@
   },
   {
     "name": "Ligia Keiko",
-    "photo": "/images/people/ligiakeiko.png",
+    "photo": "/images/about/members/ligiakeiko.png",
     "description": "Likes learning about AI and its applications in everyday life, especially NLP and image processing (OCR). In her free time, she draws and makes sculptures with cold porcelain.",
     "categories": [
       "Teaching"
@@ -133,7 +133,7 @@
   },
   {
     "name": "Victor Zaneti",
-    "photo": "/images/people/victorzaneti.png",
+    "photo": "/images/about/members/victorzaneti.png",
     "description": "Statistics and Data Science student at USP, interested in AI, machine learning, and data analysis. Always looking for new opportunities for practice and improvement.",
     "categories": [
       "Events",
@@ -143,7 +143,7 @@
   },
   {
     "name": "Mariana Queroz",
-    "photo": "/images/people/marianabarbosaqueroz.png",
+    "photo": "/images/about/members/marianabarbosaqueroz.png",
     "description": "Computational physics student at USP, interested in machine learning and its applications. Likes reading and pop divas.",
     "categories": [
       "Marketing",
@@ -157,7 +157,7 @@
   },
   {
     "name": "Letícia Neves",
-    "photo": "/images/people/leticianeves.png",
+    "photo": "/images/about/members/leticianeves.png",
     "description": "Computer Science student at USP, always motivated to learn.",
     "categories": [
       "Teaching"
@@ -166,7 +166,7 @@
   },
   {
     "name": "Arthur Ramos",
-    "photo": "/images/people/arthurramos.png",
+    "photo": "/images/about/members/arthurramos.png",
     "description": "Computer Science student at USP, interested in machine learning and neural networks. Fan of The Beatles.",
     "categories": [
       "Teaching"
@@ -175,7 +175,7 @@
   },
   {
     "name": "Matheu Alves",
-    "photo": "/images/people/matheualves.png",
+    "photo": "/images/about/members/matheualves.png",
     "description": "Statistics and Data Science student at USP, interested in AI, especially ML. Likes playing drums, working out, and playing chess as hobbies.",
     "categories": [
       "Marketing",
@@ -184,7 +184,7 @@
   },
   {
     "name": "João Pedro Godoy",
-    "photo": "/images/people/joaopedrogodoy.png",
+    "photo": "/images/about/members/joaopedrogodoy.png",
     "description": "Computer Science student at USP, interested in various fields of Data Science. Likes working out, listening to music, and programming.",
     "categories": [
       "Teaching"
@@ -193,7 +193,7 @@
   },
   {
     "name": "Glauco Fleury",
-    "photo": "/images/people/glaucofleury.png",
+    "photo": "/images/about/members/glaucofleury.png",
     "description": "Computer Science student at USP, curious about ML, AI, and Statistics. Likes reading, taking care of plants as a hobby, and listening to music.",
     "categories": [
       "Teaching"
