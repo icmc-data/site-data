@@ -51,9 +51,11 @@ const EventsLOG = () => {
                 </div>
               </div>
               <div className="flex flex-wrap gap-3">
+              <a href="https://forms.gle/Y2fHCaZgSTNFQMd77" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-data-purple hover:bg-data-purple/80">
                   {t("log.actions.register")}
                 </Button>
+                </a>
                 <Link to="/events/log/speakers">
                   <Button variant="outline">
                     {t("log.actions.viewSpeakers")}
