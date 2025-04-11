@@ -120,18 +120,6 @@
     ]
   },
   {
-    "name": "Ligia Keiko",
-    "photo": "/images/about/members/ligiakeiko.png",
-    "description": "Likes learning about AI and its applications in everyday life, especially NLP and image processing (OCR). In her free time, she draws and makes sculptures with cold porcelain.",
-    "categories": [
-      "Teaching"
-    ],
-    "funcao_especial": [
-      "Teaching"
-    ],
-    "linkedin": "https://br.linkedin.com/in/ligia-keiko-carvalho-19084221b"
-  },
-  {
     "name": "Victor Zaneti",
     "photo": "/images/about/members/victorzaneti.png",
     "description": "Statistics and Data Science student at USP, interested in AI, machine learning, and data analysis. Always looking for new opportunities for practice and improvement.",

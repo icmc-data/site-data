@@ -151,7 +151,7 @@ const About = () => {
                 ))}
               </div>
             ) : (
-              <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
+              <div className="flex flex-wrap gap-6 justify-center max-w-screen-xl mx-auto">
                 {filteredMembers?.map((member) => (
                   <MemberCard key={member.name} member={member} />
                 ))}
