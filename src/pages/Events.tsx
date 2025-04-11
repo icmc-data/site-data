@@ -18,7 +18,7 @@ const Events = () => {
           <section className="mb-16">
             <h1 className="text-4xl font-bold mb-8">{t("title")}</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* LoG Event Card
+              {/* LoG Event Card */}
               <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-border">
                 <div className="aspect-video w-full overflow-hidden">
                   <img
@@ -45,7 +45,7 @@ const Events = () => {
                     </Button>
                   </Link>
                 </CardContent>
-              </Card> */}
+              </Card> 
 
               {/* UDL Event Card */}
               <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-border">
