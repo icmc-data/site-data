@@ -1,0 +1,146 @@
+
+{
+  "udl": {
+    "speakers": [
+      {
+        "name": "Sebastian Ruder",
+        "photo": "/images/speakers/sebastian.jpg",
+        "title": "Multilingual LLMs",
+        "bio": "Sebastian Ruder is a research scientist at Cohere, specializing in multilingual LLMs, with experience at Google DeepMind. He completed his PhD in Natural Language Processing (NLP) at the Insight Research Centre for Data Analytics, while working as a research scientist at the text analysis startup AYLIEN, based in Dublin. Previously, he studied Computational Linguistics at the University of Heidelberg, Germany, and at Trinity College, Dublin.",
+        "day": "monday"
+      },
+      {
+        "name": "Jeremy Bernstein",
+        "photo": "/images/speakers/jeremy.jpg",
+        "title": "Understanding Generalization",
+        "bio": "Jeremy Bernstein is a postdoctoral researcher at MIT, specializing in natural and artificial intelligence. His work examines why deep learning algorithms are effective, despite theoretical challenges. Recently, he began exploring connections between biology and AI, investigating how biological neural networks process information. He obtained his PhD from Caltech under the guidance of Yisong Yue.",
+        "day": "tuesday"
+      },
+      {
+        "name": "Bruno Ribeiro",
+        "photo": "/images/speakers/bruno.jpg", 
+        "title": "Graph Neural Networks",
+        "bio": "Bruno Ribeiro is an associate professor in the Department of Computer Science at Purdue University and a member of the Data Science Center. His work on graph neural networks is pioneering, especially on the limits of expressiveness of these models. He received his PhD from the University of Massachusetts Amherst in 2010.",
+        "day": "wednesday"
+      },
+      {
+        "name": "Hallison Paz",
+        "photo": "/images/speakers/hallison.jpg",
+        "title": "Image Processing with Neural Networks",
+        "bio": "Hallison Paz is a researcher in AI Graphics, co-creator of the Programação Dinâmica channel, and a specialist in image processing with neural networks. His work at the intersection of computer vision and deep learning has impacted various practical applications of generative AI.",
+        "day": "thursday"
+      },
+      {
+        "name": "Hannes Stärk",
+        "photo": "/images/speakers/hannes.jpg", 
+        "title": "Generative Models",
+        "bio": "We present three pathways in which we believe generative models are especially valuable for Machine Learning: (1) for generating synthetic data; (2) for avoiding the need to manually design representations for different data types; and (3) for addressing ML with formal guarantees by creating models that we can easily analyze and understand.",
+        "day": "friday"
+      },
+      {
+        "name": "Marzieh Fadaee",
+        "photo": "/images/speakers/marzieh.jpg",
+        "title": "Ethics in LLMs",
+        "bio": "Marzieh Fadaee is a senior research scientist at Cohere for AI, a non-profit research laboratory. Her research focuses on developing methods to improve the robustness, reliability, and honesty of LLMs. Previously, she worked at Apple focusing on natural language processing to improve Siri's quality.",
+        "day": "monday"
+      },
+      {
+        "name": "Petar Veličković",
+        "photo": "/images/speakers/petar.jpg",
+        "title": "Geometric Deep Learning",
+        "bio": "Petar Veličković is a senior researcher at Google DeepMind, specializing in geometric learning and graphs. He completed his PhD at Cambridge under the supervision of Pietro Liò. He is an advocate for the democratization of science and co-founder of the Adversarial Collaboration Network.",
+        "day": "thursday"
+      },
+      {
+        "name": "Victor Pugliese",
+        "photo": "/images/speakers/victor.jpg",
+        "title": "Reinforcement Learning",
+        "bio": "Victor Pugliese is a doctoral student at UNIFESP, specializing in reinforcement learning and optimization. His work focuses on methods that combine efficient exploration in complex environments with model-based reinforcement learning techniques and planning techniques.",
+        "day": "friday"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is participation free?",
+        "answer": "Yes, the event is completely free for all participants. Simply register through our form to receive the access links to the lectures."
+      },
+      {
+        "question": "Where will the event be held?",
+        "answer": "Understanding Deep Learning 2024 will be held online via the Zoom platform. This allows participants from anywhere in the world to attend the lectures."
+      },
+      {
+        "question": "How do I sponsor?",
+        "answer": "Companies and institutions interested in sponsoring the event can contact us via email at data@icmc.usp.br to discuss different partnership possibilities."
+      },
+      {
+        "question": "Is there a certificate?",
+        "answer": "Yes, all participants who attend the lectures will receive a digital certificate of participation, which will be sent after the end of the event."
+      }
+    ]
+  },
+  "log": {
+    "speakers": [
+      {
+        "name": "Marcos Gôlo",
+        "photo": "/images/speakers/golo.jpg",
+        "bio": "Marcos Gôlo holds a master's degree in computer science from the Institute of Mathematical and Computer Sciences at the University of São Paulo, São Carlos campus. Marcos explored multimodal representation learning in textual data for one-class learning during his master's with papers published in national conferences and international journals. Currently, he is pursuing a doctorate at the same place as his master's, was awarded the Latin American Google PhD Fellowship to research representation learning in heterogeneous graphs in one-class learning, and is conducting a sandwich doctorate in Leipzig, Germany.",
+        "lattes": "http://lattes.cnpq.br/7402825146038143",
+        "linkedin": "https://www.linkedin.com/in/marcosgolo/",
+        "email": "marcosgolo@usp.br",
+        "scholar": "https://scholar.google.com.br/citations?user=CeyvhM8AAAAJ&hl=pt-BR"
+      },
+      {
+        "name": "Carlos Caetano",
+        "photo": "/images/speakers/caetano.jpg",
+        "bio": "Carlos Caetano holds a PhD in Computer Science from the Federal University of Minas Gerais (UFMG), with part of his studies conducted at the Centre de Recherche INRIA Sophia Antipolis, France, as a researcher in the STARS team. He holds a master's degree in Computer Science from the same university and a bachelor's degree in Information Systems from the Pontifical Catholic University of Minas Gerais (PUC Minas)."
+      },
+      {
+        "name": "Marcel Barros",
+        "photo": "/images/speakers/barros.jpg",
+        "bio": "PhD in Electrical Engineering from the University of São Paulo, with emphasis on Computer Engineering. His doctoral research focused on temporal encoding techniques for multivariate time series, involving graph-based models. He holds a degree in Electrical Engineering with emphasis on Computing from the same institution (2011)."
+      },
+      {
+        "name": "Leo Sampaio",
+        "photo": "/images/speakers/sampaio.jpg",
+        "bio": "Professor at ICMC-USP. She obtained her PhD in Computer Sciences from ICMC-USP and was a postdoctoral researcher at the State University of Campinas (Unicamp). She works as a researcher in the field of Computer Vision, with specific experience in the development of multimodal models focused on cross-domain search."
+      },
+      {
+        "name": "Heloisa Oss Boll",
+        "photo": "/images/speakers/boll.jpg",
+        "bio": "PhD candidate at the University of Amsterdam/Amsterdam UMC, where she researches deep learning methods with a focus on graphs and natural language processing (NLP) applied to the Dutch healthcare system. She holds a master's degree in Computer Science from INF-UFRGS, specializing in Artificial Intelligence for healthcare."
+      },
+      {
+        "name": "Zhao Liang",
+        "photo": "/images/speakers/liang.jpg",
+        "bio": "He obtained his bachelor's degree from Wuhan University, China, in 1988 and completed his master's and doctoral degrees in Computer Science at the Technological Institute of Aeronautics (ITA) in 1996 and 1998, respectively. In 2000, he joined the faculty of the Institute of Mathematical and Computer Sciences (ICMC) of the University of São Paulo (USP), located in São Carlos."
+      },
+      {
+        "name": "Francisco Rodrigues",
+        "photo": "/images/speakers/rodrigues.jpg",
+        "bio": "Francisco A. Rodrigues is a full professor at the Institute of Mathematical and Computer Sciences (University of São Paulo), working in the area of Complex Systems and Data Science. Currently, he is the head of the Department of Applied Mathematics. He was a visiting professor at the University of Warwick (United Kingdom) between 2018 and 2019 with funding from the Leverhulme Trust."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Will the event be in Portuguese?",
+        "answer": "Yes, the entire program of the event will be in Portuguese. To allow people from other countries to also watch the lectures, we will also make the recordings available with English subtitles."
+      },
+      {
+        "question": "Is participation free?",
+        "answer": "Yes, the event is completely free!"
+      },
+      {
+        "question": "Where will the event be held?",
+        "answer": "The event will take place at ICMC - USP (the location of each activity can be consulted in the event schedule). In addition, the lectures, mini-courses, and Flash Talks will be broadcast live on Data's YouTube channel."
+      },
+      {
+        "question": "Is there a participation certificate?",
+        "answer": "Yes, there is a certificate for those who register for the event and record attendance at at least 3 lectures or mini-courses. In addition, we will have special certificates for those who present works in the Poster Session or Flash Talks."
+      },
+      {
+        "question": "How do I sponsor?",
+        "answer": "Contact us at data@icmc.usp.br or matheoangelo@usp.br with details of your proposal."
+      }
+    ]
+  }
+}

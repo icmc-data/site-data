@@ -1,0 +1,20 @@
+{
+    "title": "Learn",
+    "pythoncourse": {
+      "title": "Python for Data Science Course",
+      "date": "August 26 to October 21, 2024",
+      "description": "Free course offered by the DATA extension group at ICMC-USP, aimed at university and high school students from the 9th grade onwards. The classes cover from the fundamentals of the Python language to the use of essential libraries for data science, such as NumPy, Pandas, Matplotlib, Seaborn, and Scikit-Learn. The course includes a final project integrating the acquired knowledge.",
+      "actions": {
+        "watch": "Watch the classes"
+      }
+    },
+    "mlcourse": {
+      "title": "IMachine Learning Course",
+      "date": "March 21 to May 2, 2025",
+      "description": "Free course promoted by the DATA extension group at ICMC-USP, intended for anyone interested in learning more about machine learning. Classes are held on Fridays, from 2:00 PM to 4:00 PM, at the Fernão Stella de Rodrigues Germano auditorium at ICMC, with live streaming on the DATA YouTube channel. Basic prior knowledge in Python, vectors, and matrices is recommended. Topics include linear and non-linear classifiers, recommendation algorithms, and neural networks.",
+      "actions": {
+        "watch": "Watch the classes"
+      }
+    }
+  }
+  

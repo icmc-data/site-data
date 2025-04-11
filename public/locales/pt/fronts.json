@@ -1,0 +1,31 @@
+{
+  "title": "FRENTES",
+  "description": "As frentes do Data ICMC são pilares fundamentais que estruturam e organizam as atividades do nosso grupo. Cada frente é responsável por uma área específica de atuação, trabalhando de forma coordenada para alcançar nossos objetivos de promover o conhecimento em Ciência de Dados e Aprendizado de Máquina. Através dessas frentes, buscamos proporcionar uma experiência enriquecedora não só para os membros, mas também para a comunidade, permitindo que desenvolvam suas habilidades, colaborem em projetos e estabeleçam conexões valiosas.",
+  "subheading": "Conheça abaixo as diferentes frentes do Data ICMC e como cada uma contribui para o crescimento e fortalecimento do nosso grupo:",
+  "fronts": {
+    "studyGroups": {
+      "title": "Grupos de Estudos",
+      "description": "Nos grupos de estudos, os alunos se reúnem com o objetivo de aprofundar em um tópico. Ao fim do ciclo de estudos, os membros se reúnem para apresentar ao restante do grupo resultados e projetos."
+    },
+    "projects": {
+      "title": "Projetos",
+      "description": "A frente de projetos tem como objetivo juntar grupos para desenvolver aplicações envolvendo desde a obtenção dos dados até o desenvolvimento, treinamento, além da visualização de resultados."
+    },
+    "events": {
+      "title": "Eventos",
+      "description": "Organiza eventos de Ciência de Dados como o DataDay. Além disso, representa o grupo em mostra de oportunidades, Congressos e Escolas de Verão."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "O Marketing tem como objetivo divulgar o grupo, atrair novas pessoas através das redes sociais que o DATA está presente."
+    },
+    "secretariat": {
+      "title": "Secretaria",
+      "description": "A Secretaria cuida da relação do grupo com a USP, facilitando burocracias, organizando os documentos no Github e Drive. Também representa o grupo em Assembléias Gerais e da Diretoria."
+    },
+    "teaching": {
+      "title": "Ensino",
+      "description": "A frente de Ensino organiza cursos com o objetivo de apresentar a área de Ciência de Dados, tanto como cursos de aprofundamento."
+    }
+  }
+}

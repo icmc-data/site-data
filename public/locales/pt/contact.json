@@ -1,0 +1,12 @@
+
+{
+  "title": "Contato",
+  "description": "Entre em contato conosco para saber mais sobre o DATA ICMC, nossas atividades e como você pode participar. Estamos sempre abertos a novas ideias, parcerias e colaborações.",
+  "callToAction": "Fale conosco!",
+  "contactMethods": {
+    "email": "E-mail",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
+  }
+}

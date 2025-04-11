@@ -1,0 +1,115 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 17%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 17%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 17%;
+    
+    --primary: 0 0% 17%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 330 78% 75%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 27%;
+    
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 17%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 0 0% 17%;
+    
+    --data-blue: 197 82% 75%;
+    --data-pink: 330 78% 75%;
+    --data-purple: 291 41% 56%;
+    
+    --background-secondary: 0 0% 96%;
+    --background-opacity: 0 0% 100% 0.4;
+    --button: 330 78% 75%;
+    --button-text: 0 0% 0%;
+    --text-secondary: 0 0% 27%;
+    --dropdown: 0 0% 88%;
+    --dropdown-hover: 0 0% 80%;
+    --button-secondary: 0 0% 94%;
+    --selected: 228 64% 86%;
+    --link: 235 96% 40%;
+    
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 220 25% 97%;
+    
+    --card: 0 0% 7%;
+    --card-foreground: 220 25% 97%;
+    
+    --popover: 0 0% 7%;
+    --popover-foreground: 220 25% 97%;
+    
+    --primary: 220 25% 97%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 328 81% 80%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 73%;
+    
+    --accent: 0 0% 11%;
+    --accent-foreground: 220 25% 97%;
+    
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 220 25% 97%;
+    
+    --data-blue: 199 89% 79%;
+    --data-pink: 328 81% 80%;
+    --data-purple: 293 42% 64%;
+    
+    --background-secondary: 0 0% 11%;
+    --background-opacity: 0 0% 7% 0.4;
+    --button: 328 81% 80%;
+    --button-text: 0 0% 100%;
+    --text-secondary: 0 0% 73%;
+    --dropdown: 0 0% 18%;
+    --dropdown-hover: 0 0% 27%;
+    --button-secondary: 0 0% 11%;
+    --selected: 212 38% 32%;
+    --link: 199 89% 79%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .purple-gradient {
+    @apply bg-gradient-to-r from-data-purple-dark to-data-purple text-white;
+  }
+}
+

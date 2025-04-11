@@ -1,0 +1,146 @@
+
+{
+  "udl": {
+    "speakers": [
+      {
+        "name": "Sebastian Ruder",
+        "photo": "/images/events/log2025/speakers/sebastian.png",
+        "title": "Multilingual LLMs",
+        "bio": "Sebastian Ruder é um cientista pesquisador da Cohere, especialista em LLMs multilinguais, com passagem pelo Google DeepMind. Concluiu seu PhD em Processamento de Linguagem Natural (NLP) no Insight Research Centre for Data Analytics, enquanto trabalhava como cientista pesquisador na startup de análise de texto AYLIEN, sediada em Dublin. Anteriormente, estudou Linguística Computacional na Universidade de Heidelberg, Alemanha, e no Trinity College, Dublin.",
+        "day": "segunda"
+      },
+      {
+        "name": "Jeremy Bernstein",
+        "photo": "/images/events/log2025/speakers/jeremy.png",
+        "title": "Understanding Generalization",
+        "bio": "Jeremy Bernstein é pesquisador de pós-doutorado no MIT, especializado em inteligência natural e artificial. Seu trabalho examina por que os algoritmos de aprendizado profundo são eficazes, apesar dos desafios teóricos. Recentemente, começou a explorar conexões entre biologia e IA, investigando como redes neurais biológicas processam informações. Obteve seu PhD no Caltech sob orientação de Yisong Yue.",
+        "day": "terça"
+      },
+      {
+        "name": "Bruno Ribeiro",
+        "photo": "/images/events/log2025/speakers/bruno.png", 
+        "title": "Graph Neural Networks",
+        "bio": "Bruno Ribeiro é professor associado no Departamento de Ciência da Computação da Purdue University e membro do Centro de Ciência de Dados. Seu trabalho em redes neurais de grafos é pioneiro, especialmente sobre limites da expressividade desses modelos. Recebeu seu PhD pela University of Massachusetts Amherst em 2010.",
+        "day": "quarta"
+      },
+      {
+        "name": "Hallison Paz",
+        "photo": "/images/events/log2025/speakers/hallison.png",
+        "title": "Image Processing with Neural Networks",
+        "bio": "Hallison Paz é pesquisador em AI Graphics, co-criador do canal Programação Dinâmica e especialista em processamento de imagens com redes neurais. Seu trabalho na interseção de visão computacional e aprendizado profundo tem impactado diversas aplicações práticas de IA generativa.",
+        "day": "quinta"
+      },
+      {
+        "name": "Hannes Stärk",
+        "photo": "/images/events/log2025/speakers/hannes.png", 
+        "title": "Generative Models",
+        "bio": "Apresentamos três caminhos nos quais achamos que modelos generativos são especialmente valiosos para Aprendizado de Máquina: (1) para geração de dados sintéticos; (2) para evitar a necessidade de projetar manualmente representações para diferentes tipos de dados; e (3) para abordar ML com garantias formais ao criar modelos que podemos facilmente analisar e compreender.",
+        "day": "sexta"
+      },
+      {
+        "name": "Marzieh Fadaee",
+        "photo": "/images/events/log2025/speakers/marzieh.png",
+        "title": "Ethics in LLMs",
+        "bio": "Marzieh Fadaee é uma cientista pesquisadora sênior na Cohere for AI, um laboratório de pesquisa sem fins lucrativos. Sua pesquisa foca no desenvolvimento de métodos para melhorar a robustez, confiabilidade e honestidade dos LLMs. Anteriormente, trabalhou na Apple com foco em processamento de linguagem natural para melhorar a qualidade do Siri.",
+        "day": "segunda"
+      },
+      {
+        "name": "Petar Veličković",
+        "photo": "/images/events/log2025/speakers/petar.png",
+        "title": "Geometric Deep Learning",
+        "bio": "Petar Veličković é pesquisador sênior no Google DeepMind, especialista em aprendizado geométrico e gráficos. Completou seu PhD em Cambridge sob supervisão de Pietro Liò. É defensor da democratização da ciência e co-fundador do Adversarial Collaboration Network.",
+        "day": "quinta"
+      },
+      {
+        "name": "Victor Pugliese",
+        "photo": "/images/events/log2025/speakers/victor.png",
+        "title": "Reinforcement Learning",
+        "bio": "Victor Pugliese é doutorando na UNIFESP, especializado em aprendizado por reforço e otimização. Seu trabalho concentra-se em métodos que combinam exploração eficiente em ambientes complexos com técnicas de aprendizado por reforço baseadas em modelos e técnicas de planejamento.",
+        "day": "sexta"
+      }
+    ],
+    "faq": [
+      {
+        "question": "A participação é gratuita?",
+        "answer": "Sim, o evento é totalmente gratuito para todos os participantes. Basta se inscrever pelo nosso formulário para receber os links de acesso às palestras."
+      },
+      {
+        "question": "Onde será o evento?",
+        "answer": "O Understanding Deep Learning 2024 será realizado online, via plataforma Zoom. Isso permite que participantes de qualquer lugar do mundo possam assistir às palestras."
+      },
+      {
+        "question": "Como faço para patrocinar?",
+        "answer": "Empresas e instituições interessadas em patrocinar o evento podem entrar em contato pelo e-mail data@icmc.usp.br para discutir as diferentes possibilidades de parceria."
+      },
+      {
+        "question": "Tem certificado?",
+        "answer": "Sim, todos os participantes que assistirem às palestras receberão um certificado digital de participação, que será enviado após o término do evento."
+      }
+    ]
+  },
+  "log": {
+    "speakers": [
+      {
+        "name": "Marcos Gôlo",
+        "photo": "/images/events/log2025/speakers/golo.png",
+        "bio": "Marcos Gôlo é mestre em ciência da computação pelo Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo, campus de São Carlos. Marcos explorou o aprendizado de representação multimodal em dados textuais para o aprendizado de uma classe durante seu mestrado com trabalhos publicados em conferências nacionais e revistas internacionais. Atualmente, faz doutorado no mesmo local de seu mestrado, foi premiado com o Latin American Google PhD Fellowship para pesquisar sobre aprendizado de representação em grafos heterogêneos no aprendizado de uma classe, e esta realizando doutorado sanduiche em Leipzig, na Alemanha.",
+        "lattes": "http://lattes.cnpq.br/7402825146038143",
+        "linkedin": "https://www.linkedin.com/in/marcosgolo/",
+        "email": "marcosgolo@usp.br",
+        "scholar": "https://scholar.google.com.br/citations?user=CeyvhM8AAAAJ&hl=pt-BR"
+      },
+      {
+        "name": "Carlos Caetano",
+        "photo": "/images/events/log2025/speakers/caetano.png",
+        "bio": "Carlos Caetano é doutor em Ciência da Computação pela Universidade Federal de Minas Gerais (UFMG), com parte de seus estudos realizados no Centre de Recherche INRIA Sophia Antipolis, na França, como pesquisador do time STARS. É mestre em Ciência da Computação pela mesma universidade e bacharel em Sistemas de Informação pela Pontifícia Universidade Católica de Minas Gerais (PUC Minas)."
+      },
+      {
+        "name": "Marcel Barros",
+        "photo": "/images/events/log2025/speakers/marcel.png",
+        "bio": "Doutor em Engenharia Elétrica pela Universidade de São Paulo, com ênfase em Engenharia da Computação. Sua pesquisa de doutorado foi focada em técnicas de codificação temporal para séries temporais multivariadas, envolvendo modelos baseados em grafos. Possui graduação em Engenharia Elétrica - Ênfase em Computação pela mesma instituição (2011)."
+      },
+      {
+        "name": "Leo Sampaio",
+        "photo": "/images/events/log2025/speakers/sampaio.png",
+        "bio": "Professora doutora no ICMC-USP. Obteve o título de Doutora em Ciências de Computação pelo ICMC-USP e foi pesquisadora em pós-doutorado na Universidade Estadual de Campinas (Unicamp). Atua como pesquisadora da área de Visão Computacional, com experiência específica no desenvolvimento de modelos multimodais voltados para busca entre domínios."
+      },
+      {
+        "name": "Heloisa Oss Boll",
+        "photo": "/images/events/log2025/speakers/boll.png",
+        "bio": "Doutoranda na Universidade de Amsterdã/Amsterdam UMC, onde pesquisa métodos de aprendizado profundo com foco em grafos e processamento de linguagem natural (PLN) aplicados ao sistema de saúde holandês. Mestre em Ciência da Computação pelo INF-UFRGS, com especialização em Inteligência Artificial para a saúde."
+      },
+      {
+        "name": "Zhao Liang",
+        "photo": "/images/events/log2025/speakers/ling.png",
+        "bio": "Obteve seu bacharelado na Wuhan University, China, em 1988 e concluiu seus mestrado e doutorado em Ciência da Computação no Instituto Tecnológico de Aeronáutica (ITA) em 1996 e 1998, respectivamente. Em 2000, ingressou no corpo docente do Instituto de Ciências Matemáticas e de Computação (ICMC) da Universidade de São Paulo (USP), localizado em São Carlos."
+      },
+      {
+        "name": "Francisco Rodrigues",
+        "photo": "/images/events/log2025/speakers/rodrigues.png",
+        "bio": "Francisco A. Rodrigues é professor titular do Instituto de Ciências Matemáticas e de Computação (Universidade de São Paulo), atuando na área de Sistemas Complexos e Ciência de Dados. Atualmente, é chefe do Departamento de Matemática e Aplicada. Foi professor visitante na University of Warwick (Reino Unido) entre 2018 e 2019 com financiamento da Leverhulme Trust."
+      }
+    ],
+    "faq": [
+      {
+        "question": "O evento será em Português?",
+        "answer": "Sim, toda a programação do evento será em português. Para permitir que pessoas de outros países também possam assistir as palestras, também iremos disponibilizar as gravações com legendas em Inglês."
+      },
+      {
+        "question": "A participação é gratuita?",
+        "answer": "Sim, o evento é totalmente gratuito!"
+      },
+      {
+        "question": "Onde será o evento?",
+        "answer": "O evento irá ocorrer no ICMC - USP (o local de cada atividade pode ser consultado no cronograma do evento). Além disso, as palestras, minicursos e Flash Talks serão transmitidas ao vivo no YouTube do Data."
+      },
+      {
+        "question": "Tem certificado de participação?",
+        "answer": "Sim, há certificado para quem se inscrever no evento e registrar presença em pelo menos 3 palestras ou minicursos. Além disso, teremos certificados especiais para os que apresentarem trabalhos na Sessão de Pôsters ou nas Flash Talks."
+      },
+      {
+        "question": "Como faço para patrocinar?",
+        "answer": "Entre em contato conosco em data@icmc.usp.br ou matheoangelo@usp.br com detalhes da sua proposta."
+      }
+    ]
+  }
+}

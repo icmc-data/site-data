@@ -1,12 +1,31 @@
-import { getRequestConfig } from 'next-intl/server'
-import { notFound } from 'next/navigation'
 
-export const locales = ['en', 'br']
-export default getRequestConfig(async ({ locale }) => {
-  // validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound()
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import Backend from "i18next-http-backend";
 
-  return {
-    messages: (await import(`../languages/${locale}.json`)).default
-  }
-})
+i18n
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: "pt",
+    supportedLngs: ["pt", "en"],
+    detection: {
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
+      lookupLocalStorage: "i18nextLng",
+    },
+    debug: false,
+    interpolation: {
+      escapeValue: false,
+    },
+    react: {
+      useSuspense: false,
+    },
+    backend: {
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
+    },
+  });
+
+export default i18n;

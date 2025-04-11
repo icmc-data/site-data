@@ -1,0 +1,20 @@
+{
+    "title": "Aprender",
+    "pythoncourse": {
+      "title": "Curso de Python para Ciência de Dados",
+      "date": "26 de agosto a 21 de outubro de 2024",
+      "description": "Curso gratuito oferecido pelo grupo de extensão DATA do ICMC-USP, voltado para estudantes universitários e do ensino médio a partir do 9º ano. As aulas abordam desde fundamentos da linguagem Python até o uso de bibliotecas essenciais para ciência de dados, como NumPy, Pandas, Matplotlib, Seaborn e Scikit-Learn. O curso inclui um projeto final integrando os conhecimentos adquiridos.",
+      "actions": {
+        "watch": "Assistir às aulas"
+      }
+    },
+    "mlcourse": {
+      "title": "Curso Machine Learning",
+      "date": "21 de março a 2 de maio de 2025",
+      "description": "Curso gratuito promovido pelo grupo de extensão DATA do ICMC-USP, destinado a qualquer pessoa interessada em aprender mais sobre aprendizado de máquina. As aulas ocorrem às sextas-feiras, das 14h às 16h, no auditório Fernão Stella de Rodrigues Germano do ICMC, com transmissão ao vivo pelo canal do DATA no YouTube. Recomenda-se conhecimento prévio básico em Python, vetores e matrizes. Serão abordados temas como classificadores lineares e não lineares, algoritmos de recomendação e redes neurais.",
+      "actions": {
+        "watch": "Assistir às aulas"
+      }
+    }
+  }
+  
