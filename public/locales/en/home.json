@@ -1,10 +1,15 @@
-
 {
   "title": "DATA",
-  "description": "Extension Group from ICMC-USP, focused on Data Science and Machine Learning. Through classes, events, study groups and lectures, the entity has the mission of uniting the industry, the academic world and interested people, so that everyone can create important connections for their lives and careers while learning.",
+  "description": "Extension Group from ICMC-USP, focused on Data Science and Machine Learning. Through classes, events, study groups, and lectures, our mission is to create meaningful connections for your career while you learn.",
   "learnMore": "Learn more",
   "sponsors": {
     "title": "Sponsors",
     "subtitle": "Institutions that believe in the project"
-  }
+  },
+  "eventSectionTitle": "Discover the Events of Data ICMC",
+  "eventSectionDescription": "At Data ICMC, we promote transformative events that connect academia and industry. Our meetups, workshops, and lectures are designed to foster innovation and facilitate networking among professionals, students, and data science enthusiasts.",
+  "seeEvents": "See Events",
+  "learnSectionTitle": "Explore the Educational Content",
+  "learnSectionDescription": "Discover a variety of educational resources ranging from articles and tutorials to courses and videos, prepared to help you master the latest technologies and methodologies in data science and machine learning.",
+  "seeLearn": "See Content"
 }
