@@ -87,6 +87,17 @@ const About = () => {
             </div>
           </section>
 
+          <div className="mt-10 px-4 py-6 border rounded-xl text-center shadow-sm bg-background-secondary">
+            <p className="text-lg text-muted-foreground mb-4">
+              {t("historyCTA.text")}
+            </p>
+            <a href="/membershistory">
+              <Button className="text-base font-semibold px-6 py-3 rounded-full bg-[hsl(var(--data-purple))] text-white hover:brightness-110 transition duration-200">
+                {t("historyCTA.button")}
+              </Button>
+            </a>
+          </div>
+
           <section>
             <div className="flex justify-between items-center mb-8">
               <h2 className="text-3xl font-bold">

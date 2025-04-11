@@ -19,6 +19,7 @@ import EventsLOGSpeakers from "./pages/EventsLOGSpeakers";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Learn from "./pages/Learn";
+import MembersHistory from "./pages/MembersHistory";
 
 // i18n
 import "./i18n";
@@ -33,7 +34,7 @@ const App = () => {
   useEffect(() => {
     const loadResources = async () => {
       setIsLoading(true);
-      const namespaces = ["common", "home", "about", "fronts", "contact", "events", "learn"];
+      const namespaces = ["common", "home", "about", "fronts", "contact", "events", "learn", "membershistory"];
       
       try {
         await Promise.all(
@@ -83,6 +84,7 @@ const App = () => {
                 <Route path="/events/log" element={<EventsLOG />} />
                 <Route path="/events/log/speakers" element={<EventsLOGSpeakers />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/membershistory" element={<MembersHistory />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Layout>
