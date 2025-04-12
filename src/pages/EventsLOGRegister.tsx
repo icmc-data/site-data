@@ -12,21 +12,16 @@ const EvertsLOGRegister = () => {
   const language = i18n.language;
 
   useEffect(() => {
-    // Reinicializa o script do Tally sempre que o tema ou idioma muda
-    const existingScript = document.querySelector(
-      "script[src='https://tally.so/widgets/embed.js']"
-    );
-    if (existingScript) {
-      existingScript.parentNode.removeChild(existingScript);
+    // Verifica se o script do Tally já está presente
+    if (!document.querySelector("script[src='https://tally.so/widgets/embed.js']")) {
+      const script = document.createElement("script");
+      script.src = "https://tally.so/widgets/embed.js";
+      script.async = true;
+      document.body.appendChild(script);
     }
-    const script = document.createElement("script");
-    script.src = "https://tally.so/widgets/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, [theme, language]);
+    // Note: removemos o cleanup para que o script não seja excluído,
+    // garantindo que o widget seja inicializado corretamente.
+  }, []);
 
   const getFormUrl = () => {
     if (language === "pt") {
@@ -53,11 +48,10 @@ const EvertsLOGRegister = () => {
             </Button>
           </Link>
         </div>
-
         {/* Área do formulário com rolagem única */}
         <div className="flex-grow overflow-auto">
           <iframe
-            key={`${theme}-${language}`} // Re-renderiza quando o tema ou idioma mudam
+            key={`${theme}-${language}`} // Re-renderiza o iframe quando tema ou idioma mudam
             data-tally-src={getFormUrl()}
             title="Inscrições - LoG 2025 São Carlos"
             className="w-full h-full border-0"
