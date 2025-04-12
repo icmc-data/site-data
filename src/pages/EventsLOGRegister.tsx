@@ -7,12 +7,15 @@ import { ChevronLeft } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 
 const EvertsLOGRegister = () => {
-  const { t } = useTranslation("events");
+  const { t, i18n } = useTranslation("events");
   const { theme } = useTheme();
+  const language = i18n.language;
 
   useEffect(() => {
-    // Reinicializa o script do Tally sempre que o tema muda
-    const existingScript = document.querySelector("script[src='https://tally.so/widgets/embed.js']");
+    // Reinicializa o script do Tally sempre que o tema ou idioma muda
+    const existingScript = document.querySelector(
+      "script[src='https://tally.so/widgets/embed.js']"
+    );
     if (existingScript) {
       existingScript.parentNode.removeChild(existingScript);
     }
@@ -23,14 +26,24 @@ const EvertsLOGRegister = () => {
     return () => {
       document.body.removeChild(script);
     };
-  }, [theme]);
+  }, [theme, language]);
+
+  const getFormUrl = () => {
+    if (language === "pt") {
+      return theme === "dark"
+        ? "https://tally.so/r/w2Rxvp?transparentBackground=1"
+        : "https://tally.so/r/m6VQjY?transparentBackground=1";
+    } else {
+      return theme === "dark"
+        ? "https://tally.so/r/3x6Nar?transparentBackground=1"
+        : "https://tally.so/r/woxVdV?transparentBackground=1";
+    }
+  };
 
   return (
     <>
       <ParticlesBackground />
-      {/* Usa overflow-auto para permitir a rolagem de todo o conteúdo */}
       <main className="h-screen overflow-auto pt-20">
-        {/* O botão está dentro do fluxo normal da página */}
         <div className="p-4">
           <Link to="/events">
             <Button variant="ghost" className="flex items-center gap-2">
@@ -39,16 +52,10 @@ const EvertsLOGRegister = () => {
             </Button>
           </Link>
         </div>
-
-        {/* O formulário (iframe) é renderizado logo abaixo do botão */}
         <div className="w-full h-full">
           <iframe
-            key={theme} // Força o re-render do iframe ao mudar o tema
-            data-tally-src={
-              theme === "dark"
-                ? "https://tally.so/r/3x6Nar?transparentBackground=1"
-                : "https://tally.so/r/m6VQjY?transparentBackground=1"
-            }
+            key={`${theme}-${language}`} // Re-renderiza quando tema ou idioma mudarem
+            data-tally-src={getFormUrl()}
             title="Inscrições - LoG 2025 São Carlos"
             className="w-full h-full border-0"
             allowFullScreen
