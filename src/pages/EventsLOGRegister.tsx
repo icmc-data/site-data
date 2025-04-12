@@ -49,7 +49,7 @@ const EvertsLOGRegister = () => {
     iframe.setAttribute("allowFullScreen", "");
     iframe.className = "w-full border-0";
     // Define uma altura fixa grande para exibir todo o conteúdo do formulário
-    iframe.style.height = "1000px";
+    iframe.style.height = "1500px";
 
     // Insere o iframe no container
     if (widgetContainerRef.current) {
