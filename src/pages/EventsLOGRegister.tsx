@@ -11,12 +11,11 @@ const EvertsLOGRegister = () => {
   const { theme } = useTheme();
 
   useEffect(() => {
-    // Procura e remove qualquer script do Tally já existente
+    // Remove e reinicializa o script do Tally quando o tema muda
     const existingScript = document.querySelector("script[src='https://tally.so/widgets/embed.js']");
     if (existingScript) {
       existingScript.parentNode.removeChild(existingScript);
     }
-    // Cria e adiciona o script do Tally novamente
     const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
     script.async = true;
@@ -24,25 +23,26 @@ const EvertsLOGRegister = () => {
     return () => {
       document.body.removeChild(script);
     };
-  }, [theme]); // Esse efeito será executado sempre que o tema mudar
+  }, [theme]);
 
   return (
     <>
       <ParticlesBackground />
-      <main className="h-screen overflow-hidden pt-20">
-        <div className="relative w-full h-full">
-          <div className="absolute top-6 left-6 z-10">
-            <Link to="/events">
-              <Button variant="ghost" className="flex items-center gap-2">
-                <ChevronLeft size={16} />
-                {t("udl.actions.backToEvent")}
-              </Button>
-            </Link>
-          </div>
-
+      <main className="h-screen overflow-auto pt-20">
+        {/* Cabeçalho que faz parte do fluxo normal da página */}
+        <header className="w-full p-6">
+          <Link to="/events">
+            <Button variant="ghost" className="flex items-center gap-2">
+              <ChevronLeft size={16} />
+              {t("udl.actions.backToEvent")}
+            </Button>
+          </Link>
+        </header>
+        
+        {/* Conteúdo com o formulário */}
+        <section className="relative w-full h-full">
           <iframe
-            // Ao alterar o tema, essa key muda, forçando a remontagem do iframe
-            key={theme}
+            key={theme} // Força a remontagem do iframe ao mudar o tema
             data-tally-src={
               theme === "dark"
                 ? "https://tally.so/r/3x6Nar?transparentBackground=1"
@@ -52,7 +52,7 @@ const EvertsLOGRegister = () => {
             className="w-full h-full border-0"
             allowFullScreen
           ></iframe>
-        </div>
+        </section>
       </main>
     </>
   );
