@@ -1,67 +1,65 @@
-import React, { useEffect, useState } from \"react\";
-import { useTranslation } from \"react-i18next\";
-import { ParticlesBackground } from \"@/components/ParticlesBackground\";
-import { Button } from \"@/components/ui/button\";
-import { Link } from \"react-router-dom\";
-import { ChevronLeft } from \"lucide-react\";
-import { useTheme } from \"@/components/ThemeProvider\";
+import React, { useEffect, useState } from "react";
+import { useTheme } from "@/components/ThemeProvider";
 
 const EvertsLOGRegister = () => {
-  const { t } = useTranslation(\"events\");
   const { theme } = useTheme();
   const [iframeKey, setIframeKey] = useState(0);
 
+  // URLs para cada tema (ajuste conforme necessário)
+  const formUrlLight = "https://tally.so/embed/m6VQjY?transparentBackground=1";
+  const formUrlDark  = "https://tally.so/embed/3x6Nar?transparentBackground=1";
+
   useEffect(() => {
-    // Remove script antigo se existir
-    const oldScript = document.querySelector(
-      'script[src=\"https://tally.so/widgets/embed.js\"]'
+    // Remove o script existente, caso haja
+    const existingScript = document.querySelector(
+      'script[src="https://tally.so/widgets/embed.js"]'
     );
-    if (oldScript) {
-      oldScript.remove();
+    if (existingScript) {
+      existingScript.remove();
     }
 
-    // Adiciona o script novamente
-    const script = document.createElement(\"script\");
-    script.src = \"https://tally.so/widgets/embed.js\";
-    script.async = true;
-    document.body.appendChild(script);
+    // Função para carregar o script do Tally de forma assíncrona
+    const loadScript = () =>
+      new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = "https://tally.so/widgets/embed.js";
+        script.async = true;
+        script.onload = () => resolve();
+        script.onerror = () => reject(new Error("Erro ao carregar o script do Tally"));
+        document.body.appendChild(script);
+      });
 
-    // Força a re-renderização do iframe com nova chave
-    setIframeKey(prev => prev + 1);
+    loadScript()
+      .then(() => {
+        // Após o script carregar, forçamos a re-renderização do iframe
+        setIframeKey((prevKey) => prevKey + 1);
+      })
+      .catch((err) => console.error(err));
 
+    // Cleanup: remove o script no unmount ou antes de reinjetar
     return () => {
-      document.body.removeChild(script);
+      const script = document.querySelector('script[src="https://tally.so/widgets/embed.js"]');
+      if (script) {
+        script.remove();
+      }
     };
   }, [theme]);
 
-  return (
-    <>
-      <ParticlesBackground />
-      <main className=\"h-screen overflow-hidden pt-20\">
-        <div className=\"relative w-full h-full\">
-          <div className=\"absolute top-6 left-6 z-10\">
-            <Link to=\"/events\">
-              <Button variant=\"ghost\" className=\"flex items-center gap-2\">
-                <ChevronLeft size={16} />
-                {t(\"udl.actions.backToEvent\")}
-              </Button>
-            </Link>
-          </div>
+  // Seleciona a URL com base no tema atual
+  const tallyFormUrl = theme === "dark" ? formUrlDark : formUrlLight;
 
-          <iframe
-            key={iframeKey} // Atualiza ao mudar tema
-            data-tally-src={
-              theme === \"dark\"
-                ? \"https://tally.so/r/3x6Nar?transparentBackground=1\"
-                : \"https://tally.so/r/m6VQjY?transparentBackground=1\"
-            }
-            title=\"Inscrições - LoG 2025 São Carlos\"
-            className=\"w-full h-full border-0\"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </main>
-    </>
+  return (
+    <iframe
+      key={iframeKey} // A key atualiza para forçar a recriação do iframe
+      data-tally-src={tallyFormUrl}
+      loading="lazy"
+      width="100%"
+      height="600"
+      frameBorder="0"
+      marginHeight="0"
+      marginWidth="0"
+      title="Formulário de Registro"
+    ></iframe>
   );
 };
 
