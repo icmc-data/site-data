@@ -1,50 +1,50 @@
-import React, { useEffect, useState } from 'react';
-import { useTheme } from 'next-themes';  // Exemplo de import do hook de tema (ajuste conforme seu contexto)
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { ParticlesBackground } from "@/components/ParticlesBackground";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { ChevronLeft } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 
-function EvertsLOGRegister() {
-  const { theme } = useTheme();  // Obtém o tema atual (por exemplo, 'light' ou 'dark')
-  const [iframeKey, setIframeKey] = useState(0);
-
-  // URLs do formulário Tally para cada tema
-  const formUrlLight = "https://tally.so/embed/FORM_ID_LIGHT?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1";
-  const formUrlDark  = "https://tally.so/embed/FORM_ID_DARK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1";
+const EvertsLOGRegister = () => {
+  const { t } = useTranslation("events");
+  const { theme } = useTheme();
 
   useEffect(() => {
-    // 1. Remover o script do Tally existente, se houver
-    const existingScript = document.querySelector('script[src="https://tally.so/widgets/embed.js"]');
-    if (existingScript) {
-      existingScript.remove();
-    }
-
-    // 2. Re-injetar o script do Tally com document.createElement
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
-    script.id = "tally-widget";
     script.async = true;
     document.body.appendChild(script);
 
-    // 3. Atualizar a key do iframe para forçar re-renderização ao mudar de tema
-    setIframeKey(prevKey => prevKey + 1);
-  }, [theme]);
-
-  // Seleciona a URL do formulário de acordo com o tema atual
-  const tallyFormUrl = theme === 'dark' ? formUrlDark : formUrlLight;
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
-    <div>
-      <iframe
-        key={iframeKey}
-        data-tally-src={tallyFormUrl}
-        loading="lazy"
-        width="100%"
-        height="600"
-        frameBorder="0"
-        marginHeight="0"
-        marginWidth="0"
-        title="Formulário de Registro"
-      ></iframe>
-    </div>
+    <>
+      <ParticlesBackground />
+      <main className="h-screen overflow-hidden pt-20">
+        <div className="relative w-full h-full">
+          <div className="absolute top-6 left-6 z-10">
+            <Link to="/events">
+              <Button variant="ghost" className="flex items-center gap-2">
+                <ChevronLeft size={16} />
+                {t("udl.actions.backToEvent")}
+              </Button>
+            </Link>
+          </div>
+
+          <iframe
+            data-tally-src={theme === "dark" ? "https://tally.so/r/3x6Nar?transparentBackground=1" : "https://tally.so/r/m6VQjY?transparentBackground=1"}
+            title="Inscrições - LoG 2025 São Carlos"
+            className="w-full h-full border-0"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </main>
+    </>
   );
-}
+};
 
 export default EvertsLOGRegister;
