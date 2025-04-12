@@ -12,15 +12,13 @@ const EvertsLOGRegister = () => {
   const language = i18n.language;
 
   useEffect(() => {
-    // Verifica se o script do Tally já está presente
+    // Adiciona o script do Tally apenas se ele ainda não estiver presente
     if (!document.querySelector("script[src='https://tally.so/widgets/embed.js']")) {
       const script = document.createElement("script");
       script.src = "https://tally.so/widgets/embed.js";
       script.async = true;
       document.body.appendChild(script);
     }
-    // Note: removemos o cleanup para que o script não seja excluído,
-    // garantindo que o widget seja inicializado corretamente.
   }, []);
 
   const getFormUrl = () => {
@@ -38,8 +36,8 @@ const EvertsLOGRegister = () => {
   return (
     <>
       <ParticlesBackground />
-      <main className="min-h-screen flex flex-col">
-        {/* Cabeçalho fixo */}
+      <main className="min-h-screen">
+        {/* Cabeçalho do site */}
         <div className="p-4">
           <Link to="/events">
             <Button variant="ghost" className="flex items-center gap-2">
@@ -48,13 +46,13 @@ const EvertsLOGRegister = () => {
             </Button>
           </Link>
         </div>
-        {/* Área do formulário com rolagem única */}
-        <div className="flex-grow overflow-auto">
+        {/* O iframe é colocado diretamente na página, sem contêiner com overflow */}
+        <div className="w-full">
           <iframe
-            key={`${theme}-${language}`} // Re-renderiza o iframe quando tema ou idioma mudam
+            key={`${theme}-${language}`} // Re-renderiza quando tema ou idioma mudam
             data-tally-src={getFormUrl()}
             title="Inscrições - LoG 2025 São Carlos"
-            className="w-full h-full border-0"
+            className="w-full border-0"
             allowFullScreen
           ></iframe>
         </div>
