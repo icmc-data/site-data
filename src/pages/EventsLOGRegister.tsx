@@ -32,7 +32,7 @@ const EvertsLOGRegister = () => {
       widgetContainerRef.current.innerHTML = "";
     }
 
-    // Remove script do Tally, se já estiver carregado, para forçar a reinicialização
+    // Remove o script do Tally, se já estiver carregado, para forçar a reinicialização
     const existingScript = document.querySelector("script[src='https://tally.so/widgets/embed.js']");
     if (existingScript) {
       existingScript.parentNode.removeChild(existingScript);
@@ -41,22 +41,22 @@ const EvertsLOGRegister = () => {
     // Cria o novo iframe para o widget do Tally
     const iframe = document.createElement("iframe");
     iframe.setAttribute("data-tally-src", getFormUrl());
-    // Ativa o auto-redimensionamento para que o formulário seja exibido por inteiro
-    iframe.setAttribute("data-tally-auto-resize", "");
+    // Comentamos o auto redimensionamento para usar a altura fixa
+    // iframe.setAttribute("data-tally-auto-resize", "");
     // Desabilita o scroll interno do iframe
     iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("title", "Inscrições - LoG 2025 São Carlos");
     iframe.setAttribute("allowFullScreen", "");
     iframe.className = "w-full border-0";
-    // Removido o height fixo para permitir o ajuste conforme o conteúdo
-    // iframe.style.height = "100%";
+    // Define uma altura fixa grande para exibir todo o conteúdo do formulário
+    iframe.style.height = "1000px";
 
     // Insere o iframe no container
     if (widgetContainerRef.current) {
       widgetContainerRef.current.appendChild(iframe);
     }
 
-    // Re-adiciona o script do Tally para processar o iframe inserido
+    // Re-adiciona o script do Tally para que ele processe o iframe inserido
     const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
     script.async = true;
@@ -69,7 +69,7 @@ const EvertsLOGRegister = () => {
         scriptTag.parentNode.removeChild(scriptTag);
       }
     };
-  }, [theme, language]); // Sempre recria o widget quando o tema ou idioma muda
+  }, [theme, language]); // Recria o widget sempre que o tema ou idioma mudar
 
   return (
     <>
@@ -84,8 +84,8 @@ const EvertsLOGRegister = () => {
             </Button>
           </Link>
         </div>
-        {/* Container para o widget: removida a altura fixa para que ele se ajuste ao tamanho do formulário */}
-        <div className="w-full" ref={widgetContainerRef} />
+        {/* Container para o widget: removido qualquer altura fixa para permitir o ajuste do iframe */}
+        <div className="w-full" ref={widgetContainerRef} style={{ overflow: "hidden" }} />
       </main>
     </>
   );
