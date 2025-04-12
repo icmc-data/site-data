@@ -11,28 +11,20 @@ const EvertsLOGRegister = () => {
   const { theme } = useTheme();
 
   useEffect(() => {
-    // Utiliza um query param "reloaded" para determinar se já ocorreu o recarregamento
-    const url = new URL(window.location.href);
-    if (!url.searchParams.has("reloaded")) {
-      url.searchParams.set("reloaded", "true");
-      window.location.href = url.toString();
-    } else {
-      // Remove o parâmetro para que futuras alterações de tema possam recarregar novamente
-      url.searchParams.delete("reloaded");
-      window.history.replaceState(null, "", url.toString());
+    // Procura e remove qualquer script do Tally já existente
+    const existingScript = document.querySelector("script[src='https://tally.so/widgets/embed.js']");
+    if (existingScript) {
+      existingScript.parentNode.removeChild(existingScript);
     }
-  }, [theme]);
-
-  useEffect(() => {
+    // Cria e adiciona o script do Tally novamente
     const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
     script.async = true;
     document.body.appendChild(script);
-
     return () => {
       document.body.removeChild(script);
     };
-  }, []);
+  }, [theme]); // Esse efeito será executado sempre que o tema mudar
 
   return (
     <>
@@ -49,6 +41,8 @@ const EvertsLOGRegister = () => {
           </div>
 
           <iframe
+            // Ao alterar o tema, essa key muda, forçando a remontagem do iframe
+            key={theme}
             data-tally-src={
               theme === "dark"
                 ? "https://tally.so/r/3x6Nar?transparentBackground=1"
