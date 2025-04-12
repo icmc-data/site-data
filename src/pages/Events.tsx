@@ -5,10 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Calendar } from "lucide-react";
 import { useFetchEvents } from "@/utils/fetch-events";
+import { useTheme } from "@/components/ThemeProvider";
 
 const Events = () => {
   const { t } = useTranslation("events");
   const { data: eventsData, isLoading } = useFetchEvents();
+  const { theme } = useTheme();
 
   return (
     <>
@@ -22,7 +24,11 @@ const Events = () => {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-border">
                 <div className="aspect-video w-full overflow-hidden">
                   <img
-                    src="/images/events/log2025/LoGLogoThumb.png"
+                    src={
+                      theme === "light"
+                        ? "/images/events/log2025/log_thumb_branca.png"
+                        : "/images/events/log2025/LoGLogoThumb.png"
+                    }
                     alt="Learning on Graphs Conference 2025"
                     className="w-full h-full object-cover"
                   />
@@ -45,7 +51,7 @@ const Events = () => {
                     </Button>
                   </Link>
                 </CardContent>
-              </Card> 
+              </Card>
 
               {/* UDL Event Card */}
               <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-border">
