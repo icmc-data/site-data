@@ -10,6 +10,12 @@ const EvertsLOGRegister = () => {
   const { t } = useTranslation("events");
   const { theme } = useTheme();
 
+  // Recarrega a página quando o tema muda
+  useEffect(() => {
+    window.location.reload();
+  }, [theme]);
+
+  // Carrega o script do Tally somente uma vez
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
@@ -36,7 +42,11 @@ const EvertsLOGRegister = () => {
           </div>
 
           <iframe
-            data-tally-src={theme === "dark" ? "https://tally.so/r/3x6Nar?transparentBackground=1" : "https://tally.so/r/m6VQjY?transparentBackground=1"}
+            data-tally-src={
+              theme === "dark"
+                ? "https://tally.so/r/3x6Nar?transparentBackground=1"
+                : "https://tally.so/r/m6VQjY?transparentBackground=1"
+            }
             title="Inscrições - LoG 2025 São Carlos"
             className="w-full h-full border-0"
             allowFullScreen
