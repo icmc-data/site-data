@@ -43,7 +43,8 @@ const EvertsLOGRegister = () => {
   return (
     <>
       <ParticlesBackground />
-      <main className="h-screen overflow-auto pt-20">
+      <main className="min-h-screen flex flex-col">
+        {/* Cabeçalho fixo */}
         <div className="p-4">
           <Link to="/events">
             <Button variant="ghost" className="flex items-center gap-2">
@@ -52,9 +53,11 @@ const EvertsLOGRegister = () => {
             </Button>
           </Link>
         </div>
-        <div className="w-full h-full">
+
+        {/* Área do formulário com rolagem única */}
+        <div className="flex-grow overflow-auto">
           <iframe
-            key={`${theme}-${language}`} // Re-renderiza quando tema ou idioma mudarem
+            key={`${theme}-${language}`} // Re-renderiza quando o tema ou idioma mudam
             data-tally-src={getFormUrl()}
             title="Inscrições - LoG 2025 São Carlos"
             className="w-full h-full border-0"
