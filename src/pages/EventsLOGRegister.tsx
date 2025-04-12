@@ -10,19 +10,19 @@ const EvertsLOGRegister = () => {
   const { t } = useTranslation("events");
   const { theme } = useTheme();
 
-  // Recarrega a página somente uma vez quando o tema muda
   useEffect(() => {
-    // Verifica se a flag "themeReloaded" não está definida
-    if (!sessionStorage.getItem("themeReloaded")) {
-      sessionStorage.setItem("themeReloaded", "true");
-      window.location.reload();
+    // Utiliza um query param "reloaded" para determinar se já ocorreu o recarregamento
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has("reloaded")) {
+      url.searchParams.set("reloaded", "true");
+      window.location.href = url.toString();
     } else {
-      // Remove a flag após o recarregamento para permitir futuras mudanças
-      sessionStorage.removeItem("themeReloaded");
+      // Remove o parâmetro para que futuras alterações de tema possam recarregar novamente
+      url.searchParams.delete("reloaded");
+      window.history.replaceState(null, "", url.toString());
     }
   }, [theme]);
 
-  // Carrega o script do Tally somente uma vez
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
