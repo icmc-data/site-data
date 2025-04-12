@@ -10,9 +10,16 @@ const EvertsLOGRegister = () => {
   const { t } = useTranslation("events");
   const { theme } = useTheme();
 
-  // Recarrega a página quando o tema muda
+  // Recarrega a página somente uma vez quando o tema muda
   useEffect(() => {
-    window.location.reload();
+    // Verifica se a flag "themeReloaded" não está definida
+    if (!sessionStorage.getItem("themeReloaded")) {
+      sessionStorage.setItem("themeReloaded", "true");
+      window.location.reload();
+    } else {
+      // Remove a flag após o recarregamento para permitir futuras mudanças
+      sessionStorage.removeItem("themeReloaded");
+    }
   }, [theme]);
 
   // Carrega o script do Tally somente uma vez
