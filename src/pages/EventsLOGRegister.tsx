@@ -11,7 +11,7 @@ const EvertsLOGRegister = () => {
   const { theme } = useTheme();
 
   useEffect(() => {
-    // Remove e reinicializa o script do Tally quando o tema muda
+    // Reinicializa o script do Tally sempre que o tema muda
     const existingScript = document.querySelector("script[src='https://tally.so/widgets/embed.js']");
     if (existingScript) {
       existingScript.parentNode.removeChild(existingScript);
@@ -28,21 +28,22 @@ const EvertsLOGRegister = () => {
   return (
     <>
       <ParticlesBackground />
+      {/* Usa overflow-auto para permitir a rolagem de todo o conteúdo */}
       <main className="h-screen overflow-auto pt-20">
-        {/* Cabeçalho que faz parte do fluxo normal da página */}
-        <header className="w-full p-6">
+        {/* O botão está dentro do fluxo normal da página */}
+        <div className="p-4">
           <Link to="/events">
             <Button variant="ghost" className="flex items-center gap-2">
               <ChevronLeft size={16} />
               {t("udl.actions.backToEvent")}
             </Button>
           </Link>
-        </header>
-        
-        {/* Conteúdo com o formulário */}
-        <section className="relative w-full h-full">
+        </div>
+
+        {/* O formulário (iframe) é renderizado logo abaixo do botão */}
+        <div className="w-full h-full">
           <iframe
-            key={theme} // Força a remontagem do iframe ao mudar o tema
+            key={theme} // Força o re-render do iframe ao mudar o tema
             data-tally-src={
               theme === "dark"
                 ? "https://tally.so/r/3x6Nar?transparentBackground=1"
@@ -52,7 +53,7 @@ const EvertsLOGRegister = () => {
             className="w-full h-full border-0"
             allowFullScreen
           ></iframe>
-        </section>
+        </div>
       </main>
     </>
   );
