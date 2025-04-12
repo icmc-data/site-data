@@ -20,6 +20,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Learn from "./pages/Learn";
 import MembersHistory from "./pages/MembersHistory";
+import EventsLOGRegister from "./pages/EventsLOGRegister";
 
 // i18n
 import "./i18n";
@@ -83,6 +84,7 @@ const App = () => {
                 <Route path="/learn" element={<Learn />} />
                 <Route path="/events/log" element={<EventsLOG />} />
                 <Route path="/events/log/speakers" element={<EventsLOGSpeakers />} />
+                <Route path="/events/log/register" element={<EventsLOGRegister />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/membershistory" element={<MembersHistory />} />
                 <Route path="*" element={<NotFound />} />
