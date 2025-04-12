@@ -60,7 +60,7 @@ const EventsLOG = () => {
               </div>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://forms.gle/Y2fHCaZgSTNFQMd77"
+                  href="/events/log/register"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
