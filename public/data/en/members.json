@@ -1,4 +1,3 @@
-
 [
   {
     "name": "Luiz Felipe",
@@ -17,21 +16,33 @@
     "categories": [
       "Teaching",
       "Projects"
-    ]
-
+    ],
+    "linkedin": "https://www.linkedin.com/in/cauepaiva/"
   },
   {
     "name": "Kathy",
     "photo": "/images/about/members/kathy.jpg",
-    "description": "Information Systems student. Interested in classical ML, especially Time Series. Loves running and reading.",
+    "description": "Information Systems student. Interested in classical ML, especially Time Series.",
     "categories": [
-      "Events",
+      "Projects",
       "Secretariat"
     ],
     "funcao_especial": [
-      "Secretariat"
+      "Projects",
+      "Secretariat",
+      "Coordinators"
     ],
     "linkedin": "https://www.linkedin.com/in/katielylacerda/"
+  },
+  {
+    "name": "Juan",
+    "photo": "/images/about/members/Juan.jpg",
+    "description": "Applied Mathematics student. Interested in Optimization and Data Science, with a focus on heuristics and machine learning. Loves jazz and comics.",
+    "categories": [
+      "Teaching",
+      "Projects"
+    ],
+    "linkedin": "https://www.linkedin.com/in/juan-santana-651951321//"
   },
   {
     "name": "Enzo",
@@ -43,7 +54,8 @@
     ],
     "funcao_especial": [
       "Teaching"
-    ]
+    ],
+    "linkedin": "https://www.linkedin.com/in/enzotm/"
   },
   {
     "name": "Miller",

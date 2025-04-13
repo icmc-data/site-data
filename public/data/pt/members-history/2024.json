@@ -25,6 +25,16 @@
     ]
   },
   {
+    "name": "Juan",
+    "photo": "/images/about/members/Juan.jpg",
+    "description": "Estudante de Matemática Aplicada. Interessado em Otimização e Ciência de Dados, com foco em heurísticas e aprendizado de máquina. Ama jazz e quadrinhos.",
+    "categories": [
+      "Teaching",
+      "Events"
+    ],
+    "linkedin": "https://www.linkedin.com/in/juan-santana-651951321//"
+  },
+  {
     "name": "Kathy",
     "photo": "/images/about/members/kathy.jpg",
     "description": "Estudante de Sistemas de Informação. Interessada em ML clássica, especialmente Séries Temporais. Adora correr e ler.",

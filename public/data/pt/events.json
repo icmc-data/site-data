@@ -1,4 +1,3 @@
-
 {
   "udl": {
     "speakers": [
@@ -18,7 +17,7 @@
       },
       {
         "name": "Bruno Ribeiro",
-        "photo": "/images/events/log2025/speakers/bruno.png", 
+        "photo": "/images/events/log2025/speakers/bruno.png",
         "title": "Graph Neural Networks",
         "bio": "Bruno Ribeiro é professor associado no Departamento de Ciência da Computação da Purdue University e membro do Centro de Ciência de Dados. Seu trabalho em redes neurais de grafos é pioneiro, especialmente sobre limites da expressividade desses modelos. Recebeu seu PhD pela University of Massachusetts Amherst em 2010.",
         "day": "quarta"
@@ -32,7 +31,7 @@
       },
       {
         "name": "Hannes Stärk",
-        "photo": "/images/events/log2025/speakers/hannes.png", 
+        "photo": "/images/events/log2025/speakers/hannes.png",
         "title": "Generative Models",
         "bio": "Apresentamos três caminhos nos quais achamos que modelos generativos são especialmente valiosos para Aprendizado de Máquina: (1) para geração de dados sintéticos; (2) para evitar a necessidade de projetar manualmente representações para diferentes tipos de dados; e (3) para abordar ML com garantias formais ao criar modelos que podemos facilmente analisar e compreender.",
         "day": "sexta"
