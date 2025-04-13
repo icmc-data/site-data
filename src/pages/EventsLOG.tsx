@@ -131,14 +131,14 @@ const EventsLOG = () => {
                   </p>
                   <div className="mt-4 flex flex-col gap-2">
                     <Link
-                      to="/events/log2025/submit-poster"
+                      to="/events/log/submit-poster"
                       className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
                     >
                       <ArrowUpRight size={16} />
                       {t("log.actions.submitPoster")}
                     </Link>
                     <Link
-                      to="/events/log2025/submit-flash-talk"
+                      to="/events/log/submit-flash-talk"
                       className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
                     >
                       <ArrowUpRight size={16} />

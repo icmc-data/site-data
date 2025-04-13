@@ -146,7 +146,7 @@
           "actions": [
             {
               "text": "Submeter Pôster",
-              "url": "/events/log2025/submit-poster"
+              "url": "/events/log/submit-poster"
             }
           ]
         }
@@ -199,7 +199,7 @@
           "actions": [
             {
               "text": "Submeter Flash Talk",
-              "url": "/events/log2025/submit-flash-talk"
+              "url": "/events/log/submit-flash-talk"
             },
             {
               "text": "Assista no YouTube",
