@@ -62,7 +62,6 @@ const EvertsLOGRegister = () => {
   return (
     <>
       <ParticlesBackground />
-      {/* Adiciona um padding-top equivalente à altura do header global */}
       <main className="min-h-screen pt-[70px]">
         <div className="p-4">
           <Link to="/events">
