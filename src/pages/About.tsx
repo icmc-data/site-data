@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 import { MemberCard } from "@/components/MemberCard";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { useFetchMembers, type Member } from "@/utils/fetch-members";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -91,13 +92,14 @@ const About = () => {
             <p className="text-base sm:text-lg text-muted-foreground mb-4">
               {t("historyCTA.text")}
             </p>
-            <a href="/members-history">
-              <Button className="whitespace-normal text-sm sm:text-base font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-[hsl(var(--data-purple))] text-white hover:brightness-110 transition duration-200">
+            <Link to="/members-history">
+              <Button className="px-4 sm:px-6 py-2 sm:py-3 whitespace-normal text-sm sm:text-base font-semibold rounded-full bg-[hsl(var(--data-purple))] text-white hover:brightness-110 transition duration-200">
                 {t("historyCTA.button")}
               </Button>
-            </a>
+            </Link>
           </div>
 
+          <br />
           <section>
             <div className="flex justify-between items-center mb-8">
               <h2 className="text-3xl font-bold">
