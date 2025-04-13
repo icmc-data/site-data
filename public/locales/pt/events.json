@@ -1,4 +1,3 @@
-
 {
   "title": "EVENTOS",
   "udl": {
@@ -85,32 +84,59 @@
         "saturday": "Sábado",
         "sunday": "Domingo"
       },
+      "actions": {
+        "addToCalendar": "Adicionar ao Google Calendar"
+      },
       "saturday": [
         {
           "title": "Abertura",
           "time": "9:45",
-          "location": "ICMC - Auditório Fernão (presencial)"
+          "location": "ICMC - Auditório Fernão (presencial)",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://youtube.com/fake-aula-abertura"
+            }
+          ]
         },
         {
           "title": "Aprendizado em Grafos na Saúde: De GNNs à Integração com LLMs",
           "time": "10:00",
           "location": "ICMC - Auditório Fernão (remoto)",
           "speaker": "Heloisa Oss Boll",
-          "description": "A palestra abordará técnicas avançadas de representação profunda de pacientes, com foco na previsão de desfechos clínicos a partir de prontuários eletrônicos de saúde (EHRs), utilizando redes neurais de grafos (GNNs). Ao final, serão explorados métodos recentes integrando grafos de conhecimento biomédico a modelos de linguagem de grande escala (LLMs), ampliando o suporte ao raciocínio clínico."
+          "description": "A palestra abordará técnicas avançadas de representação profunda de pacientes, com foco na previsão de desfechos clínicos a partir de prontuários eletrônicos de saúde (EHRs), utilizando redes neurais de grafos (GNNs). Ao final, serão explorados métodos recentes integrando grafos de conhecimento biomédico a modelos de linguagem de grande escala (LLMs), ampliando o suporte ao raciocínio clínico.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://youtube.com/fake-video1"
+            }
+          ]
         },
         {
           "title": "Dominando Compreensão de Cenas: Grafos de Cena ao Resgate",
           "time": "11:00",
           "location": "ICMC - Auditório Fernão (presencial)",
           "speakers": ["Leo Sampaio", "Carlos Caetano"],
-          "description": "Tarefas de compreensão de cenas em visão computacional foram contempladas por avanços notáveis nos últimos anos. Destacamos neste processo a contribuição do desenvolvimento de utilização de grafos de cena e suas representações bem estruturadas e semânticas. A abordagem estruturada permite melhor compreensão de contexto e facilita tarefas como descrição, geração e busca de imagens bem como identificação de interações humano-objetos e respostas de perguntas visuais. Esta apresentação vai explorar os estudos atuais com grafos de cena e seus métodos, aplicações, bases de dados e o que esperamos do futuro dos grafos de cena na literatura."
+          "description": "Tarefas de compreensão de cenas em visão computacional foram contempladas por avanços notáveis nos últimos anos. Destacamos neste processo a contribuição do desenvolvimento de utilização de grafos de cena e suas representações bem estruturadas e semânticas. A abordagem estruturada permite melhor compreensão de contexto e facilita tarefas como descrição, geração e busca de imagens bem como identificação de interações humano-objetos e respostas de perguntas visuais. Esta apresentação vai explorar os estudos atuais com grafos de cena e seus métodos, aplicações, bases de dados e o que esperamos do futuro dos grafos de cena na literatura.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://youtube.com/fake-video2"
+            }
+          ]
         },
         {
           "title": "Classificação baseada em padrões e o desenvolvimento de novas GNNs",
           "time": "14:00",
           "location": "ICMC - Auditório Fernão (presencial)",
           "speaker": "Zhao Liang",
-          "description": "A classificação de dados tradicional se baseia apenas em atributos físicos dos dados de entrada, como distância, similaridade, ou distribuição. Aqui, nós nos referimos a isso como classificação de baixo nível. Por outro lado, o cérebro humano (ou animal) aprende tanto no baixo nível quanto no alto nível, demonstrando capacidade de reconhecer padrões com base no sentido semântico dos dados de entrada. Nesse contexto, a classificação de dados que vai além dos padrões físicos para considerar a formação de padrões é chamada de classificação de alto nível ou classificação baseada em padrões. Nessa palestra, irei introduzir abordagens para a implementação do aprendizado baseado em padrões e discutir o desenvolvimento de novas Redes Neurais de Grafos (GNNs) através da aplicação da teoria de redes complexas."
+          "description": "A classificação de dados tradicional se baseia apenas em atributos físicos dos dados de entrada, como distância, similaridade, ou distribuição. Aqui, nós nos referimos a isso como classificação de baixo nível. Por outro lado, o cérebro humano (ou animal) aprende tanto no baixo nível quanto no alto nível, demonstrando capacidade de reconhecer padrões com base no sentido semântico dos dados de entrada. Nesse contexto, a classificação de dados que vai além dos padrões físicos para considerar a formação de padrões é chamada de classificação de alto nível ou classificação baseada em padrões. Nessa palestra, irei introduzir abordagens para a implementação do aprendizado baseado em padrões e discutir o desenvolvimento de novas Redes Neurais de Grafos (GNNs) através da aplicação da teoria de redes complexas.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://youtube.com/fake-video3"
+            }
+          ]
         },
         {
           "title": "Sessão de Pôsters",
@@ -125,27 +151,55 @@
           "time": "9:30",
           "location": "ICMC - Auditório Fernão (presencial)",
           "speaker": "Francisco Rodrigues",
-          "description": "Mudanças climáticas, crises econômicas, epidemias, desigualdade social e a crescente crise da saúde mental estão entre os desafios mais urgentes da humanidade. Como a ciência pode contribuir para entendê-los e enfrentá-los? Nesta palestra, exploraremos como a teoria das redes complexas, aliada a técnicas de aprendizado de máquina e deep learning, pode oferecer novas perspectivas sobre esses problemas. Discutiremos como as redes podem ser aplicadas no diagnóstico de transtornos mentais, na previsão de secas e mudanças climáticas, na modelagem da economia global e na análise das dinâmicas das redes sociais."
+          "description": "Mudanças climáticas, crises econômicas, epidemias, desigualdade social e a crescente crise da saúde mental estão entre os desafios mais urgentes da humanidade. Como a ciência pode contribuir para entendê-los e enfrentá-los? Nesta palestra, exploraremos como a teoria das redes complexas, aliada a técnicas de aprendizado de máquina e deep learning, pode oferecer novas perspectivas sobre esses problemas. Discutiremos como as redes podem ser aplicadas no diagnóstico de transtornos mentais, na previsão de secas e mudanças climáticas, na modelagem da economia global e na análise das dinâmicas das redes sociais.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://youtube.com/fake-video4"
+            }
+          ]
         },
         {
           "title": "Aprendizado Profundo Baseado em Grafos para Modelagem Oceânica: Métodos e Aplicações Offshore",
           "time": "10:30",
           "location": "ICMC - Auditório Fernão (remoto)",
           "speaker": "Marcel Barros",
-          "description": "Este seminário apresenta uma visão geral das metodologias de ponta em aprendizado profundo baseado em grafos aplicadas ao complexo domínio da modelagem oceânica. Exploraremos como técnicas como Redes Neurais em Grafos Espaço-Temporais (GNNs), Transformadores em Grafos e abordagens com múltiplas malhas são utilizadas para capturar dinâmicas oceânicas intrincadas, lidar com dados esparsos e irregulares provenientes de diversas fontes (incluindo séries temporais, imagens de satélite e modelos físicos) e propagar informações de forma eficaz em grandes escalas espaciais. Além disso, abordaremos a integração de princípios de aprendizado de máquina informados por física dentro de estruturas baseadas em grafos para garantir consistência física, melhorar a capacidade de generalização e possibilitar previsões invariantes à resolução. A apresentação contextualiza esses métodos dentro do Projeto de Transformação Digital do Centro de Inovação em Tecnologia Offshore (OTIC) e do Tanque de Provas Numérico (TPN-USP), demonstrando como esses modelos avançados baseados em grafos estão sendo desenvolvidos e aplicados para atender às demandas críticas da indústria offshore, como previsões meteoceânicas robustas, monitoramento ambiental, estimativa de variáveis ocultas e otimização de operações visando segurança e eficiência. Serão discutidos os principais desafios, avanços recentes e o potencial do aprendizado de máquina em grafos para revolucionar nossa compreensão e interação com o ambiente marinho."
+          "description": "Este seminário apresenta uma visão geral das metodologias de ponta em aprendizado profundo baseado em grafos aplicadas ao complexo domínio da modelagem oceânica. Exploraremos como técnicas como Redes Neurais em Grafos Espaço-Temporais (GNNs), Transformadores em Grafos e abordagens com múltiplas malhas são utilizadas para capturar dinâmicas oceânicas intrincadas, lidar com dados esparsos e irregulares provenientes de diversas fontes (incluindo séries temporais, imagens de satélite e modelos físicos) e propagar informações de forma eficaz em grandes escalas espaciais. Além disso, abordaremos a integração de princípios de aprendizado de máquina informados por física dentro de estruturas baseadas em grafos para garantir consistência física, melhorar a capacidade de generalização e possibilitar previsões invariantes à resolução. A apresentação contextualiza esses métodos dentro do Projeto de Transformação Digital do Centro de Inovação em Tecnologia Offshore (OTIC) e do Tanque de Provas Numérico (TPN-USP), demonstrando como esses modelos avançados baseados em grafos estão sendo desenvolvidos e aplicados para atender às demandas críticas da indústria offshore, como previsões meteoceânicas robustas, monitoramento ambiental, estimativa de variáveis ocultas e otimização de operações visando segurança e eficiência. Serão discutidos os principais desafios, avanços recentes e o potencial do aprendizado de máquina em grafos para revolucionar nossa compreensão e interação com o ambiente marinho.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://youtube.com/fake-video5"
+            }
+          ]
         },
         {
           "title": "Minicurso - Introdução às Redes Neurais de Grafos",
           "time": "13:00",
-          "location": "ICMC - Auditório Fernão (presencial)",
+          "location": "Online",
           "speaker": "Marcos Gôlo",
-          "description": "O uso de redes neurais em grafos tem ganhado destaque em diversas áreas de aprendizado de máquina, como análise de redes sociais, química computacional, sistemas de recomendação e processamento de linguagem natural. A modelagem de dados em grafos permite incorporar múltiplas modalidades de características, criando representações mais ricas e informativas, além de capturar os relacionamentos entre os dados de forma eficiente. Neste minicurso, exploraremos técnicas de modelagem de dados não estruturados por meio de grafos, aprendizado de representação por meios da redes neurais de grafo, discutindo as vantagens dessa abordagem e suas aplicações no campo do aprendizado de máquina. Serão apresentados os conceitos fundamentais das Redes Neurais em Grafos (GNNs), além de variações populares como as Redes Neurais Convolucionais em Grafos (GCNs). O curso incluirá também demonstrações práticas para classificação de nós transdutiva envolvendo um problema do mundo real, permitindo que os participantes experimentem e implementem os conceitos discutidos ao longo da parte teórica."
+          "description": "O uso de redes neurais em grafos tem ganhado destaque em diversas áreas de aprendizado de máquina, como análise de redes sociais, química computacional, sistemas de recomendação e processamento de linguagem natural. A modelagem de dados em grafos permite incorporar múltiplas modalidades de características, criando representações mais ricas e informativas, além de capturar os relacionamentos entre os dados de forma eficiente. Neste minicurso, exploraremos técnicas de modelagem de dados não estruturados por meio de grafos, aprendizado de representação por meios da redes neurais de grafo, discutindo as vantagens dessa abordagem e suas aplicações no campo do aprendizado de máquina. Serão apresentados os conceitos fundamentais das Redes Neurais em Grafos (GNNs), além de variações populares como as Redes Neurais Convolucionais em Grafos (GCNs). O curso incluirá também demonstrações práticas para classificação de nós transdutiva envolvendo um problema do mundo real, permitindo que os participantes experimentem e implementem os conceitos discutidos ao longo da parte teórica.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://youtube.com/fake-video6"
+            }
+          ]
         },
         {
           "title": "Sessão Aberta de Flash Talks",
           "time": "15:30",
           "location": "Online",
-          "description": "Aberta para a participação de pessoas de todo o Brasil, a sessão de Flash Talks é um espaço onde alunos de graduação, mestrado e doutorado poderão falar sobre seus projetos de pesquisa dentro do tema de Aprendizado de Máquina em Grafos, em palestras de 5 minutos. As inscrições vão até dia 03/05."
+          "description": "Aberta para a participação de pessoas de todo o Brasil, a sessão de Flash Talks é um espaço onde alunos de graduação, mestrado e doutorado poderão falar sobre seus projetos de pesquisa dentro do tema de Aprendizado de Máquina em Grafos, em palestras de 5 minutos. As inscrições vão até dia 03/05.",
+          "actions": [
+            {
+              "text": "Submeter Flash Talk",
+              "url": "https://docs.google.com/forms/d/fake-submeter-flashtalk"
+            },
+            {
+              "text": "Assista no YouTube",
+              "url": "https://youtube.com/fake-video7"
+            }
+          ]
         }
       ]
     },
@@ -155,7 +209,7 @@
         {
           "name": "Marcos Gôlo",
           "photo": "/images/events/log2025/speakers/golo.png",
-          "bio": "Marcos Gôlo é mestre em ciência da computação pelo Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo, campus de São Carlos. Marcos explorou o aprendizado de representação multimodal em dados textuais para o aprendizado de uma classe durante seu mestrado com trabalhos publicados em conferências nacionais e revistas internacionais. Além disso, Marcos obteve o prêmio de segunda melhor dissertação de mestrado no concurso de teses e dissertações (CTD) do CSBC 2023 e melhor dissertação do CTD do Webmedia 2023. Atualmente, faz doutorado no mesmo local de seu mestrado, foi premiado com o Latin American Google PhD Fellowship para pesquisar sobre aprendizado de representação em grafos heterogêneos no aprendizado de uma classe, e esta realizando doutorado sanduiche em Leipzig, na Alemanha. Marcos tem interesse nas áreas de pesquisa de mineração de dados, mineração de textos, aprendizado de uma classe e aprendizado de representação em grafos.",
+          "bio": "Marcos Gôlo é mestre em ciência da computação pelo Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo, campus de São Carlos. Possui diversos trabalhos publicados em conferências nacionais e internacionais e foi premiado por sua dissertação.",
           "lattes": "http://lattes.cnpq.br/7402825146038143",
           "linkedin": "https://www.linkedin.com/in/marcosgolo/",
           "email": "marcosgolo@usp.br",
@@ -164,37 +218,56 @@
         {
           "name": "Carlos Caetano",
           "photo": "/images/events/log2025/speakers/caetano.png",
-          "bio": "Carlos Caetano é doutor em Ciência da Computação pela Universidade Federal de Minas Gerais (UFMG), com parte de seus estudos realizados no Centre de Recherche INRIA Sophia Antipolis, na França, como pesquisador do time STARS. É mestre em Ciência da Computação pela mesma universidade e bacharel em Sistemas de Informação pela Pontifícia Universidade Católica de Minas Gerais (PUC Minas). Carlos atuou como pesquisador em Inteligência Artificial e especialista em Machine Learning no Samsung Research Development Institute Brazil (SRBR). Atualmente, é pesquisador científico em pós-doutorado na Universidade Estadual de Campinas (UNICAMP), integrando o laboratório de Inteligência Artificial Recod.ai. Sua pesquisa abrange áreas como Visão Computacional, Processamento Digital de Imagens, Classificação de Imagens e Vídeos, e Processamento de Sinais."
+          "bio": "Carlos Caetano é doutor em Ciência da Computação e possui experiência em Inteligência Artificial e Machine Learning, tendo atuado em diversos centros de pesquisa e na indústria.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Marcel Barros",
           "photo": "/images/events/log2025/speakers/marcel.png",
-
-          "bio": "Doutor em Engenharia Elétrica pela Universidade de São Paulo, com ênfase em Engenharia da Computação. Sua pesquisa de doutorado foi focada em técnicas de codificação temporal para séries temporais multivariadas, envolvendo modelos baseados em grafos. Possui graduação em Engenharia Elétrica - Ênfase em Computação pela mesma instituição (2011). Atualmente é pesquisador no Tanque de Provas Numérico (TPN-USP), atuando em projetos em parceria com a Petrobras, e no Offshore Technology Innovation Centre (OTIC), em projetos em parceria com a Shell. Atua em aplicações de aprendizado de máquina para engenharia offshore, com foco especial na modelagem de variáveis meteoceanográficas."
+          "bio": "Doutor em Engenharia Elétrica, Marcel Barros possui experiência em codificação temporal para séries temporais e atua em projetos com foco em aprendizado de máquina para engenharia offshore.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Leo Sampaio",
           "photo": "/images/events/log2025/speakers/sampaio.png",
-
-          "bio": "Professora doutora no ICMC-USP. Obteve o título de Doutora em Ciências de Computação pelo ICMC-USP e foi pesquisadora em pós-doutorado na Universidade Estadual de Campinas (Unicamp). Atua como pesquisadora da área de Visão Computacional, com experiência específica no desenvolvimento de modelos multimodais voltados para busca entre domínios. Além do problema de busca multimodal a pesquisadora atua também no reconhecimento de conteúdos sensíveis sob protocolos de poucos dados e generalização de domínios."
+          "bio": "Professora doutora com ampla experiência em Visão Computacional, Leo Sampaio atua no desenvolvimento de modelos multimodais e na identificação de conteúdos sensíveis.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Heloisa Oss Boll",
           "photo": "/images/events/log2025/speakers/boll.png",
-
-          "bio": "Doutoranda na Universidade de Amsterdã/Amsterdam UMC, onde pesquisa métodos de aprendizado profundo com foco em grafos e processamento de linguagem natural (PLN) aplicados ao sistema de saúde holandês. Mestre em Ciência da Computação pelo INF-UFRGS, com especialização em Inteligência Artificial para a saúde. Sua dissertação concentrou-se no uso de redes neurais de grafos (GNN) e prontuários eletrônicos de saúde (EHR) para a predição de riscos clínicos. Seus principais interesses de pesquisa envolvem o uso de aprendizado profundo e dados multimodais para aprimorar o cuidado aos pacientes."
+          "bio": "Doutoranda na Universidade de Amsterdã, Heloisa pesquisa métodos de aprendizado profundo com foco em grafos aplicados ao sistema de saúde, com ampla experiência em redes neurais de grafos.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Zhao Liang",
           "photo": "/images/events/log2025/speakers/liang.png",
-
-          "bio": "Obteve seu bacharelado na Wuhan University, China, em 1988 e concluiu seus mestrado e doutorado em Ciência da Computação no Instituto Tecnológico de Aeronáutica (ITA) em 1996 e 1998, respectivamente. Em 2000, ingressou no corpo docente do Instituto de Ciências Matemáticas e de Computação (ICMC) da Universidade de São Paulo (USP), localizado em São Carlos. Atualmente, ocupa o cargo de Professor Titular no Departamento de Computação e Matemática (DCM), na Faculdade de Filosofia, Ciência e Letras de Ribeirão Preto (FFCLRP) da USP."
+          "bio": "Professor Titular no ICMC-USP, Zhao Liang possui larga experiência em Ciência da Computação e tem contribuído para o avanço do estudo e aplicação de Redes Neurais de Grafos.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Francisco Rodrigues",
           "photo": "/images/events/log2025/speakers/rodrigues.png",
-
-          "bio": "Francisco A. Rodrigues é professor titular do Instituto de Ciências Matemáticas e de Computação (Universidade de São Paulo), atuando na área de Sistemas Complexos e Ciência de Dados. Atualmente, é chefe do Departamento de Matemática e Aplicada. Foi professor visitante na University of Warwick (Reino Unido) entre 2018 e 2019 com financiamento da Leverhulme Trust. Foi pesquisador visitante (curta duração) na Universidad de Zaragoza (Espanha), no Potsdam Institute for Climate Research (Alemanha), e no Complexity Science Hub Vienna (Austria). Foi também professor visitante na Aschaffenburg University of Applied Sciences (Alemanha) e Universidad de Zaragoza. Mais informações sobre a sua pesquisa podem ser obtidas no endereço https://sites.icmc.usp.br/francisco"
+          "bio": "Professor titular no ICMC-USP e especialista em Sistemas Complexos e Ciência de Dados, Francisco Rodrigues tem experiência internacional e contribuições relevantes para a pesquisa na área.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         }
       ]
     },

@@ -184,76 +184,36 @@ const EventsLOG = () => {
                   {t("log.schedule.days.sunday")}
                 </TabsTrigger>
               </TabsList>
-
               <TabsContent value="saturday" className="space-y-6">
-                {i18n.language === "pt" ? (
-                  <>
-                    {t("log.schedule.saturday", { returnObjects: true })?.map(
-                      (event: any, index: number) => (
-                        <ScheduleItem
-                          key={index}
-                          title={event.title}
-                          time={event.time}
-                          location={event.location}
-                          speaker={event.speaker}
-                          speakers={event.speakers}
-                          description={event.description}
-                        />
-                      )
-                    )}
-                  </>
-                ) : (
-                  <>
-                    {t("log.schedule.saturday", { returnObjects: true })?.map(
-                      (event: any, index: number) => (
-                        <ScheduleItem
-                          key={index}
-                          title={event.title}
-                          time={event.time}
-                          location={event.location}
-                          speaker={event.speaker}
-                          speakers={event.speakers}
-                          description={event.description}
-                        />
-                      )
-                    )}
-                  </>
+                {t("log.schedule.saturday", { returnObjects: true })?.map(
+                  (event: any, index: number) => (
+                    <ScheduleItem
+                      key={index}
+                      title={event.title}
+                      time={event.time}
+                      location={event.location}
+                      speaker={event.speaker}
+                      speakers={event.speakers}
+                      description={event.description}
+                      actions={event.actions} // passando o array de ações
+                    />
+                  )
                 )}
               </TabsContent>
-
               <TabsContent value="sunday" className="space-y-6">
-                {i18n.language === "pt" ? (
-                  <>
-                    {t("log.schedule.sunday", { returnObjects: true })?.map(
-                      (event: any, index: number) => (
-                        <ScheduleItem
-                          key={index}
-                          title={event.title}
-                          time={event.time}
-                          location={event.location}
-                          speaker={event.speaker}
-                          speakers={event.speakers}
-                          description={event.description}
-                        />
-                      )
-                    )}
-                  </>
-                ) : (
-                  <>
-                    {t("log.schedule.sunday", { returnObjects: true })?.map(
-                      (event: any, index: number) => (
-                        <ScheduleItem
-                          key={index}
-                          title={event.title}
-                          time={event.time}
-                          location={event.location}
-                          speaker={event.speaker}
-                          speakers={event.speakers}
-                          description={event.description}
-                        />
-                      )
-                    )}
-                  </>
+                {t("log.schedule.sunday", { returnObjects: true })?.map(
+                  (event: any, index: number) => (
+                    <ScheduleItem
+                      key={index}
+                      title={event.title}
+                      time={event.time}
+                      location={event.location}
+                      speaker={event.speaker}
+                      speakers={event.speakers}
+                      description={event.description}
+                      actions={event.actions} // também passando o array de ações
+                    />
+                  )
                 )}
               </TabsContent>
             </Tabs>
@@ -323,6 +283,7 @@ const ScheduleItem = ({
   speaker,
   speakers,
   description,
+  actions,
 }: {
   title: string;
   time: string;
@@ -330,6 +291,10 @@ const ScheduleItem = ({
   speaker?: string;
   speakers?: string[];
   description: string;
+  actions?: {
+    text: string;
+    url: string;
+  }[];
 }) => {
   return (
     <div className="p-6 rounded-lg border border-border bg-card/50 backdrop-blur-sm">
@@ -353,44 +318,25 @@ const ScheduleItem = ({
         </div>
       )}
       <p className="text-muted-foreground text-sm">{description}</p>
-      {title === "Abertura" ||
-      title === "Opening" ||
-      title.includes("Sessão") ||
-      title.includes("Session") ? (
-        <div className="mt-4">
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-2"
-          >
-            <ArrowUpRight size={14} />
-            {title.includes("Talk") || title.includes("Flash") ? (
-              <a
-                href="https://docs.google.com/forms/d/1XCRj8ohikPHGV0U7qi0lyskeMAmo9ttM871DyMEc4As/edit?pli=1"
-                target="_blank"
-                rel="noopener noreferrer"
+      <div className="mt-4 flex flex-col gap-2">
+        {actions?.length > 0 && (
+          <div className="mt-4 flex flex-col gap-2">
+            {actions.map((action, index) => (
+              <Button
+                key={index}
+                variant="outline"
+                size="sm"
+                className="flex items-center gap-2 w-fit"
               >
-                {title.includes("Pôster") || title.includes("Poster")
-                  ? "Submeter Pôster"
-                  : "Submeter Flash Talk"}
-              </a>
-            ) : (
-              <>Assista no YouTube</>
-            )}
-          </Button>
-        </div>
-      ) : (
-        <div className="mt-4">
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-2"
-          >
-            <ArrowUpRight size={14} />
-            Assista no YouTube
-          </Button>
-        </div>
-      )}
+                <ArrowUpRight size={14} />
+                <a href={action.url} target="_blank" rel="noopener noreferrer">
+                  {action.text}
+                </a>
+              </Button>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
