@@ -4,7 +4,14 @@
     "photo": "/images/about/members/luizfelipedinizcosta.png",
     "description": "Apaixonado por tecnologia e aprendizado. Busca soluções criativas para problemas complexos.",
     "categories": [
-      "Teaching"
+      "Ensino",
+      "Projetos",
+      "Coordenadores",
+      "Marketing",
+      "Eventos"
+    ],
+    "funcao_especial": [
+      "Marketing"
     ],
     "linkedin": "https://www.linkedin.com/in/lfelipediniz/"
   },
@@ -13,24 +20,9 @@
     "photo": "/images/about/members/cauepaiva.jpg",
     "description": "Pesquisador em IA, LLMs e Ciência de Dados, com foco em educação e dados públicos. Campeão nacional da competição AWS Deepracer 2024.",
     "categories": [
-      "Teaching"
-    ],
-    "linkedin": "https://www.linkedin.com/in/cauepaiva/"
-  },
-  {
-    "name": "Kathy",
-    "photo": "/images/about/members/kathy.jpg",
-    "description": "Estudante de Sistemas de Informação. Interessada em ML clássico, especialmente Séries Temporais.",
-    "categories": [
-      "Projects",
-      "Secretariat",
-      "Coordinators"
-    ],
-    "funcao_especial": [
-      "Projects",
-      "cor"
-    ],
-    "linkedin": "https://www.linkedin.com/in/katielylacerda/"
+      "Ensino",
+      "Eventos"
+    ]
   },
   {
     "name": "Juan",
@@ -38,102 +30,106 @@
     "description": "Estudante de Matemática Aplicada. Interessado em Otimização e Ciência de Dados, com foco em heurísticas e aprendizado de máquina. Ama jazz e quadrinhos.",
     "categories": [
       "Teaching",
-      "Projects"
+      "Events"
     ],
     "linkedin": "https://www.linkedin.com/in/juan-santana-651951321//"
   },
   {
+    "name": "Kathy",
+    "photo": "/images/about/members/kathy.jpg",
+    "description": "Estudante de Sistemas de Informação. Interessada em ML clássica, especialmente Séries Temporais. Adora correr e ler.",
+    "categories": [
+      "Eventos"
+    ],
+    "linkedin": "https://www.linkedin.com/in/katielylacerda/"
+  },
+  {
     "name": "Enzo",
     "photo": "/images/about/members/enzo.jpg",
-    "description": "Estudante interessado em machine learning e matemática. Top 500 no Overwatch.",
+    "description": "Estudante interessado em aprendizado de máquina e matemática. Entre os top 500 no Overwatch.",
     "categories": [
-      "Teaching",
-      "Coordinators"
+      "Ensino",
+      "Coordenadores"
     ],
-    "linkedin": "https://www.linkedin.com/in/enzotm/",
     "funcao_especial": [
-      "Teaching"
+      "Ensino"
     ]
   },
   {
     "name": "Miller",
     "photo": "/images/about/members/miller.jpg",
-    "description": "Estudante de Ciências da Computação na USP, com interesse em Séries Temporais e Aprendizado Profundo. Gosta de pedalar e assistir a filmes ruins.",
+    "description": "Estudante de Ciência da Computação na USP, interessado em Séries Temporais e Deep Learning. Gosta de andar de bicicleta e assistir a filmes ruins.",
     "categories": [
-      "Secretariat",
-      "Study Group"
+      "Marketing",
+      "Grupo de Estudos"
     ],
     "funcao_especial": [
-      "Estudos em Aprendizado Profundo",
-      "Secretariat"
+      "Estudos em Deep Learning",
+      "Secretariado"
     ]
   },
   {
     "name": "Francisco Maian",
     "photo": "/images/about/members/franciscomaian.jpg",
-    "description": "Estudante de Ciência de Dados e entusiasta em Big Data.",
+    "description": "Estudante de Ciência de Dados e entusiasta de Big Data.",
     "categories": [
-      "Teaching",
-      "Events"
+      "Ensino",
+      "Eventos"
     ]
   },
   {
     "name": "Ruri",
     "photo": "/images/about/members/ruri.jpg",
-    "description": "Interessado em linguística e aprendizado profundo. Gosta de sitcoms e livros de fantasia.",
+    "description": "Interessada em linguística e deep learning. Gosta de sitcoms e livros de fantasia.",
     "categories": [
       "Marketing",
-      "Study Group"
+      "Grupo de Estudos"
     ],
     "funcao_especial": [
-      "Estudos em Aprendizado Profundo"
+      "Estudos em Deep Learning"
     ]
   },
   {
     "name": "Murilo Leandro",
     "photo": "/images/about/members/muriloleandro.jpg",
-    "description": "Estudante de BCC na USP, sempre aprendendo e ensinando. Fã de My Little Pony.",
+    "description": "Estudante de Bacharelado em Ciência da Computação na USP, sempre aprendendo e ensinando. Fã de My Little Pony.",
     "categories": [
-      "Study Group",
-      "Teaching"
+      "Grupo de Estudos",
+      "Ensino"
     ]
   },
   {
     "name": "Gabriel Abreu",
     "photo": "/images/about/members/abreu.jpg",
-    "description": "Estudante de BCC na USP, focado em aprender IA, ML e Data Science. Sempre testando códigos e correndo atrás de novas ideias!",
+    "description": "Estudante de Bacharelado em Ciência da Computação na USP, focado em aprender IA, ML e Ciência de Dados. Sempre testando código e buscando novas ideias!",
     "categories": [
-      "Events",
-      "Coordinators"
-    ],
-    "funcao_especial": [
-      "Events"
+      "Eventos"
     ],
     "linkedin": "https://www.linkedin.com/in/gabriel-abreubr"
   },
   {
     "name": "Matheo Angelo",
     "photo": "/images/about/members/matheoangelo.png",
-    "description": "Estudante de Ciência de Dados no ICMC, pesquisando Redes Neurais de Grafos. Gosta de ouvir Cocteau Twins e ver memes de gatos.",
+    "description": "Estudante de Ciência de Dados no ICMC, pesquisando Redes Neurais de Grafos. Gosta de ouvir Cocteau Twins e assistir a memes de gatos.",
     "categories": [
-      "Events"
+      "Eventos"
     ],
     "linkedin": "https://www.linkedin.com/in/matheo-angelo-61334622a"
   },
   {
     "name": "Nicolas Maia",
     "photo": "/images/about/members/nicolasmaia.png",
-    "description": "Estudante de BCC na USP, focado em machine learning e biotech. Gosta de ler, principalmente fantasia e suspense, e jogar vôlei.",
+    "description": "Estudante de Bacharelado em Ciência da Computação na USP, focado em aprendizado de máquina e biotecnologia. Gosta de ler, especialmente fantasia e suspense, e jogar vôlei.",
     "categories": [
-      "Teaching"
+      "Ensino"
     ]
   },
   {
     "name": "Victor Zaneti",
     "photo": "/images/about/members/victorzaneti.png",
-    "description": "Estudante de Estatística e Ciência de Dados na USP, interessado em IA, aprendizado de máquina e análise de dados. Sempre buscando novas oportunidades para prática e aprimoramento.",
+    "description": "Estudante de Estatística e Ciência de Dados na USP, interessado em IA, aprendizado de máquina e análise de dados. Sempre em busca de novas oportunidades para praticar e melhorar.",
     "categories": [
-      "Events",
+      "Eventos",
       "Marketing"
     ],
     "linkedin": "https://www.linkedin.com/in/victor-zaneti/"
@@ -141,11 +137,10 @@
   {
     "name": "Mariana Queroz",
     "photo": "/images/about/members/marianabarbosaqueroz.png",
-    "description": "Estudante de física computacional na USP, interessada em aprendizado de máquina e suas aplicações. Gosta de ler e divas pop.",
+    "description": "Estudante de Física Computacional na USP, interessada em aprendizado de máquina e suas aplicações. Gosta de ler e de pop divas.",
     "categories": [
       "Marketing",
-      "Events",
-      "Coordinators"
+      "Eventos"
     ],
     "funcao_especial": [
       "Marketing"
@@ -155,46 +150,45 @@
   {
     "name": "Letícia Neves",
     "photo": "/images/about/members/leticianeves.png",
-    "description": "Estudante de Ciências da Computação na USP, sempre motivada a aprender.",
+    "description": "Estudante de Ciência da Computação na USP, sempre motivada a aprender.",
     "categories": [
-      "Teaching"
+      "Ensino"
     ],
     "linkedin": "https://www.linkedin.com/in/leticia-bneves/"
   },
   {
     "name": "Arthur Ramos",
     "photo": "/images/about/members/arthurramos.png",
-    "description": "Estudante de Ciências da Computação na USP, interessado em aprendizado de máquina e redes neurais. Fã de The Beatles.",
+    "description": "Estudante de Ciência da Computação na USP, interessado em aprendizado de máquina e redes neurais. Fã dos Beatles.",
     "categories": [
-      "Teaching"
+      "Ensino"
     ],
     "linkedin": "https://www.linkedin.com/in/arthur-ramos-9b81b9201/"
   },
   {
     "name": "Matheu Alves",
     "photo": "/images/about/members/matheualves.png",
-    "description": "Estudante de Estatística e Ciência de Dados na USP, interessado em IA, especialmente ML. Gosta de tocar bateria, treinar e jogar xadrez como hobbies.",
+    "description": "Estudante de Estatística e Ciência de Dados na USP, interessado em IA, especialmente ML. Gosta de tocar bateria, malhar e jogar xadrez como hobbies.",
     "categories": [
       "Marketing",
-      "Events",
-      "Projects"
+      "Eventos"
     ]
   },
   {
     "name": "João Pedro Godoy",
     "photo": "/images/about/members/joaopedrogodoy.png",
-    "description": "Estudante de Ciências da Computação na USP, interessado nos diversos campos da Ciência de Dados. Gosta de treinar, ouvir música e programar.",
+    "description": "Estudante de Ciência da Computação na USP, interessado em várias áreas da Ciência de Dados. Gosta de malhar, ouvir música e programar.",
     "categories": [
-      "Teaching"
+      "Ensino"
     ],
     "linkedin": "https://www.linkedin.com/in/jo%C3%A3o-pedro-alves-notari-godoy-5154bb325/"
   },
   {
     "name": "Glauco Fleury",
     "photo": "/images/about/members/glaucofleury.png",
-    "description": "Estudante de Ciências da Computação na USP, curioso sobre ML, IA e Estatística. Gosta de ler, cuidar de plantas como hobby e ouvir música.",
+    "description": "Estudante de Ciência da Computação na USP, curioso sobre ML, IA e Estatística. Gosta de ler, cuidar de plantas como hobby e ouvir música.",
     "categories": [
-      "Teaching"
+      "Ensino"
     ]
   }
 ]

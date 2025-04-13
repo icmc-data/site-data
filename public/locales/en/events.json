@@ -1,26 +1,25 @@
-
 {
   "title": "EVENTS",
   "udl": {
     "title": "UNDERSTANDING DEEP LEARNING 2024",
-    "description": "Join us in October for a series of online lectures with renowned researchers from leading universities and institutions around the world, discussing the latest advances in Deep Learning.",
+    "description": "Join us in October for a series of online lectures featuring renowned researchers from the world's leading universities and institutions, discussing the latest advancements in Deep Learning.",
     "date": "October 14-18",
-    "dateDetails": "October 14-18, 2024 for an in-depth exploration of Deep Learning, covering topics such as LLMs, Graph Neural Networks, Topological Deep Learning, Reinforcement Learning, and applications of Deep Learning at the frontiers of science.",
+    "dateDetails": "From October 14 to 18, 2024, for an in-depth exploration of Deep Learning, covering topics such as LLM's, Graph Neural Networks, Topological Deep Learning, Reinforcement Learning, and Deep Learning applications at the forefront of science.",
     "speakers": {
       "title": "Renowned International Speakers",
-      "description": "Hear from experts from MIT, Cambridge, UC Santa Barbara, Purdue University, University of Amsterdam, and institutions like DeepMind and Cohere. Cutting-edge insights from the best AI specialists."
+      "description": "Listen to experts from MIT, Cambridge, UC Santa Barbara, Purdue University, University of Amsterdam and institutions such as DeepMind and Cohere. Cutting-edge insights from the top AI specialists."
     },
     "actions": {
-      "register": "Register",
+      "register": "Sign Up",
       "viewSpeakers": "View Speakers",
       "learnMore": "Learn More",
-      "backToEvent": "Back to Event"
+      "backToEvent": "View All Events"
     },
     "about": {
       "title": "ABOUT THE EVENT",
-      "description": "UnderstandingDL 2024 is an international event organized by the Data group from USP São Carlos, from the Institute of Mathematical and Computer Sciences (ICMC). Dedicated to the study and dissemination of knowledge in Data Science to the internal and external public to the university.",
-      "details": "The objective of the event is to bring together researchers from various parts of the world to present their research and make knowledge more accessible to all. Among the topics covered in the lectures are Multilingual LLMs, Image Representation in Multiresolution using Neural Networks, among many others.",
-      "sponsors": "UnderstandingDL 2024 aims to give visibility to researchers and their contributions. Groups such as Brains and C4AI support and sponsor the event, along with the support of the largest university in Latin America, the University of São Paulo."
+      "description": "UnderstandingDL 2024 is an international event organized by the Data Group at USP São Carlos, from the Institute of Mathematical and Computer Sciences (ICMC). It is dedicated to the study and dissemination of knowledge in Data Science to both internal and external audiences.",
+      "details": "The event aims to bring together researchers from around the world to present their work and make knowledge more accessible to everyone. Topics covered in the lectures include Multilingual LLMs, Multi-resolution Image Representation using Neural Networks, among many others.",
+      "sponsors": "UnderstandingDL 2024 aims to highlight researchers and their contributions. Groups like Brains and C4AI support and sponsor the event, along with the backing of Latin America's largest university, the University of São Paulo."
     },
     "schedule": {
       "title": "SCHEDULE",
@@ -35,9 +34,6 @@
         "addToCalendar": "Add to Google Calendar"
       }
     },
-    "speakers": {
-      "title": "UDL SPEAKERS"
-    },
     "sponsors": {
       "title": "Sponsors",
       "subtitle": "Institutions that believe in the project"
@@ -46,7 +42,7 @@
       "title": "FAQ",
       "questions": {
         "free": "Is participation free?",
-        "location": "Where will the event be held?",
+        "location": "Where is the event being held?",
         "sponsor": "How do I sponsor?",
         "certificate": "Is there a certificate?"
       }
@@ -54,11 +50,11 @@
   },
   "log": {
     "title": "LEARNING ON GRAPHS CONFERENCE 2025",
-    "description": "Join us on May 10 and 11 to dive into the universe of one of the most important and interesting areas of Artificial Intelligence: Machine Learning on Graphs!",
+    "description": "Join us on May 10 and 11 to dive into the world of one of the most important and exciting areas of Artificial Intelligence: Graph Machine Learning!",
     "date": "May 10-11",
-    "dateDetails": "May 10-11, 2025 for an immersion in Machine Learning on Graphs, with lectures, mini-courses, and sessions for presenting academic works.",
+    "dateDetails": "May 10 and 11, 2025, for an immersion in Graph Machine Learning featuring lectures, mini-courses, and sessions for presenting academic papers.",
     "actions": {
-      "register": "Register",
+      "register": "Sign Up",
       "viewSpeakers": "View Speakers",
       "learnMore": "Learn More",
       "backToEvent": "Back to Event",
@@ -69,18 +65,18 @@
     },
     "features": {
       "lectures": {
-        "title": "High-level lectures and mini-courses",
-        "description": "With Brazilian researchers from renowned institutions in Brazil and around the world, you can learn more about the theory of Machine Learning on Graphs and some of its various applications, such as Computer Vision, Ocean Modeling, and Health."
+        "title": "High-level Lectures and Mini-courses",
+        "description": "With Brazilian researchers from renowned institutions in Brazil and around the world, learn more about the theory of Graph Machine Learning and its diverse applications, such as Computer Vision, Ocean Modeling, and Healthcare."
       },
       "research": {
-        "title": "Show your research",
-        "description": "Undergraduate, Master's, and Doctoral students from Brazilian universities who are researching the topic will be able to show their work in our in-person poster session or in our online Flash Talks session. Registration for both activities runs until 05/03."
+        "title": "Showcase Your Research",
+        "description": "Undergraduate, Master's, and PhD students from Brazilian universities researching the topic can showcase their work in our in-person poster session or our online Flash Talks session. Registration for both activities is open until May 3."
       }
     },
     "about": {
       "title": "ABOUT THE EVENT",
-      "description": "Conceived in 2022, the Learning on Graphs Conference (LoG) is the world's leading academic conference focused on Machine Learning on Graphs. Each year, the conference features a main event and a network of local meetings spread around the world. Now, on May 10 and 11, 2025, São Carlos will be the first city in Latin America and the Southern Hemisphere to host a LoG meeting.",
-      "details": "The objective of the LoG in São Carlos is to boost Brazilian research in Learning on Graphs, through an event in Portuguese, with Brazilian speakers or with extensive work in the country, and spaces for showcasing academic works from Brazil on the topic. It will be an opportunity to promote Brazilian science in the area, providing the dissemination of ongoing research and enriching learning experiences for the training of researchers and other professionals."
+      "description": "Founded in 2022, the Learning on Graphs Conference (LoG) is the world's premier academic conference dedicated to Graph Machine Learning. Each year the conference features a main event along with a network of local meetings around the globe. Now, on May 10 and 11, 2025, São Carlos will be the first city in Latin America and the Southern Hemisphere to host a LoG meeting.",
+      "details": "The goal of LoG São Carlos is to boost Brazilian research in Graph Learning through an event conducted in Portuguese, featuring Brazilian speakers or experts with extensive involvement in the country, and providing spaces to showcase Brazilian academic work on the subject. It is an opportunity to promote Brazilian science in the field, disseminating ongoing research and offering enriching learning experiences for the development of researchers and other professionals."
     },
     "schedule": {
       "title": "SCHEDULE",
@@ -88,67 +84,121 @@
         "saturday": "Saturday",
         "sunday": "Sunday"
       },
+      "actions": {
+        "addToCalendar": "Add to Google Calendar"
+      },
       "saturday": [
         {
           "title": "Opening",
           "time": "9:45",
-          "location": "ICMC - Fernão Auditorium (in person)"
+          "location": "ICMC - Fernão Auditorium (in-person)",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://youtube.com/fake-aula-abertura"
+            }
+          ]
         },
         {
-          "title": "Learning on Graphs in Health: From GNNs to Integration with LLMs",
+          "title": "Graph Learning in Healthcare: From GNNs to Integration with LLMs",
           "time": "10:00",
           "location": "ICMC - Fernão Auditorium (remote)",
           "speaker": "Heloisa Oss Boll",
-          "description": "The lecture will address advanced techniques of deep patient representation, focusing on predicting clinical outcomes from electronic health records (EHRs), using graph neural networks (GNNs). At the end, recent methods integrating biomedical knowledge graphs with large language models (LLMs) will be explored, expanding support for clinical reasoning."
+          "description": "The lecture will address advanced techniques for deep patient representation, focusing on predicting clinical outcomes from electronic health records (EHRs) using Graph Neural Networks (GNNs). In conclusion, recent methods integrating biomedical knowledge graphs with large language models (LLMs) will be explored, expanding support for clinical reasoning.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://youtube.com/fake-video1"
+            }
+          ]
         },
         {
           "title": "Mastering Scene Understanding: Scene Graphs to the Rescue",
           "time": "11:00",
-          "location": "ICMC - Fernão Auditorium (in person)",
-          "speakers": ["Leo Sampaio", "Carlos Caetano"],
-          "description": "Scene understanding tasks in computer vision have been contemplated by remarkable advances in recent years. We highlight in this process the contribution of the development of the use of scene graphs and their well-structured and semantic representations. The structured approach allows better understanding of context and facilitates tasks such as image description, generation, and search, as well as identification of human-object interactions and visual question answers. This presentation will explore current studies with scene graphs and their methods, applications, databases, and what we expect from the future of scene graphs in the literature."
+          "location": "ICMC - Fernão Auditorium (in-person)",
+          "speakers": [
+            "Leo Sampaio",
+            "Carlos Caetano"
+          ],
+          "description": "Scene understanding tasks in computer vision have seen remarkable advances in recent years. This presentation highlights the contribution of developing scene graphs and their well-structured, semantic representations. Such an approach allows for better contextual comprehension and facilitates tasks like image description, generation, search, as well as identifying human-object interactions and answering visual questions. The session explores current research on scene graphs, including methods, applications, databases, and future perspectives.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://youtube.com/fake-video2"
+            }
+          ]
         },
         {
-          "title": "Pattern-based classification and the development of new GNNs",
+          "title": "Pattern-based Classification and the Development of New GNNs",
           "time": "14:00",
-          "location": "ICMC - Fernão Auditorium (in person)",
+          "location": "ICMC - Fernão Auditorium (in-person)",
           "speaker": "Zhao Liang",
-          "description": "Traditional data classification is based only on physical attributes of the input data, such as distance, similarity, or distribution. Here, we refer to this as low-level classification. On the other hand, the human (or animal) brain learns at both low and high levels, demonstrating the ability to recognize patterns based on the semantic meaning of the input data. In this context, data classification that goes beyond physical patterns to consider pattern formation is called high-level classification or pattern-based classification. In this lecture, I will introduce approaches to implementing pattern-based learning and discuss the development of new Graph Neural Networks (GNNs) through the application of complex network theory."
+          "description": "Traditional data classification relies only on physical attributes such as distance, similarity, or distribution, which is considered low-level classification. In contrast, the human (or animal) brain learns at both low and high levels, recognizing patterns based on the semantic meaning of data. This lecture will introduce approaches for implementing pattern-based learning and discuss the development of new Graph Neural Networks (GNNs) through the application of complex network theory.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://youtube.com/fake-video3"
+            }
+          ]
         },
         {
           "title": "Poster Session",
           "time": "15:30",
-          "location": "ICMC - Loibel Hyperspace (Library Hall)",
-          "description": "Undergraduate, Master's, and Doctoral students will be able to show their research in Machine Learning for Graphs in person at ICMC. Registration is open until 05/03."
+          "location": "ICMC - Loibel HyperSpace (Library Hallway)",
+          "description": "Undergraduate, Master's, and PhD students will have the opportunity to showcase their research in Graph Machine Learning in-person at ICMC. Registration is open until May 3."
         }
       ],
       "sunday": [
         {
-          "title": "The Era of Complexity",
+          "title": "The Age of Complexity",
           "time": "9:30",
-          "location": "ICMC - Fernão Auditorium (in person)",
+          "location": "ICMC - Fernão Auditorium (in-person)",
           "speaker": "Francisco Rodrigues",
-          "description": "Climate change, economic crises, epidemics, social inequality, and the growing mental health crisis are among humanity's most urgent challenges. How can science contribute to understanding and addressing them? In this lecture, we will explore how complex network theory, combined with machine learning and deep learning techniques, can offer new perspectives on these problems. We will discuss how networks can be applied in the diagnosis of mental disorders, prediction of droughts and climate changes, modeling of the global economy, and analysis of social network dynamics."
+          "description": "Climate change, economic crises, epidemics, social inequality, and the rising mental health crisis are among humanity's most urgent challenges. How can science help understand and address these issues? This lecture explores how complex network theory, combined with machine learning and deep learning techniques, can offer new perspectives on these problems. We will discuss applications of networks in diagnosing mental disorders, predicting droughts and climate change, modeling the global economy, and analyzing social network dynamics.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://youtube.com/fake-video4"
+            }
+          ]
         },
         {
           "title": "Graph-Based Deep Learning for Ocean Modeling: Methods and Offshore Applications",
           "time": "10:30",
           "location": "ICMC - Fernão Auditorium (remote)",
           "speaker": "Marcel Barros",
-          "description": "This seminar presents an overview of cutting-edge methodologies in graph-based deep learning applied to the complex domain of ocean modeling. We will explore how techniques such as Spatiotemporal Graph Neural Networks (GNNs), Graph Transformers, and multi-mesh approaches are used to capture intricate ocean dynamics, handle sparse and irregular data from various sources (including time series, satellite imagery, and physical models), and efficiently propagate information across large spatial scales. Additionally, we will address the integration of physics-informed machine learning principles within graph-based frameworks to ensure physical consistency, improve generalization capabilities, and enable resolution-invariant predictions. The presentation contextualizes these methods within the Digital Transformation Project of the Offshore Technology Innovation Center (OTIC) and the Numerical Test Tank (TPN-USP), demonstrating how these advanced graph-based models are being developed and applied to meet critical demands of the offshore industry, such as robust metocean predictions, environmental monitoring, hidden variable estimation, and optimization of operations for safety and efficiency. The main challenges, recent advances, and the potential of machine learning on graphs to revolutionize our understanding and interaction with the marine environment will be discussed."
+          "description": "This seminar provides an overview of cutting-edge methodologies in graph-based deep learning applied to the complex field of ocean modeling. We will explore techniques such as Spatio-Temporal Graph Neural Networks (GNNs), Graph Transformers, and multi-mesh approaches used to capture intricate ocean dynamics, handle sparse and irregular data from various sources (including time series, satellite images, and physical models), and effectively propagate information over large spatial scales. Additionally, the integration of physics-informed machine learning principles within graph-based frameworks will be discussed to ensure physical consistency, enhance generalization capabilities, and enable resolution-invariant predictions. The presentation contextualizes these methods within the Digital Transformation Project of the Offshore Technology Innovation Center (OTIC) and the Numerical Test Tank (TPN-USP), demonstrating how these advanced graph-based models are being developed and applied to meet critical offshore industry demands, such as robust meteo-ocean forecasts, environmental monitoring, estimation of hidden variables, and the optimization of operations for safety and efficiency.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://youtube.com/fake-video5"
+            }
+          ]
         },
         {
           "title": "Mini-course - Introduction to Graph Neural Networks",
           "time": "13:00",
-          "location": "ICMC - Fernão Auditorium (in person)",
+          "location": "Online",
           "speaker": "Marcos Gôlo",
-          "description": "The use of neural networks in graphs has gained prominence in various areas of machine learning, such as social network analysis, computational chemistry, recommendation systems, and natural language processing. Modeling data in graphs allows incorporating multiple modalities of features, creating richer and more informative representations, in addition to efficiently capturing the relationships between data. In this mini-course, we will explore techniques for modeling unstructured data through graphs, representation learning through graph neural networks, discussing the advantages of this approach and its applications in the field of machine learning. The fundamental concepts of Graph Neural Networks (GNNs) will be presented, as well as popular variations such as Graph Convolutional Neural Networks (GCNs). The course will also include practical demonstrations for transductive node classification involving a real-world problem, allowing participants to experiment with and implement the concepts discussed throughout the theoretical part."
+          "description": "Graph Neural Networks have become prominent in various areas of machine learning, including social network analysis, computational chemistry, recommendation systems, and natural language processing. Modeling data as graphs allows for incorporating multiple feature modalities, creating richer and more informative representations, as well as efficiently capturing relationships between data. In this mini-course, we will explore techniques for modeling unstructured data using graphs, delve into representation learning through graph neural networks, and discuss the advantages of this approach and its applications in machine learning. Fundamental concepts of Graph Neural Networks (GNNs), along with popular variants such as Graph Convolutional Networks (GCNs), will be presented. The course also includes practical demonstrations for transductive node classification based on a real-world problem, enabling participants to experiment with and implement the discussed concepts.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://youtube.com/fake-video6"
+            }
+          ]
         },
         {
           "title": "Open Flash Talks Session",
           "time": "15:30",
           "location": "Online",
-          "description": "Open for participation from people all over Brazil, the Flash Talks session is a space where undergraduate, master's, and doctoral students can talk about their research projects within the topic of Machine Learning on Graphs, in 5-minute talks. Registration is open until 05/03."
+          "description": "Open to participants from all over Brazil, the Flash Talks session is a space where undergraduate, Master's, and PhD students can present their research projects on Graph Machine Learning in 5-minute talks. Registration is open until May 3.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://youtube.com/fake-video7"
+            }
+          ]
         }
       ]
     },
@@ -158,7 +208,7 @@
         {
           "name": "Marcos Gôlo",
           "photo": "/images/events/log2025/speakers/golo.png",
-          "bio": "Marcos Gôlo holds a master's degree in computer science from the Institute of Mathematical and Computer Sciences at the University of São Paulo, São Carlos campus. Marcos explored multimodal representation learning in textual data for one-class learning during his master's with papers published in national conferences and international journals. Additionally, Marcos received the award for the second best master's thesis in the thesis and dissertation contest (CTD) at CSBC 2023 and the best dissertation at the CTD at Webmedia 2023. Currently, he is pursuing a doctorate at the same place as his master's, was awarded the Latin American Google PhD Fellowship to research representation learning in heterogeneous graphs in one-class learning, and is conducting a sandwich doctorate in Leipzig, Germany. Marcos has interests in the research areas of data mining, text mining, one-class learning, and representation learning in graphs.",
+          "bio": "Marcos Gôlo holds a master's degree in Computer Science from the Institute of Mathematical and Computer Sciences at the University of São Paulo, São Carlos campus. He has several publications in national and international conferences and was awarded for his dissertation.",
           "lattes": "http://lattes.cnpq.br/7402825146038143",
           "linkedin": "https://www.linkedin.com/in/marcosgolo/",
           "email": "marcosgolo@usp.br",
@@ -166,27 +216,57 @@
         },
         {
           "name": "Carlos Caetano",
-          "bio": "Carlos Caetano holds a PhD in Computer Science from the Federal University of Minas Gerais (UFMG), with part of his studies conducted at the Centre de Recherche INRIA Sophia Antipolis, France, as a researcher in the STARS team. He holds a master's degree in Computer Science from the same university and a bachelor's degree in Information Systems from the Pontifical Catholic University of Minas Gerais (PUC Minas). Carlos worked as a researcher in Artificial Intelligence and a Machine Learning specialist at Samsung Research Development Institute Brazil (SRBR). Currently, he is a scientific researcher in post-doctorate at the State University of Campinas (UNICAMP), integrating the Artificial Intelligence laboratory Recod.ai. His research covers areas such as Computer Vision, Digital Image Processing, Image and Video Classification, and Signal Processing."
+          "photo": "/images/events/log2025/speakers/caetano.png",
+          "bio": "Carlos Caetano holds a PhD in Computer Science and has experience in Artificial Intelligence and Machine Learning, having worked in various research centers and the industry.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Marcel Barros",
-          "bio": "PhD in Electrical Engineering from the University of São Paulo, with emphasis on Computer Engineering. His doctoral research focused on temporal encoding techniques for multivariate time series, involving graph-based models. He holds a degree in Electrical Engineering with emphasis on Computing from the same institution (2011). He is currently a researcher at the Numerical Test Tank (TPN-USP), working on projects in partnership with Petrobras, and at the Offshore Technology Innovation Centre (OTIC), on projects in partnership with Shell. He works with machine learning applications for offshore engineering, with a special focus on modeling meteorological and oceanographic variables."
+          "photo": "/images/events/log2025/speakers/marcel.png",
+          "bio": "Marcel Barros holds a PhD in Electrical Engineering, with experience in temporal encoding for time series, and works on projects focused on machine learning for offshore engineering.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Leo Sampaio",
-          "bio": "Professor at ICMC-USP. She obtained her PhD in Computer Sciences from ICMC-USP and was a postdoctoral researcher at the State University of Campinas (Unicamp). She works as a researcher in the field of Computer Vision, with specific experience in the development of multimodal models focused on cross-domain search. In addition to the multimodal search problem, the researcher also works on recognizing sensitive content under few-data protocols and domain generalization."
+          "photo": "/images/events/log2025/speakers/sampaio.png",
+          "bio": "Leo Sampaio is a PhD professor with extensive experience in Computer Vision, working on developing multimodal models and identifying sensitive content.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Heloisa Oss Boll",
-          "bio": "PhD candidate at the University of Amsterdam/Amsterdam UMC, where she researches deep learning methods with a focus on graphs and natural language processing (NLP) applied to the Dutch healthcare system. She holds a master's degree in Computer Science from INF-UFRGS, specializing in Artificial Intelligence for healthcare. Her dissertation focused on using graph neural networks (GNN) and electronic health records (EHR) for clinical risk prediction. Her main research interests involve the use of deep learning and multimodal data to improve patient care."
+          "photo": "/images/events/log2025/speakers/boll.png",
+          "bio": "Heloisa Oss Boll is a PhD candidate at the University of Amsterdam, researching deep learning methods focused on graphs applied to the healthcare system, with extensive experience in Graph Neural Networks.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Zhao Liang",
-          "bio": "He obtained his bachelor's degree from Wuhan University, China, in 1988 and completed his master's and doctoral degrees in Computer Science at the Technological Institute of Aeronautics (ITA) in 1996 and 1998, respectively. In 2000, he joined the faculty of the Institute of Mathematical and Computer Sciences (ICMC) of the University of São Paulo (USP), located in São Carlos. He currently holds the position of Full Professor in the Department of Computing and Mathematics (DCM), at the Faculty of Philosophy, Science, and Letters of Ribeirão Preto (FFCLRP) of USP."
+          "photo": "/images/events/log2025/speakers/liang.png",
+          "bio": "Zhao Liang is a Full Professor at ICMC-USP, with extensive experience in Computer Science and significant contributions to advancing research and application of Graph Neural Networks.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         },
         {
           "name": "Francisco Rodrigues",
-          "bio": "Francisco A. Rodrigues is a full professor at the Institute of Mathematical and Computer Sciences (University of São Paulo), working in the area of Complex Systems and Data Science. Currently, he is the head of the Department of Applied Mathematics. He was a visiting professor at the University of Warwick (United Kingdom) between 2018 and 2019 with funding from the Leverhulme Trust. He was a visiting researcher (short term) at Universidad de Zaragoza (Spain), at the Potsdam Institute for Climate Research (Germany), and at the Complexity Science Hub Vienna (Austria). He was also a visiting professor at Aschaffenburg University of Applied Sciences (Germany) and Universidad de Zaragoza. More information about his research can be found at https://sites.icmc.usp.br/francisco"
+          "photo": "/images/events/log2025/speakers/rodrigues.png",
+          "bio": "Francisco Rodrigues is a Full Professor at ICMC-USP and an expert in Complex Systems and Data Science, with international experience and significant contributions to research in the field.",
+          "lattes": "",
+          "linkedin": "",
+          "email": "",
+          "scholar": ""
         }
       ]
     },
@@ -194,15 +274,15 @@
       "title": "FAQ",
       "questions": {
         "language": "Will the event be in Portuguese?",
-        "language_answer": "Yes, the entire program of the event will be in Portuguese. To allow people from other countries to also watch the lectures, we will also make the recordings available with English subtitles.",
+        "language_answer": "Yes, the entire event program will be in Portuguese. To allow people from other countries to watch the lectures, recordings will also be available with English subtitles.",
         "free": "Is participation free?",
         "free_answer": "Yes, the event is completely free!",
-        "location": "Where will the event be held?",
-        "location_answer": "The event will take place at ICMC - USP (the location of each activity can be consulted in the event schedule). In addition, the lectures, mini-courses, and Flash Talks will be broadcast live on Data's YouTube channel.",
+        "location": "Where is the event being held?",
+        "location_answer": "The event will take place at ICMC - USP (the location for each activity can be found in the event schedule). Additionally, the lectures, mini-courses, and Flash Talks will be broadcast live on Data's YouTube channel.",
         "certificate": "Is there a participation certificate?",
-        "certificate_answer": "Yes, there is a certificate for those who register for the event and record attendance at at least 3 lectures or mini-courses. In addition, we will have special certificates for those who present works in the Poster Session or Flash Talks.",
+        "certificate_answer": "Yes, a certificate is provided for those who register for the event and attend at least three lectures or mini-courses. Additionally, special certificates will be issued for those who present work during the Poster Session or Flash Talks.",
         "sponsor": "How do I sponsor?",
-        "sponsor_answer": "Contact us at data@icmc.usp.br or matheoangelo@usp.br with details of your proposal."
+        "sponsor_answer": "Please contact us at data@icmc.usp.br or matheoangelo@usp.br with the details of your proposal."
       }
     }
   }

@@ -59,15 +59,11 @@ const EventsLOG = () => {
                 </div>
               </div>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href="/events/log/register"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link to="/events/log/register">
                   <Button className="bg-data-purple hover:bg-data-purple/80">
                     {t("log.actions.register")}
                   </Button>
-                </a>
+                </Link>
                 <Link to="/events/log/speakers">
                   <Button variant="outline">
                     {t("log.actions.viewSpeakers")}
@@ -99,7 +95,13 @@ const EventsLOG = () => {
           </section>
 
           {/* Features Section */}
-          <section className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <section
+            className={`mb-16 grid gap-8 ${
+              i18n.language !== "en"
+                ? "grid-cols-1 md:grid-cols-2"
+                : "grid-cols-1"
+            }`}
+          >
             <Card className="bg-card/50 backdrop-blur-sm border border-border">
               <CardContent className="p-8">
                 <div className="text-4xl font-bold text-data-purple mb-4">
@@ -114,39 +116,38 @@ const EventsLOG = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border border-border">
-              <CardContent className="p-8">
-                <div className="text-4xl font-bold text-data-purple mb-4">
-                  🔍
-                </div>
-                <h2 className="text-xl font-bold mb-3">
-                  {t("log.features.research.title")}
-                </h2>
-                <p className="text-muted-foreground">
-                  {t("log.features.research.description")}
-                </p>
-                <div className="mt-4 flex flex-col gap-2">
-                  <a
-                    href="https://docs.google.com/forms/d/1asPebmyqtFoEpKWiHK46-2cwRk1Upk3CGI59D_cTWSY/edit"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
-                  >
-                    <ArrowUpRight size={16} />
-                    {t("log.actions.submitPoster")}
-                  </a>
-                  <a
-                    href="https://docs.google.com/forms/d/1XCRj8ohikPHGV0U7qi0lyskeMAmo9ttM871DyMEc4As/edit?pli=1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
-                  >
-                    <ArrowUpRight size={16} />
-                    {t("log.actions.submitFlashTalk")}
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
+            {/* rederiza o card de pesquisa somente se o idioma NÃO for ingles */}
+            {i18n.language !== "en" && (
+              <Card className="bg-card/50 backdrop-blur-sm border border-border">
+                <CardContent className="p-8">
+                  <div className="text-4xl font-bold text-data-purple mb-4">
+                    🔍
+                  </div>
+                  <h2 className="text-xl font-bold mb-3">
+                    {t("log.features.research.title")}
+                  </h2>
+                  <p className="text-muted-foreground">
+                    {t("log.features.research.description")}
+                  </p>
+                  <div className="mt-4 flex flex-col gap-2">
+                    <Link
+                      to="/events/log/submit-poster"
+                      className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
+                    >
+                      <ArrowUpRight size={16} />
+                      {t("log.actions.submitPoster")}
+                    </Link>
+                    <Link
+                      to="/events/log/submit-flash-talk"
+                      className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
+                    >
+                      <ArrowUpRight size={16} />
+                      {t("log.actions.submitFlashTalk")}
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </section>
 
           {/* About Section */}
@@ -188,76 +189,36 @@ const EventsLOG = () => {
                   {t("log.schedule.days.sunday")}
                 </TabsTrigger>
               </TabsList>
-
               <TabsContent value="saturday" className="space-y-6">
-                {i18n.language === "pt" ? (
-                  <>
-                    {t("log.schedule.saturday", { returnObjects: true })?.map(
-                      (event: any, index: number) => (
-                        <ScheduleItem
-                          key={index}
-                          title={event.title}
-                          time={event.time}
-                          location={event.location}
-                          speaker={event.speaker}
-                          speakers={event.speakers}
-                          description={event.description}
-                        />
-                      )
-                    )}
-                  </>
-                ) : (
-                  <>
-                    {t("log.schedule.saturday", { returnObjects: true })?.map(
-                      (event: any, index: number) => (
-                        <ScheduleItem
-                          key={index}
-                          title={event.title}
-                          time={event.time}
-                          location={event.location}
-                          speaker={event.speaker}
-                          speakers={event.speakers}
-                          description={event.description}
-                        />
-                      )
-                    )}
-                  </>
+                {t("log.schedule.saturday", { returnObjects: true })?.map(
+                  (event: any, index: number) => (
+                    <ScheduleItem
+                      key={index}
+                      title={event.title}
+                      time={event.time}
+                      location={event.location}
+                      speaker={event.speaker}
+                      speakers={event.speakers}
+                      description={event.description}
+                      actions={event.actions} // passando o array de ações
+                    />
+                  )
                 )}
               </TabsContent>
-
               <TabsContent value="sunday" className="space-y-6">
-                {i18n.language === "pt" ? (
-                  <>
-                    {t("log.schedule.sunday", { returnObjects: true })?.map(
-                      (event: any, index: number) => (
-                        <ScheduleItem
-                          key={index}
-                          title={event.title}
-                          time={event.time}
-                          location={event.location}
-                          speaker={event.speaker}
-                          speakers={event.speakers}
-                          description={event.description}
-                        />
-                      )
-                    )}
-                  </>
-                ) : (
-                  <>
-                    {t("log.schedule.sunday", { returnObjects: true })?.map(
-                      (event: any, index: number) => (
-                        <ScheduleItem
-                          key={index}
-                          title={event.title}
-                          time={event.time}
-                          location={event.location}
-                          speaker={event.speaker}
-                          speakers={event.speakers}
-                          description={event.description}
-                        />
-                      )
-                    )}
-                  </>
+                {t("log.schedule.sunday", { returnObjects: true })?.map(
+                  (event: any, index: number) => (
+                    <ScheduleItem
+                      key={index}
+                      title={event.title}
+                      time={event.time}
+                      location={event.location}
+                      speaker={event.speaker}
+                      speakers={event.speakers}
+                      description={event.description}
+                      actions={event.actions} // também passando o array de ações
+                    />
+                  )
                 )}
               </TabsContent>
             </Tabs>
@@ -327,6 +288,7 @@ const ScheduleItem = ({
   speaker,
   speakers,
   description,
+  actions,
 }: {
   title: string;
   time: string;
@@ -334,6 +296,10 @@ const ScheduleItem = ({
   speaker?: string;
   speakers?: string[];
   description: string;
+  actions?: {
+    text: string;
+    url: string;
+  }[];
 }) => {
   return (
     <div className="p-6 rounded-lg border border-border bg-card/50 backdrop-blur-sm">
@@ -357,44 +323,25 @@ const ScheduleItem = ({
         </div>
       )}
       <p className="text-muted-foreground text-sm">{description}</p>
-      {title === "Abertura" ||
-      title === "Opening" ||
-      title.includes("Sessão") ||
-      title.includes("Session") ? (
-        <div className="mt-4">
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-2"
-          >
-            <ArrowUpRight size={14} />
-            {title.includes("Talk") || title.includes("Flash") ? (
-              <a
-                href="https://docs.google.com/forms/d/1XCRj8ohikPHGV0U7qi0lyskeMAmo9ttM871DyMEc4As/edit?pli=1"
-                target="_blank"
-                rel="noopener noreferrer"
+      <div className="mt-4 flex flex-col gap-2">
+        {actions?.length > 0 && (
+          <div className="mt-4 flex flex-col gap-2">
+            {actions.map((action, index) => (
+              <Button
+                key={index}
+                variant="outline"
+                size="sm"
+                className="flex items-center gap-2 w-fit"
               >
-                {title.includes("Pôster") || title.includes("Poster")
-                  ? "Submeter Pôster"
-                  : "Submeter Flash Talk"}
-              </a>
-            ) : (
-              <>Assista no YouTube</>
-            )}
-          </Button>
-        </div>
-      ) : (
-        <div className="mt-4">
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-2"
-          >
-            <ArrowUpRight size={14} />
-            Assista no YouTube
-          </Button>
-        </div>
-      )}
+                <ArrowUpRight size={14} />
+                <a href={action.url} target="_blank" rel="noopener noreferrer">
+                  {action.text}
+                </a>
+              </Button>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,0 +1,41 @@
+{
+  "title": "MEMORIES",
+  "filter": {
+    "all": "Show all years",
+    "dropdown": "Filter by year",
+    "filtered": "Filtered: {{year}}"
+  },
+  "years": [
+    {
+      "year": "2024",
+      "description": "The year 2024 marked a significant restructuring of the group, with major contributions: new study groups were created in Natural Language Processing, Classical Machine Learning, Computer Vision, Data Engineering, and Time Series. The global event 'Understanding Deep Learning' stood out, as well as the Python for Data Science course, which attracted participants from all over Brazil. A new structure for Kaggle competitions was also established, among many other achievements.",
+      "photo": "/images/members-history/2024.png"
+    },
+    {
+      "year": "2023",
+      "description": "In 2023, the group solidified its position as a reference in student-led Data Science initiatives in Brazil. Several talks were held with industry professionals, including members from Nubank and QuintoAndar, along with internal training events. Collaborations with other USP groups and active participation in online competitions were highlights. The group also made progress in practical projects and strengthened its internal community.",
+      "photo": "/images/members-history/2023.png"
+    },
+    {
+      "year": "2022",
+      "description": "During 2022, DATA expanded its activities by offering introductory mini-courses in Python and Statistics to the public. The return of in-person activities fostered technical meetings and discussions, encouraging the development of new projects and tools. The group's online presence was also strengthened through technical publications and educational videos.",
+      "photo": "/images/members-history/2022.png"
+    },
+    {
+      "year": "2021",
+      "description": "In 2021, with activities still held remotely, the group focused on producing digital content, such as the 'DATAcast' podcast, YouTube tutorial series, and weekly virtual meetings. There was also engagement in social projects related to science communication, in addition to partnerships with professors and other ICMC groups. The main goal was to keep the community active and connected, despite the distance.",
+      "photo": ""
+    },
+    {
+      "year": "2020",
+      "description": "The year 2020 was challenging due to the pandemic but marked the beginning of a new digital phase for the group. In-person activities gave way to live streams, webinars, and technical livestreams. The group launched its first series of explanatory videos on YouTube and organized open sessions on tools such as Pandas, Scikit-learn, and GitHub. It was a time of adaptation and innovation.",
+      "photo": ""
+    },
+    {
+      "year": "2019",
+      "description": "Founded in 2019, the DATA ICMC extension group was created with the goal of connecting ICMC students to the practice of Data Science and Machine Learning. In its inaugural year, weekly study meetings, group introduction events, and experimental projects were held. The group's initial structure was established, marking the beginning of a journey of impact within the institute.",
+      "photo": "/images/members-history/2019.png"
+    }
+  ],
+  "back_button": "Back to About"
+}

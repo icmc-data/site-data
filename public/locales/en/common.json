@@ -10,7 +10,9 @@
   "footer": {
     "resources": "RESOURCES",
     "followUs": "FOLLOW US",
-    "happening": "HAPPENING..."
+    "happening": "HAPPENING...",
+    "learnCourse": "Machine Learning Course",
+    "eventNow": "LoG Conference"
   },
   "languageSelector": {
     "pt": "PT",

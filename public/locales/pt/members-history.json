@@ -1,0 +1,41 @@
+{
+  "title": "MEMÓRIAS",
+  "filter": {
+    "all": "Mostrar todos os anos",
+    "dropdown": "Filtrar por ano",
+    "filtered": "Filtrado: {{year}}"
+  },
+  "years": [
+    {
+      "year": "2024",
+      "description": "O ano de 2024 marcou uma reestruturação significativa do grupo, com importantes contribuições: foram criados grupos de estudo em Processamento de Linguagem Natural, Machine Learning Clássico, Visão Computacional, Engenharia de Dados e Séries Temporais. Destacou-se também a realização do evento “Understanding Deep Learning”, um evento global, e também o curso Python para Ciência de Dados, que reuniu inscritos de todo o Brasil. Além disso, foi estabelecida uma nova estrutura para competições no Kaggle e muito mais.",
+      "photo": "/images/members-history/2024.png"
+    },
+    {
+      "year": "2023",
+      "description": "Em 2023, o grupo se consolidou como uma referência em iniciativas estudantis de Ciência de Dados no Brasil. Foram promovidas diversas palestras com especialistas da indústria, como membros do Nubank e QuintoAndar, além de eventos internos de capacitação. Destacaram-se também as colaborações com outros grupos da USP e a participação ativa em competições online. Houve avanços em projetos práticos e no fortalecimento da comunidade interna.",
+      "photo": "/images/members-history/2023.png"
+    },
+    {
+      "year": "2022",
+      "description": "Durante o ano de 2022, o grupo DATA ampliou sua atuação com a oferta de minicursos introdutórios em Python e Estatística, abertos ao público. A retomada de atividades presenciais impulsionou os encontros e discussões técnicas, fomentando a criação de novos projetos e ferramentas. A presença online do grupo também foi fortalecida com publicações técnicas e vídeos educativos.",
+      "photo": "/images/members-history/2022.png"
+    },
+    {
+      "year": "2021",
+      "description": "Em 2021, com as atividades ainda em formato remoto, o grupo focou na produção de conteúdos digitais, como o podcast 'DATAcast', séries de tutoriais no YouTube e encontros virtuais semanais. Houve também envolvimento em projetos sociais relacionados à divulgação científica, além de parcerias com docentes e outros grupos do ICMC. O foco foi manter a comunidade ativa e conectada, mesmo à distância.",
+      "photo": ""
+    },
+    {
+      "year": "2020",
+      "description": "O ano de 2020 foi desafiador devido à pandemia, mas marcou o início de uma nova fase digital para o grupo. Atividades presenciais deram lugar a transmissões ao vivo, webinários e lives técnicas. O grupo lançou sua primeira série de vídeos explicativos no YouTube e organizou sessões abertas sobre ferramentas como Pandas, Scikit-learn e GitHub. Foi um período de adaptação e inovação.",
+      "photo": ""
+    },
+    {
+      "year": "2019",
+      "description": "Fundado em 2019, o grupo de extensão DATA ICMC nasceu com o objetivo de conectar alunos do ICMC à prática de Ciência de Dados e aprendizado de máquina. Nesse ano inicial, foram realizadas reuniões semanais de estudos, eventos de apresentação do grupo e projetos experimentais. A estrutura inicial do grupo foi estabelecida, marcando o início de uma trajetória de impacto no instituto.",
+      "photo": "/images/members-history/2019.png"
+    }
+  ],
+  "back_button": "Voltar para Sobre o Data"
+}

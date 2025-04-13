@@ -1,4 +1,3 @@
-
 {
   "navigation": {
     "fronts": "Frentes",
@@ -10,7 +9,9 @@
   "footer": {
     "resources": "RECURSOS",
     "followUs": "SIGA-NOS",
-    "happening": "ACONTECENDO..."
+    "happening": "ACONTECENDO...",
+    "learnCourse": "Curso de Machine Learning",
+    "eventNow": "LoG Conference"
   },
   "languageSelector": {
     "pt": "PT",

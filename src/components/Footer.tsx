@@ -22,8 +22,8 @@ export function Footer() {
             <div>
               <h3 className="font-semibold mb-4">{t("footer.resources")}</h3>
               <ul className="space-y-2">
-                <li><Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">Sobre Nós</Link></li>
-                <li><Link to="/fronts" className="text-muted-foreground hover:text-foreground transition-colors">Frentes do grupo</Link></li>
+                <li><Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors"> {t("navigation.about")}</Link></li>
+                <li><Link to="/fronts" className="text-muted-foreground hover:text-foreground transition-colors">{t("navigation.fronts")}</Link></li>
               </ul>
             </div>
 
@@ -38,8 +38,8 @@ export function Footer() {
             <div>
               <h3 className="font-semibold mb-4">{t("footer.happening")}</h3>
               <ul className="space-y-2">
-                <li><Link to="/learn" className="text-muted-foreground hover:text-foreground transition-colors">Machine Learning Course</Link></li>
-                <li><Link to="/events" className="text-muted-foreground hover:text-foreground transition-colors">LoG Conference</Link></li>
+                <li><Link to="/learn" className="text-muted-foreground hover:text-foreground transition-colors">{t("footer.learnCourse")}</Link></li>
+                <li><Link to="/events" className="text-muted-foreground hover:text-foreground transition-colors">{t("footer.eventNow")}</Link></li>
               </ul>
             </div>
           </div>
