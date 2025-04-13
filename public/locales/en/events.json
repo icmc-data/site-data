@@ -78,6 +78,10 @@
       "description": "Founded in 2022, the Learning on Graphs Conference (LoG) is the world's premier academic conference dedicated to Graph Machine Learning. Each year the conference features a main event along with a network of local meetings around the globe. Now, on May 10 and 11, 2025, São Carlos will be the first city in Latin America and the Southern Hemisphere to host a LoG meeting.",
       "details": "The goal of LoG São Carlos is to boost Brazilian research in Graph Learning through an event conducted in Portuguese, featuring Brazilian speakers or experts with extensive involvement in the country, and providing spaces to showcase Brazilian academic work on the subject. It is an opportunity to promote Brazilian science in the field, disseminating ongoing research and offering enriching learning experiences for the development of researchers and other professionals."
     },
+    "historyCTA": {
+      "text": "Want to learn more about LoG's history?",
+      "button": "View History"
+    },
     "schedule": {
       "title": "SCHEDULE",
       "days": {

@@ -78,6 +78,10 @@
       "description": "Idealizada em 2022, a Learning on Graphs Conference (LoG) é a principal conferência acadêmica do mundo voltada para o Aprendizado de Máquina em Grafos. A conferência possui, a cada ano, um evento principal e uma rede de encontros locais espalhados pelo mundo. Agora, nos dias 10 e 11 de maio de 2025, São Carlos será a primeira cidade da Améria Latina e do Hemisfério Sul a sediar um encontro da LoG.",
       "details": "O objetivo da LoG de São Carlos é impulsionar a pesquisa brasileira no Aprendizado em Grafos, por meio de um evento em Português, com palestrantes brasileiros ou com ampla atuação no país, e espaços para a mostra de trabalhos acadêmicos do Brasil sobre o tema. Será uma oportunidade de promover a ciência brasileira na área, proporcionando a divulgação das pesquisas em curso e experiências de aprendizado enriquecedoras para a formação de pesquisadores e outros profissionais."
     },
+    "historyCTA": {
+      "text": "Quer saber mais sobre a história da LoG?",
+      "button": "Ver História"
+    },
     "schedule": {
       "title": "CRONOGRAMA",
       "days": {
