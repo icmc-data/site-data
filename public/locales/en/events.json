@@ -208,7 +208,7 @@
         {
           "name": "Marcos Gôlo",
           "photo": "/images/events/log2025/speakers/golo.png",
-          "bio": "Marcos Gôlo holds a master's degree in Computer Science from the Institute of Mathematical and Computer Sciences at the University of São Paulo, São Carlos campus. He has several publications in national and international conferences and was awarded for his dissertation.",
+          "bio": "Marcos Gôlo holds a master's degree in computer science from the Institute of Mathematical and Computer Sciences at the University of São Paulo, São Carlos campus. Marcos explored multimodal representation learning in textual data for one-class learning during his master's with papers published in national conferences and international journals. Additionally, Marcos received the award for the second best master's thesis in the thesis and dissertation contest (CTD) at CSBC 2023 and the best dissertation at the CTD at Webmedia 2023. Currently, he is pursuing a doctorate at the same place as his master's, was awarded the Latin American Google PhD Fellowship to research representation learning in heterogeneous graphs in one-class learning, and is conducting a sandwich doctorate in Leipzig, Germany. Marcos has interests in the research areas of data mining, text mining, one-class learning, and representation learning in graphs.",
           "lattes": "http://lattes.cnpq.br/7402825146038143",
           "linkedin": "https://www.linkedin.com/in/marcosgolo/",
           "email": "marcosgolo@usp.br",
@@ -217,7 +217,7 @@
         {
           "name": "Carlos Caetano",
           "photo": "/images/events/log2025/speakers/caetano.png",
-          "bio": "Carlos Caetano holds a PhD in Computer Science and has experience in Artificial Intelligence and Machine Learning, having worked in various research centers and the industry.",
+          "bio": "Carlos Caetano holds a PhD in Computer Science from the Federal University of Minas Gerais (UFMG), with part of his studies conducted at the Centre de Recherche INRIA Sophia Antipolis, France, as a researcher in the STARS team. He holds a master's degree in Computer Science from the same university and a bachelor's degree in Information Systems from the Pontifical Catholic University of Minas Gerais (PUC Minas). Carlos worked as a researcher in Artificial Intelligence and a Machine Learning specialist at Samsung Research Development Institute Brazil (SRBR). Currently, he is a scientific researcher in post-doctorate at the State University of Campinas (UNICAMP), integrating the Artificial Intelligence laboratory Recod.ai. His research covers areas such as Computer Vision, Digital Image Processing, Image and Video Classification, and Signal Processing.",
           "lattes": "",
           "linkedin": "",
           "email": "",
@@ -226,7 +226,7 @@
         {
           "name": "Marcel Barros",
           "photo": "/images/events/log2025/speakers/marcel.png",
-          "bio": "Marcel Barros holds a PhD in Electrical Engineering, with experience in temporal encoding for time series, and works on projects focused on machine learning for offshore engineering.",
+          "bio": "PhD in Electrical Engineering from the University of São Paulo, with emphasis on Computer Engineering. His doctoral research focused on temporal encoding techniques for multivariate time series, involving graph-based models. He holds a degree in Electrical Engineering with emphasis on Computing from the same institution (2011). He is currently a researcher at the Numerical Test Tank (TPN-USP), working on projects in partnership with Petrobras, and at the Offshore Technology Innovation Centre (OTIC), on projects in partnership with Shell. He works with machine learning applications for offshore engineering, with a special focus on modeling meteorological and oceanographic variables.",
           "lattes": "",
           "linkedin": "",
           "email": "",
@@ -235,7 +235,7 @@
         {
           "name": "Leo Sampaio",
           "photo": "/images/events/log2025/speakers/sampaio.png",
-          "bio": "Leo Sampaio is a PhD professor with extensive experience in Computer Vision, working on developing multimodal models and identifying sensitive content.",
+          "bio": "Professor at ICMC-USP. She obtained her PhD in Computer Sciences from ICMC-USP and was a postdoctoral researcher at the State University of Campinas (Unicamp). She works as a researcher in the field of Computer Vision, with specific experience in the development of multimodal models focused on cross-domain search. In addition to the multimodal search problem, the researcher also works on recognizing sensitive content under few-data protocols and domain generalization.",
           "lattes": "",
           "linkedin": "",
           "email": "",
@@ -244,7 +244,7 @@
         {
           "name": "Heloisa Oss Boll",
           "photo": "/images/events/log2025/speakers/boll.png",
-          "bio": "Heloisa Oss Boll is a PhD candidate at the University of Amsterdam, researching deep learning methods focused on graphs applied to the healthcare system, with extensive experience in Graph Neural Networks.",
+          "bio": "PhD candidate at the University of Amsterdam/Amsterdam UMC, where she researches deep learning methods with a focus on graphs and natural language processing (NLP) applied to the Dutch healthcare system. She holds a master's degree in Computer Science from INF-UFRGS, specializing in Artificial Intelligence for healthcare. Her dissertation focused on using graph neural networks (GNN) and electronic health records (EHR) for clinical risk prediction. Her main research interests involve the use of deep learning and multimodal data to improve patient care.",
           "lattes": "",
           "linkedin": "",
           "email": "",
@@ -253,7 +253,7 @@
         {
           "name": "Zhao Liang",
           "photo": "/images/events/log2025/speakers/liang.png",
-          "bio": "Zhao Liang is a Full Professor at ICMC-USP, with extensive experience in Computer Science and significant contributions to advancing research and application of Graph Neural Networks.",
+          "bio": "He obtained his bachelor's degree from Wuhan University, China, in 1988 and completed his master's and doctoral degrees in Computer Science at the Technological Institute of Aeronautics (ITA) in 1996 and 1998, respectively. In 2000, he joined the faculty of the Institute of Mathematical and Computer Sciences (ICMC) of the University of São Paulo (USP), located in São Carlos. He currently holds the position of Full Professor in the Department of Computing and Mathematics (DCM), at the Faculty of Philosophy, Science, and Letters of Ribeirão Preto (FFCLRP) of USP.",
           "lattes": "",
           "linkedin": "",
           "email": "",
@@ -262,11 +262,11 @@
         {
           "name": "Francisco Rodrigues",
           "photo": "/images/events/log2025/speakers/rodrigues.png",
-          "bio": "Francisco Rodrigues is a Full Professor at ICMC-USP and an expert in Complex Systems and Data Science, with international experience and significant contributions to research in the field.",
+          "bio": "Francisco A. Rodrigues is a full professor at the Institute of Mathematical and Computer Sciences (University of São Paulo), working in the area of Complex Systems and Data Science. Currently, he is the head of the Department of Applied Mathematics. He was a visiting professor at the University of Warwick (United Kingdom) between 2018 and 2019 with funding from the Leverhulme Trust. He was a visiting researcher (short term) at Universidad de Zaragoza (Spain), at the Potsdam Institute for Climate Research (Germany), and at the Complexity Science Hub Vienna (Austria). He was also a visiting professor at Aschaffenburg University of Applied Sciences (Germany) and Universidad de Zaragoza.",
           "lattes": "",
-          "linkedin": "",
+          "linkedin": "https://sites.icmc.usp.br/francisco/",
           "email": "",
-          "scholar": ""
+          "scholar": "https://scholar.google.com/citations?user=mMl8aggAAAAJ&hl=en"
         }
       ]
     },
