@@ -1,3 +1,4 @@
+
 [
   {
     "name": "Luiz Felipe",
@@ -5,7 +6,13 @@
     "description": "Passionate about technology and learning. Seeks creative solutions for complex problems.",
     "categories": [
       "Teaching",
-      "Projects"
+      "Projects",
+      "Coordinators",
+      "Marketing",
+      "Events"
+    ],
+    "funcao_especial": [
+      "Marketing"
     ],
     "linkedin": "https://www.linkedin.com/in/lfelipediniz/"
   },
@@ -15,24 +22,9 @@
     "description": "Researcher in AI, LLMs and Data Science, with a focus on education and public data. National champion of the AWS Deepracer 2024 competition.",
     "categories": [
       "Teaching",
-      "Projects"
-    ],
-    "linkedin": "https://www.linkedin.com/in/cauepaiva/"
-  },
-  {
-    "name": "Kathy",
-    "photo": "/images/about/members/kathy.jpg",
-    "description": "Information Systems student. Interested in classical ML, especially Time Series.",
-    "categories": [
-      "Projects",
-      "Secretariat"
-    ],
-    "funcao_especial": [
-      "Projects",
-      "Secretariat",
-      "Coordinators"
-    ],
-    "linkedin": "https://www.linkedin.com/in/katielylacerda/"
+      "Events"
+    ]
+
   },
   {
     "name": "Juan",
@@ -40,9 +32,19 @@
     "description": "Applied Mathematics student. Interested in Optimization and Data Science, with a focus on heuristics and machine learning. Loves jazz and comics.",
     "categories": [
       "Teaching",
-      "Projects"
+      "Events"
     ],
     "linkedin": "https://www.linkedin.com/in/juan-santana-651951321//"
+  },
+  
+  {
+    "name": "Kathy",
+    "photo": "/images/about/members/kathy.jpg",
+    "description": "Information Systems student. Interested in classical ML, especially Time Series. Loves running and reading.",
+    "categories": [
+      "Events"
+    ],
+    "linkedin": "https://www.linkedin.com/in/katielylacerda/"
   },
   {
     "name": "Enzo",
@@ -54,17 +56,15 @@
     ],
     "funcao_especial": [
       "Teaching"
-    ],
-    "linkedin": "https://www.linkedin.com/in/enzotm/"
+    ]
   },
   {
     "name": "Miller",
     "photo": "/images/about/members/miller.jpg",
     "description": "Computer Science student at USP, interested in Time Series and Deep Learning. Likes cycling and watching bad movies.",
     "categories": [
-      "Secretariat",
-      "Study Group",
-      "Coordinators"
+      "Marketing",
+      "Study Group"
     ],
     "funcao_especial": [
       "Deep Learning Studies",
@@ -106,12 +106,9 @@
     "photo": "/images/about/members/abreu.jpg",
     "description": "BCC student at USP, focused on learning AI, ML, and Data Science. Always testing code and pursuing new ideas!",
     "categories": [
-      "Events",
-      "Coordinators"
-    ],
-    "funcao_especial": [
       "Events"
     ],
+
     "linkedin": "https://www.linkedin.com/in/gabriel-abreubr"
   },
   {
@@ -147,8 +144,7 @@
     "description": "Computational physics student at USP, interested in machine learning and its applications. Likes reading and pop divas.",
     "categories": [
       "Marketing",
-      "Events",
-      "Coordinators"
+      "Events"
     ],
     "funcao_especial": [
       "Marketing"

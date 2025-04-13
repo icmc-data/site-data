@@ -21,6 +21,8 @@ import NotFound from "./pages/NotFound";
 import Learn from "./pages/Learn";
 import MembersHistory from "./pages/MembersHistory";
 import EventsLOGRegister from "./pages/EventsLOGRegister";
+import EvertsLOGRegisterFlashCard from "./pages/EventsLOGRegisterFlashCard";
+import EvertsLOGRegisterPoster from "./pages/EventsLOGRegisterPoster";
 
 // i18n
 import "./i18n";
@@ -35,7 +37,7 @@ const App = () => {
   useEffect(() => {
     const loadResources = async () => {
       setIsLoading(true);
-      const namespaces = ["common", "home", "about", "fronts", "contact", "events", "learn", "membershistory"];
+      const namespaces = ["common", "home", "about", "fronts", "contact", "events", "learn", "members-history"];
       
       try {
         await Promise.all(
@@ -85,8 +87,10 @@ const App = () => {
                 <Route path="/events/log" element={<EventsLOG />} />
                 <Route path="/events/log/speakers" element={<EventsLOGSpeakers />} />
                 <Route path="/events/log/register" element={<EventsLOGRegister />} />
+                <Route path="/events/log/submit-flash-talk" element={<EvertsLOGRegisterFlashCard />} />
+                <Route path="/events/log/submit-poster" element={<EvertsLOGRegisterPoster />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/membershistory" element={<MembersHistory />} />
+                <Route path="/members-history" element={<MembersHistory />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Layout>

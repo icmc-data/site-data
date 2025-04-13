@@ -31,7 +31,7 @@ const YearHistoryItem: React.FC<YearHistoryItemProps> = ({ item, locale }) => {
   const fetchMembers = async () => {
     setIsLoadingMembers(true);
     try {
-      const res = await fetch(`/data/${locale}/membershistory/${item.year}.json`);
+      const res = await fetch(`/data/${locale}/members-history/${item.year}.json`);
       const data = await res.json();
       setMembers(data);
     } catch (error) {
@@ -94,7 +94,7 @@ const YearHistoryItem: React.FC<YearHistoryItemProps> = ({ item, locale }) => {
 };
 
 const MembersHistory = () => {
-  const { t, ready, i18n } = useTranslation("membershistory");
+  const { t, ready, i18n } = useTranslation("members-history");
 
   if (!ready) return <div>Carregando...</div>;
 
