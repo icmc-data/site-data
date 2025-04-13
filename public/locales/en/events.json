@@ -195,10 +195,6 @@
           "description": "Open to participants from all over Brazil, the Flash Talks session is a space where undergraduate, Master's, and PhD students can present their research projects on Graph Machine Learning in 5-minute talks. Registration is open until May 3.",
           "actions": [
             {
-              "text": "Submit Flash Talk",
-              "url": "https://docs.google.com/forms/d/fake-submeter-flashtalk"
-            },
-            {
               "text": "Watch on YouTube",
               "url": "https://youtube.com/fake-video7"
             }

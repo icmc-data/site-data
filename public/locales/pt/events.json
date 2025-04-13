@@ -142,7 +142,13 @@
           "title": "Sessão de Pôsters",
           "time": "15:30",
           "location": "ICMC - Hiperespaço Loibel (Vão da Biblioteca)",
-          "description": "Alunos de graduação, mestrado e doutorado poderão mostrar sua pesquisa em Aprendizado de Máquina para Grafos presencialmente no ICMC. As inscrições vão até dia 03/05."
+          "description": "Alunos de graduação, mestrado e doutorado poderão mostrar sua pesquisa em Aprendizado de Máquina para Grafos presencialmente no ICMC. As inscrições vão até dia 03/05.",
+          "actions": [
+            {
+              "text": "Submeter Pôster",
+              "url": "/events/log2025/submit-poster"
+            }
+          ]
         }
       ],
       "sunday": [
@@ -193,7 +199,7 @@
           "actions": [
             {
               "text": "Submeter Flash Talk",
-              "url": "https://docs.google.com/forms/d/fake-submeter-flashtalk"
+              "url": "/events/log2025/submit-flash-talk"
             },
             {
               "text": "Assista no YouTube",

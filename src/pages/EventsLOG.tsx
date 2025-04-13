@@ -95,7 +95,13 @@ const EventsLOG = () => {
           </section>
 
           {/* Features Section */}
-          <section className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <section
+            className={`mb-16 grid gap-8 ${
+              i18n.language !== "en"
+                ? "grid-cols-1 md:grid-cols-2"
+                : "grid-cols-1"
+            }`}
+          >
             <Card className="bg-card/50 backdrop-blur-sm border border-border">
               <CardContent className="p-8">
                 <div className="text-4xl font-bold text-data-purple mb-4">
@@ -110,39 +116,38 @@ const EventsLOG = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border border-border">
-              <CardContent className="p-8">
-                <div className="text-4xl font-bold text-data-purple mb-4">
-                  🔍
-                </div>
-                <h2 className="text-xl font-bold mb-3">
-                  {t("log.features.research.title")}
-                </h2>
-                <p className="text-muted-foreground">
-                  {t("log.features.research.description")}
-                </p>
-                <div className="mt-4 flex flex-col gap-2">
-                  <a
-                    href="https://docs.google.com/forms/d/1asPebmyqtFoEpKWiHK46-2cwRk1Upk3CGI59D_cTWSY/edit"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
-                  >
-                    <ArrowUpRight size={16} />
-                    {t("log.actions.submitPoster")}
-                  </a>
-                  <a
-                    href="https://docs.google.com/forms/d/1XCRj8ohikPHGV0U7qi0lyskeMAmo9ttM871DyMEc4As/edit?pli=1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
-                  >
-                    <ArrowUpRight size={16} />
-                    {t("log.actions.submitFlashTalk")}
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
+            {/* rederiza o card de pesquisa somente se o idioma NÃO for ingles */}
+            {i18n.language !== "en" && (
+              <Card className="bg-card/50 backdrop-blur-sm border border-border">
+                <CardContent className="p-8">
+                  <div className="text-4xl font-bold text-data-purple mb-4">
+                    🔍
+                  </div>
+                  <h2 className="text-xl font-bold mb-3">
+                    {t("log.features.research.title")}
+                  </h2>
+                  <p className="text-muted-foreground">
+                    {t("log.features.research.description")}
+                  </p>
+                  <div className="mt-4 flex flex-col gap-2">
+                    <Link
+                      to="/events/log2025/submit-poster"
+                      className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
+                    >
+                      <ArrowUpRight size={16} />
+                      {t("log.actions.submitPoster")}
+                    </Link>
+                    <Link
+                      to="/events/log2025/submit-flash-talk"
+                      className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
+                    >
+                      <ArrowUpRight size={16} />
+                      {t("log.actions.submitFlashTalk")}
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </section>
 
           {/* About Section */}

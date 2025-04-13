@@ -91,7 +91,7 @@ const About = () => {
             <p className="text-base sm:text-lg text-muted-foreground mb-4">
               {t("historyCTA.text")}
             </p>
-            <a href="/membershistory">
+            <a href="/members-history">
               <Button className="whitespace-normal text-sm sm:text-base font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-[hsl(var(--data-purple))] text-white hover:brightness-110 transition duration-200">
                 {t("historyCTA.button")}
               </Button>
