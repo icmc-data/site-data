@@ -99,7 +99,7 @@
           "actions": [
             {
               "text": "Assista no YouTube",
-              "url": "https://youtube.com/fake-aula-abertura"
+              "url": "https://youtube.com/@DataICMC#0"
             }
           ]
         },
@@ -112,7 +112,7 @@
           "actions": [
             {
               "text": "Assista no YouTube",
-              "url": "https://youtube.com/fake-video1"
+              "url": "https://youtube.com/@DataICMC#1"
             }
           ]
         },
@@ -125,7 +125,7 @@
           "actions": [
             {
               "text": "Assista no YouTube",
-              "url": "https://youtube.com/fake-video2"
+              "url": "https://youtube.com/@DataICMC#2"
             }
           ]
         },
@@ -138,7 +138,7 @@
           "actions": [
             {
               "text": "Assista no YouTube",
-              "url": "https://youtube.com/fake-video3"
+              "url": "https://youtube.com/@DataICMC#3"
             }
           ]
         },
@@ -165,7 +165,7 @@
           "actions": [
             {
               "text": "Assista no YouTube",
-              "url": "https://youtube.com/fake-video4"
+              "url": "https://youtube.com/@DataICMC#4"
             }
           ]
         },
@@ -178,7 +178,7 @@
           "actions": [
             {
               "text": "Assista no YouTube",
-              "url": "https://youtube.com/fake-video5"
+              "url": "https://youtube.com/@DataICMC#5"
             }
           ]
         },
@@ -191,7 +191,7 @@
           "actions": [
             {
               "text": "Assista no YouTube",
-              "url": "https://youtube.com/fake-video6"
+              "url": "https://youtube.com/@DataICMC#6"
             }
           ]
         },
@@ -207,7 +207,7 @@
             },
             {
               "text": "Assista no YouTube",
-              "url": "https://youtube.com/fake-video7"
+              "url": "https://youtube.com/@DataICMC#7"
             }
           ]
         }
