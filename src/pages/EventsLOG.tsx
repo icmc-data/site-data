@@ -176,6 +176,8 @@ const EventsLOG = () => {
             </a>
           </div>
 
+          <br />
+
           {/* Schedule Section */}
           <section className="mb-16">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
