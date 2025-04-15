@@ -40,7 +40,7 @@ const EvertsLOGRegister = () => {
     iframe.setAttribute("title", "Inscrições - LoG 2025 São Carlos");
     iframe.setAttribute("allowFullScreen", "");
     iframe.className = "w-full border-0";
-    iframe.style.height = "2500px";
+    iframe.style.height = "3000px";
 
     if (widgetContainerRef.current) {
       widgetContainerRef.current.appendChild(iframe);
