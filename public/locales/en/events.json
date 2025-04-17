@@ -169,7 +169,7 @@
         {
           "title": "Graph-Based Deep Learning for Ocean Modeling: Methods and Offshore Applications",
           "time": "10:30",
-          "location": "ICMC - Fernão Auditorium (remote)",
+          "location": "ICMC - Fernão Auditorium (in-person)",
           "speaker": "Marcel Barros",
           "description": "This seminar provides an overview of cutting-edge methodologies in graph-based deep learning applied to the complex field of ocean modeling. We will explore techniques such as Spatio-Temporal Graph Neural Networks (GNNs), Graph Transformers, and multi-mesh approaches used to capture intricate ocean dynamics, handle sparse and irregular data from various sources (including time series, satellite images, and physical models), and effectively propagate information over large spatial scales. Additionally, the integration of physics-informed machine learning principles within graph-based frameworks will be discussed to ensure physical consistency, enhance generalization capabilities, and enable resolution-invariant predictions. The presentation contextualizes these methods within the Digital Transformation Project of the Offshore Technology Innovation Center (OTIC) and the Numerical Test Tank (TPN-USP), demonstrating how these advanced graph-based models are being developed and applied to meet critical offshore industry demands, such as robust meteo-ocean forecasts, environmental monitoring, estimation of hidden variables, and the optimization of operations for safety and efficiency.",
           "actions": [
