@@ -1,3 +1,4 @@
+// src/pages/EvertsLOGRegister.tsx
 import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
@@ -6,11 +7,11 @@ import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 
-const EvertsLOGRegister = () => {
+const EvertsLOGRegister: React.FC = () => {
   const { t, i18n } = useTranslation("events");
   const { theme } = useTheme();
   const language = i18n.language;
-  const widgetContainerRef = useRef(null);
+  const widgetContainerRef = useRef<HTMLDivElement>(null);
 
   const getFormUrl = () => {
     if (language === "pt") {
@@ -25,26 +26,20 @@ const EvertsLOGRegister = () => {
   };
 
   useEffect(() => {
-    if (widgetContainerRef.current) {
-      widgetContainerRef.current.innerHTML = "";
-    }
-    
-    const existingScript = document.querySelector("script[src='https://tally.so/widgets/embed.js']");
-    if (existingScript) {
-      existingScript.parentNode.removeChild(existingScript);
-    }
+    const container = widgetContainerRef.current!;
+    container.innerHTML = "";
+    document
+      .querySelectorAll("script[src='https://tally.so/widgets/embed.js']")
+      .forEach(s => s.remove());
 
     const iframe = document.createElement("iframe");
     iframe.setAttribute("data-tally-src", getFormUrl());
-    iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("title", "Inscrições - LoG 2025 São Carlos");
+    iframe.setAttribute("scrolling", "yes");
     iframe.setAttribute("allowFullScreen", "");
-    iframe.className = "w-full border-0";
-    iframe.style.height = "3000px";
+    iframe.className = "absolute inset-0 w-full h-full border-0";
 
-    if (widgetContainerRef.current) {
-      widgetContainerRef.current.appendChild(iframe);
-    }
+    container.appendChild(iframe);
 
     const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
@@ -52,17 +47,16 @@ const EvertsLOGRegister = () => {
     document.body.appendChild(script);
 
     return () => {
-      const scriptTag = document.querySelector("script[src='https://tally.so/widgets/embed.js']");
-      if (scriptTag) {
-        scriptTag.parentNode.removeChild(scriptTag);
-      }
+      document
+        .querySelectorAll("script[src='https://tally.so/widgets/embed.js']")
+        .forEach(s => s.remove());
     };
   }, [theme, language]);
 
   return (
     <>
       <ParticlesBackground />
-      <main className="min-h-screen pt-[70px]">
+      <main className="flex flex-col h-screen pt-[70px]">
         <div className="p-4">
           <Link to="/events">
             <Button variant="ghost" className="flex items-center gap-2">
@@ -71,7 +65,11 @@ const EvertsLOGRegister = () => {
             </Button>
           </Link>
         </div>
-        <div className="w-full" ref={widgetContainerRef} style={{ overflow: "hidden" }} />
+        <div
+          id="tally-widget-container"
+          ref={widgetContainerRef}
+          className="relative w-full flex-1"
+        />
       </main>
     </>
   );
