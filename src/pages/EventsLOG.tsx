@@ -20,6 +20,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { useFetchEvents } from "@/utils/fetch-events";
 import { useTheme } from "@/components/ThemeProvider";
+import { SponsorList } from "@/components/SponsorList";
 
 const EventsLOG = () => {
   const { t, i18n } = useTranslation("events");
@@ -164,6 +165,8 @@ const EventsLOG = () => {
               </div>
             </div>
           </section>
+
+          <SponsorList names={["ICMC-USP", "SBMAC", "CEMEAI"]} />
 
           <div className="mt-10 px-4 py-6 border rounded-xl text-center shadow-sm bg-background-secondary w-full max-w-md mx-auto sm:px-6 md:px-8">
             <p className="text-base sm:text-lg text-muted-foreground mb-4">
