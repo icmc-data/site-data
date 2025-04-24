@@ -1,4 +1,4 @@
-// src/pages/EvertsLOGRegister.tsx
+// src/pages/EvertsLOGRegisterFlashCard.tsx
 import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
@@ -6,12 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
+import i18n from "@/i18n";
 
-const EvertsLOGRegister: React.FC = () => {
-  const { t, i18n } = useTranslation("events");
+const EvertsLOGRegisterFlashCard: React.FC = () => {
+  const { t } = useTranslation("events");
   const { theme } = useTheme();
-  const language = i18n.language;
   const widgetContainerRef = useRef<HTMLDivElement>(null);
+  const language = i18n.language.split("-")[0];
 
   const getFormUrl = () => {
     if (language === "pt") {
@@ -51,7 +52,7 @@ const EvertsLOGRegister: React.FC = () => {
         .querySelectorAll("script[src='https://tally.so/widgets/embed.js']")
         .forEach(s => s.remove());
     };
-  }, [theme, language]);
+  }, [theme]);
 
   return (
     <>
@@ -75,4 +76,4 @@ const EvertsLOGRegister: React.FC = () => {
   );
 };
 
-export default EvertsLOGRegister;
+export default EvertsLOGRegisterFlashCard;
