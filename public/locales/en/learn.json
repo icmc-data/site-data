@@ -15,6 +15,22 @@
       "actions": {
         "watch": "Watch the classes"
       }
+    },
+    "rlcourse": {
+      "title": "Reinforcement Learning Course",
+      "date": "May 10 to June 30, 2025",
+      "description": "Introductory course on reinforcement learning, covering agents, environments, rewards and policies.",
+      "actions": {
+        "watch": "Watch classes"
+      }
+    },
+    "sqlcourse": {
+      "title": "SQL Course",
+      "date": "April 15 to May 20, 2025",
+      "description": "Basic SQL course teaching queries, filters, joins and data modeling.",
+      "actions": {
+        "watch": "Watch classes"
+      }
     }
   }
   

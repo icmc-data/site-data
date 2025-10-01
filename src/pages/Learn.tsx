@@ -79,6 +79,68 @@ const Learn = () => {
                   </Link>
                 </CardContent>
               </Card>
+
+              {/* Reinforcement Learning Course Card */}
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-border">
+                <div className="aspect-video w-full overflow-hidden">
+                  <img
+                    src="/images/learn/python2024Thumb.png"
+                    alt="Curso de introdução à Reinforcement Learning"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h2 className="text-xl font-bold mb-2">
+                    {t("rlcourse.title")}
+                  </h2>
+                  <div className="flex items-center text-sm text-muted-foreground mb-4">
+                    <Calendar size={16} className="mr-1" />
+                    <span>{t("rlcourse.date")}</span>
+                  </div>
+                  <p className="text-muted-foreground mb-6 line-clamp-3">
+                    {t("rlcourse.description")}
+                  </p>
+                  <Link to="https://www.youtube.com/playlist?list=PLFE-LjWAAP9TKFzYmmRqvbIOXZpvkXd28">
+                    <Button
+                      size="sm"
+                      className="bg-data-purple hover:bg-data-purple/80"
+                    >
+                      {t("rlcourse.actions.watch")}
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+
+              {/* SQL Course Card */}
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-border">
+                <div className="aspect-video w-full overflow-hidden">
+                  <img
+                    src="/images/learn/python2024Thumb.png"
+                    alt="Understanding Deep Learning 2024"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h2 className="text-xl font-bold mb-2">
+                    {t("sqlcourse.title")}
+                  </h2>
+                  <div className="flex items-center text-sm text-muted-foreground mb-4">
+                    <Calendar size={16} className="mr-1" />
+                    <span>{t("sqlcourse.date")}</span>
+                  </div>
+                  <p className="text-muted-foreground mb-6 line-clamp-3">
+                    {t("sqlcourse.description")}
+                  </p>
+                  <Link to="https://www.youtube.com/playlist?list=PLFE-LjWAAP9Ry9zwnjVOSgglOlw3y6g12">
+                    <Button
+                      size="sm"
+                      className="bg-data-purple hover:bg-data-purple/80"
+                    >
+                      {t("sqlcourse.actions.watch")}
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
             </div>
           </section>
         </div>

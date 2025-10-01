@@ -15,6 +15,22 @@
       "actions": {
         "watch": "Assistir às aulas"
       }
+    },
+    "rlcourse": {
+      "title": "Curso Reinforcement Learning",
+      "date": "10 de maio a 30 de junho de 2025",
+      "description": "Curso introdutório de aprendizado por reforço, cobrindo agentes, ambientes, recompensas e políticas.",
+      "actions": {
+        "watch": "Assistir às aulas"
+      }
+    },
+    "sqlcourse": {
+      "title": "Curso de SQL",
+      "date": "15 de abril a 20 de maio de 2025",
+      "description": "Curso básico de SQL, ensinando consultas, filtros, joins e modelagem de dados.",
+      "actions": {
+        "watch": "Assistir às aulas"
+      }
     }
   }
   
