@@ -166,7 +166,7 @@ const EventsLOG = () => {
             </div>
           </section>
 
-          <SponsorList names={["ICMC-USP", "SBMAC", "CEMEAI"]} />
+          <SponsorList names={["ICMC-USP", "SBMAC", "Alura", "CEMEAI"]} />
 
           <div className="mt-10 px-4 py-6 border rounded-xl text-center shadow-sm bg-background-secondary w-full max-w-md mx-auto sm:px-6 md:px-8">
             <p className="text-base sm:text-lg text-muted-foreground mb-4">
