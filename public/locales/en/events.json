@@ -289,5 +289,195 @@
         "sponsor_answer": "Please contact us at data@icmc.usp.br or matheoangelo@usp.br with the details of your proposal."
       }
     }
+  },
+  "khipu": {
+    "title": "KHIPUx: Spring School on LLMs",
+    "description": "Join us on November 15 and 16 for a deep dive into the world of LLMs! Learn in theory and practice how the most famous AI models today work.",
+    "date": "November 15–16",
+    "dateDetails": "On November 15 and 16, 2025, join us for an immersive experience on Large Language Models, featuring lectures and hands-on minicourses designed to help you learn and apply cutting-edge techniques.",
+    "actions": {
+      "register": "Sign Up",
+      "viewSpeakers": "View Speakers",
+      "learnMore": "Learn More",
+      "backToEvent": "Back to Events",
+      "addToCalendar": "Add to Google Calendar",
+      "watchOnYoutube": "Watch on YouTube"
+    },
+    "features": {
+      "lectures": {
+        "title": "High-level Lectures",
+        "description": "Learn from renowned researchers and industry professionals about finetuning and AI agents directly from those who work with these technologies every day."
+      },
+      "courses": {
+        "title": "Hands-on Minicourses",
+        "description": "Develop practical applications using the most advanced technologies available in the AI ecosystem."
+      }
+    },
+    "about": {
+      "title": "ABOUT THE EVENT",
+      "description": "KHIPU is the main Latin American gathering focused on Artificial Intelligence (AI). Its mission is to strengthen the research and development community in AI and Machine Learning (ML) throughout Latin America. KHIPUx supports local organizations across the region by promoting initiatives that expand access to cutting-edge AI knowledge.",
+      "details": "The Spring School on LLMs aims to disseminate state-of-the-art knowledge in Artificial Intelligence, with a special focus on Large Language Models (LLMs) and multi-agent systems. The event brings together both theoretical and practical perspectives on the most recent advances in LLM technologies."
+    },
+    "historyCTA": {
+      "text": "Want to learn more about KHIPU’s history?",
+      "button": "View History"
+    },
+    "schedule": {
+      "title": "SCHEDULE",
+      "days": {
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+      },
+      "actions": {
+        "addToCalendar": "Add to Google Calendar"
+      },
+      "saturday": [
+        {
+          "title": "Check-in + Breakfast",
+          "time": "09:00",
+          "location": "ICMC - Fernão Auditorium"
+        },
+        {
+          "title": "Event Opening",
+          "time": "09:45",
+          "location": "ICMC - Fernão Auditorium"
+        },
+        {
+          "title": "Strategies for Adapting LLMs",
+          "time": "10:00",
+          "location": "ICMC - Fernão Auditorium",
+          "speaker": "Matheus Jorge - Tractian",
+          "description": "This talk will explore techniques such as In-Context Learning, Retrieval-Augmented Generation (RAG), and Finetuning, highlighting practical applications, challenges, and real-world use cases in industry settings.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://www.youtube.com/live/LNgbo8WukI0?si=LkrWLDoMrxCH5_Ks"
+            }
+          ]
+        },
+        {
+          "title": "Minicourse – Retrieval-Augmented Generation (RAG)",
+          "time": "13:30",
+          "location": "ICMC - Building 6 - Rooms 6305 and 6306",
+          "speaker": "Renato Moraes Silva - ICMC/USP",
+          "description": "A hands-on minicourse where participants will learn practical RAG techniques used to enhance the effectiveness of LLMs. The session includes foundational concepts and essential tools for implementing RAG pipelines.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://www.youtube.com/live/-5aybTeQY2w?si=9ktk5mqy_wXWdFBQ"
+            }
+          ]
+        },
+        {
+          "title": "Coffee Break",
+          "time": "15:30",
+          "location": "ICMC - Fernão Auditorium"
+        },
+        {
+          "title": "End of Minicourse",
+          "time": "18:00",
+          "location": "ICMC - Fernão Auditorium"
+        }
+      ],
+      "sunday": [
+        {
+          "title": "Check-in + Breakfast",
+          "time": "9:00",
+          "location": "ICMC - Fernão Auditorium"
+        },
+        {
+          "title": "Ailo: Understanding How to Build a Large-Scale AI Agent",
+          "time": "10:00",
+          "location": "ICMC - Fernão Auditorium",
+          "speaker": "Daniel Wolbert - iFood",
+          "description": "Daniel Wolbert will share insights on building large-scale AI agents, discussing technical challenges and best practices for creating robust and efficient systems designed for complex, high-demand environments.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://www.youtube.com/live/ywuZ5tNGuqU?si=gDnJncMWm5wYc7TH"
+            }
+          ]
+        },
+        {
+          "title": "Minicourse – Building Multi-Agent AI Systems from Scratch",
+          "time": "13:30",
+          "location": "ICMC - Building 6 - Rooms 6305 and 6306",
+          "speaker": "Moacir Ponti - Professor, ICMC/USP",
+          "description": "This minicourse will teach participants how to design and implement multi-agent systems using modern AI techniques. Topics include core concepts, agent architectures, coordination strategies, and hands-on exercises with widely used professional tools.",
+          "actions": [
+            {
+              "text": "Watch on YouTube",
+              "url": "https://www.youtube.com/live/1r3WSNSEE6A?si=XukyWQH8ovaJeAjS"
+            }
+          ]
+        },
+        {
+          "title": "Coffee Break",
+          "time": "15:30",
+          "location": "ICMC - Fernão Auditorium"
+        },
+        {
+          "title": "End of Minicourse",
+          "time": "18:00",
+          "location": "ICMC - Fernão Auditorium"
+        }
+      ]
+    },
+    "speakers": {
+      "title": "SPEAKERS OF THE SPRING SCHOOL ON LLMs",
+      "list": [
+        {
+          "name": "Matheus Jorge",
+          "photo": "/images/events/khipux2025/speakers/matheus-jorge.jpeg",
+          "bio": "Matheus Jorge holds a degree in Computer Engineering from the School of Engineering of São Carlos (EESC) and the Institute of Mathematics and Computer Sciences (ICMC) at the University of São Paulo (USP). He has worked professionally with Machine Learning and Data Science since his undergraduate studies, developing large-scale AI solutions. He is currently the Head of Machine Learning Engineering at Tractian, where he leads the team responsible for designing, developing, and deploying systems based on Large Language Models (LLMs) and other machine learning technologies. His work involves applied research, production pipelines for AI models, and the development of intelligent systems for industrial environments. His interests include language models, ML engineering, and AI systems for large-scale operations.",
+          "lattes": "",
+          "linkedin": "https://www.linkedin.com/in/matheus-jorge-69bb6715b/?originalSubdomain=br",
+          "email": "",
+          "scholar": ""
+        },
+        {
+          "name": "Daniel Wolbert",
+          "photo": "/images/events/khipux2025/speakers/daniel-wolbert.jpeg",
+          "bio": "Daniel Wolbert is a Data & AI Lead at iFood, where he leads Data Science and Artificial Intelligence teams focused on developing scalable solutions for high-demand environments. He has over eight years of experience in the industry, working on the design, implementation, and operation of intelligent systems applied to technology and service sectors. Throughout his career, Daniel has specialized in machine learning, intelligent agent development, data engineering, and AI architectures for digital products. His work spans model strategy, infrastructure design, and production pipeline oversight, with emphasis on performance, reliability, and user impact. His interests include multi-agent systems, model scalability, observability, and practical applications of AI in enterprise settings.",
+          "lattes": "",
+          "linkedin": "https://www.linkedin.com/in/daniel-wolbert-39b38b29/?originalSubdomain=br",
+          "email": "",
+          "scholar": ""
+        },
+        {
+          "name": "Moacir Ponti",
+          "photo": "/images/events/khipux2025/speakers/moacir-ponti.jpeg",
+          "bio": "Moacir Ponti is an Associate Professor at the Institute of Mathematics and Computer Sciences at the University of São Paulo (ICMC-USP). His research focuses on Machine Learning, Computer Vision, and Artificial Intelligence. He has authored more than 60 publications in high-impact international venues and is ranked among the top 2% most influential scientists worldwide according to Stanford University. Beyond academia, Moacir is also a Machine Learning specialist at Mercado Livre, contributing to the development of large-scale AI solutions. His expertise spans data modeling, intelligent systems, LLMs, and modern deep learning methods, with emphasis on both applied research and real-world applications.",
+          "lattes": "http://lattes.cnpq.br/5041497500746910",
+          "linkedin": "https://www.linkedin.com/in/moacir-antonelli-ponti/?originalSubdomain=br",
+          "email": "",
+          "scholar": ""
+        },
+        {
+          "name": "Renato Moraes Silva",
+          "photo": "/images/events/khipux2025/speakers/renato-silva.jpeg",
+          "bio": "Renato Moraes Silva is an Associate Professor at the Institute of Mathematics and Computer Sciences at the University of São Paulo (ICMC-USP). He is a member of the Center for Artificial Intelligence at USP (C4AI-USP) and the Interinstitutional Center for Computational Linguistics (NILC), two of Brazil’s leading research centers in AI and Natural Language Processing. His research spans language models, information retrieval systems, NLP, and deep learning, with contributions to applied research and professional training in these areas. Renato has experience in large-scale collaborative projects involving academia and industry, focusing on the development and evaluation of modern AI methods for language understanding and generation. His interests include LLMs, search systems, RAG, text representation, and deep learning architectures for NLP.",
+          "lattes": "http://lattes.cnpq.br/2532893661927339",
+          "linkedin": "https://www.linkedin.com/in/renatosvmor/?originalSubdomain=br",
+          "email": "",
+          "scholar": ""
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ",
+      "questions": {
+        "language": "Will the event be in Portuguese?",
+        "language_answer": "Yes, the entire event will be held in Portuguese. To make the content accessible to people from other countries, recorded sessions will be available with English subtitles.",
+        "free": "Is participation free?",
+        "free_answer": "Yes! Participation is completely free.",
+        "location": "Where will the event take place?",
+        "location_answer": "The event will take place at ICMC - USP. The location of each activity can be checked in the event schedule. Additionally, lectures, minicourses, and Flash Talks will be streamed live on the Data YouTube channel.",
+        "certificate": "Is there a certificate of participation?",
+        "certificate_answer": "Yes, participants who register for the event and attend at least three lectures or minicourses will receive a certificate. There will also be special certificates for those who present work during the Poster Session or Flash Talks.",
+        "sponsor": "How can I become a sponsor?",
+        "sponsor_answer": "Please contact us at data@icmc.usp.br or matheoangelo@usp.br with details about your proposal."
+      }
+    }
   }
 }

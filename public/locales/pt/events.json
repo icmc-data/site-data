@@ -296,5 +296,195 @@
         "sponsor_answer": "Entre em contato conosco em data@icmc.usp.br ou matheoangelo@usp.br com detalhes da sua proposta."
       }
     }
+  },
+  "khipu": {
+    "title": "KHIPUx: Escola de Primavera de LLMs",
+    "description": "Junte-se a nós nos dias 15 e 16 de Novembro para se aprofundar no universo das LLMs! E aprender na teoria e na prática como funcionam os modelos de IA mais famosos da atualidade!",
+    "date": "15-16 de Novembro",
+    "dateDetails": "Dias 15 e 16 de Novembro de 2025 para uma imersão no universo dos LLMs, com palestras e minicursos para aprender e aplicar o conhecimento na prática.",
+    "actions": {
+      "register": "Inscreva-se",
+      "viewSpeakers": "Ver Palestrantes",
+      "learnMore": "Saiba Mais",
+      "backToEvent": "Ver todos os Eventos",
+      "addToCalendar": "Adicionar ao Google Calendar",
+      "watchOnYoutube": "Assista no YouTube"
+    },
+    "features": {
+      "lectures": {
+        "title": "Palestras de alto nível",
+        "description": "Com pesquisadores renomados e representantes da indústria, você poderá aprender mais sobre Finetuning e agentes de IA com quem realmente entende do assunto!"
+      },
+      "courses": {
+        "title": "Minicursos mão na massa",
+        "description": "Desenvolvimento de aplicações práticas utilizando o que há de mais avançado no mundo da tecnologia!"
+      }
+    },
+    "about": {
+      "title": "SOBRE O EVENTO",
+      "description": "O KHIPU é o principal encontro latino-americano focado em Inteligência Artificial (IA). Seu objetivo é fortalecer a comunidade de pesquisa e desenvolvimento em IA e Machine Learning (ML) na América Latina. O KHIPUx é uma iniciativa de apoio a organizações de eventos locais sobre IA em diversos países da América Latina, buscando alcançar diferentes centros de pesquisa e desenvolvimento dessas tecnologias.",
+      "details": "O objetivo da Escola de Primavera de LLMs é difundir conhecimento de ponta em Inteligência Artificial, com foco específico em Modelos de Linguagem Grandes (LLMs) e sistemas multiagentes. Será uma oportunidade de unir o conhecimento prático e teórico sobre as tecnologias mais reventes em LLMs."
+    },
+    "historyCTA": {
+      "text": "Quer saber mais sobre a história da KHIPU?",
+      "button": "Ver História"
+    },
+    "schedule": {
+      "title": "CRONOGRAMA",
+      "days": {
+        "saturday": "Sábado",
+        "sunday": "Domingo"
+      },
+      "actions": {
+        "addToCalendar": "Adicionar ao Google Calendar"
+      },
+      "saturday": [
+        {
+          "title": "Credenciamento + Café da Manhã",
+          "time": "09:00",
+          "location": "ICMC - Auditório Fernão"
+        },
+        {
+          "title": "Abertura do evento",
+          "time": "09:45",
+          "location": "ICMC - Auditório Fernão"
+        },
+        {
+          "title": "Estratégias de Adaptação de LLMs",
+          "time": "10:00",
+          "location": "ICMC - Auditório Fernão",
+          "speaker": "Matheus Jorge - Tractian",
+          "description": "A palestra abordará técnicas como In-Context Learning, Retrieval-Augmented Generation (RAG) e Finetuning, destacando suas aplicações práticas e desafios. Serão discutidos casos de uso da indústria, evidenciando a importância dessas tecnologias.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://www.youtube.com/live/LNgbo8WukI0?si=LkrWLDoMrxCH5_Ks"
+            }
+          ]
+        },
+        {
+          "title": "Minicurso - Retrieval Augmented Generation (RAG)",
+          "time": "13:30",
+          "location": "ICMC - Bloco 6 - Sala 6305 e 6306",
+          "speaker": "Renato Moraes Silva - ICMC/USP",
+          "description": "No minicurso, os participantes aprenderão técnicas práticas de RAG para melhorar a eficiência dos LLMs. Serão abordados conceitos fundamentais e ferramentas essenciais para a implementação dessas técnicas.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://www.youtube.com/live/-5aybTeQY2w?si=9ktk5mqy_wXWdFBQ"
+            }
+          ]
+        },
+        {
+          "title": "Coffee Break",
+          "time": "15:30",
+          "location": "ICMC - Auditório Fernão"
+        },
+        {
+          "title": "Fim do minicurso",
+          "time": "18:00",
+          "location": "ICMC - Auditório Fernão"
+        }
+      ],
+      "sunday": [
+        {
+          "title": "Credenciamento + Café da Manhã",
+          "time": "9:00",
+          "location": "ICMC - Auditório Fernão"
+        },
+        {
+          "title": "Ailo: Entendendo como construir um agente de IA em escala",
+          "time": "10:00",
+          "location": "ICMC - Auditório Fernão",
+          "speaker": "Daniel Wolbert - iFood",
+          "description": "Nesta palestra, Daniel Wolbert compartilhará insights sobre a construção de agentes de IA em escala. Serão discutidos os desafios técnicos e as melhores práticas para desenvolver sistemas robustos e eficientes que possam operar em ambientes complexos e dinâmicos.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://www.youtube.com/live/ywuZ5tNGuqU?si=gDnJncMWm5wYc7TH"
+            }
+          ]
+        },
+        {
+          "title": "Minicurso - Construindo Sistemas Multiagentes com IA do zero",
+          "time": "13:30",
+          "location": "ICMC - Bloco 6 - Sala 6305 e 6306",
+          "speaker": "Moacir Ponti - Professor ICMC/USP",
+          "description": "Neste minicurso, os participantes aprenderão a construir sistemas multiagentes utilizando técnicas de Inteligência Artificial. Serão abordados conceitos fundamentais, arquiteturas de agentes e estratégias de coordenação para desenvolver sistemas eficazes, utilizando as ferramentas mais usadas no meio profissional.",
+          "actions": [
+            {
+              "text": "Assista no YouTube",
+              "url": "https://www.youtube.com/live/1r3WSNSEE6A?si=XukyWQH8ovaJeAjS"
+            }
+          ]
+        },
+        {
+          "title": "Coffee Break",
+          "time": "15:30",
+          "location": "ICMC - Auditório Fernão"
+        },
+        {
+          "title": "Fim do minicurso",
+          "time": "18:00",
+          "location": "ICMC - Auditório Fernão"
+        }
+      ]
+    },
+    "speakers": {
+      "title": "PALESTRANTES DA ESCOLA DE PRIMAVERA DE LLMs",
+      "list": [
+        {
+          "name": "Matheus Jorge",
+          "photo": "/images/events/khipux2025/speakers/matheus-jorge.jpeg",
+          "bio": "Matheus Jorge é formado em Engenharia de Computação pela Escola de Engenharia de São Carlos (EESC) e pelo Instituto de Ciências Matemáticas e de Computação (ICMC) da Universidade de São Paulo. Atua profissionalmente nas áreas de Aprendizado de Máquina e Ciência de Dados desde a graduação, desenvolvendo soluções de IA aplicadas a problemas de grande escala. Atualmente, é Head of Machine Learning Engineering na Tractian, onde lidera a equipe responsável pelo projeto, desenvolvimento e deploy de sistemas baseados em Large Language Models (LLMs) e outras tecnologias de aprendizado de máquina. Seu trabalho envolve pesquisa aplicada, construção de pipelines de produção para modelos de IA e implementação de sistemas inteligentes voltados à indústria. Seus interesses incluem modelos de linguagem, engenharia de machine learning e desenvolvimento de sistemas de IA para ambientes industriais.",
+          "lattes": "",
+          "linkedin": "https://www.linkedin.com/in/matheus-jorge-69bb6715b/?originalSubdomain=br",
+          "email": "",
+          "scholar": ""
+        },
+        {
+          "name": "Daniel Wolbert",
+          "photo": "/images/events/khipux2025/speakers/daniel-wolbert.jpeg",
+          "bio": "Daniel Wolbert é Data & AI Lead no iFood, onde atua na liderança de times de Ciência de Dados e Inteligência Artificial focados no desenvolvimento de soluções escaláveis para ambientes de alta demanda. Possui mais de oito anos de experiência no mercado, trabalhando na concepção, implementação e operação de sistemas inteligentes aplicados ao setor de tecnologia e serviços. Ao longo de sua carreira, Daniel tem se especializado em aprendizado de máquina, construção de agentes inteligentes, engenharia de dados e arquiteturas de IA voltadas para produtos digitais. Sua atuação envolve desde a definição de estratégias de modelagem e infraestrutura até a supervisão de pipelines de produção, com foco em desempenho, confiabilidade e impacto nos usuários. Seus interesses incluem sistemas multiagentes, escalabilidade de modelos, observabilidade e aplicações práticas de IA em ambientes corporativos.",
+          "lattes": "",
+          "linkedin": "https://www.linkedin.com/in/daniel-wolbert-39b38b29/?originalSubdomain=br",
+          "email": "",
+          "scholar": ""
+        },
+        {
+          "name": "Moacir Ponti",
+          "photo": "/images/events/khipux2025/speakers/moacir-ponti.jpeg",
+          "bio": "Moacir Ponti é Professor Associado no Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo (ICMC-USP), onde atua nas áreas de Aprendizado de Máquina, Visão Computacional e Inteligência Artificial. Possui extensa produção científica, com mais de 60 publicações em conferências e periódicos de alto impacto internacional, e integra o grupo dos 2% de cientistas mais influentes do mundo segundo ranking da Universidade Stanford. Além da atuação acadêmica, Moacir também é especialista em Machine Learning no Mercado Livre, contribuindo para o desenvolvimento de soluções avançadas em IA aplicadas a produtos de larga escala. Sua experiência abrange modelagem de dados, sistemas inteligentes, LLMs e métodos modernos de aprendizado profundo, com foco em aplicações práticas e em pesquisa de ponta.",
+          "lattes": "http://lattes.cnpq.br/5041497500746910",
+          "linkedin": "https://www.linkedin.com/in/moacir-antonelli-ponti/?originalSubdomain=br",
+          "email": "",
+          "scholar": ""
+        },
+        {
+          "name": "Renato Moraes Silva",
+          "photo": "/images/events/khipux2025/speakers/renato-silva.jpeg",
+          "bio": "Renato Moraes Silva é Professor Associado no Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo (ICMC-USP). É integrante do Centro de Inteligência Artificial da USP (C4AI-USP) e do Núcleo Interinstitucional de Linguística Computacional (NILC), dois dos principais centros de pesquisa em IA e Processamento de Linguagem Natural (PLN) do país. Sua atuação acadêmica abrange temas como modelos de linguagem, sistemas de recuperação de informação, PLN e aprendizado profundo, com contribuições relevantes em pesquisa aplicada e formação de profissionais na área. Renato tem experiência em projetos colaborativos de grande porte envolvendo universidades e indústria, com foco no desenvolvimento e avaliação de métodos modernos de IA para compreensão e geração de linguagem natural. Seus interesses incluem LLMs, sistemas de busca, RAG, representação de texto e arquiteturas de deep learning aplicadas ao processamento de linguagem.",
+          "lattes": "http://lattes.cnpq.br/2532893661927339",
+          "linkedin": "https://www.linkedin.com/in/renatosvmor/?originalSubdomain=br",
+          "email": "",
+          "scholar": ""
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ",
+      "questions": {
+        "language": "O evento será em Português?",
+        "language_answer": "Sim, toda a programação do evento será em português. Para permitir que pessoas de outros países também possam assistir as palestras, também iremos disponibilizar as gravações com legendas em Inglês.",
+        "free": "A participação é gratuita?",
+        "free_answer": "Sim, o evento é totalmente gratuito!",
+        "location": "Onde será o evento?",
+        "location_answer": "O evento irá ocorrer no ICMC - USP (o local de cada atividade pode ser consultado no cronograma do evento). Além disso, as palestras, minicursos e Flash Talks serão transmitidas ao vivo no YouTube do Data.",
+        "certificate": "Tem certificado de participação?",
+        "certificate_answer": "Sim, há certificado para quem se inscrever no evento e registrar presença em pelo menos 3 palestras ou minicursos. Além disso, teremos certificados especiais para os que apresentarem trabalhos na Sessão de Pôsters ou nas Flash Talks.",
+        "sponsor": "Como faço para patrocinar?",
+        "sponsor_answer": "Entre em contato conosco em data@icmc.usp.br ou matheoangelo@usp.br com detalhes da sua proposta."
+      }
+    }
   }
 }
