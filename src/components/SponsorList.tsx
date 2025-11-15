@@ -32,6 +32,14 @@ export function SponsorList({ names }: SponsorListProps) {
       url: "https://c4ai.inova.usp.br/",
     },
     {
+      name: "Alura",
+      logo:
+        theme === "dark"
+          ? "/images/sponsors/alura-logo.png"
+          : "/images/sponsors/alura-logo-white.png",
+      url: "https://www.alura.com.br/",
+    },
+    {
       name: "CEMEAI",
       logo:
         theme === "dark"
@@ -46,6 +54,46 @@ export function SponsorList({ names }: SponsorListProps) {
           ? "/images/sponsors/sbmac-logo.png"
           : "/images/sponsors/sbmac-logo.png",
       url: "https://www.sbmac.org.br/",
+    },
+    {
+      name: "iFood",
+      logo:
+        theme === "dark"
+          ? "/images/sponsors/ifood-logo.png"
+          : "/images/sponsors/ifood-logo-white.png",
+      url: "https://www.sbmac.org.br/",
+    },
+    {
+      name: "Tractian",
+      logo:
+        theme === "dark"
+          ? "/images/sponsors/tractian-logo.png"
+          : "/images/sponsors/tractian-logo-white.png",
+      url: "https://www.sbmac.org.br/",
+    },
+    {
+      name: "KHIPUx",
+      logo:
+        theme === "dark"
+          ? "/images/sponsors/khipu-logo.png"
+          : "/images/sponsors/khipu-logo.png",
+      url: "https://www.sbmac.org.br/",
+    },
+    {
+      name: "CCEx",
+      logo:
+        theme === "dark"
+          ? "/images/sponsors/ccex-logo.png"
+          : "/images/sponsors/ccex-logo.png",
+      url: "https://www.sbmac.org.br/",
+    },
+    {
+      name: "FIPAI",
+      logo:
+        theme === "dark"
+          ? "/images/sponsors/fipai-logo.png"
+          : "/images/sponsors/fipai-logo-white.png",
+      url: "https://www.fipai.org.br",
     },
   ];
 
@@ -69,11 +117,13 @@ export function SponsorList({ names }: SponsorListProps) {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
-              <img
-                src={sponsor.logo}
-                alt={sponsor.name}
-                className="h-24 md:h-24 object-contain"
-              />
+              <div className="w-40 h-20 flex items-center justify-center">
+                <img
+                  src={sponsor.logo}
+                  alt={sponsor.name}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
             </a>
           ))}
         </div>

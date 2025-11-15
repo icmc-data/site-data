@@ -60,7 +60,7 @@ const EventsKHIPU = () => {
                 </div>
               </div>
               <div className="flex flex-wrap gap-3">
-                <Link to="/events/khipu/register">
+                <Link to="https://tr.ee/k1m_I1D1jE">
                   <Button className="bg-data-purple hover:bg-data-purple/80">
                     {t("khipu.actions.register")}
                   </Button>
@@ -93,11 +93,7 @@ const EventsKHIPU = () => {
 
           {/* Features Section */}
           <section
-            className={`mb-16 grid gap-8 ${
-              i18n.language !== "en"
-                ? "grid-cols-1 md:grid-cols-2"
-                : "grid-cols-1"
-            }`}
+            className={`mb-16 grid gap-8 grid-cols-1 md:grid-cols-2`}
           >
             <Card className="bg-card/50 backdrop-blur-sm border border-border">
               <CardContent className="p-8">
@@ -114,17 +110,17 @@ const EventsKHIPU = () => {
             </Card>
 
             <Card className="bg-card/50 backdrop-blur-sm border border-border">
-            <CardContent className="p-8">
-                <div className="text-4xl font-bold text-data-purple mb-4">
-                ⚙️
-                </div>
-                <h2 className="text-xl font-bold mb-3">
-                {t("khipu.features.courses.title")}
-                </h2>
-                <p className="text-muted-foreground">
-                {t("khipu.features.courses.description")}
-                </p>
-            </CardContent>
+              <CardContent className="p-8">
+                  <div className="text-4xl font-bold text-data-purple mb-4">
+                  ⚙️
+                  </div>
+                  <h2 className="text-xl font-bold mb-3">
+                  {t("khipu.features.courses.title")}
+                  </h2>
+                  <p className="text-muted-foreground">
+                  {t("khipu.features.courses.description")}
+                  </p>
+              </CardContent>
             </Card>
           </section>
 
@@ -144,7 +140,7 @@ const EventsKHIPU = () => {
           </section>
 
           {/* Patrocínio e apoio */}
-          <SponsorList names={["ICMC-USP", "SBMAC", "CEMEAI"]} />
+          <SponsorList names={["iFood", "Tractian", "KHIPUx", "CCEx", "FIPAI"]} />
 
           <div className="mt-10 px-4 py-6 border rounded-xl text-center shadow-sm bg-background-secondary w-full max-w-md mx-auto sm:px-6 md:px-8">
             <p className="text-base sm:text-lg text-muted-foreground mb-4">

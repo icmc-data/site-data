@@ -42,7 +42,7 @@ const Index = () => {
         </section>
 
         {/* Seção de Apoiadores */}
-        <SponsorList />
+        <SponsorList names={["ICMC-USP", "C4AI", "Alura", "CEMEAI", "SBMAC"]}/>
 
         {/* Seção de Conteúdos de Ensino */}
         <section className="py-16">
