@@ -95,6 +95,14 @@ export function SponsorList({ names }: SponsorListProps) {
           : "/images/sponsors/fipai-logo-white.png",
       url: "https://www.fipai.org.br",
     },
+    {
+      name: "RAIA",
+      logo:
+        theme === "dark"
+          ? "/images/sponsors/raia-logo.png"
+          : "/images/sponsors/raia-logo.png",
+      url: "https://grupo-raia.org/",
+    }
   ];
 
   const sponsorsToShow = Array.isArray(names) && names.length > 0

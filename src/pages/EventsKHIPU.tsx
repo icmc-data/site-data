@@ -140,7 +140,7 @@ const EventsKHIPU = () => {
           </section>
 
           {/* Patrocínio e apoio */}
-          <SponsorList names={["iFood", "Tractian", "KHIPUx", "CCEx", "FIPAI"]} />
+          <SponsorList names={["iFood", "Tractian", "KHIPUx", "CCEx", "FIPAI", "RAIA"]} />
 
           <div className="mt-10 px-4 py-6 border rounded-xl text-center shadow-sm bg-background-secondary w-full max-w-md mx-auto sm:px-6 md:px-8">
             <p className="text-base sm:text-lg text-muted-foreground mb-4">
