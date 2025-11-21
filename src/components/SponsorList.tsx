@@ -61,7 +61,7 @@ export function SponsorList({ names }: SponsorListProps) {
         theme === "dark"
           ? "/images/sponsors/ifood-logo.png"
           : "/images/sponsors/ifood-logo-white.png",
-      url: "https://www.sbmac.org.br/",
+      url: "https://www.ifood.com.br",
     },
     {
       name: "Tractian",
@@ -69,7 +69,7 @@ export function SponsorList({ names }: SponsorListProps) {
         theme === "dark"
           ? "/images/sponsors/tractian-logo.png"
           : "/images/sponsors/tractian-logo-white.png",
-      url: "https://www.sbmac.org.br/",
+      url: "https://tractian.com/en",
     },
     {
       name: "KHIPUx",
@@ -77,7 +77,7 @@ export function SponsorList({ names }: SponsorListProps) {
         theme === "dark"
           ? "/images/sponsors/khipu-logo.png"
           : "/images/sponsors/khipu-logo.png",
-      url: "https://www.sbmac.org.br/",
+      url: "https://khipu.ai/khipux-about",
     },
     {
       name: "CCEx",
@@ -85,7 +85,7 @@ export function SponsorList({ names }: SponsorListProps) {
         theme === "dark"
           ? "/images/sponsors/ccex-logo.png"
           : "/images/sponsors/ccex-logo.png",
-      url: "https://www.sbmac.org.br/",
+      url: "https://www.icmc.usp.br/cultura-e-extensao",
     },
     {
       name: "FIPAI",
@@ -95,6 +95,14 @@ export function SponsorList({ names }: SponsorListProps) {
           : "/images/sponsors/fipai-logo-white.png",
       url: "https://www.fipai.org.br",
     },
+    {
+      name: "RAIA",
+      logo:
+        theme === "dark"
+          ? "/images/sponsors/raia-logo.png"
+          : "/images/sponsors/raia-logo.png",
+      url: "https://grupo-raia.org/",
+    }
   ];
 
   const sponsorsToShow = Array.isArray(names) && names.length > 0
