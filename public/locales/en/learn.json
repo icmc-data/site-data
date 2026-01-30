@@ -15,6 +15,22 @@
       "actions": {
         "watch": "Watch the classes"
       }
-    }
+    },
+    "sqlcourse": {
+      "title": "Data Analysis Course | PostgreSQL",
+      "date": "August 28 to November 27, 2025",
+      "description": "Free course promoted by the DATA extension group at ICMC-USP, intended for anyone interested in learning more about data analysis using PostgreSQL. Classes are held on Fridays, from 2:00 PM to 4:00 PM, with live streaming on the DATA YouTube channel. Basic prior knowledge in Python is recommended. Topics include data treatment, time series, data modeling and ETL processes.",
+      "actions": {
+        "watch": "Watch the classes"
+      }
+    },
+    "rlcourse": {
+      "title": "Reinforcement Learning Course",
+      "date": "August 22 to November 1, 2025",
+      "description": "Free course promoted by the DATA extension group at ICMC-USP, intended for anyone interested in learning more about reinforcement learning. Classes are held on Fridays, from 2:00 PM to 4:00 PM, with live streaming on the DATA YouTube channel. Basic prior knowledge in Python and Machine Learning is recommended. Topics include agents, environments, policies and rewards, classical algorithms and some applications.",
+      "actions": {
+        "watch": "Watch the classes"
+      }
   }
+}
   
