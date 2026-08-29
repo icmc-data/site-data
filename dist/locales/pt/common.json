@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "fronts": "Frentes",
+    "about": "Sobre",
+    "events": "Eventos",
+    "contact": "Contato",
+    "learn": "Aprender"
+  },
+  "footer": {
+    "resources": "RECURSOS",
+    "followUs": "SIGA-NOS",
+    "happening": "ACONTECENDO...",
+    "learnCourse": "Curso de Machine Learning",
+    "eventNow": "LoG Meetup Conference"
+  },
+  "languageSelector": {
+    "pt": "PT",
+    "en": "EN"
+  },
+  "themeToggle": {
+    "light": "Claro",
+    "dark": "Escuro"
+  }
+}

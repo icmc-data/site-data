@@ -1,88 +1,95 @@
 
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import type { Engine } from "tsparticles-engine";
-import { loadLinksPreset } from "tsparticles-preset-links";
+import { useMemo } from "react";
+import Particles, { ParticlesProvider } from "@tsparticles/react";
+import type { Engine, ISourceOptions } from "@tsparticles/engine";
+import { loadSlim } from "@tsparticles/slim";
 import { useTheme } from "./ThemeProvider";
+
+const loadParticlesEngine = async (engine: Engine) => {
+  await loadSlim(engine);
+};
 
 export const ParticlesBackground = () => {
   const { theme } = useTheme();
-  
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadLinksPreset(engine);
-  }, []);
+  const particleColor = theme === "dark" ? "#c479ce" : "#ec90c5";
+  const options = useMemo<ISourceOptions>(() => ({
+    hdr: false,
+    background: {
+      color: {
+        value: "transparent",
+      },
+    },
+    particles: {
+      number: {
+        value: 100,
+        density: {
+          enable: false,
+        },
+      },
+      paint: {
+        color: {
+          value: particleColor,
+        },
+        fill: {
+          enable: true,
+          color: {
+            value: particleColor,
+          },
+          opacity: 1,
+        },
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: 1,
+      },
+      links: {
+        enable: true,
+        distance: 150,
+        color: particleColor,
+        opacity: theme === "dark" ? 0.4 : 0.8,
+        width: 1,
+      },
+      move: {
+        enable: true,
+        speed: 0.3,
+        direction: "none",
+        random: false,
+        straight: false,
+        outModes: {
+          default: "out",
+        },
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+      },
+    },
+    interactivity: {
+      events: {
+        onHover: {
+          enable: false,
+        },
+        onClick: {
+          enable: false,
+        },
+        resize: {
+          enable: true,
+        },
+      },
+    },
+    detectRetina: true,
+  }), [particleColor, theme]);
 
   return (
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      options={{
-        preset: "links",
-        background: {
-          color: {
-            value: "transparent",
-          },
-        },
-        particles: {
-          number: {
-            value: 80,
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-          },
-          color: {
-            value: theme === "dark" ? "#c479ce" : "#ec90c5", // Data-purple para escuro, data-pink para claro
-          },
-          links: {
-            enable: true,
-            distance: 150,
-            color: theme === "dark" ? "#c479ce" : "#ec90c5", // Data-purple para escuro, data-pink para claro
-            opacity: theme === "dark" ? 0.4 : 0.8, 
-            width: 1,
-          },
-          move: {
-            enable: true,
-            speed: 0.3,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 1200,
-            },
-          },
-        },
-        interactivity: {
-          detect_on: "window",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "repulse", // ← muda de "grab" para "repulse"
-            },
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-            resize: true,
-          },
-          modes: {
-            repulse: {
-              distance: 100,  // distância de repulsão
-              duration: 0.4,  // duração do efeito
-            },
-            push: {
-              quantity: 4,    // quantidade de partículas ao clicar
-            },
-          },
-        },
-        
-        retina_detect: true,
-      }}
-      className="fixed inset-0 -z-10"
-    />
+    <ParticlesProvider init={loadParticlesEngine}>
+      <Particles
+        id="tsparticles"
+        options={options}
+        className="fixed inset-0 -z-10"
+      />
+    </ParticlesProvider>
   );
 };

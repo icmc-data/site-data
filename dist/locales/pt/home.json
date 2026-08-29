@@ -1,0 +1,15 @@
+{
+  "title": "DATA",
+  "description": "Grupo de Extensão do ICMC-USP, focado em Ciência de Dados e Aprendizado de Máquina. Por meio de aulas, eventos, grupos de estudo e palestras, nossa missão é criar conexões relevantes para sua carreira enquanto você aprende.",
+  "learnMore": "Saiba mais",
+  "sponsors": {
+    "title": "Apoiadores",
+    "subtitle": "Instituições que acreditam no projeto"
+  },
+  "eventSectionTitle": "Descubra os Eventos do Data ICMC",
+  "eventSectionDescription": "No Data ICMC, promovemos eventos transformadores que conectam o meio acadêmico à indústria. Nossos encontros, workshops e palestras são projetados para estimular a inovação e facilitar o networking entre profissionais, estudantes e entusiastas da ciência de dados.",
+  "seeEvents": "Ver Eventos",
+  "learnSectionTitle": "Explore os Conteúdos de Ensino",
+  "learnSectionDescription": "Descubra uma variedade de conteúdos educativos que vão desde artigos e tutoriais até cursos e vídeos, preparados para ajudar você a dominar as mais recentes tecnologias e metodologias em ciência de dados e machine learning.",
+  "seeLearn": "Ver Conteúdos"
+}

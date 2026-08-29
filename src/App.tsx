@@ -14,9 +14,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Fronts from "./pages/Fronts";
 import Events from "./pages/Events";
-import EventsKHIPU from "./pages/EventsKHIPU";
 import EventsKHIPUSpeakers from "./pages/EventsKHIPUSpeakers";
-import EventsLOG from "./pages/EventsLOG";
 import EventsLOGSpeakers from "./pages/EventsLOGSpeakers";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -28,6 +26,7 @@ import EvertsLOGRegisterPoster from "./pages/EventsLOGRegisterPoster";
 
 // i18n
 import "./i18n";
+import EventsChoosen from "./pages/EventChoosen";
 
 const queryClient = new QueryClient();
 
@@ -86,9 +85,9 @@ const App = () => {
                 <Route path="/fronts" element={<Fronts />} />
                 <Route path="/events" element={<Events />} />
                 <Route path="/learn" element={<Learn />} />
-                <Route path="/events/khipu" element={<EventsKHIPU />} />
+                <Route path="/events/khipu" element={<EventsChoosen event="khipu" />} />
                 <Route path="/events/khipu/speakers" element={<EventsKHIPUSpeakers />} />
-                <Route path="/events/log" element={<EventsLOG />} />
+                <Route path="/events/log" element={<EventsChoosen event="log" />} />
                 <Route path="/events/log/speakers" element={<EventsLOGSpeakers />} />
                 <Route path="/events/log/register" element={<EventsLOGRegister />} />
                 <Route path="/events/log/submit-flash-talk" element={<EvertsLOGRegisterFlashCard />} />

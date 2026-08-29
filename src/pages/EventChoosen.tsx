@@ -22,9 +22,15 @@ import { useFetchEvents } from "@/utils/fetch-events";
 import { useTheme } from "@/components/ThemeProvider";
 import { SponsorList } from "@/components/SponsorList";
 
-const EventsLOG = () => {
+type EventsChoosenProps = {
+  event: "khipu" | "log";
+};
+
+const EventsChoosen = ({ event }: EventsChoosenProps) => {
   const { t, i18n } = useTranslation("events");
   const { theme } = useTheme();
+  const isKhipu = event === "khipu";
+  const prefix = event;
 
   return (
     <>
@@ -35,7 +41,7 @@ const EventsLOG = () => {
             <Link to="/events">
               <Button variant="ghost" className="flex items-center gap-2 mb-4">
                 <ChevronLeft size={16} />
-                {t("udl.actions.backToEvent")}
+                {t(`${prefix}.actions.backToEvent`)}
               </Button>
             </Link>
           </div>
@@ -44,15 +50,15 @@ const EventsLOG = () => {
           <section className="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                {t("log.title")}
+                {t(`${prefix}.title`)}
               </h1>
               <p className="text-lg mb-8 text-muted-foreground">
-                {t("log.description")}
+                {t(`${prefix}.description`)}
               </p>
               <div className="flex flex-wrap gap-4 mb-4">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Calendar size={18} />
-                  <span>{t("log.date")}</span>
+                  <span>{t(`${prefix}.date`)}</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <MapPin size={18} />
@@ -60,14 +66,14 @@ const EventsLOG = () => {
                 </div>
               </div>
               <div className="flex flex-wrap gap-3">
-                <Link to="/events/log/register">
+                <Link to="https://tr.ee/k1m_I1D1jE">
                   <Button className="bg-data-purple hover:bg-data-purple/80">
-                    {t("log.actions.register")}
+                    {t(`${prefix}.actions.register`)}
                   </Button>
                 </Link>
-                <Link to="/events/log/speakers">
+                <Link to={t(`/events/${prefix}/speakers`)}>
                   <Button variant="outline">
-                    {t("log.actions.viewSpeakers")}
+                    {t(`${prefix}.actions.viewSpeakers`)}
                   </Button>
                 </Link>
                 <a
@@ -77,19 +83,15 @@ const EventsLOG = () => {
                 >
                   <Button variant="ghost" className="flex items-center gap-2">
                     <Calendar size={16} />
-                    {t("log.actions.addToCalendar")}
+                    {t(`${prefix}.actions.addToCalendar`)}
                   </Button>
                 </a>
               </div>
             </div>
             <div className="relative rounded-lg overflow-hidden aspect-video">
               <img
-                src={
-                  theme === "light"
-                    ? "/images/events/log2025/log_thumb_branca.png"
-                    : "/images/events/log2025/LoGLogoThumb.png"
-                }
-                alt="Learning on Graphs Conference 2025"
+                src={isKhipu ? "/images/events/khipux2025/khipux.png" : "/images/events/log2025/log_thumb_branca.png"}
+                alt={isKhipu ? "KHIPUx 2025" : "Learning on Graphs Conference 2025"}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -98,7 +100,7 @@ const EventsLOG = () => {
           {/* Features Section */}
           <section
             className={`mb-16 grid gap-8 ${
-              i18n.language !== "en"
+              i18n.language !== "en" && !isKhipu
                 ? "grid-cols-1 md:grid-cols-2"
                 : "grid-cols-1"
             }`}
@@ -109,72 +111,76 @@ const EventsLOG = () => {
                   👥
                 </div>
                 <h2 className="text-xl font-bold mb-3">
-                  {t("log.features.lectures.title")}
+                  {t(`${prefix}.features.lectures.title`)}
                 </h2>
                 <p className="text-muted-foreground">
-                  {t("log.features.lectures.description")}
+                  {t(`${prefix}.features.lectures.description`)}
                 </p>
               </CardContent>
             </Card>
-
+            
             {/* rederiza o card de pesquisa somente se o idioma NÃO for ingles */}
-            {i18n.language !== "en" && (
+            {i18n.language !== "en" && !isKhipu ? 
               <Card className="bg-card/50 backdrop-blur-sm border border-border">
                 <CardContent className="p-8">
-                  <div className="text-4xl font-bold text-data-purple mb-4">
-                    🔍
-                  </div>
-                  <h2 className="text-xl font-bold mb-3">
-                    {t("log.features.research.title")}
-                  </h2>
-                  <p className="text-muted-foreground">
-                    {t("log.features.research.description")}
-                  </p>
-                  <div className="mt-4 flex flex-col gap-2">
-                    <Link
-                      to="/events/log/submit-poster"
-                      className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
-                    >
-                      <ArrowUpRight size={16} />
-                      {t("log.actions.submitPoster")}
-                    </Link>
-                    <Link
-                      to="/events/log/submit-flash-talk"
-                      className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
-                    >
-                      <ArrowUpRight size={16} />
-                      {t("log.actions.submitFlashTalk")}
-                    </Link>
-                  </div>
+                    <div className="text-4xl font-bold text-data-purple mb-4">
+                    {isKhipu ? '⚙️': "🔍"}
+                    </div>
+                    <h2 className="text-xl font-bold mb-3">
+                    {t(isKhipu ? "khipu.features.courses.title" : "log.features.research.title")}
+                    </h2>
+                    <p className="text-muted-foreground">
+                    {t(isKhipu ? "khipu.features.courses.description" : "log.features.research.description")}
+                    </p>
+                    {isKhipu ? "":
+                      <div className="mt-4 flex flex-col gap-2">
+                      <Link
+                        to="/events/log/submit-poster"
+                        className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
+                      >
+                        <ArrowUpRight size={16} />
+                        {t("log.actions.submitPoster")}
+                      </Link>
+                      <Link
+                        to="/events/log/submit-flash-talk"
+                        className="flex items-center gap-2 text-data-purple hover:text-data-purple/80 transition-colors"
+                      >
+                        <ArrowUpRight size={16} />
+                        {t("log.actions.submitFlashTalk")}
+                      </Link>
+                    </div>
+                    }
                 </CardContent>
               </Card>
-            )}
+              : ""
+            }
           </section>
 
           {/* About Section */}
           <section className="mb-16">
-            <h2 className="text-2xl font-bold mb-6">{t("log.about.title")}</h2>
+            <h2 className="text-2xl font-bold mb-6">{t(`${prefix}.about.title`)}</h2>
             <div className="grid grid-cols-1 gap-8">
               <div className="lg:col-span-2">
                 <p className="mb-4 text-muted-foreground">
-                  {t("log.about.description")}
+                  {t(`${prefix}.about.description`)}
                 </p>
                 <p className="text-muted-foreground">
-                  {t("log.about.details")}
+                  {t(`${prefix}.about.details`)}
                 </p>
               </div>
             </div>
           </section>
 
-          <SponsorList names={["ICMC-USP", "SBMAC", "Alura", "CEMEAI"]} />
+          {/* Patrocínio e apoio */}
+          <SponsorList names={isKhipu ? ["iFood", "Tractian", "KHIPUx", "CCEx", "FIPAI", "RAIA"] : ["ICMC-USP", "Alura", "CEMEAI", "SBMAC"]} />
 
           <div className="mt-10 px-4 py-6 border rounded-xl text-center shadow-sm bg-background-secondary w-full max-w-md mx-auto sm:px-6 md:px-8">
             <p className="text-base sm:text-lg text-muted-foreground mb-4">
-              {t("log.historyCTA.text")}
+              {t(`${prefix}.historyCTA.text`)}
             </p>
-            <a href="https://logconference.org/" target="_blank" rel="noopener noreferrer">
+            <a href={isKhipu ? "https://khipu.ai" : "https://logconference.org/"} target="_blank" rel="noopener noreferrer">
               <Button className="px-4 sm:px-6 py-2 sm:py-3 whitespace-normal text-sm sm:text-base font-semibold rounded-full bg-[hsl(var(--data-purple))] text-white hover:brightness-110 transition duration-200">
-                {t("log.historyCTA.button")}
+                {t(`${prefix}.historyCTA.button`)}
               </Button>
             </a>
           </div>
@@ -184,7 +190,7 @@ const EventsLOG = () => {
           {/* Schedule Section */}
           <section className="mb-16">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-              <h2 className="text-2xl font-bold">{t("log.schedule.title")}</h2>
+              <h2 className="text-2xl font-bold">{t(`${prefix}.schedule.title`)}</h2>
               <a
                 href="https://calendar.google.com/calendar/u/0?cid=Y180ZWUyN2I1YzkyMzc0MjE5M2FmOGY3YTA5ZWUwMjk2ZWE2NjZjYWJiZmI4OTExMGQ1ZTgwZmNmNmZmZGZmMjBmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
                 target="_blank"
@@ -192,21 +198,21 @@ const EventsLOG = () => {
                 className="mt-2 md:mt-0 text-sm flex items-center gap-1 text-data-purple hover:text-data-purple/80 transition-colors"
               >
                 <Calendar size={14} />
-                {t("log.actions.addToCalendar")}
+                {t(`${prefix}.actions.addToCalendar`)}
               </a>
             </div>
 
             <Tabs defaultValue="saturday">
               <TabsList className="mb-8">
                 <TabsTrigger value="saturday">
-                  {t("log.schedule.days.saturday")}
+                  {t(`${prefix}.schedule.days.saturday`)}
                 </TabsTrigger>
                 <TabsTrigger value="sunday">
-                  {t("log.schedule.days.sunday")}
+                  {t(`${prefix}.schedule.days.sunday`)}
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="saturday" className="space-y-6">
-                {t("log.schedule.saturday", { returnObjects: true })?.map(
+                {t(`${prefix}.schedule.saturday`, { returnObjects: true })?.map(
                   (event: any, index: number) => (
                     <ScheduleItem
                       key={index}
@@ -216,13 +222,13 @@ const EventsLOG = () => {
                       speaker={event.speaker}
                       speakers={event.speakers}
                       description={event.description}
-                      actions={event.actions} // passando o array de ações
+                      actions={event.actions}
                     />
                   )
                 )}
               </TabsContent>
               <TabsContent value="sunday" className="space-y-6">
-                {t("log.schedule.sunday", { returnObjects: true })?.map(
+                {t(`${prefix}.schedule.sunday`, { returnObjects: true })?.map(
                   (event: any, index: number) => (
                     <ScheduleItem
                       key={index}
@@ -232,7 +238,7 @@ const EventsLOG = () => {
                       speaker={event.speaker}
                       speakers={event.speakers}
                       description={event.description}
-                      actions={event.actions} // também passando o array de ações
+                      actions={event.actions}
                     />
                   )
                 )}
@@ -242,31 +248,31 @@ const EventsLOG = () => {
 
           {/* FAQ Section */}
           <section className="mb-16">
-            <h2 className="text-2xl font-bold mb-6">{t("log.faq.title")}</h2>
+            <h2 className="text-2xl font-bold mb-6">{t(`${prefix}.faq.title`)}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
-                    {t("log.faq.questions.language")}
+                    {t(`${prefix}.faq.questions.language`)}
                   </AccordionTrigger>
                   <AccordionContent>
-                    {t("log.faq.questions.language_answer")}
+                    {t(`${prefix}.faq.questions.language_answer`)}
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger>
-                    {t("log.faq.questions.free")}
+                    {t(`${prefix}.faq.questions.free`)}
                   </AccordionTrigger>
                   <AccordionContent>
-                    {t("log.faq.questions.free_answer")}
+                    {t(`${prefix}.faq.questions.free_answer`)}
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger>
-                    {t("log.faq.questions.certificate")}
+                    {t(`${prefix}.faq.questions.certificate`)}
                   </AccordionTrigger>
                   <AccordionContent>
-                    {t("log.faq.questions.certificate_answer")}
+                    {t(`${prefix}.faq.questions.certificate_answer`)}
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -274,18 +280,18 @@ const EventsLOG = () => {
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-4">
                   <AccordionTrigger>
-                    {t("log.faq.questions.location")}
+                    {t(`${prefix}.faq.questions.location`)}
                   </AccordionTrigger>
                   <AccordionContent>
-                    {t("log.faq.questions.location_answer")}
+                    {t(`${prefix}.faq.questions.location_answer`)}
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
                   <AccordionTrigger>
-                    {t("log.faq.questions.sponsor")}
+                    {t(`${prefix}.faq.questions.sponsor`)}
                   </AccordionTrigger>
                   <AccordionContent>
-                    {t("log.faq.questions.sponsor_answer")}
+                    {t(`${prefix}.faq.questions.sponsor_answer`)}
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -362,4 +368,4 @@ const ScheduleItem = ({
   );
 };
 
-export default EventsLOG;
+export default EventsChoosen;

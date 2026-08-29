@@ -1,0 +1,25 @@
+
+{
+  "navigation": {
+    "fronts": "Fronts",
+    "about": "About",
+    "events": "Events",
+    "contact": "Contact",
+    "learn": "Learn"
+  },
+  "footer": {
+    "resources": "RESOURCES",
+    "followUs": "FOLLOW US",
+    "happening": "HAPPENING...",
+    "learnCourse": "Machine Learning Course",
+    "eventNow": "LoG Meetup Conference"
+  },
+  "languageSelector": {
+    "pt": "PT",
+    "en": "EN"
+  },
+  "themeToggle": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}
