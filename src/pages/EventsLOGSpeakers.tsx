@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { useFetchEvents } from "@/utils/fetch-events";
+import { type Speaker } from "@/utils/fetch-events";
 
 const EventsLOGSpeakers = () => {
   const { t, i18n } = useTranslation("events");
-  const { data: eventsData, isLoading, isError } = useFetchEvents();
-  const speakers = eventsData?.log.speakers ?? [];
+  const speakerData = t("log.speakers.list", { returnObjects: true });
+  const speakers = Array.isArray(speakerData) ? (speakerData as Speaker[]) : [];
 
   return (
     <>
@@ -33,18 +33,6 @@ const EventsLOGSpeakers = () => {
           </div>
 
           <section className="mb-16">
-            {isLoading && (
-              <p className="text-muted-foreground">
-                {i18n.language === "pt" ? "Carregando palestrantes..." : "Loading speakers..."}
-              </p>
-            )}
-            {isError && (
-              <p className="text-destructive">
-                {i18n.language === "pt"
-                  ? "Não foi possível carregar os palestrantes."
-                  : "Unable to load the speakers."}
-              </p>
-            )}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {speakers.map((speaker) => (
                 <Card key={speaker.name} className="overflow-hidden border border-border">
