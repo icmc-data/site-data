@@ -5,13 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useFetchEvents } from "@/utils/fetch-events";
 
 const EventsLOGSpeakers = () => {
   const { t, i18n } = useTranslation("events");
-  
-  const speakers = i18n.language === "pt" 
-    ? t("log.speakers.list", { returnObjects: true })
-    : t("log.speakers.list", { returnObjects: true });
+  const { data: eventsData, isLoading, isError } = useFetchEvents();
+  const speakers = eventsData?.log.speakers ?? [];
 
   return (
     <>
@@ -34,9 +33,21 @@ const EventsLOGSpeakers = () => {
           </div>
 
           <section className="mb-16">
+            {isLoading && (
+              <p className="text-muted-foreground">
+                {i18n.language === "pt" ? "Carregando palestrantes..." : "Loading speakers..."}
+              </p>
+            )}
+            {isError && (
+              <p className="text-destructive">
+                {i18n.language === "pt"
+                  ? "Não foi possível carregar os palestrantes."
+                  : "Unable to load the speakers."}
+              </p>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {speakers?.map((speaker: any, index: number) => (
-                <Card key={index} className="overflow-hidden border border-border">
+              {speakers.map((speaker) => (
+                <Card key={speaker.name} className="overflow-hidden border border-border">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="w-full md:w-1/3">

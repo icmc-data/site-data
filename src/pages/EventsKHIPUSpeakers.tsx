@@ -5,13 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { type Speaker } from "@/utils/fetch-events";
 
 const EventsKHIPUSpeakers = () => {
   const { t, i18n } = useTranslation("events");
   
-  const speakers = i18n.language === "pt" 
-    ? t("khipu.speakers.list", { returnObjects: true })
-    : t("khipu.speakers.list", { returnObjects: true });
+  const speakerData = t("khipu.speakers.list", { returnObjects: true });
+  const speakers = Array.isArray(speakerData) ? (speakerData as Speaker[]) : [];
 
   return (
     <>
@@ -35,8 +35,8 @@ const EventsKHIPUSpeakers = () => {
 
           <section className="mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {speakers?.map((speaker: any, index: number) => (
-                <Card key={index} className="overflow-hidden border border-border">
+              {speakers.map((speaker) => (
+                <Card key={speaker.name} className="overflow-hidden border border-border">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="w-full md:w-1/3">

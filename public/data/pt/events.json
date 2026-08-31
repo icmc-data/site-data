@@ -91,32 +91,44 @@
       {
         "name": "Carlos Caetano",
         "photo": "/images/events/log2025/speakers/caetano.png",
-        "bio": "Carlos Caetano é doutor em Ciência da Computação pela Universidade Federal de Minas Gerais (UFMG), com parte de seus estudos realizados no Centre de Recherche INRIA Sophia Antipolis, na França, como pesquisador do time STARS. É mestre em Ciência da Computação pela mesma universidade e bacharel em Sistemas de Informação pela Pontifícia Universidade Católica de Minas Gerais (PUC Minas)."
+        "bio": "Carlos Caetano é doutor em Ciência da Computação pela Universidade Federal de Minas Gerais (UFMG), com parte de seus estudos realizados no Centre de Recherche INRIA Sophia Antipolis, na França, como pesquisador do time STARS. É mestre em Ciência da Computação pela mesma universidade e bacharel em Sistemas de Informação pela Pontifícia Universidade Católica de Minas Gerais (PUC Minas).",
+        "linkedin": "https://www.linkedin.com/in/ccaetano-junior/",
+        "scholar": "https://scholar.google.com/citations?user=-6_6l9UAAAAJ&hl=pt-BR"
       },
       {
         "name": "Marcel Barros",
         "photo": "/images/events/log2025/speakers/marcel.png",
-        "bio": "Doutor em Engenharia Elétrica pela Universidade de São Paulo, com ênfase em Engenharia da Computação. Sua pesquisa de doutorado foi focada em técnicas de codificação temporal para séries temporais multivariadas, envolvendo modelos baseados em grafos. Possui graduação em Engenharia Elétrica - Ênfase em Computação pela mesma instituição (2011)."
+        "bio": "Doutor em Engenharia Elétrica pela Universidade de São Paulo, com ênfase em Engenharia da Computação. Sua pesquisa de doutorado foi focada em técnicas de codificação temporal para séries temporais multivariadas, envolvendo modelos baseados em grafos. Possui graduação em Engenharia Elétrica - Ênfase em Computação pela mesma instituição (2011).",
+        "linkedin": "https://www.linkedin.com/in/mrdebarros/?locale=pt",
+        "scholar": "https://scholar.google.com/citations?user=5QnmJXIAAAAJ&hl=en"
       },
       {
         "name": "Leo Sampaio",
         "photo": "/images/events/log2025/speakers/sampaio.png",
-        "bio": "Professora doutora no ICMC-USP. Obteve o título de Doutora em Ciências de Computação pelo ICMC-USP e foi pesquisadora em pós-doutorado na Universidade Estadual de Campinas (Unicamp). Atua como pesquisadora da área de Visão Computacional, com experiência específica no desenvolvimento de modelos multimodais voltados para busca entre domínios."
+        "bio": "Professora doutora no ICMC-USP. Obteve o título de Doutora em Ciências de Computação pelo ICMC-USP e foi pesquisadora em pós-doutorado na Universidade Estadual de Campinas (Unicamp). Atua como pesquisadora da área de Visão Computacional, com experiência específica no desenvolvimento de modelos multimodais voltados para busca entre domínios.",
+        "linkedin": "https://www.linkedin.com/in/leosampaioferrazribeiro/",
+        "scholar": "https://scholar.google.com/citations?user=vunj2dMAAAAJ&hl=en"
       },
       {
         "name": "Heloisa Oss Boll",
         "photo": "/images/events/log2025/speakers/boll.png",
-        "bio": "Doutoranda na Universidade de Amsterdã/Amsterdam UMC, onde pesquisa métodos de aprendizado profundo com foco em grafos e processamento de linguagem natural (PLN) aplicados ao sistema de saúde holandês. Mestre em Ciência da Computação pelo INF-UFRGS, com especialização em Inteligência Artificial para a saúde."
+        "bio": "Doutoranda na Universidade de Amsterdã/Amsterdam UMC, onde pesquisa métodos de aprendizado profundo com foco em grafos e processamento de linguagem natural (PLN) aplicados ao sistema de saúde holandês. Mestre em Ciência da Computação pelo INF-UFRGS, com especialização em Inteligência Artificial para a saúde.",
+        "linkedin": "https://www.linkedin.com/in/hossboll/",
+        "scholar": "https://scholar.google.com/citations?user=cvNYij4AAAAJ&hl=en"
       },
       {
         "name": "Zhao Liang",
-        "photo": "/images/events/log2025/speakers/ling.png",
-        "bio": "Obteve seu bacharelado na Wuhan University, China, em 1988 e concluiu seus mestrado e doutorado em Ciência da Computação no Instituto Tecnológico de Aeronáutica (ITA) em 1996 e 1998, respectivamente. Em 2000, ingressou no corpo docente do Instituto de Ciências Matemáticas e de Computação (ICMC) da Universidade de São Paulo (USP), localizado em São Carlos."
+        "photo": "/images/events/log2025/speakers/liang.png",
+        "bio": "Obteve seu bacharelado na Wuhan University, China, em 1988 e concluiu seus mestrado e doutorado em Ciência da Computação no Instituto Tecnológico de Aeronáutica (ITA) em 1996 e 1998, respectivamente. Em 2000, ingressou no corpo docente do Instituto de Ciências Matemáticas e de Computação (ICMC) da Universidade de São Paulo (USP), localizado em São Carlos.",
+        "linkedin": "https://www.linkedin.com/in/liang-zhao-274b979a/",
+        "scholar": "https://scholar.google.com/citations?user=zJKmGRAAAAAJ&hl=pt-BR"
       },
       {
         "name": "Francisco Rodrigues",
         "photo": "/images/events/log2025/speakers/rodrigues.png",
-        "bio": "Francisco A. Rodrigues é professor titular do Instituto de Ciências Matemáticas e de Computação (Universidade de São Paulo), atuando na área de Sistemas Complexos e Ciência de Dados. Atualmente, é chefe do Departamento de Matemática e Aplicada. Foi professor visitante na University of Warwick (Reino Unido) entre 2018 e 2019 com financiamento da Leverhulme Trust."
+        "bio": "Francisco A. Rodrigues é professor titular do Instituto de Ciências Matemáticas e de Computação (Universidade de São Paulo), atuando na área de Sistemas Complexos e Ciência de Dados. Atualmente, é chefe do Departamento de Matemática e Aplicada. Foi professor visitante na University of Warwick (Reino Unido) entre 2018 e 2019 com financiamento da Leverhulme Trust.",
+        "linkedin": "https://www.linkedin.com/in/francisco-rodrigues-b613aa3b/",
+        "scholar": "https://scholar.google.com/citations?user=mMl8aggAAAAJ&hl=en"
       }
     ],
     "faq": [
