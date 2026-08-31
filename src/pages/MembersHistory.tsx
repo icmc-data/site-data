@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 import { Button } from "@/components/ui/button";
@@ -11,43 +11,25 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import { MemberCard } from "@/components/MemberCard";
+import { useFetchMembers } from "@/utils/fetch-members";
+
+type HistoryItem = {
+  year: string;
+  description: string;
+  photo: string;
+};
 
 // Componente para renderizar cada grupo de histórico (por ano)
 interface YearHistoryItemProps {
-  item: {
-    year: string;
-    description: string;
-    photo: string;
-  };
-  locale: string;
+  item: HistoryItem;
 }
 
-const YearHistoryItem: React.FC<YearHistoryItemProps> = ({ item, locale }) => {
-  const [members, setMembers] = useState<any[]>([]);
-  const [isLoadingMembers, setIsLoadingMembers] = useState(false);
+const YearHistoryItem: React.FC<YearHistoryItemProps> = ({ item }) => {
   const [showMembers, setShowMembers] = useState(false);
-
-  // Função para buscar os membros do ano a partir do arquivo JSON
-  const fetchMembers = async () => {
-    setIsLoadingMembers(true);
-    try {
-      const res = await fetch(`/data/${locale}/members-history/${item.year}.json`);
-      const data = await res.json();
-      setMembers(data);
-    } catch (error) {
-      console.error("Erro ao carregar os membros do ano", error);
-    } finally {
-      setIsLoadingMembers(false);
-    }
-  };
-
-  // Toggle para exibir ou ocultar os membros; se ainda não estiverem carregados, dispara a requisição.
-  const toggleMembers = () => {
-    if (!showMembers && members.length === 0) {
-      fetchMembers();
-    }
-    setShowMembers(!showMembers);
-  };
+  const { data: members = [], isLoading: isLoadingMembers } = useFetchMembers(
+    item.year,
+    showMembers,
+  );
 
   return (
     <div key={item.year} className="flex flex-col items-center scroll-mt-24">
@@ -65,7 +47,7 @@ const YearHistoryItem: React.FC<YearHistoryItemProps> = ({ item, locale }) => {
       <div className="mt-4">
         <Button
           variant="outline"
-          onClick={toggleMembers}
+          onClick={() => setShowMembers((current) => !current)}
           className="flex items-center gap-2"
         >
           Ver membros
@@ -94,7 +76,8 @@ const YearHistoryItem: React.FC<YearHistoryItemProps> = ({ item, locale }) => {
 };
 
 const MembersHistory = () => {
-  const { t, ready, i18n } = useTranslation("members-history");
+  const { t, ready } = useTranslation("members-history");
+  const [selectedYear, setSelectedYear] = useState<string | null>(null);
 
   if (!ready) return <div>Carregando...</div>;
 
@@ -105,12 +88,11 @@ const MembersHistory = () => {
     return <div>Erro ao carregar os dados do histórico.</div>;
   }
 
-  const [selectedYear, setSelectedYear] = useState<string | null>(null);
-
+  const typedHistoryYears = historyYears as HistoryItem[];
   const filteredYears =
     selectedYear === null
-      ? historyYears
-      : historyYears.filter((item: any) => item.year === selectedYear);
+      ? typedHistoryYears
+      : typedHistoryYears.filter((item) => item.year === selectedYear);
 
   return (
     <>
@@ -144,7 +126,7 @@ const MembersHistory = () => {
                 <DropdownMenuItem onClick={() => setSelectedYear(null)}>
                   {t("filter.all")}
                 </DropdownMenuItem>
-                {historyYears.map((item: any) => (
+                {typedHistoryYears.map((item) => (
                   <DropdownMenuItem
                     key={item.year}
                     onClick={() => setSelectedYear(item.year)}
@@ -158,12 +140,8 @@ const MembersHistory = () => {
 
           {/* Renderiza cada ano (filtrado ou não) */}
           <div className="flex flex-col gap-16">
-            {filteredYears.map((item: any) => (
-              <YearHistoryItem
-                key={item.year}
-                item={item}
-                locale={i18n.language}
-              />
+            {filteredYears.map((item) => (
+              <YearHistoryItem key={item.year} item={item} />
             ))}
           </div>
         </div>
